@@ -1,0 +1,9 @@
+.panel, .search-input, .search-submit {
+  transition: all .2s ease-in-out;
+}
+.p-events-none {
+  pointer-events: none;
+}
+.p-events-auto {
+  pointer-events: auto;
+}

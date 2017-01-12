@@ -1,0 +1,30 @@
+{
+  "product": {
+    "path": "/:slug/p",
+    "component": "Product.js"
+  },
+  "home": {
+    "path": "/",
+    "component": "Home.js"
+  },
+  "category": {
+    "path": "/:category/c",
+    "component": "Category.js"
+  },
+  "brand": {
+    "path": "/:brand/b",
+    "component": "Brand.js"
+  },
+  "account": {
+    "path": "/account",
+    "component": "Account.js"
+  },
+  "about": {
+    "path": "/about",
+    "component": "About.js"
+  },
+  "search": {
+    "path": "/*searchTerm",
+    "component": "Search.js"
+  }
+}

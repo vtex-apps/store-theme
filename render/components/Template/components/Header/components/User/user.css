@@ -1,0 +1,13 @@
+.dropdown-closed {
+  transition: transform .2s;
+  transform-origin: top right;
+  transform: scale(0,0);
+  pointer-events: none;
+}
+
+.dropdown-open {
+  transition: transform .2s;
+  transform-origin: top right;
+  transform: scale(1,1);
+  pointer-events: auto;
+}

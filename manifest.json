@@ -1,0 +1,35 @@
+{
+  "name": "dreamstore",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Dreamstore",
+  "description": "",
+  "mustUpdateAt": "2017-09-26",
+  "categories": [
+    "store"
+  ],
+  "settingsSchema": {},
+  "dependencies": {
+    "vtex.render": "0.x",
+    "vtex.my-orders": "2.0.19",
+    "vtex.my-accounts": "0.x",
+    "vtex.react-slick": "0.x",
+    "vtex.navigation-capture": "0.1.0",
+    "vtex.loading": "0.x",
+    "vtex.shelf": "0.x",
+    "vtex.recommendation": "0.x",
+    "vtex.breadcrumb": "0.x",
+    "vtex.sku-selector": "0.x",
+    "vtex.nav-menu": "0.x",
+    "vtex.shipping-calculator": "0.x",
+    "vtex.price-and-buy": "0.x",
+    "vtex.gallery": "0.x",
+    "vtex.order-by": "0.x",
+    "vtex.dreamstore-theme": "0.x",
+    "npm:classnames": "2.2.5",
+    "npm:react-sticky": "5.0.4"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish"
+  }
+}
