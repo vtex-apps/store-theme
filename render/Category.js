@@ -39,26 +39,30 @@ Category.propTypes = {
 const query = gql`
   query CategoryQuery($category: String, $sort: String) {
     products(category: $category, sort: $sort, pageSize: 50) {
-      name,
-      slug,
+      name
+      slug
       brand {
-        name,
+        name
         slug
-      },
+      }
       skus {
         images {
           src
-        },
+        }
         offers {
-          availability,
-          price,
+          availability
+          price
           listPrice
+          seller {
+            id
+            name
+          }
         }
       }
     }
 
     category(slug: $category) {
-      name,
+      name
       slug
     }
   }

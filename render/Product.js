@@ -100,11 +100,7 @@ class ProductPage extends Component {
   }
 
   productOffers (selectedSku) {
-    const offers = selectedSku && selectedSku.offers ? selectedSku.offers : []
-    const price = offers[0] ? offers[0].price : 0
-    const listPrice = offers[0] ? offers[0].listPrice : 0
-    const qty = offers[0] ? offers[0].availability : 0
-    return {price, listPrice, qty}
+    return selectedSku && selectedSku.offers ? selectedSku.offers : []
   }
 
   componentWillMount () {
@@ -190,29 +186,33 @@ ProductPage.propTypes = {
 const query = gql`
 query Product($slug: String){
   product(slug: $slug) {
-    slug,
-    name,
-    description,
+    slug
+    name
+    description
     brand {
-      name,
-      slug,
-    },
+      name
+      slug
+    }
     properties {
       facet {
-        slug,
-        name,
+        slug
+        name
         values
       }
-    },
+    }
     skus {
-      id,
+      id
       offers {
-        price,
-        listPrice,
+        price
+        listPrice
         availability
-      },
+        seller {
+          id
+          name
+        }
+      }
       images {
-        src,
+        src
         title
       }
     }
