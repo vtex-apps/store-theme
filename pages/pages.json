@@ -1,0 +1,25 @@
+{
+  "pages": {
+    "store": {
+      "path": "/",
+      "theme": "theme"
+    },
+    "store/home": {
+      "path": "/"
+    },
+    "store/search": {
+      "path": "/:term"
+    }
+  },
+  "extensions": {
+    "store": {
+      "component": "StoreTemplate"
+    },
+    "store/home": {
+      "component": "HomePage"
+    },
+    "store/search": {
+      "component": "SearchPage"
+    }
+  }
+}

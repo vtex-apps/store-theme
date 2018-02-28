@@ -1,0 +1,21 @@
+{
+  "vendor": "vtex",
+  "name": "dreamstore",
+  "version": "0.0.0",
+  "builders": {
+    "pages": "0.x",
+    "react": "1.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --public --verbose"
+  },
+  "dependencies": {
+    "vtex.store-graphql": "1.x"
+  }
+}
