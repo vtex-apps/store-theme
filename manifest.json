@@ -4,18 +4,16 @@
   "version": "0.0.1",
   "builders": {
     "pages": "0.x",
-    "react": "1.x"
+    "react": "2.x"
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --public --verbose"
   },
   "dependencies": {
-    "vtex.store-graphql": "1.x"
+    "vtex.store-graphql": "2.x"
   }
 }
