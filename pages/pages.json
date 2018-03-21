@@ -18,6 +18,19 @@
     "store/home": {
       "component": "HomePage"
     },
+    "store/home/banner": {
+      "component": "Banner",
+      "props": {
+        "image": "http://clipart-library.com/newimages/clip-art-banner-7.png"
+      }
+    },
+    "store/home/carousel": {
+      "component": "Carousel",
+      "props": {
+        "banner1": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+        "banner2": "http://clipart-library.com/newimages/clip-art-banner-7.png"
+      }
+    },
     "store/search": {
       "component": "SearchPage"
     }

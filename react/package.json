@@ -1,6 +1,8 @@
 {
   "name": "vtex.dreamstore",
-  "version": null,
+  "version": "0.0.0",
   "dependencies": {
+    "prop-types": "^15.5.10",
+    "react-slick": "^0.16.0"
   }
 }
