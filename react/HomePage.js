@@ -8,7 +8,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <ExtensionPoint id="carousel" />
+        <ExtensionPoint id="shelf" />
         <FormattedMessage id="dreamstore.soon" />
       </div>
     )
