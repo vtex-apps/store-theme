@@ -2,6 +2,7 @@
   "name": "vtex.dreamstore",
   "version": "0.0.0",
   "dependencies": {
+    "@vtex/styleguide": "2.0.0-rc.32",
     "prop-types": "^15.5.10",
     "react-slick": "^0.16.0"
   }
