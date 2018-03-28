@@ -15,9 +15,9 @@ class Header extends Component {
   render() {
     const { name } = this.props
     return (
-      <div className="flex justify-between items-center w-100 top-0 pa4 pa5-l bg-light-gray">
+      <div className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray">
         {name && <div className="b f3 near-black mt3">{name}</div>}
-        <div className="mb0">
+        <div className="tr-ns">
           <Input long placeholder={this.translate('search-placeholder')} />{' '}
           <Button>{this.translate('search')}</Button>
         </div>

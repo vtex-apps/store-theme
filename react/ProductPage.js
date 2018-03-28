@@ -2,9 +2,13 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 
-import Spinner from '@vtex/styleguide/lib/Spinner'
 import productQuery from './productQuery.gql'
 import ShelfItem from './ShelfItem'
+import Footer from './Footer'
+import Header from './Header'
+import BuyButton from './BuyButton'
+
+const { account } = global.__RUNTIME__
 
 class ProductPage extends Component {
   static propTypes = {
@@ -16,16 +20,24 @@ class ProductPage extends Component {
     const { data } = this.props
     const { product, loading } = data
     if (loading) {
-      return <Spinner />
+      return
     }
     return (
       <div>
-        <ShelfItem
-          imageUrl={product.items[0].images[0].imageUrl}
-          name={product.items[0].name}
-          price={product.items[0].sellers[0].commertialOffer.Price}
-          productLink="/"
-        />
+        <Header name={account} />
+        <div className="flex flex-row-ns flex-column-s items-center">
+          <ShelfItem
+            imageUrl={product.items[0].images[0].imageUrl}
+            name={product.productName}
+            price={product.items[0].sellers[0].commertialOffer.Price}
+          />
+          <div className="h-20">
+            <BuyButton sku={product.items[0].itemId} />
+          </div>
+        </div>
+        <div className="mt10">
+          <Footer />
+        </div>
       </div>
     )
   }

@@ -1,5 +1,6 @@
 query Product($slug: String) {
   product(slug: $slug) {
+    productName
     productId
     description
     items {

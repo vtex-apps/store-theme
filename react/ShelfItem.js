@@ -13,13 +13,14 @@ export default class ShelfItem extends Component {
   static contextTypes = {
     culture: PropTypes.object,
   }
+
   render() {
     const { imageUrl, name, price, productLink } = this.props
     return (
-      <div>
+      <div className="w-20">
         <a
           className="flex flex-column link near-black"
-          href={`/p/${productLink}`}
+          href={productLink && `/p/${productLink}`}
         >
           <img src={imageUrl} width="200" height="200" />
           <span>{name}</span>
