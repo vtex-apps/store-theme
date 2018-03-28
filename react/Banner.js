@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default function Banner({ image }) {
-  return (
-    <div className="box-banner">
-      <a>
-        <img src={image} />
-      </a>
-    </div>
-  )
-}
+class Banner extends Component {
+  static propTypes = {
+    image: PropTypes.string,
+  }
 
-Banner.propTypes = {
-  image: PropTypes.string,
+  render() {
+    const { image } = this.props
+    return (
+      <div className="box-banner">
+        <a>
+          <img src={image} />
+        </a>
+      </div>
+    )
+  }
 }
 
 Banner.schema = {
@@ -26,3 +29,5 @@ Banner.schema = {
     },
   },
 }
+
+export default Banner

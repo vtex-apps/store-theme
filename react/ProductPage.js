@@ -1,12 +1,42 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'react-apollo'
 
-export default class ProductPage extends Component {
+import Spinner from '@vtex/styleguide/lib/Spinner'
+import productQuery from './productQuery.gql'
+import ShelfItem from './ShelfItem'
+
+class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
+    data: PropTypes.object,
   }
 
   render() {
-    return <div><p>{JSON.stringify(this.props)}</p></div>
+    const { data } = this.props
+    const { product, loading } = data
+    if (loading) {
+      return <Spinner />
+    }
+    return (
+      <div>
+        <ShelfItem
+          imageUrl={product.items[0].images[0].imageUrl}
+          name={product.items[0].name}
+          price={product.items[0].sellers[0].commertialOffer.Price}
+          productLink="/"
+        />
+      </div>
+    )
   }
 }
+
+const options = {
+  options: props => ({
+    variables: {
+      slug: props.params.id,
+    },
+  }),
+}
+
+export default graphql(productQuery, options)(ProductPage)

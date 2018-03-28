@@ -3,6 +3,13 @@ import PropTypes from 'prop-types'
 import { FormattedNumber } from 'react-intl'
 
 export default class ShelfItem extends Component {
+  static propTypes = {
+    imageUrl: PropTypes.string,
+    name: PropTypes.string,
+    price: PropTypes.number,
+    productLink: PropTypes.string,
+  }
+
   static contextTypes = {
     culture: PropTypes.object,
   }
@@ -10,9 +17,12 @@ export default class ShelfItem extends Component {
     const { imageUrl, name, price, productLink } = this.props
     return (
       <div>
-        <a className="link near-black" href={`/p/${productLink}`}>
+        <a
+          className="flex flex-column link near-black"
+          href={`/p/${productLink}`}
+        >
           <img src={imageUrl} width="200" height="200" />
-          <div>{name}</div>
+          <span>{name}</span>
           <FormattedNumber
             value={price}
             style="currency"
@@ -24,11 +34,4 @@ export default class ShelfItem extends Component {
       </div>
     )
   }
-}
-
-ShelfItem.propTypes = {
-  imageUrl: PropTypes.string,
-  name: PropTypes.string,
-  price: PropTypes.number,
-  productLink: PropTypes.string,
 }

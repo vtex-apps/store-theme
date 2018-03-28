@@ -1,29 +1,32 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 import productsQuery from './productsQuery.gql'
 
 import ShelfItem from './ShelfItem'
 
-function Shelf({ data }) {
-  return (
-    <div className="flex flex-row overflow-x-auto">
-      {!data.loading &&
-        data.products.map(product => (
-          <ShelfItem
-            key={product.productId}
-            imageUrl={product.items[0].images[0].imageUrl}
-            name={product.productName}
-            price={product.items[0].sellers[0].commertialOffer.Price}
-            productLink={product.linkText}
-          />
-        ))}
-    </div>
-  )
-}
+class Shelf extends Component {
+  static propTypes = {
+    data: PropTypes.object,
+  }
 
-Shelf.propTypes = {
-  data: PropTypes.object,
+  render() {
+    const { data } = this.props
+    return (
+      <div className="flex flex-row-ns flex-column-s">
+        {!data.loading &&
+          data.products.map(product => (
+            <ShelfItem
+              key={product.productId}
+              imageUrl={product.items[0].images[0].imageUrl}
+              name={product.productName}
+              price={product.items[0].sellers[0].commertialOffer.Price}
+              productLink={product.linkText}
+            />
+          ))}
+      </div>
+    )
+  }
 }
 
 const options = {

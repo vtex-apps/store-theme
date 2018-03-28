@@ -9,6 +9,8 @@ export default class HomePage extends Component {
     return (
       <div className="w-100 h-100">
         <Header name="Dreamstore" />
+        <ExtensionPoint id="carousel" />
+        <ExtensionPoint id="banner" />
         <ExtensionPoint id="shelf" />
         <Footer />
       </div>
