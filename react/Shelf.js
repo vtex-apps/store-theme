@@ -15,6 +15,7 @@ function Shelf({ data }) {
             imageUrl={product.items[0].images[0].imageUrl}
             name={product.productName}
             price={product.items[0].sellers[0].commertialOffer.Price}
+            productLink={product.linkText}
           />
         ))}
     </div>

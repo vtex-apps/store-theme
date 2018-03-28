@@ -9,6 +9,9 @@
     },
     "store/search": {
       "path": "/:term"
+    },
+    "store/product": {
+      "path": "/p/:id"
     }
   },
   "extensions": {
@@ -35,13 +38,15 @@
       "component": "Shelf",
       "props": {
         "from": 0,
-        "to": 5,
-        "collection": "138",
+        "to": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
     "store/search": {
       "component": "SearchPage"
+    },
+    "store/product": {
+      "component": "ProductPage"
     }
   }
 }
