@@ -53,6 +53,7 @@ const options = {
       to: to - 1,
       salesChannel,
     },
+    ssr: false,
   }),
 }
 

@@ -26,7 +26,7 @@ class ProductPage extends Component {
         <div className="flex flex-row-ns flex-column-s items-center">
           <ShelfItem
             imageUrl={product.items[0].images[0].imageUrl}
-            name={product.items[0].itemId}
+            name={product.productName}
             price={product.items[0].sellers[0].commertialOffer.Price}
           />
           <div className="h-20">

@@ -7,8 +7,11 @@
     "store/home": {
       "path": "/"
     },
+    "store/cart": {
+      "path": "/cart/"
+    },
     "store/search": {
-      "path": "/:term"
+      "path": "/s/:term"
     },
     "store/product": {
       "path": "/p/:id"
@@ -41,6 +44,9 @@
         "to": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
+    },
+    "store/cart": {
+      "component": "CartPage"
     },
     "store/search": {
       "component": "SearchPage"

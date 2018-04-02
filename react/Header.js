@@ -27,7 +27,11 @@ class Header extends Component {
 
   handleSearch = () => {
     const { searchValue } = this.state
-    location.href = `/${searchValue}`
+    location.href = `/s/${searchValue}`
+  }
+
+  handleCart = () => {
+    location.href = '/cart'
   }
 
   render() {
@@ -38,16 +42,21 @@ class Header extends Component {
         <a className="link b f3 near-black mt3" href="/">
           {name || account}
         </a>
-        <div className="tr-ns">
+        <div className="tr-ns flex">
           <Input
             long
             placeholder={this.translate('search-placeholder')}
             value={searchValue}
             onChange={this.handleChange}
           />{' '}
-          <Button onClick={this.handleSearch}>
-            {this.translate('search')}
-          </Button>
+          <div className="mt3">
+            <Button onClick={this.handleSearch}>
+              {this.translate('search')}
+            </Button>
+            <Button primary onClick={this.handleCart}>
+              {this.translate('cart')}
+            </Button>
+          </div>
         </div>
       </div>
     )

@@ -42,7 +42,7 @@ class BuyButton extends Component {
 
 export default compose(
   graphql(orderFormQuery, {
-    options: { ssr: false, fetchPolicy: 'network-only' },
+    options: { ssr: false },
   }),
   graphql(addToCartMutation)
 )(BuyButton)
