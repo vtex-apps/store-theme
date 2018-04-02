@@ -8,19 +8,19 @@ import addToCartMutation from './addToCartMutation.gql'
 
 class BuyButton extends Component {
   static propTypes = {
-    sku: PropTypes.string,
+    id: PropTypes.string,
     data: PropTypes.object,
     mutate: PropTypes.func,
   }
 
   handleClick = () => {
-    const { data: { orderForm: { orderFormId } }, mutate, sku } = this.props
+    const { data: { orderForm: { orderFormId } }, mutate, id } = this.props
     mutate({
       variables: {
         orderFormId: orderFormId,
         items: [
           {
-            id: parseInt(sku),
+            id: parseInt(id),
             index: 1,
             quantity: 1,
             seller: 1,
@@ -32,7 +32,6 @@ class BuyButton extends Component {
   }
 
   render() {
-    console.log('$$$$$$$$$$$$$$$$$$$', this.props.data)
     return (
       <Button primary onClick={this.handleClick}>
         Buy
@@ -41,6 +40,9 @@ class BuyButton extends Component {
   }
 }
 
-export default compose(graphql(orderFormQuery), graphql(addToCartMutation))(
-  BuyButton
-)
+export default compose(
+  graphql(orderFormQuery, {
+    options: { ssr: false, fetchPolicy: 'network-only' },
+  }),
+  graphql(addToCartMutation)
+)(BuyButton)

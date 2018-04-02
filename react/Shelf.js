@@ -8,6 +8,7 @@ import ShelfItem from './ShelfItem'
 class Shelf extends Component {
   static propTypes = {
     data: PropTypes.object,
+    query: PropTypes.string,
   }
 
   render() {

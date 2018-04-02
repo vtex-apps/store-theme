@@ -8,8 +8,6 @@ import Footer from './Footer'
 import Header from './Header'
 import BuyButton from './BuyButton'
 
-const { account } = global.__RUNTIME__
-
 class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
@@ -24,15 +22,15 @@ class ProductPage extends Component {
     }
     return (
       <div>
-        <Header name={account} />
+        <Header />
         <div className="flex flex-row-ns flex-column-s items-center">
           <ShelfItem
             imageUrl={product.items[0].images[0].imageUrl}
-            name={product.productName}
+            name={product.items[0].itemId}
             price={product.items[0].sellers[0].commertialOffer.Price}
           />
           <div className="h-20">
-            <BuyButton sku={product.items[0].itemId} />
+            <BuyButton id={product.items[0].itemId} />
           </div>
         </div>
         <div className="mt10">
