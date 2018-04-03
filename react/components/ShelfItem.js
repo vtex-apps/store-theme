@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FormattedNumber } from 'react-intl'
+import { Link } from 'render'
 
 export default class ShelfItem extends Component {
   static propTypes = {
@@ -18,9 +19,10 @@ export default class ShelfItem extends Component {
     const { imageUrl, name, price, productLink } = this.props
     return (
       <div className="w-20">
-        <a
-          className="flex flex-column link near-black"
-          href={productLink && `/p/${productLink}`}
+        <Link
+          className="pointer flex flex-column link near-black"
+          page={'store/product'}
+          params={{ id: productLink }}
         >
           <img src={imageUrl} width="200" height="200" />
           <span>{name}</span>
@@ -31,7 +33,7 @@ export default class ShelfItem extends Component {
             minimumFractionDigits={2}
             maximumFractionDigits={2}
           />
-        </a>
+        </Link>
       </div>
     )
   }
