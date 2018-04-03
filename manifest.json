@@ -1,14 +1,16 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --public --verbose"

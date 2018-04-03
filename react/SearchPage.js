@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Shelf from './Shelf'
 
-// eslint-disable-next-line
 export default class SearchPage extends Component {
   static propTypes = {
     params: PropTypes.object,
   }
 
   render() {
+    const term = this.props.params.term
     return (
-      <div className="pa4 ph7 pt0 georgia mw8 center f4 h-100">
-        <p>{JSON.stringify(this.props)}</p>
+      <div>
+        <Shelf query={term} />
       </div>
     )
   }

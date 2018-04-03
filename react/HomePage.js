@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import { FormattedMessage } from 'react-intl'
+import { ExtensionPoint } from 'render'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
-// eslint-disable-next-line
 export default class HomePage extends Component {
   render() {
     return (
-      <div>
-        <FormattedMessage id="dreamstore.soon" />
+      <div className="w-100 h-100">
+        <ExtensionPoint id="carousel" />
+        <ExtensionPoint id="banner" />
+        <ExtensionPoint id="shelf" />
       </div>
     )
   }

@@ -1,0 +1,14 @@
+query orderForm {
+  orderForm {
+    orderFormId
+    value
+    items {
+      id
+      imageUrl
+      detailUrl
+      skuName
+      quantity
+      sellingPrice
+    }
+  }
+}
