@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
-import Spinner from '@vtex/styleguide/lib/Spinner'
-import productsQuery from './productsQuery.gql'
+import productsQuery from './queries/productsQuery.gql'
 
-import spinnerStyle from './spinner.css'
-import ShelfItem from './ShelfItem'
+import ShelfItem from './components/ShelfItem'
+import WrappedSpinner from './components/WrappedSpinner'
 
 class Shelf extends Component {
   static propTypes = {
@@ -18,13 +17,7 @@ class Shelf extends Component {
 
     return (
       <div>
-        {data.loading && (
-          <div className="w-100 flex justify-center">
-            <div className="w-10">
-              <Spinner style={spinnerStyle} />
-            </div>
-          </div>
-        )}
+        {data.loading && <WrappedSpinner />}
         {!data.loading && (
           <div className="flex flex-row-ns flex-column-s">
             {data.products.map(product => (

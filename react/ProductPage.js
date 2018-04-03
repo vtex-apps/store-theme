@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 
-import productQuery from './productQuery.gql'
-import ShelfItem from './ShelfItem'
-import Footer from './Footer'
-import Header from './Header'
-import BuyButton from './BuyButton'
+import productQuery from './queries/productQuery.gql'
+import ShelfItem from './components/ShelfItem'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import BuyButton from './components/BuyButton'
 
 class ProductPage extends Component {
   static propTypes = {

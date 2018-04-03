@@ -4,8 +4,8 @@ import { graphql, compose } from 'react-apollo'
 import { FormattedMessage } from 'react-intl'
 import Button from '@vtex/styleguide/lib/Button'
 
-import orderFormQuery from './orderFormQuery.gql'
-import addToCartMutation from './addToCartMutation.gql'
+import orderFormQuery from '../queries/orderFormQuery.gql'
+import addToCartMutation from '../mutations/addToCartMutation.gql'
 
 class BuyButton extends Component {
   static propTypes = {

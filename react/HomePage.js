@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ExtensionPoint } from 'render'
-import Footer from './Footer'
-import Header from './Header'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
 // eslint-disable-next-line
 export default class HomePage extends Component {

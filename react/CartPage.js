@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
-import Footer from './Footer'
-import Header from './Header'
-import ShelfItem from './ShelfItem'
-import orderFormQuery from './orderFormQuery.gql'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ShelfItem from './components/ShelfItem'
+import WrappedSpinner from './components/WrappedSpinner'
+import orderFormQuery from './queries/orderFormQuery.gql'
 
 // eslint-disable-next-line
 class CartPage extends Component {
@@ -17,6 +18,7 @@ class CartPage extends Component {
     return (
       <div className="w-100 h-100">
         <Header />
+        {loading && <WrappedSpinner />}
         {!loading &&
           orderForm.items.map(product => (
             <ShelfItem
