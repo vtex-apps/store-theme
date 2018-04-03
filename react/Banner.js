@@ -9,7 +9,7 @@ class Banner extends Component {
   render() {
     const { image } = this.props
     return (
-      <div className="box-banner">
+      <div>
         <a>
           <img src={image} />
         </a>
