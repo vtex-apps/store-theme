@@ -4,9 +4,8 @@ import { graphql } from 'react-apollo'
 
 import productQuery from './queries/productQuery.gql'
 import ShelfItem from './components/ShelfItem'
-import Footer from './components/Footer'
-import Header from './components/Header'
 import BuyButton from './components/BuyButton'
+import WrappedSpinner from './components/WrappedSpinner'
 
 class ProductPage extends Component {
   static propTypes = {
@@ -22,20 +21,19 @@ class ProductPage extends Component {
     }
     return (
       <div>
-        <Header />
-        <div className="flex flex-row-ns flex-column-s items-center">
-          <ShelfItem
-            imageUrl={product.items[0].images[0].imageUrl}
-            name={product.productName}
-            price={product.items[0].sellers[0].commertialOffer.Price}
-          />
-          <div className="h-20">
-            <BuyButton id={product.items[0].itemId} />
+        {loading && <WrappedSpinner />}
+        {!loading && (
+          <div className="flex flex-row-ns flex-column-s items-center">
+            <ShelfItem
+              imageUrl={product.items[0].images[0].imageUrl}
+              name={product.productName}
+              price={product.items[0].sellers[0].commertialOffer.Price}
+            />
+            <div className="h-20">
+              <BuyButton id={product.items[0].itemId} />
+            </div>
           </div>
-        </div>
-        <div className="mt10">
-          <Footer />
-        </div>
+        )}
       </div>
     )
   }

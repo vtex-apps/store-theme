@@ -13,9 +13,7 @@ export default class SearchPage extends Component {
     const term = this.props.params.term
     return (
       <div>
-        <Header />
         <Shelf query={term} />
-        <Footer />
       </div>
     )
   }
