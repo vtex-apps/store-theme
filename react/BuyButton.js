@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, compose } from 'react-apollo'
+import { FormattedMessage } from 'react-intl'
 import Button from '@vtex/styleguide/lib/Button'
 
 import orderFormQuery from './orderFormQuery.gql'
@@ -34,7 +35,7 @@ class BuyButton extends Component {
   render() {
     return (
       <Button primary onClick={this.handleClick}>
-        Buy
+        <FormattedMessage id="dreamstore.buy" />
       </Button>
     )
   }

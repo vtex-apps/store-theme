@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
+import Spinner from '@vtex/styleguide/lib/Spinner'
 import productsQuery from './productsQuery.gql'
 
+import spinnerStyle from './spinner.css'
 import ShelfItem from './ShelfItem'
 
 class Shelf extends Component {
@@ -13,18 +15,29 @@ class Shelf extends Component {
 
   render() {
     const { data } = this.props
+
     return (
-      <div className="flex flex-row-ns flex-column-s">
-        {!data.loading &&
-          data.products.map(product => (
-            <ShelfItem
-              key={product.productId}
-              imageUrl={product.items[0].images[0].imageUrl}
-              name={product.productName}
-              price={product.items[0].sellers[0].commertialOffer.Price}
-              productLink={product.linkText}
-            />
-          ))}
+      <div>
+        {data.loading && (
+          <div className="w-100 flex justify-center">
+            <div className="w-10">
+              <Spinner style={spinnerStyle} />
+            </div>
+          </div>
+        )}
+        {!data.loading && (
+          <div className="flex flex-row-ns flex-column-s">
+            {data.products.map(product => (
+              <ShelfItem
+                key={product.productId}
+                imageUrl={product.items[0].images[0].imageUrl}
+                name={product.productName}
+                price={product.items[0].sellers[0].commertialOffer.Price}
+                productLink={product.linkText}
+              />
+            ))}
+          </div>
+        )}
       </div>
     )
   }

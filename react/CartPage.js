@@ -34,4 +34,6 @@ class CartPage extends Component {
   }
 }
 
-export default graphql(orderFormQuery)(CartPage)
+export default graphql(orderFormQuery, {
+  options: { ssr: false },
+})(CartPage)
