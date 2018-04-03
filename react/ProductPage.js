@@ -18,7 +18,7 @@ class ProductPage extends Component {
     const { data } = this.props
     const { product, loading } = data
     if (loading) {
-      return
+      return null
     }
     return (
       <div>

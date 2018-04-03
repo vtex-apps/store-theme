@@ -3,7 +3,6 @@ import { ExtensionPoint } from 'render'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
-// eslint-disable-next-line
 export default class HomePage extends Component {
   render() {
     return (

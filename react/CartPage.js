@@ -7,7 +7,6 @@ import ShelfItem from './components/ShelfItem'
 import WrappedSpinner from './components/WrappedSpinner'
 import orderFormQuery from './queries/orderFormQuery.gql'
 
-// eslint-disable-next-line
 class CartPage extends Component {
   static propTypes = {
     data: PropTypes.object,

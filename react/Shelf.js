@@ -63,9 +63,9 @@ const options = {
   }),
 }
 
-const component = graphql(productsQuery, options)(Shelf)
+const ShelfWithData = graphql(productsQuery, options)(Shelf)
 
-component.schema = {
+ShelfWithData.schema = {
   title: 'Shelf',
   description: 'A product shelf featuring a collection',
   type: 'object',
@@ -87,4 +87,4 @@ component.schema = {
   },
 }
 
-export default component
+export default ShelfWithData
