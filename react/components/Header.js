@@ -25,14 +25,9 @@ class Header extends Component {
     this.setState({ searchValue: value })
   }
 
-  handleSearch = () => {
-    const { searchValue } = this.state
-    location.href = `/s/${searchValue}`
-  }
+  handleSearch = () => location.replace(`/s/${this.state.searchValue}`)
 
-  handleCart = () => {
-    location.href = '/cart'
-  }
+  handleCart = () => location.replace('/cart')
 
   render() {
     const { name } = this.props

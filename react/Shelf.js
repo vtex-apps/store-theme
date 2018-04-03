@@ -12,6 +12,28 @@ class Shelf extends Component {
     query: PropTypes.string,
   }
 
+  static schema = {
+    title: 'Shelf',
+    description: 'A product shelf featuring a collection',
+    type: 'object',
+    properties: {
+      orderBy: {
+        type: 'string',
+        enum: ['OrderByTopSaleDESC', 'OrderByPriceDESC', 'OrderByPriceASC'],
+        enumNames: ['Sales', 'Price, descending', 'Price, ascending'],
+        title: 'Order by',
+      },
+      collection: {
+        title: 'Collection',
+        type: 'string',
+      },
+      to: {
+        title: 'Quantity',
+        type: 'string',
+      },
+    },
+  }
+
   render() {
     const { data } = this.props
 
@@ -64,27 +86,5 @@ const options = {
 }
 
 const ShelfWithData = graphql(productsQuery, options)(Shelf)
-
-ShelfWithData.schema = {
-  title: 'Shelf',
-  description: 'A product shelf featuring a collection',
-  type: 'object',
-  properties: {
-    orderBy: {
-      type: 'string',
-      enum: ['OrderByTopSaleDESC', 'OrderByPriceDESC', 'OrderByPriceASC'],
-      enumNames: ['Sales', 'Price, descending', 'Price, ascending'],
-      title: 'Order by',
-    },
-    collection: {
-      title: 'Collection',
-      type: 'string',
-    },
-    to: {
-      title: 'Quantity',
-      type: 'string',
-    },
-  },
-}
 
 export default ShelfWithData

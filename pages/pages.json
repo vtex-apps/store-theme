@@ -27,14 +27,30 @@
     "store/home/banner": {
       "component": "Banner",
       "props": {
-        "image": "http://clipart-library.com/newimages/clip-art-banner-7.png"
+        "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+        "page": "/",
+        "targetParams": {
+          "params": ""
+        }
       }
     },
     "store/home/carousel": {
       "component": "Carousel",
       "props": {
-        "banner1": "http://clipart-library.com/newimages/clip-art-banner-7.png",
-        "banner2": "http://clipart-library.com/newimages/clip-art-banner-7.png"
+        "banner1": {
+          "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+          "page": "/",
+          "targetParams": {
+            "params": ""
+          }
+        },
+        "banner2": {
+          "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+          "page": "/",
+          "targetParams": {
+            "params": ""
+          }
+        }
       }
     },
     "store/home/shelf": {
