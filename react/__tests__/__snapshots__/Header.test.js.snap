@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test should render correctly en-US 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en-US",
+      "messages": Object {
+        "dreamstore.buy": "Buy",
+        "dreamstore.cart": "Cart",
+        "dreamstore.search": "Search",
+        "dreamstore.search-placeholder": "Search for products, brands...",
+        "dreamstore.soon": "Soon...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en-US",
+        "messages": Object {
+          "dreamstore.buy": "Buy",
+          "dreamstore.cart": "Cart",
+          "dreamstore.search": "Search",
+          "dreamstore.search-placeholder": "Search for products, brands...",
+          "dreamstore.soon": "Soon...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+    >
+      <a
+        className="link b f3 near-black mt3"
+        href="/"
+      >
+        account
+      </a>
+      <div
+        className="tr-ns flex"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Search for products, brands..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Search for products, brands..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Search
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={true}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Cart
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should render correctly es-AR 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "es-AR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrito",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+        "dreamstore.soon": "Breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "es-AR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrito",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+          "dreamstore.soon": "Breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+    >
+      <a
+        className="link b f3 near-black mt3"
+        href="/"
+      >
+        account
+      </a>
+      <div
+        className="tr-ns flex"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Búsqueda por productos, marcas..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Búsqueda por productos, marcas..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={true}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Carrito
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should render correctly pt-BR 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "pt-BR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrinho",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+        "dreamstore.soon": "Em breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "pt-BR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrinho",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+          "dreamstore.soon": "Em breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+    >
+      <a
+        className="link b f3 near-black mt3"
+        href="/"
+      >
+        account
+      </a>
+      <div
+        className="tr-ns flex"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Busque por produtos, marcas..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Busque por produtos, marcas..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={true}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Carrinho
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;

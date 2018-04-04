@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer test should render correctly 1`] = `
+<footer
+  className="fixed w-100 bottom-0 pa4 pa5-l bg-light-gray"
+>
+  <div
+    className="mw8 center"
+  >
+    <div
+      className="mb4-l cf"
+    />
+  </div>
+</footer>
+`;

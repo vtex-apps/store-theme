@@ -6,8 +6,6 @@ import Button from '@vtex/styleguide/lib/Button'
 
 import CartIcon from '../images/CartIcon'
 
-const { account } = global.__RUNTIME__
-
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -32,6 +30,7 @@ class Header extends Component {
   handleCart = () => location.assign('/checkout/#/cart')
 
   render() {
+    const { account } = global.__RUNTIME__
     const { name } = this.props
     const { searchValue } = this.state
     return (
