@@ -46,10 +46,14 @@ class Header extends Component {
             onChange={this.handleChange}
           />{' '}
           <div className="mt3 flex items-center justify-center">
-            <Button onClick={this.handleSearch}>
+            <Button
+              id="search"
+              onClick={this.handleSearch}
+              disabled={!searchValue}
+            >
               {this.translate('search')}
             </Button>
-            <Button onClick={this.handleCart}>
+            <Button primary id="cart" onClick={this.handleCart}>
               <CartIcon />
             </Button>
           </div>

@@ -74,7 +74,7 @@ exports[`Header test should render correctly en-US 1`] = `
         className="link b f3 near-black mt3"
         href="/"
       >
-        account
+        store
       </a>
       <div
         className="tr-ns flex"
@@ -123,8 +123,9 @@ exports[`Header test should render correctly en-US 1`] = `
           <Button
             autoFocus={false}
             block={false}
-            disabled={false}
+            disabled={true}
             icon={false}
+            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -134,8 +135,9 @@ exports[`Header test should render correctly en-US 1`] = `
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
-              disabled={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -147,6 +149,7 @@ exports[`Header test should render correctly en-US 1`] = `
             block={false}
             disabled={false}
             icon={false}
+            id="cart"
             large={false}
             onClick={[Function]}
             primary={true}
@@ -158,6 +161,7 @@ exports[`Header test should render correctly en-US 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
               disabled={false}
+              id="cart"
               onClick={[Function]}
               type="button"
             >
@@ -245,7 +249,7 @@ exports[`Header test should render correctly es-AR 1`] = `
         className="link b f3 near-black mt3"
         href="/"
       >
-        account
+        store
       </a>
       <div
         className="tr-ns flex"
@@ -294,8 +298,9 @@ exports[`Header test should render correctly es-AR 1`] = `
           <Button
             autoFocus={false}
             block={false}
-            disabled={false}
+            disabled={true}
             icon={false}
+            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -305,8 +310,9 @@ exports[`Header test should render correctly es-AR 1`] = `
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
-              disabled={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -318,6 +324,7 @@ exports[`Header test should render correctly es-AR 1`] = `
             block={false}
             disabled={false}
             icon={false}
+            id="cart"
             large={false}
             onClick={[Function]}
             primary={true}
@@ -329,6 +336,7 @@ exports[`Header test should render correctly es-AR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
               disabled={false}
+              id="cart"
               onClick={[Function]}
               type="button"
             >
@@ -416,7 +424,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
         className="link b f3 near-black mt3"
         href="/"
       >
-        account
+        store
       </a>
       <div
         className="tr-ns flex"
@@ -465,8 +473,9 @@ exports[`Header test should render correctly pt-BR 1`] = `
           <Button
             autoFocus={false}
             block={false}
-            disabled={false}
+            disabled={true}
             icon={false}
+            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -476,8 +485,9 @@ exports[`Header test should render correctly pt-BR 1`] = `
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
-              disabled={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -489,6 +499,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
             block={false}
             disabled={false}
             icon={false}
+            id="cart"
             large={false}
             onClick={[Function]}
             primary={true}
@@ -500,6 +511,182 @@ exports[`Header test should render correctly pt-BR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
               disabled={false}
+              id="cart"
+              onClick={[Function]}
+              type="button"
+            >
+              Carrinho
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should simulate filled input 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "pt-BR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrinho",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+        "dreamstore.soon": "Em breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "pt-BR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrinho",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+          "dreamstore.soon": "Em breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+    >
+      <a
+        className="link b f3 near-black mt3"
+        href="/"
+      >
+        store
+      </a>
+      <div
+        className="tr-ns flex"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Busque por produtos, marcas..."
+          readOnly={false}
+          token={false}
+          value="product"
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Busque por produtos, marcas..."
+              readOnly={false}
+              value="product"
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            id="search"
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              id="search"
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            disabled={false}
+            icon={false}
+            id="cart"
+            large={false}
+            onClick={[Function]}
+            primary={true}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              disabled={false}
+              id="cart"
               onClick={[Function]}
               type="button"
             >
