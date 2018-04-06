@@ -61,7 +61,7 @@
     "store/home/shelf-mid": {
       "component": "Shelf",
       "props": {
-        "from": 7,
+        "from": 8,
         "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
@@ -69,7 +69,7 @@
     "store/home/shelf-bottom": {
       "component": "Shelf",
       "props": {
-        "from": 15,
+        "from": 16,
         "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
