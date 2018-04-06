@@ -13,12 +13,18 @@ class ProductPage extends Component {
     data: PropTypes.object,
   }
 
+  static contextTypes = {
+    prefetchPage: PropTypes.func,
+  }
+
+  componentDidMount() {
+    this.context.prefetchPage('store/home')
+  }
+
   render() {
     const { data } = this.props
     const { product, loading } = data
-    if (loading) {
-      return null
-    }
+
     return (
       <div>
         {loading && <WrappedSpinner />}
