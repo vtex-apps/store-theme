@@ -50,11 +50,27 @@
         }
       }
     },
-    "store/home/shelf": {
+    "store/home/shelf-top": {
       "component": "Shelf",
       "props": {
         "from": 0,
         "to": 8,
+        "orderBy": "OrderByTopSaleDESC"
+      }
+    },
+    "store/home/shelf-mid": {
+      "component": "Shelf",
+      "props": {
+        "from": 7,
+        "to": 16,
+        "orderBy": "OrderByTopSaleDESC"
+      }
+    },
+    "store/home/shelf-bottom": {
+      "component": "Shelf",
+      "props": {
+        "from": 15,
+        "to": 24,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
