@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyButton test should render correctly 1`] = `
+<Button
+  autoFocus={false}
+  block={true}
+  disabled={false}
+  icon={false}
+  large={true}
+  onClick={[Function]}
+  primary={true}
+  secondary={false}
+  type="button"
+  xLarge={false}
+>
+  <FormattedMessage
+    id="dreamstore.buy"
+    values={Object {}}
+  />
+</Button>
+`;

@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 
 describe('Footer test', () => {
   let wrapper
+
   beforeEach(() => {
     wrapper = shallow(<Footer />)
   })
