@@ -18,7 +18,6 @@ export default class HomePage extends Component {
         <ExtensionPoint id="shelf-top" />
         <ExtensionPoint id="banner" />
         <ExtensionPoint id="shelf-mid" />
-        <ExtensionPoint id="shelf-bottom" />
       </div>
     )
   }

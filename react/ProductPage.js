@@ -29,15 +29,15 @@ class ProductPage extends Component {
       <div>
         {loading && <WrappedSpinner />}
         {!loading && (
-          <div className="flex flex-row-ns flex-column-s items-center">
-            <div className="w-20 mr6">
+          <div className="flex flex-column items-center justify-center pv6 pv9-ns">
+            <div className="w-20-ns w-90">
               <ShelfItem
                 imageUrl={product.items[0].images[0].imageUrl}
                 name={product.productName}
                 price={product.items[0].sellers[0].commertialOffer.Price}
               />
             </div>
-            <div className="h-20">
+            <div className="w-20-ns w-90">
               <BuyButton id={product.items[0].itemId} />
             </div>
           </div>

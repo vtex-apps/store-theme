@@ -20,21 +20,23 @@ export default class ShelfItem extends Component {
   render() {
     const { imageUrl, name, price, productLink } = this.props
     return (
-      <div className="w-100">
+      <div className="w-100 pv5 dim">
         <Link
-          className="pointer flex flex-column link near-black"
+          className="pointer flex flex-column link serious-black f4"
           page={'store/product'}
           params={{ id: productLink }}
         >
           <img src={imageUrl} />
-          <span>{name}</span>
-          <FormattedNumber
-            value={price}
-            style="currency"
-            currency={this.context.culture.currency}
-            minimumFractionDigits={2}
-            maximumFractionDigits={2}
-          />
+          <span className="pt6 f4">{name}</span>
+          <div className="f2 fw7">
+            <FormattedNumber
+              value={price}
+              style="currency"
+              currency={this.context.culture.currency}
+              minimumFractionDigits={2}
+              maximumFractionDigits={2}
+            />
+          </div>
         </Link>
       </div>
     )

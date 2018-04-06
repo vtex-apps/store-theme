@@ -34,7 +34,7 @@ class BuyButton extends Component {
 
   render() {
     return (
-      <Button primary onClick={this.handleClick}>
+      <Button primary block large onClick={this.handleClick}>
         <FormattedMessage id="dreamstore.buy" />
       </Button>
     )
