@@ -16,10 +16,6 @@ describe('Footer test', () => {
     expect(wrapper.is('footer')).toBe(true)
   })
 
-  it('should be fixed', () => {
-    expect(wrapper.hasClass('fixed')).toBe(true)
-  })
-
   it('should be at the bottom', () => {
     expect(wrapper.hasClass('bottom-0')).toBe(true)
   })

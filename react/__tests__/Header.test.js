@@ -17,7 +17,7 @@ describe('Header test', () => {
   })
 
   it('should simulate search', done => {
-    window.location.replace = jest.fn()
+    window.location.assign = jest.fn()
     const seachString = 'product'
     const input = wrapperPT.find('input')
     const button = wrapperPT.find('#search').first()
@@ -26,7 +26,7 @@ describe('Header test', () => {
         input.simulate('change', { target: { value: seachString } })
         button.simulate('click')
         wrapperPT.update()
-        expect(window.location.replace).toBeCalledWith(`/s/${seachString}`)
+        expect(window.location.assign).toBeCalledWith(`/${seachString}/s`)
       } catch (e) {
         return done(e)
       }
@@ -35,13 +35,13 @@ describe('Header test', () => {
   })
 
   it('should simulate click on cart', done => {
-    window.location.replace = jest.fn()
+    window.location.assign = jest.fn()
     const button = wrapperPT.find('#cart').first()
     process.nextTick(() => {
       try {
         button.simulate('click')
         wrapperPT.update()
-        expect(window.location.replace).toBeCalledWith('/cart')
+        expect(window.location.assign).toBeCalledWith('/checkout/#/cart')
       } catch (e) {
         return done(e)
       }

@@ -68,16 +68,16 @@ exports[`Header test should render correctly en-US 1`] = `
     }
   >
     <div
-      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
     >
       <a
-        className="link b f3 near-black mt3"
+        className="link b f3 near-black tc tl-ns"
         href="/"
       >
         store
       </a>
       <div
-        className="tr-ns flex"
+        className="tr-ns flex items-center"
       >
         <Input
           autoFocus={false}
@@ -118,7 +118,7 @@ exports[`Header test should render correctly en-US 1`] = `
         </Input>
          
         <div
-          className="mt3"
+          className="mt3 flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -165,7 +165,33 @@ exports[`Header test should render correctly en-US 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Cart
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
             </button>
           </Button>
         </div>
@@ -243,16 +269,16 @@ exports[`Header test should render correctly es-AR 1`] = `
     }
   >
     <div
-      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
     >
       <a
-        className="link b f3 near-black mt3"
+        className="link b f3 near-black tc tl-ns"
         href="/"
       >
         store
       </a>
       <div
-        className="tr-ns flex"
+        className="tr-ns flex items-center"
       >
         <Input
           autoFocus={false}
@@ -293,7 +319,7 @@ exports[`Header test should render correctly es-AR 1`] = `
         </Input>
          
         <div
-          className="mt3"
+          className="mt3 flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -340,7 +366,33 @@ exports[`Header test should render correctly es-AR 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Carrito
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
             </button>
           </Button>
         </div>
@@ -418,16 +470,16 @@ exports[`Header test should render correctly pt-BR 1`] = `
     }
   >
     <div
-      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
     >
       <a
-        className="link b f3 near-black mt3"
+        className="link b f3 near-black tc tl-ns"
         href="/"
       >
         store
       </a>
       <div
-        className="tr-ns flex"
+        className="tr-ns flex items-center"
       >
         <Input
           autoFocus={false}
@@ -468,7 +520,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
         </Input>
          
         <div
-          className="mt3"
+          className="mt3 flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -515,7 +567,33 @@ exports[`Header test should render correctly pt-BR 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Carrinho
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
             </button>
           </Button>
         </div>
@@ -593,16 +671,16 @@ exports[`Header test should simulate filled input 1`] = `
     }
   >
     <div
-      className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray"
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
     >
       <a
-        className="link b f3 near-black mt3"
+        className="link b f3 near-black tc tl-ns"
         href="/"
       >
         store
       </a>
       <div
-        className="tr-ns flex"
+        className="tr-ns flex items-center"
       >
         <Input
           autoFocus={false}
@@ -643,7 +721,7 @@ exports[`Header test should simulate filled input 1`] = `
         </Input>
          
         <div
-          className="mt3"
+          className="mt3 flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -690,7 +768,33 @@ exports[`Header test should simulate filled input 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Carrinho
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
             </button>
           </Button>
         </div>
