@@ -10,7 +10,7 @@ class Banner extends Component {
   }
 
   static schema = {
-    title: 'Banner',
+    component: 'Banner',
     description: 'A simple banner component',
     type: 'object',
     properties: {

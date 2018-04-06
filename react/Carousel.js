@@ -18,7 +18,7 @@ class Carousel extends Component {
   }
 
   static schema = {
-    title: 'Carousel',
+    component: 'Carousel',
     description: 'A simple carousel component',
     type: 'object',
     properties: {
