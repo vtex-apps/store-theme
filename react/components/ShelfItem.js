@@ -9,6 +9,8 @@ export default class ShelfItem extends Component {
     name: PropTypes.string,
     price: PropTypes.number,
     productLink: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
   }
 
   static contextTypes = {
@@ -18,13 +20,13 @@ export default class ShelfItem extends Component {
   render() {
     const { imageUrl, name, price, productLink } = this.props
     return (
-      <div className="w-20">
+      <div className="w-100">
         <Link
           className="pointer flex flex-column link near-black"
           page={'store/product'}
           params={{ id: productLink }}
         >
-          <img src={imageUrl} width="200" height="200" />
+          <img src={imageUrl} />
           <span>{name}</span>
           <FormattedNumber
             value={price}

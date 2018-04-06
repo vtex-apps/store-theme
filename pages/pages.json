@@ -7,14 +7,11 @@
     "store/home": {
       "path": "/"
     },
-    "store/cart": {
-      "path": "/cart/"
-    },
     "store/search": {
-      "path": "/s/:term"
+      "path": "/:term/s"
     },
     "store/product": {
-      "path": "/p/:id"
+      "path": "/:id/p"
     }
   },
   "extensions": {
@@ -60,9 +57,6 @@
         "to": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
-    },
-    "store/cart": {
-      "component": "CartPage"
     },
     "store/search": {
       "component": "SearchPage"

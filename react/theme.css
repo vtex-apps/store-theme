@@ -20,3 +20,9 @@ p1 {
 body {
   background-color: white;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto; /* ie8 */
+}

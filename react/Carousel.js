@@ -84,9 +84,11 @@ class Carousel extends Component {
     }
 
     const fallback = (
-      <div>
-        <img src={banner1} />
-      </div>
+      <Banner
+        image={banner1.image}
+        page={banner1.page}
+        targetParams={banner1.targetParams}
+      />
     )
 
     return (

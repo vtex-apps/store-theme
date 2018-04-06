@@ -34,19 +34,23 @@ class Shelf extends Component {
     },
   }
 
+  trimName = name => {
+    return name.length > 20 ? `${name.substring(0, 18)}...` : name
+  }
+
   render() {
     const { data } = this.props
-
+    console.log(data)
     return (
       <div>
         {data.loading && <WrappedSpinner />}
         {!data.loading && (
-          <div className="flex flex-row-ns flex-column-s">
+          <div className="flex flex-row-ns flex-column-s items-center">
             {data.products.map(product => (
               <ShelfItem
                 key={product.productId}
                 imageUrl={product.items[0].images[0].imageUrl}
-                name={product.productName}
+                name={this.trimName(product.productName)}
                 price={product.items[0].sellers[0].commertialOffer.Price}
                 productLink={product.linkText}
               />
@@ -81,7 +85,6 @@ const options = {
       to: to - 1,
       salesChannel,
     },
-    ssr: false,
   }),
 }
 

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { ExtensionPoint } from 'render'
-import Footer from './components/Footer'
-import Header from './components/Header'
 
 export default class HomePage extends Component {
   render() {

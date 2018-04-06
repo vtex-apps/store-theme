@@ -24,11 +24,13 @@ class ProductPage extends Component {
         {loading && <WrappedSpinner />}
         {!loading && (
           <div className="flex flex-row-ns flex-column-s items-center">
-            <ShelfItem
-              imageUrl={product.items[0].images[0].imageUrl}
-              name={product.productName}
-              price={product.items[0].sellers[0].commertialOffer.Price}
-            />
+            <div className="w-20 mr6">
+              <ShelfItem
+                imageUrl={product.items[0].images[0].imageUrl}
+                name={product.productName}
+                price={product.items[0].sellers[0].commertialOffer.Price}
+              />
+            </div>
             <div className="h-20">
               <BuyButton id={product.items[0].itemId} />
             </div>

@@ -38,8 +38,8 @@ class Banner extends Component {
   render() {
     const { image, page, targetParams } = this.props
     return (
-      <div>
-        <Link page={page} params={targetParams}>
+      <div className="flex items-center">
+        <Link className="mb0" page={page} params={targetParams}>
           <img src={image} />
         </Link>
       </div>

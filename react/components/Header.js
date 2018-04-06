@@ -25,15 +25,15 @@ class Header extends Component {
     this.setState({ searchValue: value })
   }
 
-  handleSearch = () => location.replace(`/s/${this.state.searchValue}`)
+  handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
 
-  handleCart = () => location.replace('/cart')
+  handleCart = () => location.assign('/checkout/#/cart')
 
   render() {
     const { name } = this.props
     const { searchValue } = this.state
     return (
-      <div className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray">
+      <div className="z-2 flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray">
         <a className="link b f3 near-black mt3" href="/">
           {name || account}
         </a>
