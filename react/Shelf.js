@@ -10,13 +10,18 @@ class Shelf extends Component {
   static propTypes = {
     data: PropTypes.object,
     query: PropTypes.string,
+    title: PropTypes.string,
   }
 
   static schema = {
-    title: 'Shelf',
+    component: 'Shelf',
     description: 'A product shelf featuring a collection',
     type: 'object',
     properties: {
+      title: {
+        title: 'Title',
+        type: 'string',
+      },
       orderBy: {
         type: 'string',
         enum: ['OrderByTopSaleDESC', 'OrderByPriceDESC', 'OrderByPriceASC'],
@@ -25,11 +30,15 @@ class Shelf extends Component {
       },
       collection: {
         title: 'Collection',
-        type: 'string',
+        type: 'number',
       },
-      to: {
+      quantity: {
         title: 'Quantity',
-        type: 'string',
+        type: 'number',
+      },
+      from: {
+        title: 'From',
+        type: 'number',
       },
     },
   }
@@ -39,11 +48,13 @@ class Shelf extends Component {
   }
 
   render() {
-    const { data } = this.props
-    console.log(data)
+    const { data, title } = this.props
     return (
       <div>
         {data.loading && <WrappedSpinner />}
+        {!data.loading && title && (
+          <h2>{title}</h2>
+        )}
         {!data.loading && (
           <div className="flex flex-row-ns flex-column-s items-center">
             {data.products.map(product => (
@@ -71,7 +82,7 @@ const options = {
     collection = '',
     orderBy = '',
     from = 0,
-    to = 8,
+    quantity = 4,
     salesChannel = '',
   }) => ({
     variables: {
@@ -82,7 +93,7 @@ const options = {
       collection,
       orderBy,
       from,
-      to: to - 1,
+      to: from + quantity - 1,
       salesChannel,
     },
   }),

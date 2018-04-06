@@ -54,7 +54,7 @@
       "component": "Shelf",
       "props": {
         "from": 0,
-        "to": 8,
+        "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
@@ -62,7 +62,7 @@
       "component": "Shelf",
       "props": {
         "from": 7,
-        "to": 16,
+        "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
@@ -70,7 +70,7 @@
       "component": "Shelf",
       "props": {
         "from": 15,
-        "to": 24,
+        "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
