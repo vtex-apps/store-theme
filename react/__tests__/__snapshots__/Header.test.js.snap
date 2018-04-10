@@ -25,6 +25,7 @@ exports[`Header test should render correctly en-US 1`] = `
       "messages": Object {
         "dreamstore.buy": "Buy",
         "dreamstore.cart": "Cart",
+        "dreamstore.poweredBy": "POWERED BY VTEX",
         "dreamstore.search": "Search",
         "dreamstore.search-placeholder": "Search for products, brands...",
         "dreamstore.soon": "Soon...",
@@ -58,6 +59,7 @@ exports[`Header test should render correctly en-US 1`] = `
         "messages": Object {
           "dreamstore.buy": "Buy",
           "dreamstore.cart": "Cart",
+          "dreamstore.poweredBy": "POWERED BY VTEX",
           "dreamstore.search": "Search",
           "dreamstore.search-placeholder": "Search for products, brands...",
           "dreamstore.soon": "Soon...",
@@ -226,6 +228,7 @@ exports[`Header test should render correctly es-AR 1`] = `
       "messages": Object {
         "dreamstore.buy": "Comprar",
         "dreamstore.cart": "Carrito",
+        "dreamstore.poweredBy": "IMPULSADO POR VTEX",
         "dreamstore.search": "Buscar",
         "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
         "dreamstore.soon": "Breve...",
@@ -259,6 +262,7 @@ exports[`Header test should render correctly es-AR 1`] = `
         "messages": Object {
           "dreamstore.buy": "Comprar",
           "dreamstore.cart": "Carrito",
+          "dreamstore.poweredBy": "IMPULSADO POR VTEX",
           "dreamstore.search": "Buscar",
           "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
           "dreamstore.soon": "Breve...",
@@ -427,6 +431,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
       "messages": Object {
         "dreamstore.buy": "Comprar",
         "dreamstore.cart": "Carrinho",
+        "dreamstore.poweredBy": "FORNECIDO POR VTEX",
         "dreamstore.search": "Buscar",
         "dreamstore.search-placeholder": "Busque por produtos, marcas...",
         "dreamstore.soon": "Em breve...",
@@ -460,6 +465,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
         "messages": Object {
           "dreamstore.buy": "Comprar",
           "dreamstore.cart": "Carrinho",
+          "dreamstore.poweredBy": "FORNECIDO POR VTEX",
           "dreamstore.search": "Buscar",
           "dreamstore.search-placeholder": "Busque por produtos, marcas...",
           "dreamstore.soon": "Em breve...",
@@ -628,6 +634,7 @@ exports[`Header test should simulate filled input 1`] = `
       "messages": Object {
         "dreamstore.buy": "Comprar",
         "dreamstore.cart": "Carrinho",
+        "dreamstore.poweredBy": "FORNECIDO POR VTEX",
         "dreamstore.search": "Buscar",
         "dreamstore.search-placeholder": "Busque por produtos, marcas...",
         "dreamstore.soon": "Em breve...",
@@ -661,6 +668,7 @@ exports[`Header test should simulate filled input 1`] = `
         "messages": Object {
           "dreamstore.buy": "Comprar",
           "dreamstore.cart": "Carrinho",
+          "dreamstore.poweredBy": "FORNECIDO POR VTEX",
           "dreamstore.search": "Buscar",
           "dreamstore.search-placeholder": "Busque por produtos, marcas...",
           "dreamstore.soon": "Em breve...",

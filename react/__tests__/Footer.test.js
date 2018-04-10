@@ -1,23 +1,35 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mountWithIntl, loadTranslation, setLocale } from 'enzyme-react-intl'
 import Footer from '../components/Footer'
 
 describe('Footer test', () => {
-  let wrapper
+  let wrapperPT
 
   beforeEach(() => {
-    wrapper = shallow(<Footer />)
+    loadTranslation('../locales/pt-BR.json')
+    setLocale('pt-BR')
+    wrapperPT = mountWithIntl(<Footer />)
   })
 
-  it('should render correctly', () => {
-    expect(wrapper.getElement()).toMatchSnapshot()
+  it('should render correctly pt-BR', () => {
+    expect(wrapperPT.getElement()).toMatchSnapshot()
   })
 
   it('should be a footer element', () => {
-    expect(wrapper.is('footer')).toBe(true)
+    expect(wrapperPT.find('footer').length).toBe(1)
   })
 
-  it('should be at the bottom', () => {
-    expect(wrapper.hasClass('bottom-0')).toBe(true)
+  it('should render correctly en-US', () => {
+    loadTranslation('../locales/en-US.json')
+    setLocale('en-US')
+    const wrapperEN = mountWithIntl(<Footer />)
+    expect(wrapperEN).toMatchSnapshot()
+  })
+
+  it('should render correctly es-AR', () => {
+    loadTranslation('../locales/es-AR.json')
+    setLocale('es-AR')
+    const wrapperES = mountWithIntl(<Footer />)
+    expect(wrapperES).toMatchSnapshot()
   })
 })
