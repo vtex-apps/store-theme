@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { compose, graphql } from 'react-apollo'
+import Modal from '@vtex/styleguide/lib/Modal'
 
 import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
 import ShelfItem from './components/ShelfItem'
 import BuyButton from './components/BuyButton'
 import WrappedSpinner from './components/WrappedSpinner'
+import MiniCart from './components/MiniCart'
 
 class ProductPage extends Component {
   static propTypes = {
@@ -15,8 +17,21 @@ class ProductPage extends Component {
     prefetch: PropTypes.func,
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      isModalOpen: false,
+    }
+  }
+
   componentDidMount() {
     this.props.prefetch('store/home')
+  }
+
+  handleChange = () => {
+    this.setState(state => {
+      return { isModalOpen: !state.isModalOpen }
+    })
   }
 
   render() {
@@ -37,8 +52,18 @@ class ProductPage extends Component {
               />
             </div>
             <div className="w-20-ns w-90">
-              <BuyButton id={product.items[0].itemId} />
+              <BuyButton
+                id={product.items[0].itemId}
+                onClick={this.handleChange}
+              />
             </div>
+            <Modal
+              centered
+              isOpen={this.state.isModalOpen}
+              onClose={this.handleChange}
+            >
+              <MiniCart />
+            </Modal>
           </div>
         )}
       </div>
