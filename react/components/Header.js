@@ -53,7 +53,7 @@ class Header extends Component {
             >
               {this.translate('search')}
             </Button>
-            <Button primary id="cart" onClick={this.handleCart}>
+            <Button id="cart" onClick={this.handleCart}>
               <CartIcon />
             </Button>
           </div>

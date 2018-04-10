@@ -152,14 +152,14 @@ exports[`Header test should render correctly en-US 1`] = `
             id="cart"
             large={false}
             onClick={[Function]}
-            primary={true}
+            primary={false}
             secondary={false}
             type="button"
             xLarge={false}
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               id="cart"
               onClick={[Function]}
@@ -353,14 +353,14 @@ exports[`Header test should render correctly es-AR 1`] = `
             id="cart"
             large={false}
             onClick={[Function]}
-            primary={true}
+            primary={false}
             secondary={false}
             type="button"
             xLarge={false}
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               id="cart"
               onClick={[Function]}
@@ -554,14 +554,14 @@ exports[`Header test should render correctly pt-BR 1`] = `
             id="cart"
             large={false}
             onClick={[Function]}
-            primary={true}
+            primary={false}
             secondary={false}
             type="button"
             xLarge={false}
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               id="cart"
               onClick={[Function]}
@@ -755,14 +755,14 @@ exports[`Header test should simulate filled input 1`] = `
             id="cart"
             large={false}
             onClick={[Function]}
-            primary={true}
+            primary={false}
             secondary={false}
             type="button"
             xLarge={false}
           >
             <button
               autoFocus={false}
-              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--blue bg-blue white hover-bg-heavy-blue hover-b--heavy-blue pointer "
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               id="cart"
               onClick={[Function]}
