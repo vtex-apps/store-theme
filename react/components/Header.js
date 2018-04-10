@@ -49,13 +49,14 @@ class Header extends Component {
           {name || account}
         </a>
         <div className="tr-ns flex items-center">
-          <Input
-            long
-            placeholder={this.translate('search-placeholder')}
-            value={searchValue}
-            onChange={this.handleChange}
-          />{' '}
-          <div className="mt3 flex items-center justify-center">
+          <div className="w5-ns mr2">
+            <Input
+              placeholder={this.translate('search-placeholder')}
+              value={searchValue}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="flex items-center justify-center">
             <Button
               data-test-id="search"
               onClick={this.handleSearch}
