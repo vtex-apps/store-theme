@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'react-apollo'
+import { compose, graphql } from 'react-apollo'
 
+import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
 import ShelfItem from './components/ShelfItem'
 import BuyButton from './components/BuyButton'
@@ -11,14 +12,11 @@ class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
     data: PropTypes.object,
-  }
-
-  static contextTypes = {
-    prefetchPage: PropTypes.func,
+    prefetch: PropTypes.func,
   }
 
   componentDidMount() {
-    this.context.prefetchPage('store/home')
+    this.props.prefetch('store/home')
   }
 
   render() {
@@ -56,4 +54,6 @@ const options = {
   }),
 }
 
-export default graphql(productQuery, options)(ProductPage)
+export default compose(graphql(productQuery, options), withPrefetch())(
+  ProductPage
+)
