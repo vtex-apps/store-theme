@@ -34,6 +34,11 @@ class MiniCart extends Component {
     })
   }
 
+  getItemId = detailUrl => {
+    const regExp = /\/([^)]+)\//
+    return regExp.exec(detailUrl)[1]
+  }
+
   render() {
     const { data } = this.props
     if (data.loading) {
@@ -47,7 +52,7 @@ class MiniCart extends Component {
               imageUrl={item.imageUrl}
               name={item.name}
               price={item.sellingPrice}
-              productLink={item.detailUrl}
+              productId={this.getItemId(item.detailUrl)}
             />
             <Button id={item.id} onClick={this.handleRemoveItem}>
               x

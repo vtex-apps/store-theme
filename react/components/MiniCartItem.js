@@ -8,7 +8,7 @@ export default class MiniCartItem extends Component {
     imageUrl: PropTypes.string,
     name: PropTypes.string,
     price: PropTypes.number,
-    productLink: PropTypes.string,
+    productId: PropTypes.string,
   }
 
   static contextTypes = {
@@ -16,15 +16,15 @@ export default class MiniCartItem extends Component {
   }
 
   render() {
-    const { imageUrl, name, price, productLink } = this.props
+    const { imageUrl, name, price, productId } = this.props
     return (
       <div className="w-100 pv5 dim">
         <Link
           className="pointer flex flex-row link serious-black f4"
           page={'store/product'}
-          params={{ id: productLink }}
+          params={{ id: productId }}
         >
-          <img src={imageUrl} />
+          <img src={imageUrl} alt={productId} />
           <div>
             <span className="pt6 f4">{name}</span>
             <div className="f5 fw7">
