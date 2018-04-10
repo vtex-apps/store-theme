@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'react-apollo'
+import { compose, graphql } from 'react-apollo'
 
+import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
 import ShelfItem from './components/ShelfItem'
 import BuyButton from './components/BuyButton'
@@ -11,25 +12,31 @@ class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
     data: PropTypes.object,
+    prefetch: PropTypes.func,
+  }
+
+  componentDidMount() {
+    this.props.prefetch('store/home')
   }
 
   render() {
     const { data } = this.props
     const { product, loading } = data
-    if (loading) {
-      return null
-    }
+
     return (
       <div>
-        {loading && <WrappedSpinner />}
-        {!loading && (
-          <div className="flex flex-row-ns flex-column-s items-center">
-            <ShelfItem
-              imageUrl={product.items[0].images[0].imageUrl}
-              name={product.productName}
-              price={product.items[0].sellers[0].commertialOffer.Price}
-            />
-            <div className="h-20">
+        {loading ? (
+          <WrappedSpinner />
+        ) : (
+          <div className="flex flex-column items-center justify-center pv6 pv9-ns">
+            <div className="w-20-ns w-90">
+              <ShelfItem
+                imageUrl={product.items[0].images[0].imageUrl}
+                name={product.productName}
+                price={product.items[0].sellers[0].commertialOffer.Price}
+              />
+            </div>
+            <div className="w-20-ns w-90">
               <BuyButton id={product.items[0].itemId} />
             </div>
           </div>
@@ -47,4 +54,6 @@ const options = {
   }),
 }
 
-export default graphql(productQuery, options)(ProductPage)
+export default compose(graphql(productQuery, options), withPrefetch())(
+  ProductPage
+)

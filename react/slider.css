@@ -191,6 +191,7 @@
 
 .slick-next {
   right: 20px;
+  z-index: 1;
 }
 
 [dir="rtl"] .slick-next {
@@ -209,7 +210,7 @@
 /* Dots */
 
 .slick-slider {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .slick-dots {

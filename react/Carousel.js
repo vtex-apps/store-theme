@@ -18,7 +18,7 @@ class Carousel extends Component {
   }
 
   static schema = {
-    title: 'Carousel',
+    component: 'Carousel',
     description: 'A simple carousel component',
     type: 'object',
     properties: {
@@ -84,9 +84,12 @@ class Carousel extends Component {
     }
 
     const fallback = (
-      <div>
-        <img src={banner1} />
-      </div>
+      <Banner
+        image={banner1.image}
+        altText={banner1.page}
+        page={banner1.page}
+        targetParams={banner1.targetParams}
+      />
     )
 
     return (
@@ -95,6 +98,7 @@ class Carousel extends Component {
           <div>
             <Banner
               image={banner1.image}
+              altText={banner1.page}
               page={banner1.page}
               targetParams={banner1.targetParams}
             />
@@ -102,6 +106,7 @@ class Carousel extends Component {
           <div>
             <Banner
               image={banner2.image}
+              altText={banner2.page}
               page={banner2.page}
               targetParams={banner2.targetParams}
             />

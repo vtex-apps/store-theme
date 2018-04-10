@@ -9,30 +9,38 @@ export default class ShelfItem extends Component {
     name: PropTypes.string,
     price: PropTypes.number,
     productLink: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
   }
 
   static contextTypes = {
     culture: PropTypes.object,
   }
 
+  trimName = name => {
+    return name.length > 2 ? name.substring(0, 18) : name
+  }
+
   render() {
     const { imageUrl, name, price, productLink } = this.props
     return (
-      <div className="w-20">
+      <div className="w-100 pv5 dim">
         <Link
-          className="pointer flex flex-column link near-black"
+          className="pointer flex flex-column link serious-black f4"
           page={'store/product'}
           params={{ id: productLink }}
         >
-          <img src={imageUrl} width="200" height="200" />
-          <span>{name}</span>
-          <FormattedNumber
-            value={price}
-            style="currency"
-            currency={this.context.culture.currency}
-            minimumFractionDigits={2}
-            maximumFractionDigits={2}
-          />
+          <img src={imageUrl} alt={name} />
+          <span className="pt6 f4">{this.trimName(name)}</span>
+          <div className="f2 fw7">
+            <FormattedNumber
+              value={price}
+              style="currency"
+              currency={this.context.culture.currency}
+              minimumFractionDigits={2}
+              maximumFractionDigits={2}
+            />
+          </div>
         </Link>
       </div>
     )

@@ -7,14 +7,11 @@
     "store/home": {
       "path": "/"
     },
-    "store/cart": {
-      "path": "/cart/"
-    },
     "store/search": {
-      "path": "/s/:term"
+      "path": "/:term/s"
     },
     "store/product": {
-      "path": "/p/:id"
+      "path": "/:id/p"
     }
   },
   "extensions": {
@@ -53,16 +50,29 @@
         }
       }
     },
-    "store/home/shelf": {
+    "store/home/shelf-top": {
       "component": "Shelf",
       "props": {
         "from": 0,
-        "to": 8,
+        "quantity": 8,
         "orderBy": "OrderByTopSaleDESC"
       }
     },
-    "store/cart": {
-      "component": "CartPage"
+    "store/home/shelf-mid": {
+      "component": "Shelf",
+      "props": {
+        "from": 8,
+        "quantity": 8,
+        "orderBy": "OrderByTopSaleDESC"
+      }
+    },
+    "store/home/shelf-bottom": {
+      "component": "Shelf",
+      "props": {
+        "from": 16,
+        "quantity": 8,
+        "orderBy": "OrderByTopSaleDESC"
+      }
     },
     "store/search": {
       "component": "SearchPage"

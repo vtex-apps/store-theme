@@ -12,8 +12,8 @@ export default class StoreTemplate extends Component {
     return (
       <div>
         <Header />
-        <div>{this.props.children}</div>
-        <div className="mt10">
+        <div className="z-1">{this.props.children}</div>
+        <div className="mt4">
           <Footer />
         </div>
       </div>

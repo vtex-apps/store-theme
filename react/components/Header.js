@@ -4,6 +4,8 @@ import { injectIntl, intlShape } from 'react-intl'
 import Input from '@vtex/styleguide/lib/Input'
 import Button from '@vtex/styleguide/lib/Button'
 
+import CartIcon from '../images/CartIcon'
+
 const { account } = global.__RUNTIME__
 
 class Header extends Component {
@@ -25,31 +27,31 @@ class Header extends Component {
     this.setState({ searchValue: value })
   }
 
-  handleSearch = () => location.replace(`/s/${this.state.searchValue}`)
+  handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
 
-  handleCart = () => location.replace('/cart')
+  handleCart = () => location.assign('/checkout/#/cart')
 
   render() {
     const { name } = this.props
     const { searchValue } = this.state
     return (
-      <div className="flex-ns justify-between items-center w-100 top-0 pa2 pa5-l bg-light-gray">
-        <a className="link b f3 near-black mt3" href="/">
+      <div className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns">
+        <a className="link b f3 near-black tc tl-ns" href="/">
           {name || account}
         </a>
-        <div className="tr-ns flex">
+        <div className="tr-ns flex items-center">
           <Input
             long
             placeholder={this.translate('search-placeholder')}
             value={searchValue}
             onChange={this.handleChange}
           />{' '}
-          <div className="mt3">
+          <div className="mt3 flex items-center justify-center">
             <Button onClick={this.handleSearch}>
               {this.translate('search')}
             </Button>
-            <Button primary onClick={this.handleCart}>
-              {this.translate('cart')}
+            <Button onClick={this.handleCart}>
+              <CartIcon />
             </Button>
           </div>
         </div>
