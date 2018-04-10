@@ -6,8 +6,6 @@ import Button from '@vtex/styleguide/lib/Button'
 
 import CartIcon from '../images/CartIcon'
 
-const { account } = global.__RUNTIME__
-
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -32,6 +30,7 @@ class Header extends Component {
   handleCart = () => location.assign('/checkout/#/cart')
 
   render() {
+    const { account } = global.__RUNTIME__
     const { name } = this.props
     const { searchValue } = this.state
     return (
@@ -47,10 +46,14 @@ class Header extends Component {
             onChange={this.handleChange}
           />{' '}
           <div className="mt3 flex items-center justify-center">
-            <Button onClick={this.handleSearch}>
+            <Button
+              data-test-id="search"
+              onClick={this.handleSearch}
+              disabled={!searchValue}
+            >
               {this.translate('search')}
             </Button>
-            <Button onClick={this.handleCart}>
+            <Button data-test-id="cart" onClick={this.handleCart}>
               <CartIcon />
             </Button>
           </div>

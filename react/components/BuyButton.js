@@ -7,7 +7,7 @@ import Button from '@vtex/styleguide/lib/Button'
 import orderFormQuery from '../queries/orderFormQuery.gql'
 import addToCartMutation from '../mutations/addToCartMutation.gql'
 
-class BuyButton extends Component {
+export class BuyButton extends Component {
   static propTypes = {
     id: PropTypes.string,
     data: PropTypes.object,

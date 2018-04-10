@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer test should render correctly en-US 1`] = `
+<InjectIntl(Footer)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en-US",
+      "messages": Object {
+        "dreamstore.buy": "Buy",
+        "dreamstore.cart": "Cart",
+        "dreamstore.poweredBy": "POWERED BY VTEX",
+        "dreamstore.search": "Search",
+        "dreamstore.search-placeholder": "Search for products, brands...",
+        "dreamstore.soon": "Soon...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Footer
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en-US",
+        "messages": Object {
+          "dreamstore.buy": "Buy",
+          "dreamstore.cart": "Cart",
+          "dreamstore.poweredBy": "POWERED BY VTEX",
+          "dreamstore.search": "Search",
+          "dreamstore.search-placeholder": "Search for products, brands...",
+          "dreamstore.soon": "Soon...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <footer
+      className="w-100 bottom-0 pa7 pa9-l bg-near-white flex items-center"
+    >
+      <div
+        className="mw8 center"
+      >
+        <div
+          className="cf tc fw7 flex items-center justify-center"
+        >
+          POWERED BY VTEX
+        </div>
+        <div
+          className="tc"
+        >
+          2018
+        </div>
+      </div>
+    </footer>
+  </Footer>
+</InjectIntl(Footer)>
+`;
+
+exports[`Footer test should render correctly es-AR 1`] = `
+<InjectIntl(Footer)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "es-AR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrito",
+        "dreamstore.poweredBy": "IMPULSADO POR VTEX",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+        "dreamstore.soon": "Breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Footer
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "es-AR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrito",
+          "dreamstore.poweredBy": "IMPULSADO POR VTEX",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+          "dreamstore.soon": "Breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <footer
+      className="w-100 bottom-0 pa7 pa9-l bg-near-white flex items-center"
+    >
+      <div
+        className="mw8 center"
+      >
+        <div
+          className="cf tc fw7 flex items-center justify-center"
+        >
+          IMPULSADO POR VTEX
+        </div>
+        <div
+          className="tc"
+        >
+          2018
+        </div>
+      </div>
+    </footer>
+  </Footer>
+</InjectIntl(Footer)>
+`;
+
+exports[`Footer test should render correctly pt-BR 1`] = `
+<InjectIntl(Footer)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "pt-BR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrinho",
+        "dreamstore.poweredBy": "FORNECIDO POR VTEX",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+        "dreamstore.soon": "Em breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+/>
+`;

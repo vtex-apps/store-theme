@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`orderFormQuery test should be the correct query 1`] = `
+Object {
+  "definitions": Array [
+    Object {
+      "directives": Array [
+        Object {
+          "arguments": Array [
+            Object {
+              "kind": "Argument",
+              "name": Object {
+                "kind": "Name",
+                "value": "scope",
+              },
+              "value": Object {
+                "block": false,
+                "kind": "StringValue",
+                "value": "private",
+              },
+            },
+          ],
+          "kind": "Directive",
+          "name": Object {
+            "kind": "Name",
+            "value": "context",
+          },
+        },
+      ],
+      "kind": "OperationDefinition",
+      "name": Object {
+        "kind": "Name",
+        "value": "orderForm",
+      },
+      "operation": "query",
+      "selectionSet": Object {
+        "kind": "SelectionSet",
+        "selections": Array [
+          Object {
+            "arguments": Array [],
+            "directives": Array [],
+            "kind": "Field",
+            "name": Object {
+              "kind": "Name",
+              "value": "orderForm",
+            },
+            "selectionSet": Object {
+              "kind": "SelectionSet",
+              "selections": Array [
+                Object {
+                  "arguments": Array [],
+                  "directives": Array [],
+                  "kind": "Field",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "orderFormId",
+                  },
+                },
+                Object {
+                  "arguments": Array [],
+                  "directives": Array [],
+                  "kind": "Field",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "value",
+                  },
+                },
+                Object {
+                  "arguments": Array [],
+                  "directives": Array [],
+                  "kind": "Field",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "items",
+                  },
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "id",
+                        },
+                      },
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "imageUrl",
+                        },
+                      },
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "detailUrl",
+                        },
+                      },
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "skuName",
+                        },
+                      },
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "quantity",
+                        },
+                      },
+                      Object {
+                        "arguments": Array [],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "sellingPrice",
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+      "variableDefinitions": Array [],
+    },
+  ],
+  "kind": "Document",
+  "loc": Object {
+    "end": 197,
+    "source": Object {
+      "body": "query orderForm @context(scope: \\"private\\") {
+  orderForm {
+    orderFormId
+    value
+    items {
+      id
+      imageUrl
+      detailUrl
+      skuName
+      quantity
+      sellingPrice
+    }
+  }
+}
+",
+      "locationOffset": Object {
+        "column": 1,
+        "line": 1,
+      },
+      "name": "GraphQL request",
+    },
+    "start": 0,
+  },
+  "orderForm": Object {
+    "definitions": Array [
+      Object {
+        "directives": Array [
+          Object {
+            "arguments": Array [
+              Object {
+                "kind": "Argument",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "scope",
+                },
+                "value": Object {
+                  "block": false,
+                  "kind": "StringValue",
+                  "value": "private",
+                },
+              },
+            ],
+            "kind": "Directive",
+            "name": Object {
+              "kind": "Name",
+              "value": "context",
+            },
+          },
+        ],
+        "kind": "OperationDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "orderForm",
+        },
+        "operation": "query",
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "orderForm",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "orderFormId",
+                    },
+                  },
+                  Object {
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "value",
+                    },
+                  },
+                  Object {
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "items",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "id",
+                          },
+                        },
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "imageUrl",
+                          },
+                        },
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "detailUrl",
+                          },
+                        },
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "skuName",
+                          },
+                        },
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "quantity",
+                          },
+                        },
+                        Object {
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "sellingPrice",
+                          },
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "variableDefinitions": Array [],
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 197,
+      "source": Object {
+        "body": "query orderForm @context(scope: \\"private\\") {
+  orderForm {
+    orderFormId
+    value
+    items {
+      id
+      imageUrl
+      detailUrl
+      skuName
+      quantity
+      sellingPrice
+    }
+  }
+}
+",
+        "locationOffset": Object {
+          "column": 1,
+          "line": 1,
+        },
+        "name": "GraphQL request",
+      },
+      "start": 0,
+    },
+  },
+}
+`;

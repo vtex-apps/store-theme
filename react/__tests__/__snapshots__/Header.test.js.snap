@@ -1,0 +1,805 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test should render correctly en-US 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en-US",
+      "messages": Object {
+        "dreamstore.buy": "Buy",
+        "dreamstore.cart": "Cart",
+        "dreamstore.poweredBy": "POWERED BY VTEX",
+        "dreamstore.search": "Search",
+        "dreamstore.search-placeholder": "Search for products, brands...",
+        "dreamstore.soon": "Soon...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en-US",
+        "messages": Object {
+          "dreamstore.buy": "Buy",
+          "dreamstore.cart": "Cart",
+          "dreamstore.poweredBy": "POWERED BY VTEX",
+          "dreamstore.search": "Search",
+          "dreamstore.search-placeholder": "Search for products, brands...",
+          "dreamstore.soon": "Soon...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
+    >
+      <a
+        className="link b f3 near-black tc tl-ns"
+        href="/"
+      >
+        store
+      </a>
+      <div
+        className="tr-ns flex items-center"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Search for products, brands..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Search for products, brands..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3 flex items-center justify-center"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="search"
+            disabled={true}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Search
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="cart"
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should render correctly es-AR 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "es-AR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrito",
+        "dreamstore.poweredBy": "IMPULSADO POR VTEX",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+        "dreamstore.soon": "Breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "es-AR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrito",
+          "dreamstore.poweredBy": "IMPULSADO POR VTEX",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
+          "dreamstore.soon": "Breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
+    >
+      <a
+        className="link b f3 near-black tc tl-ns"
+        href="/"
+      >
+        store
+      </a>
+      <div
+        className="tr-ns flex items-center"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Búsqueda por productos, marcas..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Búsqueda por productos, marcas..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3 flex items-center justify-center"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="search"
+            disabled={true}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="cart"
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should render correctly pt-BR 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "pt-BR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrinho",
+        "dreamstore.poweredBy": "FORNECIDO POR VTEX",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+        "dreamstore.soon": "Em breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "pt-BR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrinho",
+          "dreamstore.poweredBy": "FORNECIDO POR VTEX",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+          "dreamstore.soon": "Em breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
+    >
+      <a
+        className="link b f3 near-black tc tl-ns"
+        href="/"
+      >
+        store
+      </a>
+      <div
+        className="tr-ns flex items-center"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Busque por produtos, marcas..."
+          readOnly={false}
+          token={false}
+          value=""
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Busque por produtos, marcas..."
+              readOnly={false}
+              value=""
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3 flex items-center justify-center"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="search"
+            disabled={true}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="cart"
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;
+
+exports[`Header test should simulate filled input 1`] = `
+<InjectIntl(Header)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "pt-BR",
+      "messages": Object {
+        "dreamstore.buy": "Comprar",
+        "dreamstore.cart": "Carrinho",
+        "dreamstore.poweredBy": "FORNECIDO POR VTEX",
+        "dreamstore.search": "Buscar",
+        "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+        "dreamstore.soon": "Em breve...",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <Header
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "pt-BR",
+        "messages": Object {
+          "dreamstore.buy": "Comprar",
+          "dreamstore.cart": "Carrinho",
+          "dreamstore.poweredBy": "FORNECIDO POR VTEX",
+          "dreamstore.search": "Buscar",
+          "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+          "dreamstore.soon": "Em breve...",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+  >
+    <div
+      className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns"
+    >
+      <a
+        className="link b f3 near-black tc tl-ns"
+        href="/"
+      >
+        store
+      </a>
+      <div
+        className="tr-ns flex items-center"
+      >
+        <Input
+          autoFocus={false}
+          disabled={false}
+          error={false}
+          long={true}
+          multiple={false}
+          onChange={[Function]}
+          placeholder="Busque por produtos, marcas..."
+          readOnly={false}
+          token={false}
+          value="product"
+        >
+          <label
+            className="dib"
+            style={
+              Object {
+                "width": "350px",
+              }
+            }
+          >
+            <span
+              className="db mb3 "
+            />
+            <input
+              autoFocus={false}
+              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+              disabled={false}
+              multiple={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Busque por produtos, marcas..."
+              readOnly={false}
+              value="product"
+            />
+          </label>
+        </Input>
+         
+        <div
+          className="mt3 flex items-center justify-center"
+        >
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="search"
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Buscar
+            </button>
+          </Button>
+          <Button
+            autoFocus={false}
+            block={false}
+            data-test-id="cart"
+            disabled={false}
+            icon={false}
+            large={false}
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            type="button"
+            xLarge={false}
+          >
+            <button
+              autoFocus={false}
+              className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <CartIcon>
+                <svg
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="nc-icon-wrapper"
+                    fill="#142032"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <circle
+                      cx="19.5"
+                      cy="21.5"
+                      r="2.5"
+                    />
+                    <path
+                      d="M20,17H6c-0.501,0-0.925-0.371-0.991-0.868L3.125,2H0V0h4c0.501,0,0.925,0.371,0.991,0.868L5.542,5H23 c0.316,0,0.614,0.149,0.802,0.403c0.189,0.254,0.247,0.582,0.156,0.884l-3,10C20.831,16.71,20.441,17,20,17z"
+                    />
+                  </g>
+                </svg>
+              </CartIcon>
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Header>
+</InjectIntl(Header)>
+`;

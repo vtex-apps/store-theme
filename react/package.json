@@ -10,14 +10,18 @@
     "react-slick": "^0.16.0"
   },
   "devDependencies": {
+    "apollo-client-preset": "^1.0.8",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.2.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react-app": "^3.1.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-react-intl": "^1.4.8",
     "enzyme-to-json": "^3.3.1",
+    "graphql": "^0.13.0",
+    "graphql-tag": "^2.7.3",
     "jest": "^22.2.1",
     "jest-transform-graphql": "^2.1.0",
     "react": "^16.2.0",
@@ -33,7 +37,11 @@
       "\\.(gql|graphql)$": "jest-transform-graphql",
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
     },
-    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
