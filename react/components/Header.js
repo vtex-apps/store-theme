@@ -47,13 +47,13 @@ class Header extends Component {
           />{' '}
           <div className="mt3 flex items-center justify-center">
             <Button
-              id="search"
+              data-test-id="search"
               onClick={this.handleSearch}
               disabled={!searchValue}
             >
               {this.translate('search')}
             </Button>
-            <Button id="cart" onClick={this.handleCart}>
+            <Button data-test-id="cart" onClick={this.handleCart}>
               <CartIcon />
             </Button>
           </div>

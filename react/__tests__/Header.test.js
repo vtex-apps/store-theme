@@ -20,7 +20,7 @@ describe('Header test', () => {
     window.location.assign = jest.fn()
     const seachString = 'product'
     const input = wrapperPT.find('input')
-    const button = wrapperPT.find('#search').first()
+    const button = wrapperPT.find('[data-test-id="search"]').first()
     process.nextTick(() => {
       try {
         input.simulate('change', { target: { value: seachString } })
@@ -34,34 +34,18 @@ describe('Header test', () => {
     })
   })
 
-  it('should simulate click on cart', done => {
+  it('should simulate click on cart', () => {
     window.location.assign = jest.fn()
-    const button = wrapperPT.find('#cart').first()
-    process.nextTick(() => {
-      try {
-        button.simulate('click')
-        wrapperPT.update()
-        expect(window.location.assign).toBeCalledWith('/checkout/#/cart')
-      } catch (e) {
-        return done(e)
-      }
-      done()
-    })
+    const button = wrapperPT.find('[data-test-id="cart"]').first()
+    button.simulate('click')
+    expect(window.location.assign).toBeCalledWith('/checkout/#/cart')
   })
 
-  it('should simulate filled input', done => {
+  it('should simulate filled input', () => {
     const seachString = 'product'
     const input = wrapperPT.find('input')
-    process.nextTick(() => {
-      try {
-        input.simulate('change', { target: { value: seachString } })
-        wrapperPT.update()
-        expect(wrapperPT).toMatchSnapshot()
-      } catch (e) {
-        return done(e)
-      }
-      done()
-    })
+    input.simulate('change', { target: { value: seachString } })
+    expect(wrapperPT).toMatchSnapshot()
   })
 
   it('should render correctly pt-BR', () => {

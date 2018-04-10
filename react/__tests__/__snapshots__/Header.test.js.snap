@@ -125,9 +125,9 @@ exports[`Header test should render correctly en-US 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="search"
             disabled={true}
             icon={false}
-            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -139,7 +139,6 @@ exports[`Header test should render correctly en-US 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
               disabled={true}
-              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -149,9 +148,9 @@ exports[`Header test should render correctly en-US 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="cart"
             disabled={false}
             icon={false}
-            id="cart"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -163,7 +162,6 @@ exports[`Header test should render correctly en-US 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
-              id="cart"
               onClick={[Function]}
               type="button"
             >
@@ -328,9 +326,9 @@ exports[`Header test should render correctly es-AR 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="search"
             disabled={true}
             icon={false}
-            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -342,7 +340,6 @@ exports[`Header test should render correctly es-AR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
               disabled={true}
-              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -352,9 +349,9 @@ exports[`Header test should render correctly es-AR 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="cart"
             disabled={false}
             icon={false}
-            id="cart"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -366,7 +363,6 @@ exports[`Header test should render correctly es-AR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
-              id="cart"
               onClick={[Function]}
               type="button"
             >
@@ -531,9 +527,9 @@ exports[`Header test should render correctly pt-BR 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="search"
             disabled={true}
             icon={false}
-            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -545,7 +541,6 @@ exports[`Header test should render correctly pt-BR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--light-gray bg-light-gray gray "
               disabled={true}
-              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -555,9 +550,9 @@ exports[`Header test should render correctly pt-BR 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="cart"
             disabled={false}
             icon={false}
-            id="cart"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -569,7 +564,6 @@ exports[`Header test should render correctly pt-BR 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
-              id="cart"
               onClick={[Function]}
               type="button"
             >
@@ -734,9 +728,9 @@ exports[`Header test should simulate filled input 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="search"
             disabled={false}
             icon={false}
-            id="search"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -748,7 +742,6 @@ exports[`Header test should simulate filled input 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
-              id="search"
               onClick={[Function]}
               type="button"
             >
@@ -758,9 +751,9 @@ exports[`Header test should simulate filled input 1`] = `
           <Button
             autoFocus={false}
             block={false}
+            data-test-id="cart"
             disabled={false}
             icon={false}
-            id="cart"
             large={false}
             onClick={[Function]}
             primary={false}
@@ -772,7 +765,6 @@ exports[`Header test should simulate filled input 1`] = `
               autoFocus={false}
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
-              id="cart"
               onClick={[Function]}
               type="button"
             >
