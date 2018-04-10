@@ -22,10 +22,12 @@ describe('BuyButton test', () => {
     loadTranslation('../locales/pt-BR.json')
     setLocale('pt-BR')
     const mutate = jest.fn()
-    const props = { mutate, data: { orderForm: { orderFormId: 1 } } }
+    const onClick = jest.fn()
+    const props = { mutate, data: { orderForm: { orderFormId: 1 } }, onClick }
     const wrapper = mountWithIntl(<BuyButton {...props} />)
     const button = wrapper.find('button')
     button.simulate('click')
     expect(mutate.mock.calls.length).toBe(1)
+    expect(onClick.mock.calls.length).toBe(1)
   })
 })
