@@ -43,25 +43,20 @@ class Shelf extends Component {
     },
   }
 
-  trimName = name => {
-    return name.length > 20 ? `${name.substring(0, 18)}...` : name
-  }
-
   render() {
     const { data, title } = this.props
     return (
       <div>
         {data.loading && <WrappedSpinner />}
-        {!data.loading && title && (
-          <h1 className="ph8 pt8 f2 serious-black">{title}</h1>
-        )}
+        {!data.loading &&
+          title && <h1 className="ph8 pt8 f2 serious-black">{title}</h1>}
         {!data.loading && (
           <div className="flex flex-row-ns flex-column-s items-center ph8 pb8">
             {data.products.map(product => (
               <ShelfItem
                 key={product.productId}
                 imageUrl={product.items[0].images[0].imageUrl}
-                name={this.trimName(product.productName)}
+                name={product.productName}
                 price={product.items[0].sellers[0].commertialOffer.Price}
                 productLink={product.linkText}
               />

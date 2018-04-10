@@ -27,8 +27,9 @@ class ProductPage extends Component {
 
     return (
       <div>
-        {loading && <WrappedSpinner />}
-        {!loading && (
+        {loading ? (
+          <WrappedSpinner />
+        ) : (
           <div className="flex flex-column items-center justify-center pv6 pv9-ns">
             <div className="w-20-ns w-90">
               <ShelfItem

@@ -17,6 +17,10 @@ export default class ShelfItem extends Component {
     culture: PropTypes.object,
   }
 
+  trimName = name => {
+    return name.length > 2 ? name.substring(0, 18) : name
+  }
+
   render() {
     const { imageUrl, name, price, productLink } = this.props
     return (
@@ -26,8 +30,8 @@ export default class ShelfItem extends Component {
           page={'store/product'}
           params={{ id: productLink }}
         >
-          <img src={imageUrl} />
-          <span className="pt6 f4">{name}</span>
+          <img src={imageUrl} alt={name} />
+          <span className="pt6 f4">{this.trimName(name)}</span>
           <div className="f2 fw7">
             <FormattedNumber
               value={price}
