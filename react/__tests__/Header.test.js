@@ -13,7 +13,7 @@ describe('Header test', () => {
   })
 
   it('should have 3 div elements', () => {
-    expect(wrapperPT.find('div').length).toBe(3)
+    expect(wrapperPT.find('div').length).toBe(4)
   })
 
   it('should simulate search', done => {
