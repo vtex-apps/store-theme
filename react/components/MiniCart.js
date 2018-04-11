@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, compose } from 'react-apollo'
 import Button from '@vtex/styleguide/lib/Button'
+import CloseIcon from '@vtex/styleguide/lib/icon/Close'
 import orderFormQuery from '../queries/orderFormQuery.gql'
 import updateItemsMutation from '../mutations/updateItemsMutation.gql'
 import MiniCartItem from './MiniCartItem'
@@ -55,7 +56,7 @@ class MiniCart extends Component {
               productId={this.getItemId(item.detailUrl)}
             />
             <Button id={item.id} onClick={this.handleRemoveItem}>
-              x
+              <CloseIcon />
             </Button>
           </div>
         ))}
@@ -64,9 +65,6 @@ class MiniCart extends Component {
   }
 }
 
-export default compose(
-  graphql(orderFormQuery, {
-    options: { ssr: false },
-  }),
-  graphql(updateItemsMutation)
-)(MiniCart)
+export default compose(graphql(orderFormQuery), graphql(updateItemsMutation))(
+  MiniCart
+)

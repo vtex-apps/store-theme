@@ -12,7 +12,7 @@ describe('Header test', () => {
     wrapperPT = mountWithIntl(<Header />)
   })
 
-  it('should have 3 div elements', () => {
+  it('should have 4 div elements', () => {
     expect(wrapperPT.find('div').length).toBe(4)
   })
 
