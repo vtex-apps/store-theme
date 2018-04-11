@@ -81,46 +81,48 @@ exports[`Header test should render correctly en-US 1`] = `
       <div
         className="tr-ns flex items-center"
       >
-        <Input
-          autoFocus={false}
-          disabled={false}
-          error={false}
-          long={true}
-          multiple={false}
-          onChange={[Function]}
-          placeholder="Search for products, brands..."
-          readOnly={false}
-          token={false}
-          value=""
-        >
-          <label
-            className="dib"
-            style={
-              Object {
-                "width": "350px",
-              }
-            }
-          >
-            <span
-              className="db mb3 "
-            />
-            <input
-              autoFocus={false}
-              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
-              disabled={false}
-              multiple={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Search for products, brands..."
-              readOnly={false}
-              value=""
-            />
-          </label>
-        </Input>
-         
         <div
-          className="mt3 flex items-center justify-center"
+          className="w5-ns mr2"
+        >
+          <Input
+            autoFocus={false}
+            disabled={false}
+            error={false}
+            multiple={false}
+            onChange={[Function]}
+            placeholder="Search for products, brands..."
+            readOnly={false}
+            token={false}
+            value=""
+          >
+            <label
+              className="dib"
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
+            >
+              <span
+                className="db mb3 "
+              />
+              <input
+                autoFocus={false}
+                className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+                disabled={false}
+                multiple={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="Search for products, brands..."
+                readOnly={false}
+                value=""
+              />
+            </label>
+          </Input>
+        </div>
+        <div
+          className="flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -153,6 +155,7 @@ exports[`Header test should render correctly en-US 1`] = `
             icon={false}
             large={false}
             onClick={[Function]}
+            onMouseEnter={[Function]}
             primary={false}
             secondary={false}
             type="button"
@@ -163,6 +166,7 @@ exports[`Header test should render correctly en-US 1`] = `
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               onClick={[Function]}
+              onMouseEnter={[Function]}
               type="button"
             >
               <CartIcon>
@@ -282,46 +286,48 @@ exports[`Header test should render correctly es-AR 1`] = `
       <div
         className="tr-ns flex items-center"
       >
-        <Input
-          autoFocus={false}
-          disabled={false}
-          error={false}
-          long={true}
-          multiple={false}
-          onChange={[Function]}
-          placeholder="Búsqueda por productos, marcas..."
-          readOnly={false}
-          token={false}
-          value=""
-        >
-          <label
-            className="dib"
-            style={
-              Object {
-                "width": "350px",
-              }
-            }
-          >
-            <span
-              className="db mb3 "
-            />
-            <input
-              autoFocus={false}
-              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
-              disabled={false}
-              multiple={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Búsqueda por productos, marcas..."
-              readOnly={false}
-              value=""
-            />
-          </label>
-        </Input>
-         
         <div
-          className="mt3 flex items-center justify-center"
+          className="w5-ns mr2"
+        >
+          <Input
+            autoFocus={false}
+            disabled={false}
+            error={false}
+            multiple={false}
+            onChange={[Function]}
+            placeholder="Búsqueda por productos, marcas..."
+            readOnly={false}
+            token={false}
+            value=""
+          >
+            <label
+              className="dib"
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
+            >
+              <span
+                className="db mb3 "
+              />
+              <input
+                autoFocus={false}
+                className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+                disabled={false}
+                multiple={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="Búsqueda por productos, marcas..."
+                readOnly={false}
+                value=""
+              />
+            </label>
+          </Input>
+        </div>
+        <div
+          className="flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -354,6 +360,7 @@ exports[`Header test should render correctly es-AR 1`] = `
             icon={false}
             large={false}
             onClick={[Function]}
+            onMouseEnter={[Function]}
             primary={false}
             secondary={false}
             type="button"
@@ -364,6 +371,7 @@ exports[`Header test should render correctly es-AR 1`] = `
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               onClick={[Function]}
+              onMouseEnter={[Function]}
               type="button"
             >
               <CartIcon>
@@ -483,46 +491,48 @@ exports[`Header test should render correctly pt-BR 1`] = `
       <div
         className="tr-ns flex items-center"
       >
-        <Input
-          autoFocus={false}
-          disabled={false}
-          error={false}
-          long={true}
-          multiple={false}
-          onChange={[Function]}
-          placeholder="Busque por produtos, marcas..."
-          readOnly={false}
-          token={false}
-          value=""
-        >
-          <label
-            className="dib"
-            style={
-              Object {
-                "width": "350px",
-              }
-            }
-          >
-            <span
-              className="db mb3 "
-            />
-            <input
-              autoFocus={false}
-              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
-              disabled={false}
-              multiple={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Busque por produtos, marcas..."
-              readOnly={false}
-              value=""
-            />
-          </label>
-        </Input>
-         
         <div
-          className="mt3 flex items-center justify-center"
+          className="w5-ns mr2"
+        >
+          <Input
+            autoFocus={false}
+            disabled={false}
+            error={false}
+            multiple={false}
+            onChange={[Function]}
+            placeholder="Busque por produtos, marcas..."
+            readOnly={false}
+            token={false}
+            value=""
+          >
+            <label
+              className="dib"
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
+            >
+              <span
+                className="db mb3 "
+              />
+              <input
+                autoFocus={false}
+                className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+                disabled={false}
+                multiple={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="Busque por produtos, marcas..."
+                readOnly={false}
+                value=""
+              />
+            </label>
+          </Input>
+        </div>
+        <div
+          className="flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -555,6 +565,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
             icon={false}
             large={false}
             onClick={[Function]}
+            onMouseEnter={[Function]}
             primary={false}
             secondary={false}
             type="button"
@@ -565,6 +576,7 @@ exports[`Header test should render correctly pt-BR 1`] = `
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               onClick={[Function]}
+              onMouseEnter={[Function]}
               type="button"
             >
               <CartIcon>
@@ -684,46 +696,48 @@ exports[`Header test should simulate filled input 1`] = `
       <div
         className="tr-ns flex items-center"
       >
-        <Input
-          autoFocus={false}
-          disabled={false}
-          error={false}
-          long={true}
-          multiple={false}
-          onChange={[Function]}
-          placeholder="Busque por produtos, marcas..."
-          readOnly={false}
-          token={false}
-          value="product"
-        >
-          <label
-            className="dib"
-            style={
-              Object {
-                "width": "350px",
-              }
-            }
-          >
-            <span
-              className="db mb3 "
-            />
-            <input
-              autoFocus={false}
-              className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
-              disabled={false}
-              multiple={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="Busque por produtos, marcas..."
-              readOnly={false}
-              value="product"
-            />
-          </label>
-        </Input>
-         
         <div
-          className="mt3 flex items-center justify-center"
+          className="w5-ns mr2"
+        >
+          <Input
+            autoFocus={false}
+            disabled={false}
+            error={false}
+            multiple={false}
+            onChange={[Function]}
+            placeholder="Busque por produtos, marcas..."
+            readOnly={false}
+            token={false}
+            value="product"
+          >
+            <label
+              className="dib"
+              style={
+                Object {
+                  "width": "200px",
+                }
+              }
+            >
+              <span
+                className="db mb3 "
+              />
+              <input
+                autoFocus={false}
+                className="w-100 ma0 border-box bw1 br2 b--solid outline-0 near-black b--light-gray hover-b--silver bg-white f6 pv3 ph5 "
+                disabled={false}
+                multiple={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="Busque por produtos, marcas..."
+                readOnly={false}
+                value="product"
+              />
+            </label>
+          </Input>
+        </div>
+        <div
+          className="flex items-center justify-center"
         >
           <Button
             autoFocus={false}
@@ -756,6 +770,7 @@ exports[`Header test should simulate filled input 1`] = `
             icon={false}
             large={false}
             onClick={[Function]}
+            onMouseEnter={[Function]}
             primary={false}
             secondary={false}
             type="button"
@@ -766,6 +781,7 @@ exports[`Header test should simulate filled input 1`] = `
               className="bw1 ba fw5 ttu br2 fw4 pv3 ph5 f6 b--transparent blue bg-transparent hover-heavy-blue hover-b--transparent pointer "
               disabled={false}
               onClick={[Function]}
+              onMouseEnter={[Function]}
               type="button"
             >
               <CartIcon>

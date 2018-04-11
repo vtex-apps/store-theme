@@ -12,8 +12,8 @@ describe('Header test', () => {
     wrapperPT = mountWithIntl(<Header />)
   })
 
-  it('should have 3 div elements', () => {
-    expect(wrapperPT.find('div').length).toBe(3)
+  it('should have 4 div elements', () => {
+    expect(wrapperPT.find('div').length).toBe(4)
   })
 
   it('should simulate search', done => {

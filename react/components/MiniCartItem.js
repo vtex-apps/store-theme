@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FormattedNumber } from 'react-intl'
 import { Link } from 'render'
 
-export default class ShelfItem extends Component {
+export default class MiniCartItem extends Component {
   static propTypes = {
     imageUrl: PropTypes.string,
     name: PropTypes.string,
@@ -15,29 +15,27 @@ export default class ShelfItem extends Component {
     culture: PropTypes.object,
   }
 
-  trimName = name => {
-    return name.length > 2 ? name.substring(0, 18) : name
-  }
-
   render() {
     const { imageUrl, name, price, productId } = this.props
     return (
       <div className="w-100 pv5 dim">
         <Link
-          className="pointer flex flex-column link serious-black f4"
+          className="pointer flex flex-row link serious-black f4"
           page={'store/product'}
           params={{ id: productId }}
         >
-          <img src={imageUrl} alt={name} />
-          <span className="pt6 f4">{this.trimName(name)}</span>
-          <div className="f2 fw7">
-            <FormattedNumber
-              value={price}
-              style="currency"
-              currency={this.context.culture.currency}
-              minimumFractionDigits={2}
-              maximumFractionDigits={2}
-            />
+          <img src={imageUrl} alt={productId} />
+          <div>
+            <span className="pt6 f4">{name}</span>
+            <div className="f5 fw7">
+              <FormattedNumber
+                value={price}
+                style="currency"
+                currency={this.context.culture.currency}
+                minimumFractionDigits={2}
+                maximumFractionDigits={2}
+              />
+            </div>
           </div>
         </Link>
       </div>

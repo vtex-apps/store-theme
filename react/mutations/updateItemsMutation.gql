@@ -1,0 +1,6 @@
+mutation updateItems($orderFormId: String, $items: [OrderFormItemInput])
+  @context(scope: "private") {
+  updateItems(orderFormId: $orderFormId, items: $items) {
+    orderFormId
+  }
+}

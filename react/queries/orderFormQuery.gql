@@ -4,6 +4,7 @@ query orderForm @context(scope: "private") {
     value
     items {
       id
+      name
       imageUrl
       detailUrl
       skuName

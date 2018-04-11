@@ -12,10 +12,16 @@ export class BuyButton extends Component {
     id: PropTypes.string,
     data: PropTypes.object,
     mutate: PropTypes.func,
+    onClick: PropTypes.func,
   }
 
   handleClick = () => {
-    const { data: { orderForm: { orderFormId } }, mutate, id } = this.props
+    const {
+      data: { orderForm: { orderFormId } },
+      mutate,
+      id,
+      onClick,
+    } = this.props
     mutate({
       variables: {
         orderFormId: orderFormId,
@@ -30,6 +36,7 @@ export class BuyButton extends Component {
       },
       refetchQueries: [{ query: orderFormQuery }],
     })
+    onClick()
   }
 
   render() {
