@@ -15,9 +15,9 @@ export default class HomePage extends Component {
     return (
       <div className="w-100 h-100">
         <ExtensionPoint id="carousel" />
-        <ExtensionPoint id="shelf-top" />
-        <ExtensionPoint id="banner" />
-        <ExtensionPoint id="shelf-mid" />
+        <ExtensionPoint id="shelf" />
+        <ExtensionPoint id="shelf" />
+        <ExtensionPoint id="shelf" />
       </div>
     )
   }

@@ -21,58 +21,37 @@
     "store/home": {
       "component": "HomePage"
     },
-    "store/home/banner": {
-      "component": "Banner",
-      "props": {
-        "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
-        "page": "/",
-        "targetParams": {
-          "params": ""
-        }
-      }
-    },
     "store/home/carousel": {
-      "component": "Carousel",
+      "component": "vtex.carousel/Carousel",
       "props": {
         "banner1": {
-          "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+          "image":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-01.png",
+          "mobileImage":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-mobile-01.png",
           "page": "/",
-          "targetParams": {
-            "params": ""
-          }
+          "description": "banner"
         },
         "banner2": {
-          "image": "http://clipart-library.com/newimages/clip-art-banner-7.png",
+          "image":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-02.png",
+          "mobileImage":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-mobile-02.png",
           "page": "/",
-          "targetParams": {
-            "params": ""
-          }
+          "description": "banner"
+        },
+        "banner3": {
+          "image":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-03.png",
+          "mobileImage":
+            "https://raw.githubusercontent.com/vtex-apps/carousel/master/images/banners-mobile-03.png",
+          "page": "/",
+          "description": "banner"
         }
       }
     },
-    "store/home/shelf-top": {
-      "component": "Shelf",
-      "props": {
-        "from": 0,
-        "quantity": 8,
-        "orderBy": "OrderByTopSaleDESC"
-      }
-    },
-    "store/home/shelf-mid": {
-      "component": "Shelf",
-      "props": {
-        "from": 8,
-        "quantity": 8,
-        "orderBy": "OrderByTopSaleDESC"
-      }
-    },
-    "store/home/shelf-bottom": {
-      "component": "Shelf",
-      "props": {
-        "from": 16,
-        "quantity": 8,
-        "orderBy": "OrderByTopSaleDESC"
-      }
+    "store/home/shelf": {
+      "component": "vtex.shelf/Shelf"
     },
     "store/search": {
       "component": "SearchPage"
