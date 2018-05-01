@@ -6,6 +6,7 @@ import Button from '@vtex/styleguide/lib/Button'
 
 import MiniCart from './MiniCart'
 import CartIcon from '../images/CartIcon'
+import SearchIcon from '../images/SearchIcon'
 
 class Header extends Component {
   constructor(props) {
@@ -44,42 +45,47 @@ class Header extends Component {
     const { name } = this.props
     const { searchValue, showCart } = this.state
     return (
-      <div className="z-2 flex-ns justify-between items-center w-100 top-0 pa4 pa5-ns bg-white bb bw1 b--serious-black tc tl-ns">
-        <a className="link b f3 near-black tc tl-ns" href="/">
+      <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns bg-white tc tl-ns">
+        <a className="link b f3 near-black tc tl-ns pr5" href="/">
           {name || account}
         </a>
-        <div className="tr-ns flex items-center">
-          <div className="w5-ns mr2">
+        <div className="tr-ns flex items-center flex-auto justify-center">
+          <div className="w-100 mw7-ns mr4">
             <Input
               placeholder={this.translate('search-placeholder')}
               value={searchValue}
               onChange={this.handleChange}
+              size="large"
             />
           </div>
           <div className="flex items-center justify-center">
             <Button
+              icon
+              primary
               data-test-id="search"
               onClick={this.handleSearch}
-              disabled={!searchValue}
+              size="large"
             >
-              {this.translate('search')}
+              <SearchIcon />
             </Button>
-            <Button
-              data-test-id="cart"
-              onClick={this.handleCart}
-              onMouseEnter={this.handleCartMouseEnter}
-            >
-              <CartIcon />
-            </Button>
-            {showCart && (
-              <div
-                className="absolute z-4 right-0 top-2 w-30 ma6 mt10 bg-white br2 shadow-2"
-                onMouseLeave={this.handleMouseLeave}
-              >
-                <MiniCart />
-              </div>
-            )}
           </div>
+        </div>
+        <div className="pl6">
+          <Button
+            data-test-id="cart"
+            onClick={this.handleCart}
+            onMouseEnter={this.handleCartMouseEnter}
+          >
+            <CartIcon />
+          </Button>
+          {showCart && (
+            <div
+              className="absolute z-4 right-0 top-2 w-30 ma6 mt10 bg-white br2 shadow-2"
+              onMouseLeave={this.handleMouseLeave}
+            >
+              <MiniCart />
+            </div>
+          )}
         </div>
       </div>
     )
