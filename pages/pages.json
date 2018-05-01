@@ -21,7 +21,7 @@
     "store/home": {
       "component": "HomePage"
     },
-    "store/home/carousel": {
+    "store/home/carousel1": {
       "component": "vtex.carousel/Carousel",
       "props": {
         "banner1": {
