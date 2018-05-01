@@ -45,12 +45,12 @@ class Header extends Component {
     const { name } = this.props
     const { searchValue, showCart } = this.state
     return (
-      <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns bg-white tc tl-ns">
-        <a className="link b f3 near-black tc tl-ns pr5" href="/">
+      <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns bg-white tl">
+        <a className="link b f3 near-black tc tl-ns pr5 serious-black" href="/">
           {name || account}
         </a>
         <div className="tr-ns flex items-center flex-auto justify-center">
-          <div className="w-100 mw7-ns mr4">
+          <div className="w-100 mw7-ns">
             <Input
               placeholder={this.translate('search-placeholder')}
               value={searchValue}
@@ -58,15 +58,20 @@ class Header extends Component {
               size="large"
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center dim">
             <Button
-              icon
-              primary
               data-test-id="search"
               onClick={this.handleSearch}
               size="large"
             >
-              <SearchIcon />
+              <div className="flex items-start">
+                <div>
+                  <SearchIcon />
+                </div>
+                <div className="pl3 blue">
+                  SEARCH
+                </div>
+              </div>
             </Button>
           </div>
         </div>
