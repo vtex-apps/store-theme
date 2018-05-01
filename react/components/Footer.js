@@ -14,21 +14,21 @@ class Footer extends Component {
   render() {
     const year = new Date().getFullYear()
     return (
-      <footer className="w-100 left-0 bg-serious-black">
-        <div className="center white flex items-center justify-between w-100 items-center f6 ph9 pt9">
+      <footer className="w-100 left-0 bg-serious-black tc tl-ns">
+        <div className="center white flex-ns items-center justify-between w-100 items-center f6 ph9-ns ph7 pt9-ns pt7 pb5 pb0-ns">
           <div>All rights reserved | {year}</div>
-          <div className="cf tc fw7 flex items-center justify-center f5">
+          <div className="fw7 flex items-center justify-center f5">
             {this.translate('poweredBy')}
             <VTEXIcon />
           </div>
         </div>
-        <div className="ph9 pb9 flex justify-between items-end">
+        <div className="ph9 pb7 pb9-ns flex-ns justify-between items-end">
           <div className="white">
-            <a className="db pv2 fw5">About us</a>
-            <a className="db pv2 fw5">Privacy policy</a>
-            <a className="db pv2 fw5">Terms and conditions</a>
+            <a className="db pv3 pv2-ns fw5">About us</a>
+            <a className="db pv3 pv2-ns fw5">Privacy policy</a>
+            <a className="db pv3 pv2-ns fw5">Terms and conditions</a>
           </div>
-          <div className="mr4">
+          <div className="mr0 mr4-ns pt5 pt0-ns">
             <CardIcon />
           </div>
         </div>

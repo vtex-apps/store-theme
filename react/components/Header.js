@@ -46,9 +46,28 @@ class Header extends Component {
     const { searchValue, showCart } = this.state
     return (
       <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns bg-white tl">
-        <a className="link b f3 near-black tc tl-ns pr5 serious-black" href="/">
-          {name || account}
-        </a>
+        <div className="flex items-center justify-between pb3 pb0-ns">
+          <a className="link b f3 near-black tc tl-ns pr7 serious-black" href="/">
+            {name || account}
+          </a>
+          <div className="pl6 di dn-ns">
+            <Button
+              data-test-id="cart"
+              onClick={this.handleCart}
+              onMouseEnter={this.handleCartMouseEnter}
+            >
+              <CartIcon />
+            </Button>
+            {showCart && (
+              <div
+                className="absolute z-4 right-0 top-2 w-30 ma6 mt10 bg-white br2 shadow-2"
+                onMouseLeave={this.handleMouseLeave}
+              >
+                <MiniCart />
+              </div>
+            )}
+          </div>
+        </div>
         <div className="tr-ns flex items-center flex-auto justify-center">
           <div className="w-100 mw7-ns">
             <Input
@@ -75,7 +94,7 @@ class Header extends Component {
             </Button>
           </div>
         </div>
-        <div className="pl6">
+        <div className="pl4 dn di-ns">
           <Button
             data-test-id="cart"
             onClick={this.handleCart}
