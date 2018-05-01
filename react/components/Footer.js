@@ -11,7 +11,7 @@ class Footer extends Component {
   render() {
     const year = new Date().getFullYear()
     return (
-      <footer className="w-100 bottom-0 pa7 pa9-l bg-near-white flex items-center">
+      <footer className="w-100 left-0 pa7 pa9-l bg-near-white flex items-center">
         <div className="mw8 center">
           <div className="cf tc fw7 flex items-center justify-center">
             {this.translate('poweredBy')}

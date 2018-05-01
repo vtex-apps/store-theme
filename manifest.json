@@ -16,6 +16,9 @@
     "postreleasy": "vtex publish --public --verbose"
   },
   "dependencies": {
-    "vtex.store-graphql": "2.x"
+    "vtex.store-graphql": "2.x",
+    "vtex.carousel": "0.x",
+    "vtex.shelf": "0.x",
+    "vtex.product-summary": "0.x"
   }
 }

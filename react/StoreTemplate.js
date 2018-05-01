@@ -13,9 +13,7 @@ export default class StoreTemplate extends Component {
       <div>
         <Header />
         <div className="z-1">{this.props.children}</div>
-        <div className="mt4">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     )
   }
