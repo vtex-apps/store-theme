@@ -45,7 +45,7 @@ class Header extends Component {
     const { name } = this.props
     const { searchValue, showCart } = this.state
     return (
-      <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns bg-white tl">
+      <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns ph7-l bg-white tl">
         <div className="flex items-center justify-between pb3 pb0-ns">
           <a className="link b f3 near-black tc tl-ns pr7 serious-black" href="/">
             {name || account}
