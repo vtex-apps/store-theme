@@ -11,7 +11,7 @@
       "path": "/:term/s"
     },
     "store/product": {
-      "path": "/:id/p"
+      "path": "/:slug/p"
     }
   },
   "extensions": {
