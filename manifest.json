@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
-    "vtex.carousel": "0.x",
+    "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x"
   }
