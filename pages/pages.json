@@ -27,6 +27,9 @@
     "store/home/shelf": {
       "component": "vtex.shelf/Shelf"
     },
+    "store/home/shelf/shelfitem": {
+      "component": "vtex.product-summary/ProductSummary"
+    },
     "store/search": {
       "component": "SearchPage"
     },
