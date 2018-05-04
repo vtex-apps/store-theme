@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { injectIntl, intlShape } from 'react-intl'
 
+import VTEXIcon from '../images/VTEXIcon'
+import CardIcon from '../images/CardIcon'
+
 class Footer extends Component {
   static propTypes = {
     intl: intlShape.isRequired,
@@ -11,12 +14,23 @@ class Footer extends Component {
   render() {
     const year = new Date().getFullYear()
     return (
-      <footer className="w-100 left-0 pa7 pa9-l bg-near-white flex items-center">
-        <div className="mw8 center">
-          <div className="cf tc fw7 flex items-center justify-center">
+      <footer className="w-100 left-0 bg-serious-black tc tl-ns mt8">
+        <div className="center white flex-ns items-center justify-between w-100 items-center f6 ph9-ns ph7 pt9-ns pt7 pb5 pb0-ns">
+          <div>All rights reserved | {year}</div>
+          <div className="fw7 flex items-center justify-center f5">
             {this.translate('poweredBy')}
+            <VTEXIcon />
           </div>
-          <div className="tc">{year}</div>
+        </div>
+        <div className="ph9 pb7 pb9-ns flex-ns justify-between items-end">
+          <div className="white">
+            <a className="db pv3 pv2-ns fw5">About us</a>
+            <a className="db pv3 pv2-ns fw5">Privacy policy</a>
+            <a className="db pv3 pv2-ns fw5">Terms and conditions</a>
+          </div>
+          <div className="mr0 mr4-ns pt5 pt0-ns">
+            <CardIcon />
+          </div>
         </div>
       </footer>
     )

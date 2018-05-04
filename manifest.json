@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
-    "vtex.carousel": "0.x",
+    "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x"
   }
