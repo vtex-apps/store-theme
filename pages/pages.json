@@ -21,6 +21,9 @@
     "store/home": {
       "component": "HomePage"
     },
+    "store/home/menu-link": {
+      "component": "vtex.menu/Menu"
+    },
     "store/home/carousel": {
       "component": "vtex.carousel/Carousel"
     },
