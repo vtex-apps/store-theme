@@ -5,7 +5,6 @@ import Modal from '@vtex/styleguide/lib/Modal'
 
 import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
-import ShelfItem from './components/ShelfItem'
 import BuyButton from './components/BuyButton'
 import WrappedSpinner from './components/WrappedSpinner'
 import MiniCart from './components/MiniCart'
@@ -44,13 +43,6 @@ class ProductPage extends Component {
           <WrappedSpinner />
         ) : (
           <div className="flex flex-column items-center justify-center pv6 pv9-ns">
-            <div className="w-20-ns w-90">
-              <ShelfItem
-                imageUrl={product.items[0].images[0].imageUrl}
-                name={product.productName}
-                price={product.items[0].sellers[0].commertialOffer.Price}
-              />
-            </div>
             <div className="w-20-ns w-90">
               <BuyButton
                 id={product.items[0].itemId}
