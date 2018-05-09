@@ -7,7 +7,6 @@ import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
 import BuyButton from './components/BuyButton'
 import WrappedSpinner from './components/WrappedSpinner'
-import MiniCart from './components/MiniCart'
 
 class ProductPage extends Component {
   static propTypes = {
@@ -27,12 +26,6 @@ class ProductPage extends Component {
     this.props.prefetch('store/home')
   }
 
-  handleChange = () => {
-    this.setState(state => {
-      return { isModalOpen: !state.isModalOpen }
-    })
-  }
-
   render() {
     const { data } = this.props
     const { product, loading } = data
@@ -42,22 +35,14 @@ class ProductPage extends Component {
         {loading ? (
           <WrappedSpinner />
         ) : (
-          <div className="flex flex-column items-center justify-center pv6 pv9-ns">
-            <div className="w-20-ns w-90">
-              <BuyButton
-                id={product.items[0].itemId}
-                onClick={this.handleChange}
-              />
+            <div className="flex flex-column items-center justify-center pv6 pv9-ns">
+              <div className="w-20-ns w-90">
+                <BuyButton
+                  id={product.items[0].itemId}
+                />
+              </div>
             </div>
-            <Modal
-              centered
-              isOpen={this.state.isModalOpen}
-              onClose={this.handleChange}
-            >
-              <MiniCart />
-            </Modal>
-          </div>
-        )}
+          )}
       </div>
     )
   }

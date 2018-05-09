@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { injectIntl, intlShape } from 'react-intl'
 
 import VTEXIcon from '../images/VTEXIcon'
-import CardIcon from '../images/CardIcon'
 
 class Footer extends Component {
   static propTypes = {
@@ -27,9 +26,6 @@ class Footer extends Component {
             <a className="db pv3 pv2-ns fw5">About us</a>
             <a className="db pv3 pv2-ns fw5">Privacy policy</a>
             <a className="db pv3 pv2-ns fw5">Terms and conditions</a>
-          </div>
-          <div className="mr0 mr4-ns pt5 pt0-ns">
-            <CardIcon />
           </div>
         </div>
       </footer>
