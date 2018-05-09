@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.10] - 2018-05-09
+## Added
+- Add Minicart app.
+
 ## [0.0.9] - 2018-05-07
 ## Added
-- Add Menu app on top bar
+- Add Menu app on top bar.
 
 ## Deprecated
 - Remove the own implementation of shelf to add the app. 
