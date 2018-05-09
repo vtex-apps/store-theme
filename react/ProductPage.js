@@ -4,6 +4,7 @@ import { compose, graphql } from 'react-apollo'
 import { ExtensionPoint } from 'render'
 import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
+
 import WrappedSpinner from './components/WrappedSpinner'
 
 class ProductPage extends Component {
