@@ -19,7 +19,6 @@ export class BuyButton extends Component {
       data: { orderForm: { orderFormId } },
       mutate,
       id,
-      onClick,
     } = this.props
     mutate({
       variables: {
