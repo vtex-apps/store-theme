@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { compose, graphql } from 'react-apollo'
-
+import { ExtensionPoint } from 'render'
 import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
-import { BuyButton } from './components/BuyButton'
+
 import WrappedSpinner from './components/WrappedSpinner'
 
 class ProductPage extends Component {
@@ -27,18 +27,15 @@ class ProductPage extends Component {
 
   render() {
     const { data } = this.props
-    const { product, loading } = data
-
+    const { loading, variables } = data
     return (
       <div>
         {loading ? (
           <WrappedSpinner />
         ) : (
           <div className="flex flex-column items-center justify-center pv6 pv9-ns">
-            <div className="w-20-ns w-90">
-              <BuyButton
-                id={product.items[0].itemId}
-              />
+            <div>
+              <ExtensionPoint id="product-details" slug={variables.slug} />
             </div>
           </div>
         )}

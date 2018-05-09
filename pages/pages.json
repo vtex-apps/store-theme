@@ -41,6 +41,9 @@
     },
     "store/product": {
       "component": "ProductPage"
+    },
+    "store/product/product-details": {
+      "component": "vtex.product-details/ProductDetails"
     }
   }
 }

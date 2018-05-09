@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -21,6 +21,7 @@
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x",
     "vtex.menu": "0.x",
-    "vtex.minicart": "0.x"
+    "vtex.minicart": "0.x",
+    "vtex.product-details": "0.x"
   }
 }
