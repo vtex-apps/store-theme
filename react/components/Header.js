@@ -12,7 +12,6 @@ class Header extends Component {
     super(props)
     this.state = {
       searchValue: '',
-      showCart: false,
     }
   }
 
@@ -29,20 +28,10 @@ class Header extends Component {
 
   handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
 
-  handleCart = () => location.assign('/checkout/#/cart')
-
-  handleCartMouseEnter = () => {
-    this.setState({ showCart: true })
-  }
-
-  handleMouseLeave = () => {
-    this.setState({ showCart: false })
-  }
-
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { searchValue, showCart } = this.state
+    const { searchValue } = this.state
     return (
       <div>
         <div className="z-2 flex-ns items-center w-100 top-0 bg-white tl">
