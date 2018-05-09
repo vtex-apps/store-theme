@@ -12,7 +12,6 @@ export class BuyButton extends Component {
     id: PropTypes.string,
     data: PropTypes.object,
     mutate: PropTypes.func,
-    onClick: PropTypes.func,
   }
 
   handleClick = () => {
@@ -36,7 +35,6 @@ export class BuyButton extends Component {
       },
       refetchQueries: [{ query: orderFormQuery }],
     })
-    onClick()
   }
 
   render() {

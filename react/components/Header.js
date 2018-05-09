@@ -5,8 +5,6 @@ import Input from '@vtex/styleguide/lib/Input'
 import Button from '@vtex/styleguide/lib/Button'
 import { ExtensionPoint } from 'render'
 
-import MiniCart from './MiniCart'
-import CartIcon from '../images/CartIcon'
 import SearchIcon from '../images/SearchIcon'
 
 class Header extends Component {
@@ -55,23 +53,6 @@ class Header extends Component {
             <a className="link b f3 near-black tc tl-ns pr7 serious-black" href="/">
               {name || account}
             </a>
-            <div className="pl6 di dn-ns">
-              <Button
-                data-test-id="cart"
-                onClick={this.handleCart}
-                onMouseEnter={this.handleCartMouseEnter}
-              >
-                <CartIcon />
-              </Button>
-              {showCart && (
-                <div
-                  className="absolute z-4 right-0 top-2 w-30 ma6 mt10 bg-white br2 shadow-2"
-                  onMouseLeave={this.handleMouseLeave}
-                >
-                  <MiniCart />
-                </div>
-              )}
-            </div>
           </div>
           <div className="tr-ns flex items-center flex-auto justify-center">
             <div className="w-100 mw7-ns">
@@ -99,22 +80,8 @@ class Header extends Component {
               </Button>
             </div>
           </div>
-          <div className="pl4 dn di-ns">
-            <Button
-              data-test-id="cart"
-              onClick={this.handleCart}
-              onMouseEnter={this.handleCartMouseEnter}
-            >
-              <CartIcon />
-            </Button>
-            {showCart && (
-              <div
-                className="absolute z-4 right-0 top-2 w-30 ma6 mt10 bg-white br2 shadow-2"
-                onMouseLeave={this.handleMouseLeave}
-              >
-                <MiniCart />
-              </div>
-            )}
+          <div className="pl4 dn di-ns relative">
+            <ExtensionPoint id="minicart" />
           </div>
         </div>
       </div>

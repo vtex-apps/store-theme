@@ -21,6 +21,9 @@
     "store/home": {
       "component": "HomePage"
     },
+    "store/home/minicart": {
+      "component": "vtex.minicart/MiniCart"
+    },
     "store/home/menu-link": {
       "component": "vtex.menu/Menu"
     },
