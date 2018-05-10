@@ -43,34 +43,36 @@ class Header extends Component {
               {name || account}
             </a>
           </div>
-          <div className="tr-ns flex items-center flex-auto justify-center">
-            <div className="w-100 mw7-ns">
-              <Input
-                placeholder={this.translate('search-placeholder')}
-                value={searchValue}
-                onChange={this.handleChange}
-                size="large"
-              />
-            </div>
-            <div className="flex items-center justify-center dim">
-              <Button
-                data-test-id="search"
-                onClick={this.handleSearch}
-                size="large"
-              >
-                <div className="flex items-start">
-                  <div>
-                    <SearchIcon />
+          <div className="flex items-center flex-auto">
+            <div className="w-100 flex ph7-ns">
+              <div className="w-100">
+                <Input
+                  placeholder={this.translate('search-placeholder')}
+                  value={searchValue}
+                  onChange={this.handleChange}
+                  size="large"
+                />
+              </div>
+              <div>
+                <Button
+                  data-test-id="search"
+                  onClick={this.handleSearch}
+                  size="large"
+                >
+                  <div className="flex items-start">
+                    <div>
+                      <SearchIcon />
+                    </div>
+                    <div className="pl3 blue">
+                      SEARCH
+                    </div>
                   </div>
-                  <div className="pl3 blue">
-                    SEARCH
-                  </div>
-                </div>
-              </Button>
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className="pl4 dn di-ns relative">
-            <ExtensionPoint id="minicart" />
+            <div>
+              <ExtensionPoint id="minicart" />
+            </div>
           </div>
         </div>
       </div>
