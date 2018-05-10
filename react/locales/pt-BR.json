@@ -2,6 +2,7 @@
   "dreamstore.soon": "Em breve...",
   "dreamstore.search": "Buscar",
   "dreamstore.search-placeholder": "Busque por produtos, marcas...",
+  "dreamstore.search-emptyPlaceholder": "Nenhum resultado encontrado",
   "dreamstore.cart": "Carrinho",
   "dreamstore.buy": "Comprar",
   "dreamstore.poweredBy": "FORNECIDO POR VTEX"
