@@ -34,7 +34,7 @@ class Header extends Component {
     const { searchValue } = this.state
     return (
       <div>
-        <div className="z-2 flex-ns items-center w-100 top-0 bg-white tl">
+        <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
         <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns ph7-l bg-white tl">
