@@ -33,7 +33,7 @@ class Header extends Component {
     const { name } = this.props
     const { searchValue } = this.state
     return (
-      <div>
+      <div className="fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
