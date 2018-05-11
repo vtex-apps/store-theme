@@ -5,12 +5,13 @@ import { graphql } from 'react-apollo'
 import WrappedSpinner from './WrappedSpinner'
 import productsQuery from '../queries/productsQuery.gql'
 
-import Gallery from 'vtex.gallery/Gallery'
+import { ExtensionPoint } from 'render'
 
 class GalleryWrapper extends Component {
   render() {
     const { query, data } = this.props
     const loading = data.loading
+    console.log(data.products)
 
     return (
       <div>
@@ -18,12 +19,20 @@ class GalleryWrapper extends Component {
           <WrappedSpinner />
         ) : (
           <div className="w-100">
-            <Gallery search={query} products={data.products} />
+            <ExtensionPoint
+              id="gallery"
+              search={query}
+              products={data.products}
+            />
           </div>
         )}
       </div>
     )
   }
+}
+
+GalleryWrapper.defaultProps = {
+  query: 'lg',
 }
 
 GalleryWrapper.propTypes = {
@@ -71,9 +80,16 @@ GalleryWrapper.propTypes = {
 }
 
 const options = {
-  options: ({ category, collection, orderBy, maxItems = 20 }) => ({
+  options: ({
+    category,
+    collection,
+    orderBy,
+    maxItems = 20,
+    query = 'lg',
+  }) => ({
     variables: {
       category,
+      query,
       collection,
       specificationFilters: [],
       orderBy,
@@ -84,4 +100,6 @@ const options = {
   }),
 }
 
-export default graphql(productsQuery, options)(GalleryWrapper)
+const GalleryWrapperWithData = graphql(productsQuery, options)(GalleryWrapper)
+
+export default GalleryWrapperWithData

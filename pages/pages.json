@@ -39,6 +39,9 @@
     "store/search": {
       "component": "SearchPage"
     },
+    "store/search/gallery": {
+      "component": "vtex.gallery/Gallery"
+    },
     "store/product": {
       "component": "ProductPage"
     },
