@@ -3,17 +3,21 @@ import PropTypes from 'prop-types'
 import { injectIntl, intlShape } from 'react-intl'
 import Input from '@vtex/styleguide/lib/Input'
 import Button from '@vtex/styleguide/lib/Button'
+import Alert from '@vtex/styleguide/lib/Alert'
 import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
 import SearchIcon from '../images/SearchIcon'
 
+export const TOAST_TIMEOUT = 3000;
+
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
       searchValue: '',
+      isAddToCart: false,
     }
   }
 
@@ -28,14 +32,23 @@ class Header extends Component {
     this.setState({ searchValue: value })
   }
 
+  componentDidMount() {
+    document.addEventListener('item:add', () => {
+      this.setState({ isAddToCart: !this.state.isAddToCart })
+      window.setTimeout(() => {
+        this.setState({ isAddToCart: !this.state.isAddToCart })
+      }, TOAST_TIMEOUT)
+    })
+  }
+
   handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
 
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { searchValue } = this.state
+    const { searchValue, isAddToCart } = this.state
     return (
-      <div className="fixed z-2 w-100 shadow-5">
+      <div className="relative fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
@@ -62,6 +75,14 @@ class Header extends Component {
             </div>
           </div>
         </div>
+        {
+          (isAddToCart) &&
+          <div className="pa2 absolute flex justify-center w-100">
+            <Alert type="success" autoClose={TOAST_TIMEOUT}>
+              Seu produto foi adicionado ao carrinho!
+            </Alert>
+          </div>
+        }
       </div>
     )
   }
