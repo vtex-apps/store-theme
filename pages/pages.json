@@ -27,13 +27,16 @@
     "store/home/menu-link": {
       "component": "vtex.menu/Menu"
     },
-    "store/home/carousel": {
+    "store/home/sections": {
+      "component": "vtex.render/ExtensionContainer"
+    },
+    "store/home/sections/2": {
       "component": "vtex.carousel/Carousel"
     },
-    "store/home/shelf": {
+    "store/home/sections/3": {
       "component": "vtex.shelf/Shelf"
     },
-    "store/home/shelf/shelfitem": {
+    "store/home/sections/3/shelfitem": {
       "component": "vtex.product-summary/ProductSummary"
     },
     "store/search": {

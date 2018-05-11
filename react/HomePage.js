@@ -14,9 +14,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div className="vtex-dreamstore__container w-100 h-100">
-        <ExtensionPoint id="carousel" />
-        <ExtensionPoint id="shelf" />
-        <ExtensionPoint id="custom" />
+        <ExtensionPoint id="sections" />
       </div>
     )
   }
