@@ -18,14 +18,14 @@
     "store": {
       "component": "StoreTemplate"
     },
-    "store/home": {
-      "component": "HomePage"
-    },
-    "store/home/minicart": {
+    "store/minicart": {
       "component": "vtex.minicart/MiniCart"
     },
-    "store/home/menu-link": {
+    "store/menu-link": {
       "component": "vtex.menu/Menu"
+    },
+    "store/home": {
+      "component": "HomePage"
     },
     "store/home/sections": {
       "component": "vtex.render/ExtensionContainer"
