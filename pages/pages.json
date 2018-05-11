@@ -39,9 +39,6 @@
     "store/home/sections/3": {
       "component": "vtex.shelf/Shelf"
     },
-    "store/home/sections/3/shelfitem": {
-      "component": "vtex.product-summary/ProductSummary"
-    },
     "store/search": {
       "component": "SearchPage"
     },
