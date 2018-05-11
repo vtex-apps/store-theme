@@ -6,10 +6,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Add
+
+## [0.2.0] - 2018-05-11
+### Added
 - Show success toast when a product is add to the cart.
+- Add responsive layout to the header.
+- Add gallery to the search page.
 
 ## [0.1.0] - 2018-05-11
+### Added
+- Add the search bar component
+
 ### Changed
 - Replace own Footer implementation by `vtex.storecomponents/Footer` component.
 
