@@ -30,3 +30,15 @@ body {
       padding-top: 147px;
   }
 }
+
+@media screen and (min-width: 20em) {
+  .vtex-product-details-container {
+    padding-top: 180px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .vtex-product-details-container {
+    padding-top: 100px;
+  }
+}
