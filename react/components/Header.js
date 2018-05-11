@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { injectIntl, intlShape } from 'react-intl'
+import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
 import Input from '@vtex/styleguide/lib/Input'
 import Button from '@vtex/styleguide/lib/Button'
 import Alert from '@vtex/styleguide/lib/Alert'
@@ -79,7 +79,7 @@ class Header extends Component {
           (isAddToCart) &&
           <div className="pa2 absolute flex justify-center w-100">
             <Alert type="success" autoClose={TOAST_TIMEOUT}>
-              Seu produto foi adicionado ao carrinho!
+              <FormattedMessage id="dreamstore.buy-success" />
             </Alert>
           </div>
         }
