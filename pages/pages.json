@@ -45,7 +45,10 @@
     "store/product": {
       "component": "ProductPage"
     },
-    "store/product/product-details": {
+    "store/product/sections": {
+      "component": "vtex.render/ExtensionContainer"
+    },
+    "store/product/sections/2": {
       "component": "vtex.product-details/ProductDetails"
     }
   }

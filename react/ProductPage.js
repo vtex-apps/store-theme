@@ -35,7 +35,7 @@ class ProductPage extends Component {
         ) : (
           <div className="flex flex-column items-center justify-center pv6 pv9-ns">
             <div>
-              <ExtensionPoint id="product-details" slug={variables.slug} />
+              <ExtensionPoint id="sections" slug={variables.slug} />
             </div>
           </div>
         )}
