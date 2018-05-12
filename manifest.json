@@ -23,6 +23,7 @@
     "vtex.menu": "0.x",
     "vtex.minicart": "0.x",
     "vtex.product-details": "0.x",
-    "vtex.storecomponents": "0.x"
+    "vtex.storecomponents": "0.x",
+    "vtex.category-menu": "0.x"
   }
 }
