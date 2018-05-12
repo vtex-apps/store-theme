@@ -41,17 +41,14 @@ class Header extends Component {
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
-        <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns ph7-l bg-white tl">
-          <div className="flex items-center justify-between pb3 pb0-ns">
-            <a
-              className="link b f3 near-black tc tl-ns pr7 serious-black"
-              href="/"
-            >
+        <div className="z-2 flex flex-wrap w-100 top-0 pa4 pa5-ns ph7-l bg-white tl">
+          <div className="flex pa4">
+            <a className="link b f3 near-black tc tl-ns serious-black" href="/">
               {name || account}
             </a>
           </div>
           <div className="flex items-center flex-auto">
-            <div className="w-100 flex ph7-ns">
+            <div className="w-100 flex pr8-ns">
               <div className="w-100">
                 <SearchBar
                   placeholder={this.translate('search-placeholder')}
@@ -59,9 +56,9 @@ class Header extends Component {
                 />
               </div>
             </div>
-            <div className="absolute top-3 right-1">
-              <ExtensionPoint id="minicart" />
-            </div>
+          </div>
+          <div className="absolute top-3 right-1 pv4">
+            <ExtensionPoint id="minicart" />
           </div>
         </div>
         {isAddToCart && (
