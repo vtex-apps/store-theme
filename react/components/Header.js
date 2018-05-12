@@ -44,7 +44,7 @@ class Header extends Component {
     document.removeEventListener('item:add', this.handleItemAdd)
 
     if (this._timeoutId) {
-      window.cancelTimeout(this._timeoutId)
+      window.clearTimeout(this._timeoutId)
     }
   }
 
