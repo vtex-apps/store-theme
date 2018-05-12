@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.0] - 2018-05-12
+### Added
+- Add category menu and fix padding
+- Add the search bar component and make header responsive again
+
+### Fixed
+- Fix minicart div position
+- Remove flex box from product page to fix non-expected behavior of react-slick
+
 ## [0.2.0] - 2018-05-11
 ### Added
 - Show success toast when a product is add to the cart.
