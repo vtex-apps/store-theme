@@ -4,7 +4,11 @@ import GalleryWrapper from './components/GalleryWrapper'
 
 export default class SearchPage extends Component {
   render() {
-    return <GalleryWrapper query={this.props.params.term} />
+    return (
+      <div className="vtex-dreamstore__container w-100 h-100">
+        <GalleryWrapper query={this.props.params.term} />
+      </div>
+    )
   }
 }
 
