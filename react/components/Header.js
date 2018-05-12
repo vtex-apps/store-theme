@@ -77,6 +77,7 @@ class Header extends Component {
             <ExtensionPoint id="minicart" />
           </div>
         </div>
+        <ExtensionPoint id="category-menu" />
         {
           (isAddToCart) &&
           <div className="pa2 absolute flex justify-center w-100">

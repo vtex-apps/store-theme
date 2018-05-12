@@ -27,6 +27,9 @@
     "store/menu-link": {
       "component": "vtex.menu/Menu"
     },
+    "store/category-menu": {
+      "component": "vtex.category-menu/CategoryMenu"
+    },
     "store/home": {
       "component": "HomePage"
     },
