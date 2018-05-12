@@ -13,7 +13,7 @@ export default class StoreTemplate extends Component {
     return (
       <div>
         <Header />
-        <div className="z-1">{this.props.children}</div>
+        <div className="z-1 pb6">{this.props.children}</div>
         <ExtensionPoint id="footer" />
       </div>
     )
