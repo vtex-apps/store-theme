@@ -15,7 +15,6 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchValue: '',
       isAddToCart: false,
     }
   }
@@ -27,10 +26,6 @@ class Header extends Component {
 
   translate = id => this.props.intl.formatMessage({ id: `dreamstore.${id}` })
 
-  handleChange = ({ target: { value } }) => {
-    this.setState({ searchValue: value })
-  }
-
   componentDidMount() {
     document.addEventListener('item:add', () => {
       this.setState({ isAddToCart: !this.state.isAddToCart })
@@ -39,8 +34,6 @@ class Header extends Component {
       }, TOAST_TIMEOUT)
     })
   }
-
-  handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
 
   render() {
     const { account } = global.__RUNTIME__
@@ -68,9 +61,6 @@ class Header extends Component {
                   emptyPlaceholder={this.translate('search-emptyPlaceholder')}
                 />
               </div>
-            </div>
-            <div>
-              <ExtensionPoint id="minicart" />
             </div>
           </div>
           <div className="absolute top-3 right-1">
