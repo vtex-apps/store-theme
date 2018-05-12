@@ -1,25 +1,5 @@
-query Products(
-  $query: String
-  $category: String
-  $specificationFilters: [String]
-  $priceRange: String
-  $collection: String
-  $orderBy: String
-  $from: Int
-  $to: Int
-  $salesChannel: String
-) {
-  products(
-    query: $query
-    category: $category
-    specificationFilters: $specificationFilters
-    priceRange: $priceRange
-    collection: $collection
-    orderBy: $orderBy
-    from: $from
-    to: $to
-    salesChannel: $salesChannel
-  ) {
+query Products($query: String) {
+  products(query: $query) {
     productId
     productName
     linkText

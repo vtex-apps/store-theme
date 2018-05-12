@@ -11,7 +11,6 @@ class GalleryWrapper extends Component {
   render() {
     const { query, data } = this.props
     const loading = data.loading
-    console.log(data.products)
 
     return (
       <div>
@@ -32,7 +31,7 @@ class GalleryWrapper extends Component {
 }
 
 GalleryWrapper.defaultProps = {
-  query: 'lg',
+  query: '',
 }
 
 GalleryWrapper.propTypes = {
@@ -55,13 +54,13 @@ GalleryWrapper.propTypes = {
             referenceId: PropTypes.arrayOf(
               PropTypes.shape({
                 Value: PropTypes.string.isRequired,
-              }),
+              })
             ),
             images: PropTypes.arrayOf(
               PropTypes.shape({
                 imageUrl: PropTypes.string.isRequired,
                 imageTag: PropTypes.string.isRequired,
-              }),
+              })
             ).isRequired,
             sellers: PropTypes.arrayOf(
               PropTypes.shape({
@@ -69,37 +68,16 @@ GalleryWrapper.propTypes = {
                   Price: PropTypes.number.isRequired,
                   ListPrice: PropTypes.number.isRequired,
                 }).isRequired,
-              }),
+              })
             ).isRequired,
-          }),
+          })
         ).isRequired,
-      }),
+      })
     ),
     loading: PropTypes.bool.isRequired,
   }),
 }
 
-const options = {
-  options: ({
-    category,
-    collection,
-    orderBy,
-    maxItems = 20,
-    query = 'lg',
-  }) => ({
-    variables: {
-      category,
-      query,
-      collection,
-      specificationFilters: [],
-      orderBy,
-      from: 0,
-      to: maxItems - 1,
-    },
-    ssr: false,
-  }),
-}
-
-const GalleryWrapperWithData = graphql(productsQuery, options)(GalleryWrapper)
+const GalleryWrapperWithData = graphql(productsQuery)(GalleryWrapper)
 
 export default GalleryWrapperWithData
