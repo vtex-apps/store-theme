@@ -59,9 +59,9 @@ class Header extends Component {
                 />
               </div>
             </div>
-          </div>
-          <div className="absolute top-3 right-1">
-            <ExtensionPoint id="minicart" />
+            <div className="absolute top-3 right-1">
+              <ExtensionPoint id="minicart" />
+            </div>
           </div>
         </div>
         {isAddToCart && (
