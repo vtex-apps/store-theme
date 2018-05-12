@@ -7,18 +7,33 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.2.0] - 2018-05-11
+### Added
+- Show success toast when a product is add to the cart.
+- Add responsive layout to the header.
+- Add gallery to the search page.
+
+## [0.1.0] - 2018-05-11
+### Added
+- Add the search bar component
+
+### Changed
+- Replace own Footer implementation by `vtex.storecomponents/Footer` component.
+
 ## [0.0.11] - 2018-05-09
-## Added
+### Added
 - Add Product Details app. 
-## Deprecated
+
+### Deprecated
 - Remove legacy implementations of buy button and minicart.
 
 ## [0.0.10] - 2018-05-09
-## Added
+### Added
 - Add Minicart app.
 
 ## [0.0.9] - 2018-05-07
-## Added
+### Added
 - Add Menu app on top bar.
-## Deprecated
+
+### Deprecated
 - Remove the own implementation of shelf to add the app. 

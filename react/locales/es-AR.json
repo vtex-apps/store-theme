@@ -5,5 +5,6 @@
   "dreamstore.search-emptyPlaceholder": "Ningún resultado encontrado",
   "dreamstore.cart": "Carrito",
   "dreamstore.buy": "Comprar",
-  "dreamstore.poweredBy": "IMPULSADO POR VTEX"
+  "dreamstore.poweredBy": "IMPULSADO POR VTEX",
+  "dreamstore.buy-success": "Su producto se ha agregado a la cesta!"
 }

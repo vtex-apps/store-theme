@@ -18,23 +18,26 @@
     "store": {
       "component": "StoreTemplate"
     },
+    "store/footer": {
+      "component": "vtex.storecomponents/Footer"
+    },
+    "store/minicart": {
+      "component": "vtex.minicart/MiniCart"
+    },
+    "store/menu-link": {
+      "component": "vtex.menu/Menu"
+    },
     "store/home": {
       "component": "HomePage"
     },
-    "store/home/minicart": {
-      "component": "vtex.minicart/MiniCart"
+    "store/home/sections": {
+      "component": "vtex.render/ExtensionContainer"
     },
-    "store/home/menu-link": {
-      "component": "vtex.menu/Menu"
-    },
-    "store/home/carousel": {
+    "store/home/sections/2": {
       "component": "vtex.carousel/Carousel"
     },
-    "store/home/shelf": {
+    "store/home/sections/3": {
       "component": "vtex.shelf/Shelf"
-    },
-    "store/home/shelf/shelfitem": {
-      "component": "vtex.product-summary/ProductSummary"
     },
     "store/search": {
       "component": "SearchPage"
@@ -42,10 +45,16 @@
     "store/search/gallery": {
       "component": "vtex.gallery/Gallery"
     },
+    "store/search/sections": {
+      "component": "vtex.render/ExtensionContainer"
+    },
     "store/product": {
       "component": "ProductPage"
     },
-    "store/product/product-details": {
+    "store/product/sections": {
+      "component": "vtex.render/ExtensionContainer"
+    },
+    "store/product/sections/2": {
       "component": "vtex.product-details/ProductDetails"
     }
   }

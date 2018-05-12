@@ -20,3 +20,25 @@ body {
   background-color: white;
   height: 100%;
 }
+
+.vtex-dreamstore__container {
+  padding-top: 120px; 
+}
+
+@media only screen and (max-width: 640px) {
+  .vtex-dreamstore__container {
+      padding-top: 147px;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  .vtex-product-details-container {
+    padding-top: 180px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .vtex-product-details-container {
+    padding-top: 100px;
+  }
+}

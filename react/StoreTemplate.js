@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Footer from './components/Footer'
+import { ExtensionPoint } from 'render'
+
 import Header from './components/Header'
 
 export default class StoreTemplate extends Component {
@@ -13,7 +14,7 @@ export default class StoreTemplate extends Component {
       <div>
         <Header />
         <div className="z-1">{this.props.children}</div>
-        <Footer />
+        <ExtensionPoint id="footer" />
       </div>
     )
   }
