@@ -42,6 +42,9 @@
     "store/search": {
       "component": "SearchPage"
     },
+    "store/search/gallery": {
+      "component": "vtex.gallery/Gallery"
+    },
     "store/search/sections": {
       "component": "vtex.render/ExtensionContainer"
     },

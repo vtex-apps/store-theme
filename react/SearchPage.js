@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import GalleryWrapper from './components/GalleryWrapper'
 
 export default class SearchPage extends Component {
-  static propTypes = {
-    params: PropTypes.object,
-  }
-
   render() {
-    const term = this.props.params.term
     return (
-      <div>
-        {/* TODO - Add the searchbar app */}
-        {/* <Shelf query={term} /> */}
+      <div className="vtex-dreamstore__container w-100 h-100">
+        <GalleryWrapper query={this.props.params.term} />
       </div>
     )
   }
+}
+
+SearchPage.propTypes = {
+  params: PropTypes.shape({
+    term: PropTypes.string.isRequired,
+  }),
 }

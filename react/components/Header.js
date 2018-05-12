@@ -1,22 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
-import Input from '@vtex/styleguide/lib/Input'
-import Button from '@vtex/styleguide/lib/Button'
 import Alert from '@vtex/styleguide/lib/Alert'
 import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
-import SearchIcon from '../images/SearchIcon'
-
-export const TOAST_TIMEOUT = 3000;
+export const TOAST_TIMEOUT = 3000
 
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchValue: '',
       isAddToCart: false,
     }
   }
@@ -28,10 +23,6 @@ class Header extends Component {
 
   translate = id => this.props.intl.formatMessage({ id: `dreamstore.${id}` })
 
-  handleChange = ({ target: { value } }) => {
-    this.setState({ searchValue: value })
-  }
-
   componentDidMount() {
     document.addEventListener('item:add', () => {
       this.setState({ isAddToCart: !this.state.isAddToCart })
@@ -41,12 +32,10 @@ class Header extends Component {
     })
   }
 
-  handleSearch = () => location.assign(`/${this.state.searchValue}/s`)
-
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { searchValue, isAddToCart } = this.state
+    const { isAddToCart } = this.state
     return (
       <div className="relative fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
@@ -58,26 +47,27 @@ class Header extends Component {
               {name || account}
             </a>
           </div>
-          <div className="flex-ns w-100 w-60-m w-75-l pr4-l">
-            <div className="w-100">
-              <SearchBar className="flex"
-                placeholder={this.translate('search-placeholder')}
-                emptyPlaceholder={this.translate('search-emptyPlaceholder')}
-              />
+          <div className="flex items-center flex-auto">
+            <div className="w-100 flex pr8-ns">
+              <div className="w-100">
+                <SearchBar
+                  placeholder={this.translate('search-placeholder')}
+                  emptyPlaceholder={this.translate('search-emptyPlaceholder')}
+                />
+              </div>
             </div>
           </div>
-          <div className="absolute top-3 right-1">
+          <div className="absolute top-3 right-1 pv4">
             <ExtensionPoint id="minicart" />
           </div>
         </div>
-        {
-          (isAddToCart) &&
+        {isAddToCart && (
           <div className="pa2 absolute flex justify-center w-100">
             <Alert type="success" autoClose={TOAST_TIMEOUT}>
               <FormattedMessage id="dreamstore.buy-success" />
             </Alert>
           </div>
-        }
+        )}
       </div>
     )
   }
