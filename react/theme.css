@@ -29,6 +29,9 @@ body {
   .vtex-dreamstore__container {
       padding-top: 147px;
   }
+  .vtex-category-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 20em) {

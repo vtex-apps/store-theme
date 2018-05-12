@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.1] - 2018-05-12
+### Fixed
+- Display category menu only in large screens
+- Fix padding-top of Product page
+
 ## [0.3.0] - 2018-05-12
 ### Added
 - Add category menu and fix padding
