@@ -21,6 +21,9 @@
     "store/footer": {
       "component": "vtex.storecomponents/Footer"
     },
+    "store/header-search": {
+      "component": "vtex.storecomponents/SearchBar"
+    },
     "store/minicart": {
       "component": "vtex.minicart/MiniCart"
     },

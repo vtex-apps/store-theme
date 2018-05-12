@@ -4,7 +4,6 @@ import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
 import Input from '@vtex/styleguide/lib/Input'
 import Button from '@vtex/styleguide/lib/Button'
 import Alert from '@vtex/styleguide/lib/Alert'
-import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
@@ -60,7 +59,7 @@ class Header extends Component {
           </div>
           <div className="flex-ns w-100 w-60-m w-75-l pr4-l">
             <div className="w-100">
-              <SearchBar className="flex"
+              <ExtensionPoint id='header-search' className="flex"
                 placeholder={this.translate('search-placeholder')}
                 emptyPlaceholder={this.translate('search-emptyPlaceholder')}
               />
