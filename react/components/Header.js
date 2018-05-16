@@ -9,7 +9,6 @@ import Modal from './Modal'
 import TopMenu from './TopMenu'
 
 export const TOAST_TIMEOUT = 3000
-export const POPUP_LIMIT_SCROLL = 185
 
 class Header extends Component {
   state = {
@@ -23,11 +22,17 @@ class Header extends Component {
   }
 
   handleScroll = ({ pageY }) => {
-    if (pageY < POPUP_LIMIT_SCROLL && this.state.showMenuPopup) {
+    if (!this._el) {
+      return
+    }
+
+    const { scrollHeight } = this._el
+
+    if (pageY < scrollHeight && this.state.showMenuPopup) {
       this.setState({
         showMenuPopup: false,
       })
-    } else if (pageY >= POPUP_LIMIT_SCROLL) {
+    } else if (pageY >= scrollHeight) {
       this.setState({
         showMenuPopup: true,
       })
@@ -54,7 +59,7 @@ class Header extends Component {
     const { name } = this.props
     const { isAddToCart, showMenuPopup } = this.state
     return (
-      <div className="relative z-2 w-100 shadow-5">
+      <div className="relative z-2 w-100 shadow-5" ref={e => { this._el = e }}>
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
