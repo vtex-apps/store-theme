@@ -13,7 +13,7 @@ export default class HomePage extends Component {
 
   render() {
     return (
-      <div className="vtex-dreamstore__container w-100 h-100">
+      <div className="h-100">
         <ExtensionPoint id="sections" />
       </div>
     )
