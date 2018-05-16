@@ -1,18 +1,21 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
+import { injectIntl, intlShape } from 'react-intl'
 import Alert from '@vtex/styleguide/lib/Alert'
 import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
-export const TOAST_TIMEOUT = 3000
+const TOAST_TIMEOUT = 3000
+const EVENT_TOAST = 'toast:message'
+const EMPTY_TOAST = { message: '', success: true }
 
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isAddToCart: false,
+      displayToast: false,
+      toast: EMPTY_TOAST,
     }
   }
 
@@ -24,10 +27,10 @@ class Header extends Component {
   translate = id => this.props.intl.formatMessage({ id: `dreamstore.${id}` })
 
   componentDidMount() {
-    document.addEventListener('item:add', () => {
-      this.setState({ isAddToCart: !this.state.isAddToCart })
+    document.addEventListener(EVENT_TOAST, e => {
+      this.setState({ displayToast: true, toast: e.detail })
       window.setTimeout(() => {
-        this.setState({ isAddToCart: !this.state.isAddToCart })
+        this.setState({ displayToast: false, toast: EMPTY_TOAST })
       }, TOAST_TIMEOUT)
     })
   }
@@ -35,7 +38,7 @@ class Header extends Component {
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { isAddToCart } = this.state
+    const { displayToast, toast } = this.state
     return (
       <div className="relative fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
@@ -62,10 +65,10 @@ class Header extends Component {
           </div>
         </div>
         <ExtensionPoint id="category-menu" />
-        {isAddToCart && (
+        {displayToast && (
           <div className="pa2 absolute flex justify-center w-100">
-            <Alert type="success" autoClose={TOAST_TIMEOUT}>
-              <FormattedMessage id="dreamstore.buy-success" />
+            <Alert type={toast.success ? 'success' : 'error'}>
+              {toast.message}
             </Alert>
           </div>
         )}
