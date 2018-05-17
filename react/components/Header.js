@@ -50,7 +50,7 @@ class Header extends Component {
   }
 
   componentWillUnmount() {
-    if (typeof this._timeoutId === 'undefined') {
+    if (typeof this._timeoutId !== 'undefined') {
       clearTimeout(this._timeoutId)
     }
 
