@@ -21,36 +21,45 @@ class Header extends Component {
     intl: intlShape.isRequired,
   }
 
-  handleScroll = ({ pageY }) => {
+  handleScroll = () => {
     if (!this._el) {
       return
     }
 
+    const scroll = window.scrollY
+
     const { scrollHeight } = this._el
 
-    if (pageY < scrollHeight && this.state.showMenuPopup) {
+    if (scroll < scrollHeight && this.state.showMenuPopup) {
       this.setState({
         showMenuPopup: false,
       })
-    } else if (pageY >= scrollHeight) {
+    } else if (scroll >= scrollHeight) {
       this.setState({
         showMenuPopup: true,
       })
     }
   }
 
+  handleItemAdd = () => {
+    this.setState({ isAddToCart: !this.state.isAddToCart })
+    this._timeoutId = window.setTimeout(() => {
+      this._timeoutId = undefined
+      this.setState({ isAddToCart: !this.state.isAddToCart })
+    }, TOAST_TIMEOUT)
+  }
+
   componentWillUnmount() {
+    if (typeof this._timeoutId === 'undefined') {
+      clearTimeout(this._timeoutId)
+    }
+
+    document.removeEventListener('item:add', this.handleItemAdd)
     document.removeEventListener('scroll', this.handleScroll)
   }
 
   componentDidMount() {
-    document.addEventListener('item:add', () => {
-      this.setState({ isAddToCart: !this.state.isAddToCart })
-      window.setTimeout(() => {
-        this.setState({ isAddToCart: !this.state.isAddToCart })
-      }, TOAST_TIMEOUT)
-    })
-
+    document.addEventListener('item:add', this.handleItemAdd)
     document.addEventListener('scroll', this.handleScroll)
   }
 
