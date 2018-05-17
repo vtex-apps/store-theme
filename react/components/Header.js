@@ -13,6 +13,8 @@ class Header extends Component {
     super(props)
     this.state = {
       isAddToCart: false,
+      hasError: false,
+      error: null,
     }
   }
 
@@ -25,9 +27,17 @@ class Header extends Component {
 
   componentDidMount() {
     document.addEventListener('item:add', () => {
+      console.log('sucesso')
       this.setState({ isAddToCart: true })
       window.setTimeout(() => {
         this.setState({ isAddToCart: false })
+      }, TOAST_TIMEOUT)
+    })
+
+    document.addEventListener('message:error', e => {
+      this.setState({ hasError: true, error: e })
+      window.setTimeout(() => {
+        this.setState({ hasError: false })
       }, TOAST_TIMEOUT)
     })
   }
@@ -35,7 +45,7 @@ class Header extends Component {
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { isAddToCart } = this.state
+    const { isAddToCart, hasError, error } = this.state
     return (
       <div className="relative fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
@@ -67,6 +77,11 @@ class Header extends Component {
             <Alert type="success">
               <FormattedMessage id="dreamstore.buy-success" />
             </Alert>
+          </div>
+        )}
+        {hasError && (
+          <div className="pa2 absolute flex justify-center w-100">
+            <Alert type="error">{error.detail.message}</Alert>
           </div>
         )}
       </div>
