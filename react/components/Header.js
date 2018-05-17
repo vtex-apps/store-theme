@@ -6,7 +6,7 @@ import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
-const TOAST_TIMEOUT = 3000
+export const TOAST_TIMEOUT = 3000
 
 class Header extends Component {
   constructor(props) {
