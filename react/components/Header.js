@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { injectIntl, intlShape } from 'react-intl'
+import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
 import Alert from '@vtex/styleguide/lib/Alert'
 import SearchBar from 'vtex.storecomponents/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
 const TOAST_TIMEOUT = 3000
-const EVENT_TOAST = 'toast:message'
-const EMPTY_TOAST = { message: '', success: true }
 
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayToast: false,
-      toast: EMPTY_TOAST,
+      isAddToCart: false,
     }
   }
 
@@ -27,10 +24,10 @@ class Header extends Component {
   translate = id => this.props.intl.formatMessage({ id: `dreamstore.${id}` })
 
   componentDidMount() {
-    document.addEventListener(EVENT_TOAST, e => {
-      this.setState({ displayToast: true, toast: e.detail })
+    document.addEventListener('item:add', () => {
+      this.setState({ isAddToCart: true })
       window.setTimeout(() => {
-        this.setState({ displayToast: false, toast: EMPTY_TOAST })
+        this.setState({ isAddToCart: false })
       }, TOAST_TIMEOUT)
     })
   }
@@ -38,7 +35,7 @@ class Header extends Component {
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { displayToast, toast } = this.state
+    const { isAddToCart } = this.state
     return (
       <div className="relative fixed z-2 w-100 shadow-5">
         <div className="z-2 items-center w-100 top-0 bg-white tl">
@@ -65,10 +62,10 @@ class Header extends Component {
           </div>
         </div>
         <ExtensionPoint id="category-menu" />
-        {displayToast && (
+        {isAddToCart && (
           <div className="pa2 absolute flex justify-center w-100">
-            <Alert type={toast.success ? 'success' : 'error'}>
-              {toast.message}
+            <Alert type="success">
+              <FormattedMessage id="dreamstore.buy-success" />
             </Alert>
           </div>
         )}
