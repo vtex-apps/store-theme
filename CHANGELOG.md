@@ -6,18 +6,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.2] - 2018-05-18
 ### Fixed
-- Top menus covering great portion of the page
+- Top menus covering great portion of the page.
+- Fix pages error when ExtensionContainer was used.
 
 ## [0.3.1] - 2018-05-12
 ### Fixed
-- Display category menu only in large screens
-- Fix padding-top of Product page
+- Display category menu only in large screens.
+- Fix padding-top of Product page.
 
 ## [0.3.0] - 2018-05-12
 ### Added
-- Add category menu and fix padding
-- Add the search bar component and make header responsive again
+- Add category menu and fix padding.
+- Add the search bar component and make header responsive again.
 
 ### Fixed
 - Fix minicart div position
