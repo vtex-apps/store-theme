@@ -28,13 +28,7 @@ body {
 }
 
 @media screen and (min-width: 20em) {
-  .vtex-product-details-container {
-    padding-top: 220px;
-  }
 }
 
 @media screen and (min-width: 40em) {
-  .vtex-product-details-container {
-    padding-top: 140px;
-  }
 }

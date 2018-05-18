@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add toast message system to be used on error scenarios.
 
+### Fixed
+- Fix padding top of product page content
+
 ## [0.3.2] - 2018-05-18
 ### Fixed
 - Top menus covering great portion of the page.
