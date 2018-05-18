@@ -11,14 +11,57 @@ import TopMenu from './TopMenu'
 export const TOAST_TIMEOUT = 3000
 
 class Header extends Component {
-  state = {
-    isAddToCart: false,
-    showMenuPopup: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      isAddToCart: false,
+      hasError: false,
+      error: null,
+      showMenuPopup: false,
+    }
   }
 
   static propTypes = {
     name: PropTypes.string,
     intl: intlShape.isRequired,
+  }
+
+  componentDidMount() {
+    this._timeouts = []
+    document.addEventListener('message:error', this.handleError)
+    document.addEventListener('item:add', this.handleItemAdd)
+    document.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    if (this._timeouts.length !== 0) {
+      this._timeouts.map(el => {
+        clearTimeout(el)
+      })
+    }
+
+    document.removeEventListener('message:error', this.handleError)
+    document.removeEventListener('item:add', this.handleItemAdd)
+    document.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleError = e => {
+    this.setState({ hasError: true, error: e })
+    const timeOut = window.setTimeout(() => {
+      this.setState({ hasError: false })
+    }, TOAST_TIMEOUT)
+
+    this._timeouts.push(timeOut)
+  }
+
+  handleItemAdd = () => {
+    this.setState({ isAddToCart: !this.state.isAddToCart })
+    const timeOut = window.setTimeout(() => {
+      this._timeoutId = undefined
+      this.setState({ isAddToCart: !this.state.isAddToCart })
+    }, TOAST_TIMEOUT)
+
+    this._timeouts.push(timeOut)
   }
 
   handleScroll = () => {
@@ -27,7 +70,6 @@ class Header extends Component {
     }
 
     const scroll = window.scrollY
-
     const { scrollHeight } = this._el
 
     if (scroll < scrollHeight && this.state.showMenuPopup) {
@@ -41,34 +83,18 @@ class Header extends Component {
     }
   }
 
-  handleItemAdd = () => {
-    this.setState({ isAddToCart: !this.state.isAddToCart })
-    this._timeoutId = window.setTimeout(() => {
-      this._timeoutId = undefined
-      this.setState({ isAddToCart: !this.state.isAddToCart })
-    }, TOAST_TIMEOUT)
-  }
-
-  componentWillUnmount() {
-    if (typeof this._timeoutId !== 'undefined') {
-      clearTimeout(this._timeoutId)
-    }
-
-    document.removeEventListener('item:add', this.handleItemAdd)
-    document.removeEventListener('scroll', this.handleScroll)
-  }
-
-  componentDidMount() {
-    document.addEventListener('item:add', this.handleItemAdd)
-    document.addEventListener('scroll', this.handleScroll)
-  }
-
   render() {
     const { account } = global.__RUNTIME__
     const { name } = this.props
-    const { isAddToCart, showMenuPopup } = this.state
+    const { isAddToCart, hasError, showMenuPopup, error } = this.state
+
     return (
-      <div className="relative z-2 w-100 shadow-5" ref={e => { this._el = e }}>
+      <div
+        className="relative z-2 w-100 shadow-5"
+        ref={e => {
+          this._el = e
+        }}
+      >
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
@@ -79,13 +105,24 @@ class Header extends Component {
             <TopMenu name={name || account} fixed />
           </Modal>
         )}
-        {isAddToCart && (
-          <div className="pa2 absolute flex justify-center w-100">
-            <Alert type="success" autoClose={TOAST_TIMEOUT}>
-              <FormattedMessage id="dreamstore.buy-success" />
-            </Alert>
-          </div>
-        )}
+        <div
+          className="flex flex-column items-center fixed w-100"
+          style={{ top: 120 }}
+        >
+          {isAddToCart && (
+            <div className="pa2 mw9">
+              <Alert type="success">
+                <FormattedMessage id="dreamstore.buy-success" />
+              </Alert>
+            </div>
+          )}
+
+          {hasError && (
+            <div className="pa2 mw9">
+              <Alert type="error">{error.detail.message}</Alert>
+            </div>
+          )}
+        </div>
       </div>
     )
   }
