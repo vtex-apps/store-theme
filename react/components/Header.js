@@ -105,18 +105,24 @@ class Header extends Component {
             <TopMenu name={name || account} fixed />
           </Modal>
         )}
-        {isAddToCart && (
-          <div className="pa2 absolute flex justify-center w-100">
-            <Alert type="success">
-              <FormattedMessage id="dreamstore.buy-success" />
-            </Alert>
-          </div>
-        )}
-        {hasError && (
-          <div className="pa2 absolute flex justify-center w-100">
-            <Alert type="error">{error.detail.message}</Alert>
-          </div>
-        )}
+        <div
+          className="flex flex-column items-center fixed w-100"
+          style={{ top: 120 }}
+        >
+          {isAddToCart && (
+            <div className="pa2 mw9">
+              <Alert type="success">
+                <FormattedMessage id="dreamstore.buy-success" />
+              </Alert>
+            </div>
+          )}
+
+          {hasError && (
+            <div className="pa2 mw9">
+              <Alert type="error">{error.detail.message}</Alert>
+            </div>
+          )}
+        </div>
       </div>
     )
   }
