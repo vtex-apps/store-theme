@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.4] - 2018-05-19
+### Changed
+- Update version of `vtex.storecomponents` to 1.x
+
 ## [0.3.3] - 2018-05-18
 ### Added
 - Add toast message system to be used on error scenarios.
