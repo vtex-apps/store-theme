@@ -17,14 +17,14 @@ class GalleryWrapper extends Component {
         {loading ? (
           <WrappedSpinner />
         ) : (
-          <div className="w-100">
-            <ExtensionPoint
-              id="gallery"
-              search={query}
-              products={data.products}
-            />
-          </div>
-        )}
+            <div className="w-100">
+              <ExtensionPoint
+                id="sections"
+                search={query}
+                products={data.products}
+              />
+            </div>
+          )}
       </div>
     )
   }
