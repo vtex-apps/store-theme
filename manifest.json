@@ -8,9 +8,7 @@
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --public --verbose"
