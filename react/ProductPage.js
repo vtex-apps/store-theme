@@ -35,7 +35,7 @@ class ProductPage extends Component {
         ) : (
             <div className="pv9-ns">
               <div className="vtex-product-details-container">
-                <ExtensionPoint id="product-details" slug={variables.slug} />
+                <ExtensionPoint id="sections" slug={variables.slug} />
               </div>
             </div>
           )}
