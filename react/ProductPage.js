@@ -7,6 +7,8 @@ import productQuery from './queries/productQuery.gql'
 
 import WrappedSpinner from './components/WrappedSpinner'
 
+import Breadcrumbs from 'vtex.storecomponents/Breadcrumbs'
+
 class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
@@ -33,12 +35,13 @@ class ProductPage extends Component {
         {loading ? (
           <WrappedSpinner />
         ) : (
-            <div className="pv9-ns">
-              <div className="vtex-product-details-container">
-                <ExtensionPoint id="product-details" slug={variables.slug} />
-              </div>
+          <div className="pv9-ns">
+            <div className="vtex-product-details-container">
+              <Breadcrumbs slug={variables.slug} />
+              <ExtensionPoint id="product-details" slug={variables.slug} />
             </div>
-          )}
+          </div>
+        )}
       </div>
     )
   }

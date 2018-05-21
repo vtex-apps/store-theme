@@ -7,6 +7,8 @@ import productsQuery from '../queries/productsQuery.gql'
 
 import { ExtensionPoint } from 'render'
 
+import Breadcrumbs from 'vtex.storecomponents/Breadcrumbs'
+
 class GalleryWrapper extends Component {
   render() {
     const { query, data } = this.props
@@ -18,6 +20,7 @@ class GalleryWrapper extends Component {
           <WrappedSpinner />
         ) : (
           <div className="w-100">
+            <Breadcrumbs search={query} />
             <ExtensionPoint
               id="gallery"
               search={query}
