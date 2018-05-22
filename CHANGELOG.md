@@ -6,13 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Fixed
-- Update css product details class for the spinner be in the center.
 
 ## [0.3.5] - 2018-05-21
 ### Fixed
 - Fix pages dependency to be able to use `ExntesionContainer` again. 
 - `Topbar` when scrolled overlapped the `VTEX-topbar`.
+- Update css product details class for the spinner be in the center.
 
 ## [0.3.4] - 2018-05-19
 ### Changed
