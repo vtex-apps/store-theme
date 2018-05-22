@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "0.3.1",
+  "version": "0.3.4",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -17,13 +17,14 @@
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
+    "vtex.pages-editor": "1.x",
     "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x",
     "vtex.menu": "0.x",
     "vtex.minicart": "0.x",
     "vtex.product-details": "0.x",
-    "vtex.storecomponents": "0.x",
+    "vtex.storecomponents": "1.x",
     "vtex.gallery": "0.x",
     "vtex.category-menu": "0.x"
   }

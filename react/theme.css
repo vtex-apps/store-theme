@@ -21,14 +21,7 @@ body {
   height: 100%;
 }
 
-.vtex-dreamstore__container {
-  padding-top: 180px; 
-}
-
 @media only screen and (max-width: 640px) {
-  .vtex-dreamstore__container {
-      padding-top: 147px;
-  }
   .vtex-category-menu {
     display: none;
   }

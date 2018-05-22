@@ -33,8 +33,10 @@ class ProductPage extends Component {
         {loading ? (
           <WrappedSpinner />
         ) : (
-          <div className="vtex-product-details-container">
-            <ExtensionPoint id="sections" slug={variables.slug} />
+          <div className="pv9-ns">
+            <div className="vtex-product-details-container">
+              <ExtensionPoint id="sections" slug={variables.slug} />
+            </div>
           </div>
         )}
       </div>

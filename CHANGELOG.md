@@ -9,15 +9,36 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Update css product details class for the spinner be in the center.
 
+## [0.3.5] - 2018-05-21
+### Fixed
+- Fix pages dependency to be able to use `ExntesionContainer` again. 
+- `Topbar` when scrolled overlapped the `VTEX-topbar`.
+
+## [0.3.4] - 2018-05-19
+### Changed
+- Update version of `vtex.storecomponents` to 1.x
+
+## [0.3.3] - 2018-05-18
+### Added
+- Add toast message system to be used on error scenarios.
+
+### Fixed
+- Fix padding top of product page content
+
+## [0.3.2] - 2018-05-18
+### Fixed
+- Top menus covering great portion of the page.
+- Fix pages error when ExtensionContainer was used.
+
 ## [0.3.1] - 2018-05-12
 ### Fixed
-- Display category menu only in large screens
-- Fix padding-top of Product page
+- Display category menu only in large screens.
+- Fix padding-top of Product page.
 
 ## [0.3.0] - 2018-05-12
 ### Added
-- Add category menu and fix padding
-- Add the search bar component and make header responsive again
+- Add category menu and fix padding.
+- Add the search bar component and make header responsive again.
 
 ### Fixed
 - Fix minicart div position
