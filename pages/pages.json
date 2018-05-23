@@ -45,11 +45,17 @@
     "store/search/gallery": {
       "component": "vtex.gallery/Gallery"
     },
+    "store/search/breadcrumb": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
     "store/product": {
       "component": "ProductPage"
     },
     "store/product/product-details": {
       "component": "vtex.product-details/ProductDetails"
+    },
+    "store/product/breadcrumb": {
+      "component": "vtex.breadcrumb/Breadcrumb"
     }
   }
 }
