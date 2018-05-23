@@ -14,11 +14,8 @@ class ProductPage extends Component {
     prefetch: PropTypes.func,
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      isModalOpen: false,
-    }
+  state = {
+    isModalOpen: false,
   }
 
   componentDidMount() {
@@ -29,7 +26,6 @@ class ProductPage extends Component {
     const { data } = this.props
     const { loading, variables, product } = data
 
-    console.log(data)
     return (
       <div>
         {loading ? (
