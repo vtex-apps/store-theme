@@ -33,29 +33,38 @@
     "store/home": {
       "component": "HomePage"
     },
-    "store/home/carousel": {
+    "store/home/sections": {
+      "component": "vtex.render-runtime/ExtensionContainer"
+    },
+    "store/home/sections/1": {
       "component": "vtex.carousel/Carousel"
     },
-    "store/home/shelf": {
+    "store/home/sections/2": {
       "component": "vtex.shelf/Shelf"
     },
     "store/search": {
       "component": "SearchPage"
     },
-    "store/search/gallery": {
-      "component": "vtex.gallery/Gallery"
+    "store/search/sections": {
+      "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/search/breadcrumb": {
+    "store/search/sections/1": {
       "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/search/sections/2": {
+      "component": "vtex.gallery/Gallery"
     },
     "store/product": {
       "component": "ProductPage"
     },
-    "store/product/product-details": {
-      "component": "vtex.product-details/ProductDetails"
+    "store/product/sections": {
+      "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/product/breadcrumb": {
+    "store/product/sections/1": {
       "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/product/sections/2": {
+      "component": "vtex.product-details/ProductDetails"
     }
   }
 }

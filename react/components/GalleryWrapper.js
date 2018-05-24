@@ -19,13 +19,9 @@ class GalleryWrapper extends Component {
         ) : (
           <div className="w-100">
             <ExtensionPoint
-              id="breadcrumb"
+              id="sections"
               search={query}
               categories={categories}
-            />
-            <ExtensionPoint
-              id="gallery"
-              search={query}
               products={data.products}
             />
           </div>
