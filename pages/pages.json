@@ -27,6 +27,9 @@
     "store/search/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
+    "store/search/container/1": {
+      "component": "GalleryWrapper"
+    },
     "store/search/container/1/breadcrumb": {
       "component": "vtex.breadcrumb/Breadcrumb"
     },
