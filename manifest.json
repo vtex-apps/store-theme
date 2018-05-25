@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "dreamstore",
+  "name": "dreamstore-theme",
   "version": "0.3.5",
   "builders": {
     "pages": "0.x",
