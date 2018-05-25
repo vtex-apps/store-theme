@@ -5,8 +5,8 @@ import Alert from '@vtex/styleguide/lib/Alert'
 
 import { ExtensionPoint } from 'render'
 
-import Modal from './Modal'
-import TopMenu from './TopMenu'
+import Modal from './components/Modal'
+import TopMenu from './components/TopMenu'
 
 export const TOAST_TIMEOUT = 3000
 
