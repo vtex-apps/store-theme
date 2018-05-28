@@ -27,8 +27,8 @@
     "store/search/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/search/container/1": {
-      "component": "GalleryWrapper"
+    "store/search/container/1/breadcrumb": {
+      "component": "vtex.breadcrumb/Breadcrumb"
     },
     "store/search/container/1/gallery": {
       "component": "vtex.gallery/Gallery"
@@ -37,6 +37,9 @@
       "component": "vtex.render-runtime/ExtensionContainer"
     },
     "store/product/container/1": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/product/container/2": {
       "component": "vtex.product-details/ProductDetails"
     }
   }

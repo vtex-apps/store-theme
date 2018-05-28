@@ -3,6 +3,7 @@ query Product($slug: String) {
     productName
     productId
     description
+    categories
     items {
       itemId
       name

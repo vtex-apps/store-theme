@@ -26,6 +26,7 @@
     "vtex.storecomponents": "1.x",
     "vtex.gallery": "0.x",
     "vtex.category-menu": "0.x",
+    "vtex.breadcrumb": "0.x",
     "vtex.store": "0.x"
   }
 }
