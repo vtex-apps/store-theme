@@ -10,6 +10,12 @@
     "store/search": {
       "path": "/:term/s"
     },
+    "store/search2": {
+      "path": "/:term/:term1/s"
+    },
+    "store/search3": {
+      "path": "/:term/:term1/:term2/s"
+    },
     "store/product": {
       "path": "/:slug/p"
     }
@@ -52,6 +58,30 @@
       "component": "vtex.breadcrumb/Breadcrumb"
     },
     "store/search/sections/2": {
+      "component": "vtex.gallery/Gallery"
+    },
+    "store/search2": {
+      "component": "SearchPage"
+    },
+    "store/search2/sections": {
+      "component": "vtex.render-runtime/ExtensionContainer"
+    },
+    "store/search2/sections/1": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/search2/sections/2": {
+      "component": "vtex.gallery/Gallery"
+    },
+    "store/search3": {
+      "component": "SearchPage"
+    },
+    "store/search3/sections": {
+      "component": "vtex.render-runtime/ExtensionContainer"
+    },
+    "store/search3/sections/1": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/search3/sections/2": {
       "component": "vtex.gallery/Gallery"
     },
     "store/product": {
