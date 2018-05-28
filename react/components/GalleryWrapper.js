@@ -9,7 +9,7 @@ import { ExtensionPoint } from 'render'
 
 class GalleryWrapper extends Component {
   render() {
-    const { query, data } = this.props
+    const { query, categories, data } = this.props
     const loading = data.loading
 
     return (
@@ -17,25 +17,23 @@ class GalleryWrapper extends Component {
         {loading ? (
           <WrappedSpinner />
         ) : (
-            <div className="w-100">
-              <ExtensionPoint
-                id="sections"
-                search={query}
-                products={data.products}
-              />
-            </div>
-          )}
+          <div className="w-100">
+            <ExtensionPoint
+              id="sections"
+              search={query}
+              categories={categories}
+              products={data.products}
+            />
+          </div>
+        )}
       </div>
     )
   }
 }
 
-GalleryWrapper.defaultProps = {
-  query: '',
-}
-
 GalleryWrapper.propTypes = {
   query: PropTypes.string.isRequired,
+  categories: PropTypes.arrayOf(PropTypes.string),
   /** Graphql data response. */
   data: PropTypes.shape({
     products: PropTypes.arrayOf(

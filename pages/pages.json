@@ -49,6 +49,9 @@
       "component": "vtex.render-runtime/ExtensionContainer"
     },
     "store/search/sections/1": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/search/sections/2": {
       "component": "vtex.gallery/Gallery"
     },
     "store/product": {
@@ -58,6 +61,9 @@
       "component": "vtex.render-runtime/ExtensionContainer"
     },
     "store/product/sections/1": {
+      "component": "vtex.breadcrumb/Breadcrumb"
+    },
+    "store/product/sections/2": {
       "component": "vtex.product-details/ProductDetails"
     }
   }

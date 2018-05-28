@@ -14,11 +14,8 @@ class ProductPage extends Component {
     prefetch: PropTypes.func,
   }
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      isModalOpen: false,
-    }
+  state = {
+    isModalOpen: false,
   }
 
   componentDidMount() {
@@ -27,7 +24,8 @@ class ProductPage extends Component {
 
   render() {
     const { data } = this.props
-    const { loading, variables } = data
+    const { loading, variables, product } = data
+
     return (
       <div>
         {loading ? (
@@ -35,7 +33,11 @@ class ProductPage extends Component {
         ) : (
           <div className="pv9-ns">
             <div className="vtex-product-details-container">
-              <ExtensionPoint id="sections" slug={variables.slug} />
+              <ExtensionPoint
+                id="sections"
+                slug={variables.slug}
+                categories={product.categories}
+              />
             </div>
           </div>
         )}
