@@ -5,8 +5,6 @@ import { ExtensionPoint } from 'render'
 import withPrefetch from './withPrefetch'
 import productQuery from './queries/productQuery.gql'
 
-import WrappedSpinner from './components/WrappedSpinner'
-
 class ProductPage extends Component {
   static propTypes = {
     params: PropTypes.object,
@@ -28,19 +26,17 @@ class ProductPage extends Component {
 
     return (
       <div>
-        {loading ? (
-          <WrappedSpinner />
-        ) : (
-          <div className="pv9-ns">
-            <div className="vtex-product-details-container">
+        <div className="pv9-ns">
+          <div className="vtex-product-details-container">
+            {!loading && (
               <ExtensionPoint
                 id="sections"
                 slug={variables.slug}
                 categories={product.categories}
               />
-            </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
     )
   }
