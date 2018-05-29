@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add the breadcrumb component to the SearchPage and ProductPage
 
+### Fixed
+- Removed redundant Spinner in _ProductPage_ Component.
+
 ## [0.3.5] - 2018-05-21
 ### Fixed
 - Fix pages dependency to be able to use `ExntesionContainer` again. 
