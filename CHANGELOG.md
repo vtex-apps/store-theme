@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Removed redundant Spinner in _ProductPage_ Component.
+- Product page padding.
 
 ## [0.3.5] - 2018-05-21
 ### Fixed
