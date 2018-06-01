@@ -26,7 +26,7 @@ class ProductPage extends Component {
 
     return (
       <div>
-        <div className="pv9-ns">
+        <div className="pv2-ns">
           <div className="vtex-product-details-container">
             {!loading && (
               <ExtensionPoint
