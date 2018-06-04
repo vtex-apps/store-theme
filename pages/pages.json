@@ -1,69 +1,51 @@
 {
-  "pages": {
-    "store": {
-      "path": "/",
-      "theme": "theme"
-    },
-    "store/home": {
-      "path": "/"
-    },
-    "store/search": {
-      "path": "/:term/s"
-    },
-    "store/product": {
-      "path": "/:slug/p"
-    }
-  },
   "extensions": {
-    "store": {
-      "component": "StoreTemplate"
+    "store/theme": {
+      "component": "Theme"
+    },
+    "store/header": {
+      "component": "Header"
+    },
+    "store/header/minicart": {
+      "component": "vtex.minicart/MiniCart"
+    },
+    "store/header/menu-link": {
+      "component": "vtex.menu/Menu"
+    },
+    "store/header/category-menu": {
+      "component": "vtex.category-menu/CategoryMenu"
     },
     "store/footer": {
       "component": "vtex.storecomponents/Footer"
     },
-    "store/minicart": {
-      "component": "vtex.minicart/MiniCart"
-    },
-    "store/menu-link": {
-      "component": "vtex.menu/Menu"
-    },
-    "store/category-menu": {
-      "component": "vtex.category-menu/CategoryMenu"
-    },
-    "store/home": {
-      "component": "HomePage"
-    },
-    "store/home/sections": {
+    "store/home/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/home/sections/1": {
+    "store/home/container/1": {
       "component": "vtex.carousel/Carousel"
     },
-    "store/home/sections/2": {
+    "store/home/container/2": {
       "component": "vtex.shelf/Shelf"
     },
-    "store/search": {
-      "component": "SearchPage"
-    },
-    "store/search/sections": {
+    "store/search/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/search/sections/1": {
+    "store/search/container/1": {
+      "component": "GalleryWrapper"
+    },
+    "store/search/container/1/breadcrumb": {
       "component": "vtex.breadcrumb/Breadcrumb"
     },
-    "store/search/sections/2": {
+    "store/search/container/1/gallery": {
       "component": "vtex.gallery/Gallery"
     },
-    "store/product": {
-      "component": "ProductPage"
-    },
-    "store/product/sections": {
+    "store/product/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
-    "store/product/sections/1": {
+    "store/product/container/1": {
       "component": "vtex.breadcrumb/Breadcrumb"
     },
-    "store/product/sections/2": {
+    "store/product/container/2": {
       "component": "vtex.product-details/ProductDetails"
     }
   }

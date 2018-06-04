@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "dreamstore",
+  "name": "dreamstore-theme",
   "version": "0.3.5",
   "builders": {
     "pages": "0.x",
@@ -8,14 +8,18 @@
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --public --verbose"
   },
+  "billingOptions": {
+    "free": true
+  },
   "dependencies": {
     "vtex.store-graphql": "2.x",
-    "vtex.pages-editor": "1.x",
     "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x",
@@ -25,6 +29,7 @@
     "vtex.storecomponents": "1.x",
     "vtex.gallery": "0.x",
     "vtex.category-menu": "0.x",
-    "vtex.breadcrumb": "0.x"
+    "vtex.breadcrumb": "0.x",
+    "vtex.store": "0.x"
   }
 }

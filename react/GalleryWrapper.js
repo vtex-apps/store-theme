@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 
-import WrappedSpinner from './WrappedSpinner'
-import productsQuery from '../queries/productsQuery.gql'
+import WrappedSpinner from './components/WrappedSpinner'
+import productsQuery from './queries/productsQuery.gql'
 
 import { ExtensionPoint } from 'render'
 
@@ -19,7 +19,7 @@ class GalleryWrapper extends Component {
         ) : (
           <div className="w-100">
             <ExtensionPoint
-              id="sections"
+              id="gallery"
               search={query}
               categories={categories}
               products={data.products}
