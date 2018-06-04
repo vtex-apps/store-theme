@@ -13,7 +13,10 @@
   ],
   "settingsSchema": {},
   "scripts": {
-    "postreleasy": "vtex publish --public --verbose"
+    "postreleasy": "vtex publish -r vtex --verbose"
+  },
+  "billingOptions": {
+    "free": true
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",

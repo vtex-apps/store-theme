@@ -6,11 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Added
-- Add the breadcrumb component to the SearchPage and ProductPage
 
-### Fixed
-- Removed redundant Spinner in _ProductPage_ Component.
+### Added
+- **Breaking Change** Now, dreamstore-theme is a template based on `vtex.store`. 
+- Add free billing policy in `manifest.json`.
+- Add the breadcrumb component to the `SearchPage` and `ProductPage`.
+
+### Changed
+- Changed `postreleasy` script to publish only on vtex vendor.
 
 ## [0.3.5] - 2018-05-21
 ### Fixed
