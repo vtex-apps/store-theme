@@ -1,1 +1,1 @@
-import './store.global.css'
+import './store-global.css'
