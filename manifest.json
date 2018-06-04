@@ -13,7 +13,7 @@
   ],
   "settingsSchema": {},
   "scripts": {
-    "postreleasy": "vtex publish -r vtex --verbose"
+    "postreleasy": "vtex publish --public --verbose"
   },
   "billingOptions": {
     "free": true
