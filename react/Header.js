@@ -23,6 +23,8 @@ class Header extends Component {
 
   static propTypes = {
     name: PropTypes.string,
+    logoUrl: PropTypes.string.isRequired,
+    logoTitle: PropTypes.string.isRequired,
     intl: intlShape.isRequired,
   }
 
@@ -85,7 +87,7 @@ class Header extends Component {
 
   render() {
     const { account } = global.__RUNTIME__
-    const { name } = this.props
+    const { name, logoUrl, logoTitle } = this.props
     const { isAddToCart, hasError, showMenuPopup, error } = this.state
 
     return (
@@ -98,11 +100,18 @@ class Header extends Component {
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
-        <TopMenu name={name || account} />
+        <TopMenu 
+          logoUrl={logoUrl}
+          logoTitle={logoTitle}
+        />
         <ExtensionPoint id="category-menu" />
         {showMenuPopup && (
           <Modal>
-            <TopMenu name={name || account} fixed />
+            <TopMenu 
+              logoUrl={logoUrl}
+              logoTitle={logoTitle}
+              fixed
+            />
           </Modal>
         )}
         <div
