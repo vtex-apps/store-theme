@@ -23,8 +23,8 @@ class Header extends Component {
 
   static propTypes = {
     name: PropTypes.string,
-    logoUrl: PropTypes.string.isRequired,
-    logoTitle: PropTypes.string.isRequired,
+    logoUrl: PropTypes.string,
+    logoTitle: PropTypes.string,
     intl: intlShape.isRequired,
   }
 

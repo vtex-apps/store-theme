@@ -37,8 +37,8 @@ const TopMenu = ({ logoUrl, logoTitle, intl, fixed }) => {
 }
 
 TopMenu.propTypes = {
-  logoUrl: PropTypes.string.isRequired,
-  logoTitle: PropTypes.string.isRequired,
+  logoUrl: PropTypes.string,
+  logoTitle: PropTypes.string,
   intl: intlShape.isRequired,
   fixed: PropTypes.bool,
 }
