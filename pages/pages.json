@@ -9,6 +9,9 @@
     "store/header/minicart": {
       "component": "vtex.minicart/MiniCart"
     },
+    "store/header/login": {
+      "component": "vtex.store-components/Login"
+    },
     "store/header/menu-link": {
       "component": "vtex.menu/Menu"
     },
