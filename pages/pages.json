@@ -1,5 +1,19 @@
 {
+  "pages": {
+    "store/search/2": {
+      "path": "/:term/:term1/s"
+    },
+    "store/search/3": {
+      "path": "/:term/:term1/:term2/s"
+    }
+  },
   "extensions": {
+    "store/search/2": {
+      "component": "GalleryWrapper"
+    },
+    "store/search/3": {
+      "component": "GalleryWrapper"
+    },
     "store/theme": {
       "component": "Theme"
     },
@@ -39,8 +53,8 @@
     "store/search/container/1/breadcrumb": {
       "component": "vtex.breadcrumb/Breadcrumb"
     },
-    "store/search/container/1/gallery": {
-      "component": "vtex.gallery/Gallery"
+    "store/search/container/1/search-result": {
+      "component": "vtex.search-result/SearchResult"
     },
     "store/product/container": {
       "component": "vtex.render-runtime/ExtensionContainer"

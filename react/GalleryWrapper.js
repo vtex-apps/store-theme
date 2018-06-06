@@ -1,81 +1,40 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import QueryString from 'query-string'
 import { graphql } from 'react-apollo'
-
-import WrappedSpinner from './components/WrappedSpinner'
-import productsQuery from './queries/productsQuery.gql'
-
 import { ExtensionPoint } from 'render'
 
-class GalleryWrapper extends Component {
-  render() {
-    const { query, categories, data } = this.props
-    const loading = data.loading
+export default class GalleryWrapper extends Component {
+  constructor(props) {
+    super(props)
+    this.state = this.getSearchParamsFromUrl()
+  }
 
+  getSearchParamsFromUrl() {
+    const query = window.location && window.location.pathname.slice(1, -2)
+    const queryParams = window.location && QueryString.parse(window.location.search)
+    return {
+      query,
+      map: queryParams && queryParams.map,
+      orderBy: queryParams && queryParams.O,
+      page: parseInt((queryParams && queryParams.page) || 1),
+    }
+  }
+
+  componentWillReceiveProps() {
+    this.setState(this.getSearchParamsFromUrl())
+  }
+  
+  render() {
+    const { query, map, orderBy, page } = this.state
+    console.log('wrapper props', this.props)
     return (
-      <div>
-        {loading ? (
-          <WrappedSpinner />
-        ) : (
-          <div className="w-100">
-            <ExtensionPoint
-              id="gallery"
-              search={query}
-              categories={categories}
-              products={data.products}
-            />
-          </div>
-        )}
-      </div>
+      <ExtensionPoint id="search-result" pathName={query} map={map} orderBy={orderBy} page={page} />
     )
   }
 }
 
 GalleryWrapper.propTypes = {
-  query: PropTypes.string.isRequired,
+  query: PropTypes.string,
   categories: PropTypes.arrayOf(PropTypes.string),
-  /** Graphql data response. */
-  data: PropTypes.shape({
-    products: PropTypes.arrayOf(
-      PropTypes.shape({
-        productId: PropTypes.string.isRequired,
-        productName: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        categories: PropTypes.array,
-        link: PropTypes.string,
-        linkText: PropTypes.string.isRequired,
-        brand: PropTypes.string,
-        items: PropTypes.arrayOf(
-          PropTypes.shape({
-            itemId: PropTypes.string.isRequired,
-            name: PropTypes.string.isRequired,
-            referenceId: PropTypes.arrayOf(
-              PropTypes.shape({
-                Value: PropTypes.string.isRequired,
-              })
-            ),
-            images: PropTypes.arrayOf(
-              PropTypes.shape({
-                imageUrl: PropTypes.string.isRequired,
-                imageTag: PropTypes.string.isRequired,
-              })
-            ).isRequired,
-            sellers: PropTypes.arrayOf(
-              PropTypes.shape({
-                commertialOffer: PropTypes.shape({
-                  Price: PropTypes.number.isRequired,
-                  ListPrice: PropTypes.number.isRequired,
-                }).isRequired,
-              })
-            ).isRequired,
-          })
-        ).isRequired,
-      })
-    ),
-    loading: PropTypes.bool.isRequired,
-  }),
 }
-
-const GalleryWrapperWithData = graphql(productsQuery)(GalleryWrapper)
-
-export default GalleryWrapperWithData
