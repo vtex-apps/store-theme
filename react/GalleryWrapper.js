@@ -27,7 +27,6 @@ export default class GalleryWrapper extends Component {
   
   render() {
     const { query, map, orderBy, page } = this.state
-    console.log('wrapper props', this.props)
     return (
       <ExtensionPoint id="search-result" pathName={query} map={map} orderBy={orderBy} page={page} />
     )
