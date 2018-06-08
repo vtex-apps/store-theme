@@ -11,8 +11,11 @@ export default class GalleryWrapper extends Component {
   }
 
   getSearchParamsFromUrl() {
-    const query = window.location && window.location.pathname.slice(1, -2)
+    let query = window.location && window.location.pathname.slice(1)
     const queryParams = window.location && QueryString.parse(window.location.search)
+    if (queryParams && queryParams.Q) {
+      query = [query].concat(queryParams.Q.split(',')).join('/')
+    }
     return {
       query,
       map: queryParams && queryParams.map,
