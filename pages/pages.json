@@ -10,7 +10,7 @@
       "component": "vtex.minicart/MiniCart"
     },
     "store/header/login": {
-      "component": "vtex.store-components/Login"
+      "component": "vtex.login/Login"
     },
     "store/header/menu-link": {
       "component": "vtex.menu/Menu"
@@ -19,7 +19,7 @@
       "component": "vtex.category-menu/CategoryMenu"
     },
     "store/footer": {
-      "component": "vtex.storecomponents/Footer"
+      "component": "vtex.store-components/Footer"
     },
     "store/home/container": {
       "component": "vtex.render-runtime/ExtensionContainer"

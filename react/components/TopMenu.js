@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { intlShape, injectIntl } from 'react-intl'
-import SearchBar from 'vtex.storecomponents/SearchBar'
+import SearchBar from 'vtex.store-components/SearchBar'
 
 import { ExtensionPoint } from 'render'
 
@@ -12,7 +12,7 @@ const TopMenu = ({ name, intl, fixed }) => {
     <div
       className={`${
         fixed ? 'fixed mt4 top-2 shadow-5' : 'top-0'
-      } z-999 flex flex-wrap w-100 pa4 pa5-ns ph7-l bg-white tl`}
+        } z-999 flex flex-wrap w-100 pa4 pa5-ns ph7-l bg-white tl`}
     >
       <div className="flex pa4">
         <a className="link b f3 near-black tc tl-ns serious-black" href="/">
