@@ -26,3 +26,13 @@ body {
     display: none;
   }
 }
+
+.vtex-searchbar__container {
+  min-width: 350px;
+}
+
+@media only screen and (max-width: 400px) {
+  .vtex-searchbar__container {
+    min-width: 300px;
+  }
+}
