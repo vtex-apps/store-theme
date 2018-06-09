@@ -13,10 +13,7 @@
   ],
   "settingsSchema": {},
   "scripts": {
-    "postreleasy": "vtex publish --public --verbose"
-  },
-  "billingOptions": {
-    "free": true
+    "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
@@ -26,11 +23,12 @@
     "vtex.menu": "0.x",
     "vtex.minicart": "0.x",
     "vtex.product-details": "0.x",
-    "vtex.storecomponents": "1.x",
     "vtex.store-components": "1.x",
     "vtex.gallery": "0.x",
     "vtex.category-menu": "0.x",
     "vtex.breadcrumb": "0.x",
+    "vtex.login": "0.x",
+    "vtex.styleguide": "4.x",
     "vtex.store": "0.x"
   }
 }

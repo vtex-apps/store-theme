@@ -4,7 +4,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@vtex/styleguide": "^3.0.2",
     "prop-types": "^15.5.10",
     "react-slick": "^0.16.0"
   },
