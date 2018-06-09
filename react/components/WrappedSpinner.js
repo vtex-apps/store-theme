@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Spinner from '@vtex/styleguide/lib/Spinner'
+import { Spinner } from 'vtex.styleguide'
 
 export default class WrappedSpinner extends Component {
   render() {

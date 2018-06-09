@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { intlShape, injectIntl } from 'react-intl'
-import SearchBar from 'vtex.store-components/SearchBar'
+import { SearchBar } from 'vtex.store-components'
 
 import { ExtensionPoint } from 'render'
 

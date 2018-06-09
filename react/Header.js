@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl'
-import Alert from '@vtex/styleguide/lib/Alert'
+import { Alert } from 'vtex.styleguide'
 
 import { ExtensionPoint } from 'render'
 

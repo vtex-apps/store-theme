@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- _Login_ component to the _Header_
+- _Login_ component to the _Header_.
+- Add `vtex.styleguide` dependency.
 
 ## [1.0.0] - 2018-6-4
 ### Added
