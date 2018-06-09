@@ -10,12 +10,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - _Login_ component to the _Header_.
 - Add `vtex.styleguide` dependency.
 
-### Added
-- Integration of logo component.
-
-### Added
-- Integration of logo component.
-
 ## [1.0.0] - 2018-6-4
 ### Added
 - Add the breadcrumb component to the SearchPage and ProductPage
