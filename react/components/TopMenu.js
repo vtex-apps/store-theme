@@ -10,8 +10,8 @@ const TopMenu = ({ logoUrl, logoTitle, intl, fixed }) => {
   return (
     <div
       className={`${
-        fixed ? 'fixed mt4 top-2 shadow-5' : 'top-0'
-        } z-999 flex items-center flex-wrap w-100 pa4 pa5-ns ph8-l bg-white tl`}
+        fixed ? 'fixed top-0 shadow-5' : 'top-0'
+      } z-999 flex items-center flex-wrap w-100 pa4 pa5-ns ph8-l bg-white tl`}
     >
       <div className="flex pa4">
         <a className="link b f3 near-black tc tl-ns serious-black flex" href="/">
