@@ -13,6 +13,7 @@ export const TOAST_TIMEOUT = 3000
 class Header extends Component {
   constructor(props) {
     super(props)
+    this._root = React.createRef()
     this.state = {
       isAddToCart: false,
       hasError: false,
@@ -33,6 +34,8 @@ class Header extends Component {
     document.addEventListener('message:error', this.handleError)
     document.addEventListener('item:add', this.handleItemAdd)
     document.addEventListener('scroll', this.handleScroll)
+
+    this.handleScroll()
   }
 
   componentWillUnmount() {
@@ -67,12 +70,12 @@ class Header extends Component {
   }
 
   handleScroll = () => {
-    if (!this._el) {
+    if (!this._root.current) {
       return
     }
 
     const scroll = window.scrollY
-    const { scrollHeight } = this._el
+    const { scrollHeight } = this._root.current
 
     if (scroll < scrollHeight && this.state.showMenuPopup) {
       this.setState({
@@ -86,28 +89,25 @@ class Header extends Component {
   }
 
   render() {
-    const { account } = global.__RUNTIME__
-    const { name, logoUrl, logoTitle } = this.props
+    const { logoUrl, logoTitle } = this.props
     const { isAddToCart, hasError, showMenuPopup, error } = this.state
 
     return (
       <div
         className="relative z-2 w-100 shadow-5"
-        ref={e => {
-          this._el = e
-        }}
+        ref={this._root}
       >
         <div className="z-2 items-center w-100 top-0 bg-white tl">
           <ExtensionPoint id="menu-link" />
         </div>
-        <TopMenu 
+        <TopMenu
           logoUrl={logoUrl}
           logoTitle={logoTitle}
         />
         <ExtensionPoint id="category-menu" />
         {showMenuPopup && (
           <Modal>
-            <TopMenu 
+            <TopMenu
               logoUrl={logoUrl}
               logoTitle={logoTitle}
               fixed
