@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 - Remove dependency `vtex.gallery`
+- Remove `GalleryWrapper` component
 - Remove file `queries/productsQuery.gql`
 
 ## [1.1.0] - 2018-6-8

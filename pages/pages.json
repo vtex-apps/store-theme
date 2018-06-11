@@ -34,13 +34,10 @@
       "component": "vtex.render-runtime/ExtensionContainer"
     },
     "store/search/container/1": {
-      "component": "GalleryWrapper"
+      "component": "vtex.search-result/SearchResult"
     },
     "store/search/container/1/breadcrumb": {
       "component": "vtex.breadcrumb/Breadcrumb"
-    },
-    "store/search/container/1/search-result": {
-      "component": "vtex.search-result/SearchResult"
     },
     "store/product/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
