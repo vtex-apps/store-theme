@@ -24,7 +24,7 @@
     "vtex.minicart": "0.x",
     "vtex.product-details": "0.x",
     "vtex.store-components": "1.x",
-    "vtex.gallery": "0.x",
+    "vtex.search-result": "0.x",
     "vtex.category-menu": "0.x",
     "vtex.breadcrumb": "0.x",
     "vtex.login": "0.x",
