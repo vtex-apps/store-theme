@@ -29,7 +29,7 @@
     "vtex.breadcrumb": "0.x",
     "vtex.login": "0.x",
     "vtex.styleguide": "4.x",
-    "vtex.my-orders-app": "0.0",
+    "vtex.my-orders-app": "0.x",
     "vtex.store": "0.x"
   }
 }
