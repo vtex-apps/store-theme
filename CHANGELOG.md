@@ -8,15 +8,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ### Added
-- Add integration with `vtex.search-result`
+- Add integration with `vtex.search-result`.
+- Add integration with `vtex.my-orders-app`.
 
 ### Removed
-- Remove dependency `vtex.gallery`
-- Remove `GalleryWrapper` component
-- Remove file `queries/productsQuery.gql`
+- Remove dependency `vtex.gallery`.
+- Remove `GalleryWrapper` component.
+- Remove file `queries/productsQuery.gql`.
 
 ### Fixed
-- Adapt Top Menu CSS to integrate `vtex.login`
+- Adapt Top Menu CSS to integrate `vtex.login`.
 
 ## [1.1.0] - 2018-6-8
 ### Added
