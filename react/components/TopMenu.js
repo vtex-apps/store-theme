@@ -28,7 +28,7 @@ const TopMenu = ({ logoUrl, logoTitle, intl, fixed }) => {
         />
       </div>
       <div className="pr2 bg-black">
-        <ExtensionPoint id="minicart"/>
+        <ExtensionPoint id="minicart" />
         <ExtensionPoint id="login" />
       </div>
     </div>

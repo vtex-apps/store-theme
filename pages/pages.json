@@ -3,6 +3,9 @@
     "store/theme": {
       "component": "Theme"
     },
+    "store/account/container/1": {
+      "component": "vtex.my-orders-app/index"
+    },
     "store/header": {
       "component": "Header"
     },
