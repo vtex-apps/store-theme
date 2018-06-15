@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore-theme",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
