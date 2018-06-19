@@ -50,6 +50,9 @@
     },
     "store/product/container/2": {
       "component": "vtex.product-details/ProductDetails"
+    },
+    "store/product/container/3": {
+      "component": "vtex.shelf/RelatedProducts"
     }
   }
 }
