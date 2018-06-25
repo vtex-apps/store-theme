@@ -39,6 +39,15 @@
     "store/search/container/1": {
       "component": "vtex.search-result/SearchResult"
     },
+    "store/department/container/1": {
+      "component": "vtex.search-result/SearchResult"
+    },
+    "store/category/container/1": {
+      "component": "vtex.search-result/SearchResult"
+    },
+    "store/subcategory/container/1": {
+      "component": "vtex.search-result/SearchResult"
+    },
     "store/search/container/1/breadcrumb": {
       "component": "vtex.breadcrumb/Breadcrumb"
     },
