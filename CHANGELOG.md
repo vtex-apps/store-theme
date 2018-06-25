@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add `vtex.shelf/RelatedProducts` component to the product page.
 
+### Changed
+- `pages.json` to inject `search-result` into `CategoryPage`
+
 ## [1.2.2] - 2018-6-15
 ### Fixed
 - Fix incorrect build made by builder-hub
