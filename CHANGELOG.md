@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `pages.json` to inject `search-result` into `CategoryPage`
 
+### Fixed 
+- Remove the integration with `vtex.my-orders-app`. 
+
 ## [1.3.0] - 2018-6-20
 ### Added
 - Add `vtex.shelf/RelatedProducts` component to the product page.
