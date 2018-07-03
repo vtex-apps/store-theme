@@ -1,10 +1,7 @@
 {
   "dreamstore.soon": "Soon...",
   "dreamstore.search": "Search",
-  "dreamstore.search-placeholder": "Search for products, brands...",
-  "dreamstore.search-emptyPlaceholder": "No matches found",
   "dreamstore.cart": "Cart",
   "dreamstore.buy": "Buy",
-  "dreamstore.poweredBy": "POWERED BY",
-  "dreamstore.buy-success": "Your product was add to the cart!"
+  "dreamstore.poweredBy": "POWERED BY"
 }
