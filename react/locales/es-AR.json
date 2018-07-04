@@ -1,10 +1,7 @@
 {
   "dreamstore.soon": "Breve...",
   "dreamstore.search": "Buscar",
-  "dreamstore.search-placeholder": "Búsqueda por productos, marcas...",
-  "dreamstore.search-emptyPlaceholder": "Ningún resultado encontrado",
   "dreamstore.cart": "Carrito",
   "dreamstore.buy": "Comprar",
-  "dreamstore.poweredBy": "IMPULSADO POR VTEX",
-  "dreamstore.buy-success": "Su producto se ha agregado a la cesta!"
+  "dreamstore.poweredBy": "IMPULSADO POR VTEX"
 }

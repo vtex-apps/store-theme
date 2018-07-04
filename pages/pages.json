@@ -4,7 +4,7 @@
       "component": "Theme"
     },
     "store/header": {
-      "component": "Header"
+      "component": "vtex.store-components/Header"
     },
     "store/header/minicart": {
       "component": "vtex.minicart/MiniCart"
