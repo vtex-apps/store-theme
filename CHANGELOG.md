@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.4.0] - 2018-7-6
 ### Added
 - Add `SearchResult` to the brand page.
+- `vtex.login/LoginContent` to `store/login/container` extension point.
 
 ## [1.3.2] - 2018-7-4
 ### Changed
