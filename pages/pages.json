@@ -21,6 +21,9 @@
     "store/footer": {
       "component": "vtex.store-components/Footer"
     },
+    "store/login/container": {
+      "component": "vtex.login/LoginContent"
+    },
     "store/home/container": {
       "component": "vtex.render-runtime/ExtensionContainer"
     },
