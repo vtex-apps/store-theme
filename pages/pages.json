@@ -68,6 +68,9 @@
     },
     "store/product/container/4": {
       "component": "vtex.shelf/RelatedProducts"
+    },
+    "store/__loading": {
+      "component": "vtex.styleguide/Spinner"
     }
   }
 }
