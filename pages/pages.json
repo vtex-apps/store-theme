@@ -64,6 +64,9 @@
       "component": "vtex.product-details/ProductDetails"
     },
     "store/product/container/3": {
+      "component": "vtex.product-kit/ProductKit"
+    },
+    "store/product/container/4": {
       "component": "vtex.shelf/RelatedProducts"
     }
   }
