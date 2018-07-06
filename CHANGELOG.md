@@ -6,13 +6,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Removed
+- Moved `store/login/container` to `vtex.store`.
 
 ## [1.5.0] - 2018-7-6
+### Added 
+- `vtex.login/LoginContent` to `store/login/container` extension point.
 
 ## [1.4.0] - 2018-7-6
 ### Added
 - Add `SearchResult` to the brand page.
-- `vtex.login/LoginContent` to `store/login/container` extension point.
 
 ## [1.3.2] - 2018-7-4
 ### Changed
