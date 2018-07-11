@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
-    "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
     "vtex.product-summary": "0.x",
     "vtex.menu": "0.x",
@@ -27,11 +26,10 @@
     "vtex.search-result": "0.x",
     "vtex.category-menu": "0.x",
     "vtex.breadcrumb": "0.x",
+    "vtex.product-kit": "0.x",
     "vtex.login": "0.x",
     "vtex.styleguide": "4.x",
-    "vtex.render-runtime": "7.9.x",
-    "vtex.render-server": "7.4.x",
-    "vtex.store": "1.0.0-beta",
-    "vtex.product-kit": "0.x"
+    "vtex.carousel": "1.2.0-beta",
+    "vtex.store": "1.0.0-beta"
   }
 }
