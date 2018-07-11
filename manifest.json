@@ -31,7 +31,7 @@
     "vtex.styleguide": "4.x",
     "vtex.render-runtime": "7.9.x",
     "vtex.render-server": "7.4.x",
-    "vtex.store": "0.x",
+    "vtex.store": "1.0.0-beta",
     "vtex.product-kit": "0.x"
   }
 }
