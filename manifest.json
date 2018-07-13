@@ -29,7 +29,7 @@
     "vtex.login": "0.x",
     "vtex.styleguide": "4.x",
     "vtex.carousel": "1.x",
-    "vtex.store": "1.x",
+    "vtex.store": "0.x",
     "vtex.product-kit": "0.x"
   }
 }
