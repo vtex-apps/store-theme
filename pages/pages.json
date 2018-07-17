@@ -3,65 +3,210 @@
     "store/theme": {
       "component": "Theme"
     },
-    "store/header": {
-      "component": "vtex.store-components/Header"
-    },
-    "store/header/minicart": {
-      "component": "vtex.minicart/MiniCart"
-    },
-    "store/header/login": {
-      "component": "vtex.login/Login"
-    },
-    "store/header/menu-link": {
-      "component": "vtex.menu/Menu"
-    },
-    "store/header/category-menu": {
-      "component": "vtex.category-menu/CategoryMenu"
-    },
-    "store/footer": {
-      "component": "vtex.store-components/Footer"
-    },
-    "store/login/container/1": {
-      "component": "vtex.login/LoginContent"
-    },
-    "store/home/container/1": {
-      "component": "vtex.carousel/Carousel"
-    },
-    "store/home/container/2": {
-      "component": "vtex.shelf/Shelf"
-    },
-    "store/search/container/1": {
-      "component": "vtex.search-result/SearchResult"
-    },
-    "store/brand/container/1": {
-      "component": "vtex.search-result/SearchResult"
-    },
-    "store/department/container/1": {
-      "component": "vtex.search-result/SearchResult"
-    },
-    "store/category/container/1": {
-      "component": "vtex.search-result/SearchResult"
-    },
-    "store/subcategory/container/1": {
-      "component": "vtex.search-result/SearchResult"
-    },
-    "store/search/container/1/breadcrumb": {
-      "component": "vtex.breadcrumb/Breadcrumb"
-    },
-    "store/product/container/1": {
-      "component": "vtex.breadcrumb/Breadcrumb"
-    },
-    "store/product/container/2": {
-      "component": "vtex.product-details/ProductDetails"
-    },
-    "store/product/container/3": {
-      "component": "vtex.product-kit/ProductKit"
-    },
-    "store/product/container/4": {
-      "component": "vtex.shelf/RelatedProducts"
-    },
     "store/__loading": {
       "component": "vtex.styleguide/Spinner"
     }
+  },
+  "templates": {
+    "store": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/StoreContextProvider",
+      "props": {
+        "elements": [
+          "header",
+          "__children__",
+          "footer"
+        ]
+      },
+      "extensions": {
+        "header": {
+          "component": "vtex.store-components/Header"
+        },
+        "header/minicart": {
+          "component": "vtex.minicart/MiniCart"
+        },
+        "header/login": {
+          "component": "vtex.login/Login"
+        },
+        "header/menu-link": {
+          "component": "vtex.menu/Menu"
+        },
+        "header/category-menu": {
+          "component": "vtex.category-menu/CategoryMenu"
+        },
+        "footer": {
+          "component": "vtex.store-components/Footer"
+        }
+      }
+    },
+    "product": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductContextProvider",
+      "props": {
+        "elements": [
+          "breadcrumb",
+          "details",
+          "kit",
+          "related"
+        ]
+      },
+      "extensions": {
+        "breadcrumb": {
+          "component": "vtex.breadcrumb/Breadcrumb"
+        },
+        "details": {
+          "component": "vtex.product-details/ProductDetails"
+        },
+        "kit": {
+          "component": "vtex.product-kit/ProductKit"
+        },
+        "related": {
+          "component": "vtex.shelf/RelatedProducts"
+        }
+      }
+    },
+    "search": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductSearchContextProvider",
+      "props": {
+        "elements": [
+          "banner",
+          "results"
+        ]
+      },
+      "extensions": {
+        "banner": {
+          "component": "vtex.carousel/Carousel"
+        },
+        "results": {
+          "component": "vtex.search-result/SearchResult"
+        }
+      }
+    },
+    "login": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": [
+          "login"
+        ]
+      },
+      "extensions": {
+        "login": {
+          "component": "vtex.login/LoginContent"
+        }
+      }
+    },
+    "home": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": [
+          "carousel",
+          "shelf"
+        ]
+      },
+      "extensions": {
+        "carousel": {
+          "component": "vtex.carousel/Carousel"
+        },
+        "shelf": {
+          "component": "vtex.shelf/Shelf"
+        }
+      }
+    },
+    "orders": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": [
+          "myOrdersApp"
+        ]
+      },
+      "extensions": {
+        "myOrdersApp": {
+          "component": "vtex.my-orders-app/index"
+        }
+      }
+    },
+    "simple": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": [
+          "container"
+        ]
+      }
+    }
+  },
+  "pages": {
+    "store": [
+      {
+        "name": "Default",
+        "template": "store"
+      }
+    ],
+    "store/home": [
+      {
+        "name": "Default",
+        "template": "home"
+      }
+    ],
+    "store/account": [
+      {
+        "name": "Default",
+        "template": "simple"
+      }
+    ],
+    "store/account/orders": [
+      {
+        "name": "Default",
+        "template": "orders"
+      }
+    ],
+    "store/compare": [
+      {
+        "name": "Default",
+        "template": "simple"
+      }
+    ],
+    "store/login": [
+      {
+        "name": "Default",
+        "template": "login"
+      }
+    ],
+    "store/brand": [
+      {
+        "name": "Default",
+        "template": "search"
+      }
+    ],
+    "store/department": [
+      {
+        "name": "Default",
+        "template": "search"
+      }
+    ],
+    "store/category": [
+      {
+        "name": "Default",
+        "template": "search"
+      }
+    ],
+    "store/subcategory": [
+      {
+        "name": "Default",
+        "template": "search"
+      }
+    ],
+    "store/search": [
+      {
+        "name": "Default",
+        "template": "search"
+      }
+    ],
+    "store/product": [
+      {
+        "name": "Default",
+        "template": "product"
+      }
+    ]
   }
 }
