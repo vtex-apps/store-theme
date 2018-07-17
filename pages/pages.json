@@ -10,6 +10,7 @@
   "templates": {
     "store": {
       "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
         "elements": [
           "header",
@@ -40,6 +41,7 @@
     },
     "product": {
       "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
         "elements": [
           "breadcrumb",
@@ -65,6 +67,7 @@
     },
     "search": {
       "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductSearchContextProvider",
       "props": {
         "elements": [
           "banner",
