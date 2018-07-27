@@ -27,7 +27,7 @@
     "vtex.search-result": "0.x",
     "vtex.category-menu": "0.x",
     "vtex.breadcrumb": "0.x",
-    "vtex.login": "0.x",
+    "vtex.login": "1.x",
     "vtex.styleguide": "4.x",
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
