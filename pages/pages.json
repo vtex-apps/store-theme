@@ -113,18 +113,16 @@
         }
       }
     },
-    "orders": {
+    "account": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
         "elements": [
-          "myOrdersApp"
+          "__children__"
         ]
-      },
-      "extensions": {
-        "myOrdersApp": {
-          "component": "vtex.my-orders-app/index"
-        }
       }
+    },
+    "orders": {
+      "component": "vtex.my-orders-app/index"
     },
     "simple": {
       "component": "vtex.render-runtime/LayoutContainer",
@@ -151,7 +149,7 @@
     "store/account": [
       {
         "name": "Default",
-        "template": "simple"
+        "template": "account"
       }
     ],
     "store/account/orders": [
