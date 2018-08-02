@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.9.4] - 2018-08-02
+### Changed
+- Bump `vtex.styleguide` major version. 
+
 ## [1.9.3] - 2018-07-30
 ### Fixed
 - Fix the `my-orders` rendering error.

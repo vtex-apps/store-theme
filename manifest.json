@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore-theme",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -28,7 +28,7 @@
     "vtex.category-menu": "0.x",
     "vtex.breadcrumb": "0.x",
     "vtex.login": "1.x",
-    "vtex.styleguide": "4.x",
+    "vtex.styleguide": "5.x",
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
     "vtex.product-kit": "0.x"
