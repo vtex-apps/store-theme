@@ -119,7 +119,7 @@
       },
       "extensions": {
         "header": {
-          "component": "DepartmentHeader"
+          "component": "vtex.render-runtime/ExtensionContainer"
         },
         "header/carousel": {
           "component": "vtex.carousel/Carousel"
