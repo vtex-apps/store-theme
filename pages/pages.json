@@ -12,11 +12,7 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": [
-          "header",
-          "__children__",
-          "footer"
-        ]
+        "elements": ["header", "__children__", "footer"]
       },
       "extensions": {
         "header": {
@@ -34,6 +30,9 @@
         "header/category-menu": {
           "component": "vtex.category-menu/CategoryMenu"
         },
+        "header/impersonate": {
+          "component": "vtex.impersonate/Impersonate"
+        },
         "footer": {
           "component": "vtex.store-components/Footer"
         }
@@ -43,12 +42,7 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
-        "elements": [
-          "breadcrumb",
-          "details",
-          "kit",
-          "related"
-        ]
+        "elements": ["breadcrumb", "details", "kit", "related"]
       },
       "extensions": {
         "breadcrumb": {
@@ -69,10 +63,7 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "context": "vtex.store@1.x/ProductSearchContextProvider",
       "props": {
-        "elements": [
-          "banner",
-          "results"
-        ]
+        "elements": ["banner", "results"]
       },
       "extensions": {
         "banner": {
@@ -86,9 +77,7 @@
     "login": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "login"
-        ]
+        "elements": ["login"]
       },
       "extensions": {
         "login": {
@@ -99,10 +88,7 @@
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "carousel",
-          "shelf"
-        ]
+        "elements": ["carousel", "shelf"]
       },
       "extensions": {
         "carousel": {
@@ -116,9 +102,7 @@
     "account": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "__children__"
-        ]
+        "elements": ["__children__"]
       }
     },
     "orders": {
@@ -127,9 +111,7 @@
     "simple": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "container"
-        ]
+        "elements": ["container"]
       }
     }
   },

@@ -8,9 +8,7 @@
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -31,6 +29,7 @@
     "vtex.styleguide": "5.x",
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
-    "vtex.product-kit": "0.x"
+    "vtex.product-kit": "0.x",
+    "vtex.impersonate": "0.x"
   }
 }
