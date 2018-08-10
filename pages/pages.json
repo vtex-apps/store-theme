@@ -30,8 +30,8 @@
         "header/category-menu": {
           "component": "vtex.category-menu/CategoryMenu"
         },
-        "header/impersonate": {
-          "component": "vtex.impersonate/Impersonate"
+        "header/impersonate-customer": {
+          "component": "vtex.impersonate-customer/ImpersonateCustomer"
         },
         "footer": {
           "component": "vtex.store-components/Footer"
