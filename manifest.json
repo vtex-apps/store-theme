@@ -30,6 +30,6 @@
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
     "vtex.product-kit": "0.x",
-    "vtex.impersonate": "0.x"
+    "vtex.impersonate-customer": "0.x"
   }
 }
