@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Component `ImpersonateCustomer` to `Header`.
+- DepartmentHeader component to wrap Carousel and MainCategories components.
+- Department page template.
 
 ## [1.9.4] - 2018-08-02
 ### Changed
