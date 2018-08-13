@@ -31,7 +31,7 @@
           "component": "vtex.category-menu/CategoryMenu"
         },
         "header/impersonate-customer": {
-          "component": "vtex.impersonate-customer/ImpersonateCustomer"
+          "component": "vtex.impersonate-customer/index"
         },
         "footer": {
           "component": "vtex.store-components/Footer"
