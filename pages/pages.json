@@ -12,7 +12,7 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": ["header", "__children__", "footer"]
+        "elements": ["header", "__children__", "footer", "additionalComponent"]
       },
       "extensions": {
         "header": {
@@ -32,6 +32,9 @@
         },
         "footer": {
           "component": "vtex.store-components/Footer"
+        },
+        "additionalComponent": {
+          "component": "vtex.render-runtime/ExtensionContainer"
         }
       }
     },
