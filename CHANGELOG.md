@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- `CategoriesHighlights` to `CategoriesHightlighted`.
+
 ### Added
 - DepartmentHeader component to wrap Carousel and MainCategories components.
 - Department page template.
