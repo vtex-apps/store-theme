@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.10.1] - 2018-08-15
+
 ### Changed
 - `CategoriesHighlights` to `CategoriesHightlighted`.
 - Bump `vtex.telemarketing` to 1.x.
