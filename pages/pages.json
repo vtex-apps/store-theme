@@ -103,8 +103,8 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
         "elements": [
-          "carousel",
-          "shelf"
+          "shelf",
+          "carousel"
         ]
       },
       "extensions": {
