@@ -152,7 +152,7 @@
           "component": "vtex.carousel/Carousel"
         },
         "header/categories": {
-          "component": "vtex.store-components/CategoriesHighlighted"
+          "component": "vtex.store-components/CategoriesHighlights"
         },
         "results": {
           "component": "vtex.search-result/SearchResult"
