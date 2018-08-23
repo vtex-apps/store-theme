@@ -82,7 +82,10 @@
           "component": "vtex.carousel/Carousel"
         },
         "results": {
-          "component": "vtex.search-result/SearchResult"
+          "component": "vtex.search-result/index"
+        },
+        "results/breadcrumb": {
+          "component": "vtex.breadcrumb/Breadcrumb"
         }
       }
     },
@@ -155,7 +158,7 @@
           "component": "vtex.store-components/CategoriesHighlights"
         },
         "results": {
-          "component": "vtex.search-result/SearchResult"
+          "component": "vtex.search-result/index"
         }
       }
     }
