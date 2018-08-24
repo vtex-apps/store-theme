@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -24,7 +24,7 @@
     "vtex.my-orders-app": "1.x",
     "vtex.product-details": "0.x",
     "vtex.store-components": "1.x",
-    "vtex.search-result": "0.x",
+    "vtex.search-result": "1.x",
     "vtex.category-menu": "1.x",
     "vtex.breadcrumb": "0.x",
     "vtex.login": "1.x",
