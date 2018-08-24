@@ -32,7 +32,7 @@
           "component": "vtex.menu/Menu"
         },
         "header/category-menu": {
-          "component": "vtex.category-menu/CategoryMenu"
+          "component": "vtex.category-menu/index"
         },
         "header/telemarketing": {
           "component": "vtex.telemarketing/index"
