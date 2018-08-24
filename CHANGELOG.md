@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.12.1] - 2018-08-24
+### Fixed
+- Fix carousel position in home page.
+
 ## [1.12.0] - 2018-08-24
 ### Changed
 - Renamed `SearchResult` to `index`.
