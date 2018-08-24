@@ -13,12 +13,19 @@
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
         "elements": [
+          "pixel",
           "header",
           "__children__",
           "footer"
         ]
       },
       "extensions": {
+        "pixel": {
+          "component": "vtex.render-runtime/ExtensionContainer"
+        },
+        "pixel/adwords": {
+          "component": "vtex.adwords/index"
+        },
         "header": {
           "component": "vtex.dreamstore-header/index"
         },
