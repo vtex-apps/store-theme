@@ -123,8 +123,14 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
         "elements": [
+          "account",
           "__children__"
         ]
+      },
+      "extensions": {
+        "account": {
+          "component": "vtex.my-account/index"
+        }
       }
     },
     "orders": {
