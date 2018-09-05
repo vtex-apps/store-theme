@@ -123,12 +123,14 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
         "elements": [
-          "__children__"
+          "account"
         ]
+      },
+      "extensions": {
+        "account": {
+          "component": "vtex.my-account/index"
+        }
       }
-    },
-    "orders": {
-      "component": "vtex.my-orders-app/index"
     },
     "simple": {
       "component": "vtex.render-runtime/LayoutContainer",
@@ -180,12 +182,6 @@
       {
         "name": "Default",
         "template": "account"
-      }
-    ],
-    "store/account/orders": [
-      {
-        "name": "Default",
-        "template": "orders"
       }
     ],
     "store/compare": [

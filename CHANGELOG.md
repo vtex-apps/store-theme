@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.13.1] - 2018-09-05
+### Fixed
+- Fix malformed release.
+
+## [1.13.0] - 2018-09-05
+### Added
+- Add `vtex.my-account` app.
+
 ## [1.12.2] - 2018-08-30
 ### Changed
 - Bump version of `vtex.store-components` and `vtex.styleguide`.
