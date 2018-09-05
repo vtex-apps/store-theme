@@ -6,13 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Fix malformed release.
 
 ## [1.13.0] - 2018-09-05
 ### Added
 - Add `vtex.my-account` app.
-
-### Changed
-- Hide routing header of my-orders in mobile mode.
 
 ## [1.12.2] - 2018-08-30
 ### Changed
