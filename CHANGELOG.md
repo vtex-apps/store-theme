@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Page padding class to allow apps to have same default padding.
 
+### Removed
+- Unused dependency `vtex.product-summary`
+
+## [1.13.2] - 2018-09-05
+### Fixed
+- **HotFix** Remove telemarketing app from dreamstore.
 ## [1.13.1] - 2018-09-05
 ### Fixed
 - Fix malformed release.
