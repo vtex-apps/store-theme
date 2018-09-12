@@ -36,3 +36,52 @@ body {
     min-width: 300px;
   }
 }
+
+/*
+  Media Query Extensions:
+  -s  = 20em
+  -ns  = 40em
+  -m  = 40em
+  -l  = 64em
+  -xl  = 80em
+*/
+
+.vtex-page-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 40em) {
+  .vtex-page-padding {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .vtex-page-padding {
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .vtex-page-padding {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .vtex-page-padding {
+    padding-left: 15.625rem;
+    padding-right: 15.625rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .vtex-page-padding {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
