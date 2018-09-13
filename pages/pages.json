@@ -34,6 +34,9 @@
         "header/category-menu": {
           "component": "vtex.category-menu/index"
         },
+        "header/logo": {
+          "component": "vtex.store-components/Logo"
+        },
         "footer": {
           "component": "vtex.store-components/Footer"
         }
