@@ -20,7 +20,7 @@
       },
       "extensions": {
         "header": {
-          "component": "vtex.store-components/Header"
+          "component": "vtex.header/index"
         },
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
