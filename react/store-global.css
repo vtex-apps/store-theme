@@ -21,12 +21,6 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 640px) {
-  .vtex-category-menu {
-    display: none;
-  }
-}
-
 .vtex-searchbar__container {
   min-width: 350px;
 }
