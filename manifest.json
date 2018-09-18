@@ -32,6 +32,6 @@
     "vtex.store": "1.x",
     "vtex.product-kit": "0.x",
     "vtex.telemarketing": "1.x",
-    "vtex.header": "0.x"
+    "vtex.header": "1.x"
   }
 }
