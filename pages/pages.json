@@ -20,7 +20,7 @@
       },
       "extensions": {
         "header": {
-          "component": "vtex.header/index"
+          "component": "vtex.dreamstore-header/index"
         },
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
