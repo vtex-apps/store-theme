@@ -22,6 +22,9 @@
         "header": {
           "component": "vtex.store-components/Header"
         },
+        "header/telemarketing": {
+          "component": "vtex.telemarketing/index"
+        },
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
         },
