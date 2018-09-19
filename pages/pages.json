@@ -22,6 +22,9 @@
         "header": {
           "component": "vtex.dreamstore-header/index"
         },
+        "header/telemarketing": {
+          "component": "vtex.telemarketing/index"
+        },
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
         },
