@@ -33,6 +33,6 @@
     "vtex.product-kit": "0.x",
     "vtex.telemarketing": "1.x",
     "vtex.dreamstore-header": "1.x",
-    "vtex.footer": "0.x"
+    "vtex.dreamstore-footer": "1.x"
   }
 }

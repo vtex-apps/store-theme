@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- Import footer from the new app `vtex.footer`.
+- Import footer from the new app `vtex.dreamstore-footer`.
 
 ## [1.15.2] - 2018-09-20
 ### Fixed
