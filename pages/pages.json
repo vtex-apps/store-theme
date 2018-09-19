@@ -44,7 +44,7 @@
           "component": "vtex.store-components/SearchBar"
         },
         "footer": {
-          "component": "vtex.dreamstore-footer/index"
+          "component": "vtex.footer/index"
         }
       }
     },
