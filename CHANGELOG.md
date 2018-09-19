@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.15.0] - 2018-09-18
+### Added
+- `Header` standalone component.
+
 ## [1.14.1] - 2018-09-18
 ### Added
 - Add again Telemarketing app to the Header extension point.
+
 ## [1.14.0] - 2018-09-14
 ### Added
 - `Logo` and `SearchBar` as extensions of the `Header`. 

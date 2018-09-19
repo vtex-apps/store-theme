@@ -20,7 +20,7 @@
       },
       "extensions": {
         "header": {
-          "component": "vtex.store-components/Header"
+          "component": "vtex.dreamstore-header/index"
         },
         "header/telemarketing": {
           "component": "vtex.telemarketing/index"
