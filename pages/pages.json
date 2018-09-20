@@ -53,18 +53,17 @@
       "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
         "elements": [
-          "breadcrumb",
           "details",
           "kit",
           "related"
         ]
       },
       "extensions": {
-        "breadcrumb": {
-          "component": "vtex.breadcrumb/Breadcrumb"
-        },
         "details": {
           "component": "vtex.product-details/ProductDetails"
+        },
+        "details/breadcrumb": {
+          "component": "vtex.breadcrumb/Breadcrumb"
         },
         "kit": {
           "component": "vtex.product-kit/ProductKit"

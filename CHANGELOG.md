@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Remove `package-lock.json` from react/ folder.
 
+## [1.15.1] - 2018-09-19
+### Changed
+- Moved product details breadcrumb to be inside of the `ProductDetails`.
+
 ## [1.15.0] - 2018-09-18
 ### Added
 - `Header` standalone component.
