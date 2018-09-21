@@ -91,6 +91,15 @@
         },
         "results/breadcrumb": {
           "component": "vtex.breadcrumb/Breadcrumb"
+        },
+        "results/gallery": {
+          "component": "vtex.search-result/Gallery"
+        },
+        "results/gallery/product-summary": {
+          "component": "vtex.product-summary/index"
+        },
+        "results/filter-navigator": {
+          "component": "vtex.search-result/FilterNavigator"
         }
       }
     },
