@@ -23,8 +23,11 @@
         "pixel": {
           "component": "vtex.render-runtime/ExtensionContainer"
         },
-        "pixel/adwords": {
-          "component": "vtex.adwords/index"
+        "pixel/google-adwords": {
+          "component": "vtex.google-adwords/index"
+        },
+        "pixel/google-tag-manager": {
+          "component": "vtex.google-tag-manager/index"
         },
         "header": {
           "component": "vtex.dreamstore-header/index"
