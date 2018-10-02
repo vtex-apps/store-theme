@@ -153,30 +153,6 @@
           "container"
         ]
       }
-    },
-    "department": {
-      "component": "vtex.render-runtime/LayoutContainer",
-      "context": "vtex.store@1.x/ProductSearchContextProvider",
-      "props": {
-        "elements": [
-          "header",
-          "results"
-        ]
-      },
-      "extensions": {
-        "header": {
-          "component": "vtex.render-runtime/ExtensionContainer"
-        },
-        "header/carousel": {
-          "component": "vtex.carousel/Carousel"
-        },
-        "header/categories": {
-          "component": "vtex.store-components/CategoriesHighlights"
-        },
-        "results": {
-          "component": "vtex.search-result/index"
-        }
-      }
     }
   },
   "pages": {
@@ -219,7 +195,7 @@
     "store/department": [
       {
         "name": "Default",
-        "template": "department"
+        "template": "search"
       }
     ],
     "store/category": [
