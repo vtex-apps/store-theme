@@ -32,6 +32,9 @@
         "pixel/facebook-pixel": {
           "component": "vtex.facebook-pixel/index"
         },
+        "pixel/request-capture": {
+          "component": "vtex.request-capture-app/index"
+        },
         "header": {
           "component": "vtex.dreamstore-header/index"
         },

@@ -37,6 +37,7 @@
     "vtex.dreamstore-footer": "1.x",
     "vtex.google-adwords": "0.x",
     "vtex.google-tag-manager": "0.x",
-    "vtex.facebook-pixel": "0.x"
+    "vtex.facebook-pixel": "0.x",
+    "vtex.request-capture-app": "0.x"
   }
 }
