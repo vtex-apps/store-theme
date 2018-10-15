@@ -26,9 +26,6 @@
         "pixel/google-adwords": {
           "component": "vtex.google-adwords/index"
         },
-        "pixel/google-tag-manager": {
-          "component": "vtex.google-tag-manager/index"
-        },
         "pixel/facebook-pixel": {
           "component": "vtex.facebook-pixel/index"
         },
