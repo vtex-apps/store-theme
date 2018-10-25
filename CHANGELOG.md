@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.18.1] - 2018-10-25
+
 ## [1.18.0] - 2018-10-02
 ### Added
 - Component definitions for `vtex.search-result` new extension points.
