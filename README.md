@@ -1,5 +1,5 @@
 # Dreamstore
-The default VTEX Render store template
+Default store of VTEX IO platform.
 
 ### Dependencies
 All apps that you see in Dreamstore are open source too. Production ready, you can found those apps in this GitHub organization. 
