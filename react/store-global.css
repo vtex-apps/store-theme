@@ -45,10 +45,17 @@ body {
   padding-right: 0;
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (max-width: 40em) {
   .vtex-page-padding {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .vtex-page-padding {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
   }
 }
 
@@ -63,19 +70,5 @@ body {
   .vtex-page-padding {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
-  }
-}
-
-@media screen and (min-width: 100em) {
-  .vtex-page-padding {
-    padding-left: 15.625rem;
-    padding-right: 15.625rem;
-  }
-}
-
-@media screen and (min-width: 120em) {
-  .vtex-page-padding {
-    padding-left: 20rem;
-    padding-right: 20rem;
   }
 }
