@@ -6,7 +6,7 @@
     "store/__loading": {
       "component": "Loading"
     },
-    "store/__icons/dreamstore": {
+    "store/__icons": {
       "component": "IconPack"
     }
   },
