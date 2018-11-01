@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Fixed
-- Fix paddings to match header
+- Fix paddings to match header.
 
 ## [1.18.2] - 2018-11-01
 ### Added
