@@ -7,7 +7,7 @@ const IconPack = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0" className="dn">
       <defs>
-        <g id="ds-grid">
+        <g id="grid">
           <rect width="6.73684" height="7" fill="currentColor" />
           <rect x="9.2627" width="6.73684" height="7" fill="currentColor" />
           <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 9.2627 9)" fill="currentColor" />
@@ -18,7 +18,7 @@ const IconPack = () => {
           <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 0 19)" fill="currentColor" />
         </g>
 
-        <g id="ds-inline-grid">
+        <g id="inline-grid">
           <rect y="14" width="5" height="5" fill="currentColor" />
           <rect y="7" width="5" height="5" fill="currentColor" />
           <rect width="5" height="5" fill="currentColor" />
@@ -30,12 +30,12 @@ const IconPack = () => {
           <rect x="7" y="17" width="12" height="2" fill="currentColor" />
         </g>
 
-        <g id="ds-single-item-grid">
+        <g id="single-item-grid">
           <rect width="10" height="14" fill="currentColor" />
           <rect y="16" width="10" height="3" fill="currentColor" />
         </g>
 
-        <g id="ds-check">
+        <g id="check">
           <rect
             width="9"
             height="9"
@@ -50,38 +50,38 @@ const IconPack = () => {
         </g>
 
         <path
-          id="ds-check-tick"
+          id="check-tick"
           d="M11 1.85294L9.25 0L4.25 5.29412L1.75 2.64706L0 4.5L4.25 9L11 1.85294Z"
           fill="#4F4F4F"
         />
 
         <path
-          id="ds-arrow-up"
+          id="arrow-up"
           transform="translate(14 9.23999) rotate(180)"
           d="M7.72356 8.48154C7.32958 8.89452 6.67042 8.89452 6.27644 8.48154L0 1.90235L1.81481 0L7 5.43529L12.1852 0L14 1.90235L7.72356 8.48154Z"
           fill="#BDBDBD"
         />
 
         <path
-          id="ds-arrow-down"
+          id="arrow-down"
           d="M7.72356 8.48154C7.32958 8.89452 6.67042 8.89452 6.27644 8.48154L0 1.90235L1.81481 0L7 5.43529L12.1852 0L14 1.90235L7.72356 8.48154Z"
           fill="#BDBDBD"
         />
 
         <path
-          id="ds-arrow-right"
+          id="arrow-right"
           d="M4.70449 4.30069C4.31457 4.68774 3.68543 4.68774 3.29551 4.30069L0 1.02941L1.03704 0L4 2.94118L6.96296 0L8 1.02941L4.70449 4.30069Z"
           transform="translate(0 8) rotate(-90)"
           fill="#979899"
         />
 
         <path
-          id="ds-home"
+          id="home"
           fill="currentColor"
           d="M557.1 240.7L512 203.8V104c0-4.4-3.6-8-8-8h-32c-4.4 0-8 3.6-8 8v60.5L313.4 41.1c-14.7-12.1-36-12.1-50.7 0L18.9 240.7c-3.4 2.8-3.9 7.8-1.1 11.3l20.3 24.8c2.8 3.4 7.8 3.9 11.3 1.1l14.7-12V464c0 8.8 7.2 16 16 16h168c4.4 0 8-3.6 8-8V344h64v128c0 4.4 3.6 8 8 8h168c8.8 0 16-7.2 16-16V265.8l14.7 12c3.4 2.8 8.5 2.3 11.3-1.1l20.3-24.8c2.6-3.4 2.1-8.4-1.3-11.2zM464 432h-96V304c0-4.4-3.6-8-8-8H216c-4.4 0-8 3.6-8 8v128h-96V226.5l170.9-140c2.9-2.4 7.2-2.4 10.1 0l170.9 140V432z"
         />
 
-        <g id="ds-profile">
+        <g id="profile">
           <path
             d="M13.3333 6.66667C13.3333 10.3486 10.3486 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667Z"
             transform="translate(15.333 10)"
@@ -108,7 +108,7 @@ const IconPack = () => {
           />
         </g>
 
-        <g id="ds-eyesight-disable" transform="translate(0, 0)">
+        <g id="eyesight-disable" transform="translate(0, 0)">
           <path
             fill="currentColor"
             d="M14.6,5.6l-8.2,8.2C6.9,13.9,7.5,14,8,14c3.6,0,6.4-3.1,7.6-4.9c0.5-0.7,0.5-1.6,0-2.3C15.4,6.5,15,6.1,14.6,5.6z"
@@ -119,14 +119,14 @@ const IconPack = () => {
           />
         </g>
 
-        <g id="ds-eyesight-enable" transform="translate(0, 0)">
+        <g id="eyesight-enable" transform="translate(0, 0)">
           <path
             fill="currentColor"
             d="M8,14c3.6,0,6.4-3.1,7.6-4.9c0.5-0.7,0.5-1.6,0-2.3C14.4,5.1,11.6,2,8,2C4.4,2,1.6,5.1,0.4,6.9c-0.5,0.7-0.5,1.6,0,2.2C1.6,10.9,4.4,14,8,14z M8,5c1.7,0,3,1.3,3,3s-1.3,3-3,3S5,9.7,5,8S6.3,5,8,5z"
           />
         </g>
 
-        <g id="ds-telemarketing">
+        <g id="telemarketing">
           <rect
             width="19"
             height="19"
@@ -198,7 +198,7 @@ const IconPack = () => {
           />
         </g>
 
-        <g id="ds-customer">
+        <g id="customer">
           <rect
             width="19"
             height="19"
