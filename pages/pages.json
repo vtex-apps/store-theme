@@ -5,6 +5,9 @@
     },
     "store/__loading": {
       "component": "Loading"
+    },
+    "store/__icons": {
+      "component": "IconPack"
     }
   },
   "templates": {
