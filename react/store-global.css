@@ -43,32 +43,33 @@ body {
 .vtex-page-padding {
   padding-left: 0;
   padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 20em) {
   .vtex-page-padding {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 }
 
 @media only screen and (min-width: 40em) {
   .vtex-page-padding {
-    padding-left: 3.25rem;
-    padding-right: 3.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
   .vtex-page-padding {
-    padding-left: 4.375rem;
-    padding-right: 4.375rem;
+    width: 90%;
   }
 }
 
 @media screen and (min-width: 80em) {
   .vtex-page-padding {
-    padding-left: 8.75rem;
-    padding-right: 8.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
