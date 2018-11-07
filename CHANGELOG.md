@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.18.3] - 2018-11-07
+### Fixed
+- Fix paddings to match header.
+
 ## [1.18.2] - 2018-11-01
 ### Added
 - `IconPack` component to serve the icon used by the dreamstore components.
