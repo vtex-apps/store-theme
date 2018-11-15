@@ -35,4 +35,3 @@ npm-debug.log
 lib
 .eslintrc
 *.orig
-react/package-lock.json
