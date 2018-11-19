@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Update `login` versions to 2.x.
 
-
 ## [1.18.3] - 2018-11-07
 ### Fixed
 - Fix paddings to match header.
