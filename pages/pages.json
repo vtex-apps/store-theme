@@ -162,6 +162,31 @@
           "container"
         ]
       }
+    },
+    "landing": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": [
+          "results"
+        ]
+      },
+      "extensions": {
+        "results": {
+          "component": "vtex.search-result/index"
+        },
+        "results/breadcrumb": {
+          "component": "vtex.breadcrumb/Breadcrumb"
+        },
+        "results/gallery": {
+          "component": "vtex.search-result/Gallery"
+        },
+        "results/gallery/product-summary": {
+          "component": "vtex.product-summary/index"
+        },
+        "results/filter-navigator": {
+          "component": "vtex.search-result/FilterNavigator"
+        }
+      }
     }
   },
   "pages": {

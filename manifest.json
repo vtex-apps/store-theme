@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "vtex.store-graphql": "2.x",
-    "vtex.shelf": "0.x",
+    "vtex.shelf": "1.x",
     "vtex.menu": "1.x",
     "vtex.minicart": "1.x",
     "vtex.my-account": "0.x",
@@ -27,13 +27,13 @@
     "vtex.search-result": "2.x",
     "vtex.category-menu": "1.x",
     "vtex.breadcrumb": "0.x",
-    "vtex.login": "1.x",
+    "vtex.login": "2.x",
     "vtex.styleguide": "7.x",
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
-    "vtex.product-kit": "0.x",
-    "vtex.telemarketing": "1.x",
-    "vtex.dreamstore-header": "1.x",
+    "vtex.product-kit": "1.x",
+    "vtex.telemarketing": "2.x",
+    "vtex.dreamstore-header": "2.x",
     "vtex.dreamstore-footer": "1.x"
   }
 }
