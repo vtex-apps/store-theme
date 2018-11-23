@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.19.0] - 2018-11-23
+### Added
+- Extension point definition for not found results page.
+
 ## [1.18.3] - 2018-11-07
 ### Fixed
 - Fix paddings to match header.
