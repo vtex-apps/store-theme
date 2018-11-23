@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.19.1] - 2018-11-23
+### Changed
+- Update `profile` icon from `IconPack`. 
+- Add `minicart` icon in `IconPack`.
+
 ## [1.19.0] - 2018-11-23
 ### Added
 - Extension point definition for not found results page.
