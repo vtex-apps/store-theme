@@ -1,5 +1,27 @@
 @import url(//io.vtex.com.br/fonts/fabriga/stylesheet.css);
 
+/*
+  Media Query Extensions:
+  -s  = 20em
+  -ns  = 40em
+  -m  = 40em
+  -l  = 64em
+  -xl  = 80em
+*/
+:root {
+  --font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+  helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+  --color-white: #FFFFFF;
+  
+  --global-pd: 0rem;
+  --global-pd-s: .5rem;
+  --global-pd-m: 2rem;
+  --global-pd-l: 3rem;
+  --global-pd-xl: 4rem;
+
+}
+
 body,
 button,
 input,
@@ -12,13 +34,22 @@ h2,
 h3,
 h4,
 p1 {
-  font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: var(--font-family);
 }
 
 body {
-  background-color: white;
   height: 100%;
+  margin: 0 auto 0 auto;
+  background-color: var(--color-white);
+}
+
+.force-full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .vtex-searchbar__container {
@@ -31,43 +62,30 @@ body {
   }
 }
 
-/*
-  Media Query Extensions:
-  -s  = 20em
-  -ns  = 40em
-  -m  = 40em
-  -l  = 64em
-  -xl  = 80em
-*/
-
-.vtex-page-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 @media only screen and (min-width: 20em) {
-  .vtex-page-padding {
-    padding-left: .5rem;
-    padding-right: .5rem;
+  body, .vtex-page-pd {
+    padding-left: var(--global-pd-s);
+    padding-right: var(--global-pd-s);
   }
 }
 
 @media only screen and (min-width: 40em) {
-  .vtex-page-padding {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  body, .vtex-page-pd {
+    padding-left: var(--global-pd-m);
+    padding-right: var(--global-pd-m);
   }
 }
 
 @media only screen and (min-width: 64em) {
-  .vtex-page-padding {
-    width: 90%;
+  body, .vtex-page-pd {
+    padding-left: var(--global-pd-l);
+    padding-right: var(--global-pd-l);
   }
 }
 
 @media screen and (min-width: 80em) {
-  .vtex-page-padding {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  body, .vtex-page-pd {
+    padding-left: var(--global-pd-xl);
+    padding-right: var(--global-pd-xl);
   }
 }

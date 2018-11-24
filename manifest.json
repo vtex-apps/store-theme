@@ -32,8 +32,8 @@
     "vtex.carousel": "1.x",
     "vtex.store": "1.x",
     "vtex.product-kit": "0.x",
-    "vtex.telemarketing": "1.x",
-    "vtex.dreamstore-header": "1.x",
-    "vtex.dreamstore-footer": "1.x"
+    "vtex.telemarketing": "2.x",
+    "vtex.dreamstore-header": "2.x",
+    "vtex.dreamstore-footer": "2.x"
   }
 }
