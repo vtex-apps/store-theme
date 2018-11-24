@@ -32,7 +32,7 @@
     "vtex.store": "1.x",
     "vtex.product-kit": "1.x",
     "vtex.telemarketing": "2.x",
-    "vtex.dreamstore-header": "2.x",
-    "vtex.dreamstore-footer": "2.x"
+    "vtex.store-header": "2.x",
+    "vtex.store-footer": "2.x"
   }
 }
