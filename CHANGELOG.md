@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Dreamstore with Design Tokens! :tada 
 - Extension point definition for not found results page.
+- Add `ProductSummary` to `header/minicart/product-summary` extension point.
 
 ## [1.18.5] - 2018-11-23
 ### Changed

@@ -31,6 +31,9 @@
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
         },
+        "header/minicart/product-summary": {
+          "component": "vtex.product-summary/index"
+        },
         "header/login": {
           "component": "vtex.login/Login"
         },
