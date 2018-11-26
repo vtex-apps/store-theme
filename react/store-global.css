@@ -62,6 +62,16 @@ body {
   }
 }
 
+.vtex-store__template > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vtex-store__template > div > div:last-child {
+  margin-top: auto;
+}
+
 @media only screen and (min-width: 20em) {
   body, .vtex-page-pd {
     padding-left: var(--global-pd-s);
