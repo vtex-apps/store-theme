@@ -19,7 +19,7 @@
     "vtex.store-graphql": "2.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "1.x",
-    "vtex.minicart": "1.x",
+    "vtex.minicart": "2.x",
     "vtex.my-account": "0.x",
     "vtex.product-details": "0.x",
     "vtex.product-summary": "1.x",
