@@ -39,6 +39,7 @@ p1 {
 
 body {
   height: 100%;
+  overflow-x: hidden;
   margin: 0 auto 0 auto;
   background-color: var(--color-white);
 }
