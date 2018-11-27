@@ -31,6 +31,9 @@
         "header/minicart": {
           "component": "vtex.minicart/MiniCart"
         },
+        "header/minicart/product-summary": {
+          "component": "vtex.product-summary/index"
+        },
         "header/login": {
           "component": "vtex.login/Login"
         },
@@ -103,6 +106,12 @@
         },
         "results/filter-navigator": {
           "component": "vtex.search-result/FilterNavigator"
+        },
+        "results/not-found": {
+          "component": "vtex.search-result/NotFoundSearch"
+        },
+        "results/not-found/shelf": {
+          "component": "vtex.shelf/Shelf"
         }
       }
     },

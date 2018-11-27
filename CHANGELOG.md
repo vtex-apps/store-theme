@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Default padding setted on body.
 - Class force-full-width to ignore body padding when its needed.
 - Class vtex-page-pd that behaves the same as body padding.
+- Dreamstore with Design Tokens! :tada 
+- Extension point definition for not found results page.
+- Add `ProductSummary` to `header/minicart/product-summary` extension point.
 
 ## [1.18.5] - 2018-11-23
 ### Changed
