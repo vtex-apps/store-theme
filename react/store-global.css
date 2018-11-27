@@ -63,6 +63,7 @@ body {
   }
 }
 
+/* Make divs behave evenly */
 .vtex-store__template > div {
   min-height: 100vh;
   display: flex;
@@ -74,28 +75,28 @@ body {
 }
 
 @media only screen and (min-width: 20em) {
-  body, .vtex-page-pd {
+  body {
     padding-left: var(--global-pd-s);
     padding-right: var(--global-pd-s);
   }
 }
 
 @media only screen and (min-width: 40em) {
-  body, .vtex-page-pd {
+  body {
     padding-left: var(--global-pd-m);
     padding-right: var(--global-pd-m);
   }
 }
 
 @media only screen and (min-width: 64em) {
-  body, .vtex-page-pd {
+  body {
     padding-left: var(--global-pd-l);
     padding-right: var(--global-pd-l);
   }
 }
 
 @media screen and (min-width: 80em) {
-  body, .vtex-page-pd {
+  body {
     padding-left: var(--global-pd-xl);
     padding-right: var(--global-pd-xl);
   }
