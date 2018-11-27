@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Univesal padding setted on body.
+- Default padding setted on body.
 - Class force-full-width to ignore body padding when its needed.
 - Class vtex-page-pd that behaves the same as body padding.
 
