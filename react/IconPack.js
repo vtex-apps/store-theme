@@ -198,7 +198,6 @@ const IconPack = () => {
           <path d="M15 0H10C9.4 0 9 0.4 9 1V6C9 6.6 9.4 7 10 7H15C15.6 7 16 6.6 16 6V1C16 0.4 15.6 0 15 0Z" fill="currentColor" />
           <path d="M6 9H1C0.4 9 0 9.4 0 10V15C0 15.6 0.4 16 1 16H6C6.6 16 7 15.6 7 15V10C7 9.4 6.6 9 6 9Z" fill="currentColor" />
           <path d="M15 9H10C9.4 9 9 9.4 9 10V15C9 15.6 9.4 16 10 16H15C15.6 16 16 15.6 16 15V10C16 9.4 15.6 9 15 9Z" fill="currentColor" />
-
         </g>
 
         <g id="list-grid">
@@ -209,7 +208,6 @@ const IconPack = () => {
           <rect x="9" y="13" width="4" height="3" rx="1" fill="currentColor" />
           <path d="M6 9H1C0.4 9 0 9.4 0 10V15C0 15.6 0.4 16 1 16H6C6.6 16 7 15.6 7 15V10C7 9.4 6.6 9 6 9Z" fill="currentColor" />
         </g>
-
 
         <g id="customer">
           <rect
@@ -238,7 +236,6 @@ const IconPack = () => {
             strokeLinejoin="round"
           />
         </g>
-
 
         <g id="minicart">
           <path d="M5.75003 22.0007C6.94091 22.0007 7.90631 21.0157 7.90631 19.8006C7.90631 18.5856 6.94091 17.6006 5.75003 17.6006C4.55915 17.6006 3.59375 18.5856 3.59375 19.8006C3.59375 21.0157 4.55915 22.0007 5.75003 22.0007Z" fill="#979899" />
