@@ -62,7 +62,6 @@ const IconPack = () => {
           fill="#BDBDBD"
         />
 
-
         <path id="arrow-up-search-result" d="M1 1L5.5 5.5L10 1" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 
         <path
