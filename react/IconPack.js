@@ -187,19 +187,19 @@ const IconPack = () => {
           <path d="M13 9C14.6569 9 16 7.65685 16 6C16 4.34315 14.6569 3 13 3C11.3431 3 10 4.34315 10 6C10 7.65685 11.3431 9 13 9Z" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
         </g>
 
-        <g id="single-item-grid">
-          <path d="M10.2857 0H1.71429C0.685714 0 0 0.685714 0 1.71429V10.2857C0 11.3143 0.685714 12 1.71429 12H10.2857C11.3143 12 12 11.3143 12 10.2857V1.71429C12 0.685714 11.3143 0 10.2857 0Z" fill="#3F3F40" />
+        <g id="single-item-grid-search-result">
+          <path d="M10.2857 0H1.71429C0.685714 0 0 0.685714 0 1.71429V10.2857C0 11.3143 0.685714 12 1.71429 12H10.2857C11.3143 12 12 11.3143 12 10.2857V1.71429C12 0.685714 11.3143 0 10.2857 0Z" fill="currentColor" />
           <rect y="14" width="12" height="2" rx="1" fill="currentColor" />
         </g>
 
-        <g id="grid" >
+        <g id="grid-search-result" >
           <path d="M6 0H1C0.4 0 0 0.4 0 1V6C0 6.6 0.4 7 1 7H6C6.6 7 7 6.6 7 6V1C7 0.4 6.6 0 6 0Z" fill="currentColor" />
           <path d="M15 0H10C9.4 0 9 0.4 9 1V6C9 6.6 9.4 7 10 7H15C15.6 7 16 6.6 16 6V1C16 0.4 15.6 0 15 0Z" fill="currentColor" />
           <path d="M6 9H1C0.4 9 0 9.4 0 10V15C0 15.6 0.4 16 1 16H6C6.6 16 7 15.6 7 15V10C7 9.4 6.6 9 6 9Z" fill="currentColor" />
           <path d="M15 9H10C9.4 9 9 9.4 9 10V15C9 15.6 9.4 16 10 16H15C15.6 16 16 15.6 16 15V10C16 9.4 15.6 9 15 9Z" fill="currentColor" />
         </g>
 
-        <g id="list-grid">
+        <g id="list-grid-search-result">
           <path d="M6 0H1C0.4 0 0 0.4 0 1V6C0 6.6 0.4 7 1 7H6C6.6 7 7 6.6 7 6V1C7 0.4 6.6 0 6 0Z" fill="currentColor" />
           <rect x="9" width="7" height="3" rx="1" fill="currentColor" />
           <rect x="9" y="4" width="4" height="3" rx="1" fill="currentColor" />
