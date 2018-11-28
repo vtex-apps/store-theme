@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- Update category menu to major 2.x
+
 ## [1.18.5] - 2018-11-23
 ### Changed
 - Update Search Result icons.
