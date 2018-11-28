@@ -70,10 +70,6 @@ body {
   flex-direction: column;
 }
 
-.vtex-store__template > div > div:last-child {
-  margin-top: auto;
-}
-
 @media only screen and (min-width: 20em) {
   body {
     padding-left: var(--global-pd-s);
