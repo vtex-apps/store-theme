@@ -11,8 +11,6 @@
 :root {
   --font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir,
   helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-
-  --color-white: #FFFFFF;
   
   --global-pd: 0rem;
   --global-pd-s: .5rem;
@@ -41,7 +39,6 @@ body {
   height: 100%;
   overflow-x: hidden;
   margin: 0 auto 0 auto;
-  background-color: var(--color-white);
 }
 
 .force-full-width {
