@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Dreamstore with Design Tokens! :tada 
 - Extension point definition for not found results page.
 - Add `ProductSummary` to `header/minicart/product-summary` extension point.
+- Full icon pack with viewbox `0 0 16 16`.
 - Add Arrow Down icon that is used in `SearchResult`.
 
 ## [1.18.5] - 2018-11-23
