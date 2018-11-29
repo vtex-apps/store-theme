@@ -957,6 +957,20 @@ const IconPack = () => {
           />
         </g>
 
+        <g id="nav-plus">
+          <path
+            d="M15,7H9V1c0-0.6-0.4-1-1-1S7,0.4,7,1v6H1C0.4,7,0,7.4,0,8s0.4,1,1,1h6v6c0,0.6,0.4,1,1,1s1-0.4,1-1V9h6 c0.6,0,1-0.4,1-1S15.6,7,15,7z"
+            fill="currentColor"
+          />
+        </g>
+
+        <g id="nav-minus">
+          <path
+            d="M15,7H1C0.4,7,0,7.4,0,8s0.4,1,1,1h14c0.6,0,1-0.4,1-1S15.6,7,15,7z"
+            fill="currentColor"
+          />
+        </g>
+
         {/** ====== Status Indicators ====== */}
         <g id="sti-l-check">
           <path
