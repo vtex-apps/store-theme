@@ -88,9 +88,9 @@ const IconPack = () => {
           id="arrow-up-search-result"
           d="M1 1L5.5 5.5L10 1"
           stroke="#4F4F4F"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
 
         <path
@@ -217,44 +217,44 @@ const IconPack = () => {
           <path
             d="M4 5V1"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M4 16V14"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13 12V16"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13 1V3"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M4 14C5.65685 14 7 12.6569 7 11C7 9.34315 5.65685 8 4 8C2.34315 8 1 9.34315 1 11C1 12.6569 2.34315 14 4 14Z"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13 9C14.6569 9 16 7.65685 16 6C16 4.34315 14.6569 3 13 3C11.3431 3 10 4.34315 10 6C10 7.65685 11.3431 9 13 9Z"
             stroke="#4F4F4F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
 
@@ -441,9 +441,9 @@ const IconPack = () => {
           <path
             d="M4 6L8.5 10.5L13 6"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
 
@@ -451,9 +451,9 @@ const IconPack = () => {
           <path
             d="M13 10L8.5 5.5L4 10"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
 
@@ -461,16 +461,16 @@ const IconPack = () => {
           <path
             d="M5.20004 5.2L5.20004 3C5.20004 1.89543 6.09547 0.999997 7.20004 0.999997H13C14.1046 0.999997 15 1.89543 15 3V8.80001C15 9.90457 14.1046 10.8 13 10.8H10.8"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
           <path
             d="M1 7.19999L1 13C1 14.1046 1.89543 15 3 15H8.79997C9.90454 15 10.8 14.1046 10.8 13V7.19999C10.8 6.09542 9.90454 5.19999 8.79997 5.19999H3C1.89543 5.19999 1 6.09542 1 7.19999Z"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
         </g>
 
@@ -482,17 +482,17 @@ const IconPack = () => {
           <path
             d="M6.07501 4.925L6.07501 2.175C6.07501 1.62271 6.52273 1.175 7.07501 1.175H13.825C14.3773 1.175 14.825 1.62271 14.825 2.175V8.925C14.825 9.47729 14.3773 9.925 13.825 9.925H11.075"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
           <path
             d="M1 6.49999L1 13C1 14.1046 1.89543 15 3 15H9.49997C10.6045 15 11.5 14.1046 11.5 13V6.49999C11.5 5.39542 10.6045 4.49999 9.49997 4.49999H3C1.89543 4.49999 1 5.39542 1 6.49999Z"
             fill="currentColor"
             stroke="white"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
         </g>
 
@@ -576,9 +576,9 @@ const IconPack = () => {
           <path
             d="M15 3.16048C15 3.47872 14.8485 3.77795 14.5921 3.96637L9.96348 7.36697C9.70702 7.55539 9.55556 7.85462 9.55556 8.17285V13.0073C9.55556 13.4073 9.31716 13.7688 8.94947 13.9264L7.83836 14.4026C7.1785 14.6854 6.44444 14.2014 6.44444 13.4835V8.17285C6.44444 7.85462 6.29298 7.55539 6.03652 7.36697L1.40792 3.96637C1.15147 3.77795 1 3.47872 1 3.16048V2C1 1.44772 1.44772 1 2 1H14C14.5523 1 15 1.44772 15 2V3.16048Z"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
         </g>
 
@@ -597,7 +597,7 @@ const IconPack = () => {
         </g>
 
         <g id="mpa-o-minus">
-          <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2" />
+          <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="2" />
           <path
             d="M4 8.5V7.5C4 7.22386 4.22386 7 4.5 7H11.5C11.7761 7 12 7.22386 12 7.5V8.5C12 8.77614 11.7761 9 11.5 9H4.5C4.22386 9 4 8.77614 4 8.5Z"
             fill="currentColor"
@@ -606,8 +606,8 @@ const IconPack = () => {
 
         <g id="mpa-s-minus">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4.5 7C4.22386 7 4 7.22386 4 7.5V8.5C4 8.77614 4.22386 9 4.5 9H11.5C11.7761 9 12 8.77614 12 8.5V7.5C12 7.22386 11.7761 7 11.5 7L4.5 7Z"
             fill="currentColor"
           />
@@ -621,7 +621,7 @@ const IconPack = () => {
         </g>
 
         <g id="mpa-o-plus">
-          <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2" />
+          <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="2" />
           <path
             d="M4.5 7H7V4.5C7 4.22386 7.22386 4 7.5 4H8.5C8.77614 4 9 4.22386 9 4.5V7H11.5C11.7761 7 12 7.22386 12 7.5V8.5C12 8.77614 11.7761 9 11.5 9H9V11.5C9 11.7761 8.77614 12 8.5 12H7.5C7.22386 12 7 11.7761 7 11.5V9H4.5C4.22386 9 4 8.77614 4 8.5V7.5C4 7.22386 4.22386 7 4.5 7Z"
             fill="currentColor"
@@ -630,8 +630,7 @@ const IconPack = () => {
 
         <g id="mpa-s-plus">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
             d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 7H4.5C4.22386 7 4 7.22386 4 7.5V8.5C4 8.77614 4.22386 9 4.5 9H7V11.5C7 11.7761 7.22386 12 7.5 12H8.5C8.77614 12 9 11.7761 9 11.5V9H11.5C11.7761 9 12 8.77614 12 8.5V7.5C12 7.22386 11.7761 7 11.5 7H9V4.5C9 4.22386 8.77614 4 8.5 4L7.5 4C7.22386 4 7 4.22386 7 4.5V7Z"
             fill="currentColor"
           />
@@ -648,23 +647,22 @@ const IconPack = () => {
           <path
             d="M14.0001 15.0002H2L3.20001 4.81819H12.8001L14.0001 15.0002Z"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
           <path
             d="M6.12476 7.12512V3.72227C6.12476 2.22502 7.05289 1 8.18728 1C9.32167 1 10.2498 2.22502 10.2498 3.72227V7.12512"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="square"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
           />
         </g>
 
         <g id="mpa-bars">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
             d="M0 12.7778C0 13.2687 0.397969 13.6667 0.888889 13.6667H15.1111C15.602 13.6667 16 13.2687 16 12.7778C16 12.2869 15.602 11.8889 15.1111 11.8889H0.888889C0.397969 11.8889 0 12.2869 0 12.7778ZM0 8.33333C0 8.82425 0.397969 9.22222 0.888889 9.22222H15.1111C15.602 9.22222 16 8.82425 16 8.33333C16 7.84241 15.602 7.44444 15.1111 7.44444H0.888889C0.397969 7.44444 0 7.84241 0 8.33333ZM0.888889 3C0.397969 3 0 3.39797 0 3.88889C0 4.37981 0.397969 4.77778 0.888889 4.77778H15.1111C15.602 4.77778 16 4.37981 16 3.88889C16 3.39797 15.602 3 15.1111 3H0.888889Z"
             fill="currentColor"
           />
@@ -678,7 +676,7 @@ const IconPack = () => {
         </g>
 
         <g id="mpa-columns">
-          <path d="M1 4H15V15H1V4Z" stroke="currentColor" stroke-width="2" />
+          <path d="M1 4H15V15H1V4Z" stroke="currentColor" strokeWidth="2" />
           <path
             d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1V5H0V1Z"
             fill="currentColor"
@@ -689,7 +687,7 @@ const IconPack = () => {
             x2="8.11108"
             y2="14.1176"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </g>
 
@@ -777,44 +775,44 @@ const IconPack = () => {
           <path
             d="M3.79999 4.73334V1"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M3.79999 15V13.1334"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M12.2 11.2667V15"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M12.2 1V2.86667"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M3.8 13.1333C5.3464 13.1333 6.60001 11.8797 6.60001 10.3333C6.60001 8.78695 5.3464 7.53334 3.8 7.53334C2.2536 7.53334 1 8.78695 1 10.3333C1 11.8797 2.2536 13.1333 3.8 13.1333Z"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M12.2 8.46668C13.7464 8.46668 15 7.21307 15 5.66667C15 4.12027 13.7464 2.86667 12.2 2.86667C10.6536 2.86667 9.40002 4.12027 9.40002 5.66667C9.40002 7.21307 10.6536 8.46668 12.2 8.46668Z"
             stroke="currentColor"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
 
@@ -830,26 +828,26 @@ const IconPack = () => {
           <path
             d="M12.6667 1H3.33333L1 5.2C1 6.48893 2.0444 7.53333 3.33333 7.53333C4.62227 7.53333 5.66667 6.48893 5.66667 5.2C5.66667 6.48893 6.71107 7.53333 8 7.53333C9.28893 7.53333 10.3333 6.48893 10.3333 5.2C10.3333 6.48893 11.3777 7.53333 12.6667 7.53333C13.9556 7.53333 15 6.48893 15 5.2L12.6667 1Z"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13.25 9.75V15H2.75V9.75"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M6.59999 15V11.2667H9.39999V15"
             stroke="currentColor"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
 
