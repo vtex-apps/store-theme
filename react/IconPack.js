@@ -436,6 +436,12 @@ const IconPack = () => {
           />
         </g>
 
+        <g id="hpa-hamburguer-menu">
+          <path fill="currentColor" d="M15,7H1C0.4,7,0,7.4,0,8s0.4,1,1,1h14c0.6,0,1-0.4,1-1S15.6,7,15,7z" />
+          <path fill="currentColor" d="M15,1H1C0.4,1,0,1.4,0,2s0.4,1,1,1h14c0.6,0,1-0.4,1-1S15.6,1,15,1z" />
+          <path fill="currentColor" d="M15,13H1c-0.6,0-1,0.4-1,1s0.4,1,1,1h14c0.6,0,1-0.4,1-1S15.6,13,15,13z" />
+        </g>
+
         {/** ====== Mild Priority Actions ====== */}
         <g id="mpa-angle--down">
           <path
