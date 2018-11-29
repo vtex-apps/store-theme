@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Two new nav icons
+
+### Added
 - Default padding setted on body.
 - Class force-full-width to ignore body padding when its needed.
 - Dreamstore with Design Tokens! :tada 
