@@ -18,7 +18,7 @@
   "dependencies": {
     "vtex.store-graphql": "2.x",
     "vtex.shelf": "1.x",
-    "vtex.menu": "1.x",
+    "vtex.menu": "2.x",
     "vtex.minicart": "2.x",
     "vtex.my-account": "0.x",
     "vtex.store-components": "3.x",
@@ -29,7 +29,7 @@
     "vtex.category-menu": "2.x",
     "vtex.breadcrumb": "1.x",
     "vtex.login": "2.x",
-    "vtex.styleguide": "7.x",
+    "vtex.styleguide": "8.x",
     "vtex.store": "1.x",
     "vtex.product-kit": "1.x",
     "vtex.telemarketing": "2.x",
