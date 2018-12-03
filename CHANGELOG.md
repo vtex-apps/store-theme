@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Two new nav icons
+- Two new nav icons.
+- New Icon for telemarketing.
 
 ### Added
 - Default padding setted on body.
