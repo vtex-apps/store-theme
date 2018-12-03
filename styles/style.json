@@ -1,0 +1,10 @@
+{
+  "semanticColors": {
+    "on": {
+      "action-primary": "#000"
+    },
+    "background": {
+      "action-primary": "#9999ff"
+    }
+  }
+}
