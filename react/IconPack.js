@@ -421,6 +421,14 @@ const IconPack = () => {
           />
         </g>
 
+        <g id="hpa-telemarketing">
+          <path d="M14 10V7C14 3.68629 11.3137 1 8 1V1C4.68629 1 2 3.68629 2 7V10" stroke="currentColor" strokeWidth="1.5"/>
+          <path d="M14 10V10C14 12.2091 12.2091 14 10 14H8" stroke="currentColor" strokeWidth="1.5"/>
+          <rect y="7" width="3" height="5" rx="1" fill="currentColor"/>
+          <rect x="11" y="12" width="4" height="5" rx="2" transform="rotate(90 11 12)" fill="currentColor"/>
+          <rect x="13" y="7" width="3" height="5" rx="1" fill="currentColor"/>
+        </g>
+
         <g id="hpa-save">
           <path
             d="M11.7 0.3C11.5 0.1 11.3 0 11 0H10V3C10 3.6 9.6 4 9 4H4C3.4 4 3 3.6 3 3V0H1C0.4 0 0 0.4 0 1V15C0 15.6 0.4 16 1 16H15C15.6 16 16 15.6 16 15V5C16 4.7 15.9 4.5 15.7 4.3L11.7 0.3ZM13 14H3V11C3 10.4 3.4 10 4 10H12C12.6 10 13 10.4 13 11V14Z"
