@@ -14,7 +14,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Default background to body.
 
 ## [2.0.0-beta] - 2018-12-04
-
 ### Added
 - Two new nav icons.
 - New Icon for telemarketing.
