@@ -23,7 +23,7 @@
       },
       "extensions": {
         "header": {
-          "component": "vtex.dreamstore-header/index"
+          "component": "vtex.store-header/index"
         },
         "header/telemarketing": {
           "component": "vtex.telemarketing/index"
@@ -50,7 +50,7 @@
           "component": "vtex.store-components/SearchBar"
         },
         "footer": {
-          "component": "vtex.dreamstore-footer/index"
+          "component": "vtex.store-footer/index"
         }
       }
     },
