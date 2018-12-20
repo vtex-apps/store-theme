@@ -1,5 +1,3 @@
-@import url(//io.vtex.com.br/fonts/fabriga/stylesheet.css);
-
 body,
 button,
 input,
@@ -12,7 +10,7 @@ h2,
 h3,
 h4,
 p1 {
-  font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
