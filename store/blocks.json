@@ -1,0 +1,73 @@
+{
+  "store.home": {
+    "blocks": [
+      "header.full",
+      "carousel",
+      "shelf",
+      "footer"
+    ]
+  },
+  "store.product": {
+    "blocks": [
+      "header.full",
+      "product-details",
+      "product-kit",
+      "shelf",
+      "footer"
+    ],
+    "context": "ProductContext"
+  },
+  "store.search": {
+    "blocks": [
+      "header.full",
+      "search-result",
+      "footer"
+    ],
+    "context": "SearchContext"
+  },
+  "store.search#brand": {
+    "blocks": [
+      "header.full",
+      "search-result",
+      "footer"
+    ],
+    "context": "SearchContext"
+  },
+  "store.search#department": {
+    "blocks": [
+      "header.full",
+      "search-result",
+      "footer"
+    ],
+    "context": "SearchContext"
+  },
+  "store.search#category": {
+    "blocks": [
+      "header.full",
+      "search-result",
+      "footer"
+    ],
+    "context": "SearchContext"
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "header.full",
+      "search-result",
+      "footer"
+    ],
+    "context": "SearchContext"
+  },
+  "store.account": {
+    "blocks": [
+      "header.full",
+      "footer"
+    ]
+  },
+  "store.login": {
+    "blocks": [
+      "header.full",
+      "login",
+      "footer"
+    ]
+  }
+}
