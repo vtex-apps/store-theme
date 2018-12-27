@@ -62,6 +62,15 @@ const IconPack = () => {
           <rect y="16" width="10" height="3" fill="currentColor" />
         </g>
 
+        <g id="search-result-filter">
+          <path d="M4 5V1" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 16V14" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 12V16" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 1V3" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 14C5.65685 14 7 12.6569 7 11C7 9.34315 5.65685 8 4 8C2.34315 8 1 9.34315 1 11C1 12.6569 2.34315 14 4 14Z" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 9C14.6569 9 16 7.65685 16 6C16 4.34315 14.6569 3 13 3C11.3431 3 10 4.34315 10 6C10 7.65685 11.3431 9 13 9Z" stroke="#4F4F4F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+
         <g id="check">
           <rect width="9" height="9" rx="2" fill="#368DF7" />
           <path

@@ -1,5 +1,3 @@
-@import url(//io.vtex.com.br/fonts/fabriga/stylesheet.css);
-
 /*
   Media Query Extensions:
   -s  = 20em
@@ -9,7 +7,7 @@
   -xl  = 80em
 */
 :root {
-  --font-family: Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+  --font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
   helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   
   --bg-base: #FFFFFF;
