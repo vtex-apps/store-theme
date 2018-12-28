@@ -60,6 +60,7 @@
   "store.account": {
     "blocks": [
       "header.full",
+      "my-account",
       "footer"
     ]
   },

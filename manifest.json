@@ -28,9 +28,7 @@
     "vtex.shelf": "1.x",
     "vtex.carousel": "2.x",
     "vtex.search-result": "3.x",
-    "vtex.breadcrumb": "1.x",
     "vtex.product-details": "1.x",
-    "vtex.product-summary": "2.x",
     "vtex.product-kit": "1.x",
     "vtex.my-account": "0.x",
     "vtex.styleguide": "8.x"
