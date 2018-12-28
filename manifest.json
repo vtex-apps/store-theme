@@ -30,7 +30,7 @@
     "vtex.search-result": "3.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",
-    "vtex.my-account": "0.x",
+    "vtex.my-account": "1.x",
     "vtex.styleguide": "8.x"
   }
 }
