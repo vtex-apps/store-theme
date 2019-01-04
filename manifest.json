@@ -1,9 +1,9 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "2.0.0-beta.2",
+  "version": "2.0.0-beta.3",
   "builders": {
-    "pages": "0.x",
+    "store": "0.x",
     "react": "2.x"
   },
   "mustUpdateAt": "2018-09-05",
@@ -15,24 +15,16 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store-graphql": "2.x",
-    "vtex.shelf": "1.x",
-    "vtex.menu": "2.x",
-    "vtex.minicart": "2.x",
-    "vtex.my-account": "0.x",
-    "vtex.store-components": "3.x",
-    "vtex.search-result": "3.x",
-    "vtex.product-summary": "2.x",
-    "vtex.carousel": "2.x",
-    "vtex.product-details": "1.x",
-    "vtex.category-menu": "2.x",
-    "vtex.breadcrumb": "1.x",
-    "vtex.login": "2.x",
-    "vtex.styleguide": "8.x",
-    "vtex.store": "1.x",
-    "vtex.product-kit": "1.x",
-    "vtex.telemarketing": "2.x",
-    "vtex.store-header": "2.x",
-    "vtex.store-footer": "2.x"
+    "vtex.store": "1.35.2-beta",
+    "vtex.store-header": "2.3.2-beta",
+    "vtex.store-footer": "2.2.2-beta",
+    "vtex.carousel": "2.2.1-beta",
+    "vtex.shelf": "1.2.1-beta",
+    "vtex.product-details": "1.3.1-beta",
+    "vtex.product-kit": "1.1.1-beta",
+    "vtex.search-result": "3.5.1-beta",
+    "vtex.login": "2.2.1-beta",
+    "vtex.my-account": "1.x",
+    "vtex.styleguide": "8.x"
   }
 }
