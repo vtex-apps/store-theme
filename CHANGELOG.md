@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.0-beta.4] - 2018-01-09
+### Changed
+- Remove `global.css` and bump `vtex.store` to 2.0.0-beta. 
+
 ## [2.0.0-beta.3] - 2018-01-04
 ### Changed
 - Bye `pages.json`! Welcome `store-builder`.
