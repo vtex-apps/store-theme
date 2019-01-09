@@ -2,17 +2,17 @@
   "store.home": {
     "blocks": [
       "header.full",
-      "carousel",
-      "shelf",
+      "carousel#home",
+      "shelf#home",
       "footer"
     ]
   },
   "store.product": {
     "blocks": [
       "header.full",
-      "product-details",
+      "product-details#default",
       "product-kit",
-      "shelf",
+      "related-products",
       "footer"
     ]
   },
@@ -33,7 +33,7 @@
   "store.search#department": {
     "blocks": [
       "header.full",
-      "search-result",
+      "search-result#department",
       "footer"
     ]
   },
@@ -61,8 +61,319 @@
   "store.login": {
     "blocks": [
       "header.full",
-      "login-content",
+      "login-content#default",
       "footer"
     ]
+  },
+  "header.full": {
+    "blocks": [
+      "login",
+      "minicart",
+      "logo",
+      "search-bar",
+      "menu-link",
+      "telemarketing",
+      "category-menu"
+    ],
+    "inheritComponent": true,
+    "props": {
+      "logoUrl": "/assets/vtex.file-manager-graphql/images/dreamstore-logo___b8dea9def93579926215daa28fc60248.png",
+      "showSearchBar": true,
+      "showLogin": true
+    }
+  },
+  "menu-link": {
+    "inheritComponent": true,
+    "props": {
+      "numberOfItems": 6,
+      "item1": {
+        "title": "Atendimento",
+        "typeOfRoute": "internal",
+        "page": "store/home",
+        "position": "right"
+      },
+      "item2": {
+        "title": "Programa de Afiliados",
+        "typeOfRoute": "internal",
+        "position": "middle"
+      },
+      "item3": {
+        "title": "Anuncie",
+        "typeOfRoute": "internal",
+        "position": "middle"
+      },
+      "item4": {
+        "title": "Televendas 4003-2018",
+        "typeOfRoute": "internal",
+        "position": "left"
+      },
+      "item5": {
+        "title": "Sobre",
+        "typeOfRoute": "internal",
+        "position": "right"
+      }
+    }
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "inheritComponent": true,
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Ir para o checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10
+    }
+  },
+  "footer": {
+    "inheritComponent": true,
+    "props": {
+      "showPaymentFormsInColor": false,
+      "showSocialNetworksInColor": false,
+      "socialNetworks": [
+        {
+          "__editorItemTitle": "Facebook",
+          "socialNetwork": "Facebook"
+        }
+      ],
+      "sectionLinks": [
+        {
+          "__editorItemTitle": "Institucional",
+          "title": "Institucional",
+          "links": [
+            {
+              "__editorItemTitle": "Garantia Estendida",
+              "title": "Garantia Estendida"
+            },
+            {
+              "__editorItemTitle": "Relações com investidores",
+              "title": "Relações com investidores"
+            },
+            {
+              "__editorItemTitle": "Trabalhe conosco",
+              "title": "Trabalhe conosco"
+            },
+            {
+              "__editorItemTitle": "Política de privacidade",
+              "title": "Política de privacidade"
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Dúvidas",
+          "title": "Dúvidas",
+          "links": [
+            {
+              "__editorItemTitle": "Atendimento",
+              "title": "Atendimento"
+            },
+            {
+              "__editorItemTitle": "Trocas e devoluções",
+              "title": "Trocas e devoluções"
+            },
+            {
+              "__editorItemTitle": "Direito de arrependimento",
+              "title": "Direito de arrependimento"
+            },
+            {
+              "__editorItemTitle": "Politica de entrega",
+              "title": "Politica de entrega"
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Nosso Cartão",
+          "title": "Nosso Cartão",
+          "links": [
+            {
+              "__editorItemTitle": "Peça já o seu!",
+              "title": "Peça já o seu!"
+            },
+            {
+              "__editorItemTitle": "Central de Promoções",
+              "title": "Central de Promoções"
+            },
+            {
+              "__editorItemTitle": "Programas Milhas",
+              "title": "Programas Milhas"
+            },
+            {
+              "__editorItemTitle": "Benefícios",
+              "title": "Benefícios"
+            }
+          ]
+        }
+      ],
+      "badges": [
+        {
+          "__editorItemTitle": "Medalha"
+        }
+      ],
+      "paymentForms": [
+        {
+          "__editorItemTitle": "Crédito",
+          "title": "Crédito",
+          "paymentTypes": [
+            "MasterCard",
+            "Visa",
+            "Diners Club"
+          ]
+        },
+        {
+          "__editorItemTitle": "Débito",
+          "title": "Débito",
+          "paymentTypes": [
+            "MasterCard",
+            "Visa",
+            "Diners Club"
+          ]
+        }
+      ],
+      "storeInformations": [
+        {
+          "__editorItemTitle": "Informação da Loja",
+          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\nStore pictures: https://photos.icons8.com"
+        },
+        {
+          "__editorItemTitle": "Endereço",
+          "storeInformation": "CNPJ n.º 01.002.333/0001-00  | Centro Empresarial Botafogo - Praia de Botafogo, 300 - 2º Andar - Botafogo, Rio de Janeiro - RJ, 22250-040- empresa do grupo VTEX. "
+        }
+      ]
+    }
+  },
+  "carousel#home": {
+    "inheritComponent": true,
+    "props": {
+      "autoplay": true,
+      "autoplaySpeed": 4,
+      "banners": [
+        {
+          "__editorItemTitle": "Banner",
+          "image": "/assets/vtex.file-manager-graphql/images/banner 04___a642026d2b9d114fca2d89e0f939d0ff.jpg",
+          "description": "",
+          "mobileImage": "/assets/vtex.file-manager-graphql/images/banner-1x1-mobile___12a818910a3c880716a994b329887ecd.png"
+        },
+        {
+          "__editorItemTitle": "Banner",
+          "description": "",
+          "image": "/assets/vtex.file-manager-graphql/images/banner___e55418c827d96dbf924b98e1d555224e.jpg",
+          "mobileImage": "/assets/vtex.file-manager-graphql/images/banner-1x1-mobile2___e33d1ce8ed76033ab7778ddb609afef9.png"
+        }
+      ],
+      "height": 440,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+  "shelf#home": {
+    "inheritComponent": true,
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "New collection",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "OFF",
+          "buyButtonText": "Comprar ",
+          "displayBuyButton": "displayButtonHover",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": true,
+            "showSku": true,
+            "showProductReference": false
+          }
+        }
+      }
+    }
+  },
+  "product-details#default": {
+    "inheritComponent": true,
+    "props": {
+      "displayVertically": true,
+      "share": {
+        "social": {
+          "Facebook": true,
+          "WhatsApp": true,
+          "Twitter": false
+        }
+      },
+      "price": {
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": true,
+        "showSavings": true
+      },
+      "name": {
+        "showBrandName": false,
+        "showSku": false,
+        "showProductReference": false
+      }
+    }
+  },
+  "search-result#department": {
+    "blocks": [
+      "filter-navigator",
+      "gallery",
+      "not-found",
+      "breadcrumb"
+    ],
+    "inheritComponent": true,
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 2,
+        "orderByField": "OrderByReleaseDateDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonAlways",
+        "showCollections": false,
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
+    }
+  },
+  "login-content#default": {
+    "inheritComponent": true,
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
   }
 }
