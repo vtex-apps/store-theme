@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "header.full",
-      "carousel#default",
+      "carousel#home",
       "shelf#home",
       "footer"
     ]
@@ -246,7 +246,7 @@
       ]
     }
   },
-  "carousel#default": {
+  "carousel#home": {
     "inheritComponent": true,
     "props": {
       "autoplay": true,
