@@ -75,12 +75,7 @@
       "telemarketing",
       "category-menu"
     ],
-    "inheritComponent": true,
-    "props": {
-      "logoUrl": "/assets/vtex.file-manager-graphql/images/dreamstore-logo___b8dea9def93579926215daa28fc60248.png",
-      "showSearchBar": true,
-      "showLogin": true
-    }
+    "inheritComponent": true
   },
   "menu-link": {
     "inheritComponent": true,
@@ -251,20 +246,7 @@
     "props": {
       "autoplay": true,
       "autoplaySpeed": 4,
-      "banners": [
-        {
-          "__editorItemTitle": "Banner",
-          "image": "/assets/vtex.file-manager-graphql/images/banner 04___a642026d2b9d114fca2d89e0f939d0ff.jpg",
-          "description": "",
-          "mobileImage": "/assets/vtex.file-manager-graphql/images/banner-1x1-mobile___12a818910a3c880716a994b329887ecd.png"
-        },
-        {
-          "__editorItemTitle": "Banner",
-          "description": "",
-          "image": "/assets/vtex.file-manager-graphql/images/banner___e55418c827d96dbf924b98e1d555224e.jpg",
-          "mobileImage": "/assets/vtex.file-manager-graphql/images/banner-1x1-mobile2___e33d1ce8ed76033ab7778ddb609afef9.png"
-        }
-      ],
+      "banners": [],
       "height": 440,
       "showArrows": true,
       "showDots": true
@@ -277,14 +259,14 @@
       "productList": {
         "maxItems": 10,
         "itemsPerPage": 4,
-        "scroll": "ONE_BY_ONE",
+        "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "New collection",
         "summary": {
           "isOneClickBuy": false,
           "showBadge": true,
           "badgeText": "OFF",
-          "buyButtonText": "Comprar ",
+          "buyButtonText": "Comprar",
           "displayBuyButton": "displayButtonHover",
           "showCollections": false,
           "showListPrice": true,
