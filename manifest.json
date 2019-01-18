@@ -6,10 +6,6 @@
     "store": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
-  "categories": [],
-  "registries": [
-    "smartcheckout"
-  ],
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
