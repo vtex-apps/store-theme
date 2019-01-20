@@ -1,72 +1,54 @@
 {
   "store.home": {
-    "blocks": [
-      "header.full",
+    "body": [
       "carousel#home",
-      "shelf#home",
-      "footer"
+      "shelf#home"
     ]
   },
   "store.product": {
-    "blocks": [
-      "header.full",
+    "body": [
       "product-details#default",
       "product-kit",
-      "related-products",
-      "footer"
+      "related-products"
     ]
   },
   "store.search": {
-    "blocks": [
-      "header.full",
-      "search-result",
-      "footer"
+    "body": [
+      "search-result"
     ]
   },
   "store.search#brand": {
-    "blocks": [
-      "header.full",
-      "search-result",
-      "footer"
+    "body": [
+      "search-result#brand"
     ]
   },
   "store.search#department": {
-    "blocks": [
-      "header.full",
-      "search-result#department",
-      "footer"
+    "body": [
+      "search-result#department"
     ]
   },
   "store.search#category": {
-    "blocks": [
-      "header.full",
-      "search-result",
-      "footer"
+    "body": [
+      "search-result#category"
     ]
   },
   "store.search#subcategory": {
-    "blocks": [
-      "header.full",
-      "search-result",
-      "footer"
+    "body": [
+      "search-result#subcategory"
     ]
   },
   "store.account": {
-    "blocks": [
-      "header.full",
-      "my-account",
-      "footer"
+    "body": [
+      "my-account"
     ]
   },
   "store.login": {
-    "blocks": [
-      "header.full",
-      "login-content#default",
-      "footer"
+    "body": [
+      "login-content#default"
     ]
   },
   "header.full": {
-    "blocks": [
+    "body": [
       "login",
       "minicart",
       "logo",
@@ -110,7 +92,7 @@
     }
   },
   "minicart": {
-    "blocks": [
+    "body": [
       "product-summary"
     ],
     "inheritComponent": true,
@@ -308,7 +290,7 @@
     }
   },
   "search-result#department": {
-    "blocks": [
+    "body": [
       "filter-navigator",
       "gallery",
       "not-found",
