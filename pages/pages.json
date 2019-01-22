@@ -225,5 +225,10 @@
         "template": "product"
       }
     ]
+  },
+  "routes": {
+    "store/account": {
+      "path": "/account/orders"
+    }
   }
 }
