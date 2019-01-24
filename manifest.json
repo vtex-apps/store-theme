@@ -3,7 +3,8 @@
   "name": "dreamstore",
   "version": "2.0.0-beta.15",
   "builders": {
-    "store": "0.x"
+    "styles": "0.x",
+    "store": "0.x"  
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {

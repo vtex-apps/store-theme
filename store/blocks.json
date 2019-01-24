@@ -256,8 +256,8 @@
           "showInstallments": true,
           "showSavings": true,
           "name": {
-            "showBrandName": true,
-            "showSku": true,
+            "showBrandName": false,
+            "showSku": false,
             "showProductReference": false
           }
         }
