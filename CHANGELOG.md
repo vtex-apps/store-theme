@@ -9,53 +9,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [2.0.0-beta.14] - 2019-01-23
 
-## [2.0.0-beta.13] - 2019-1-22
-
-## [2.0.0-beta.12] - 2019-01-22
-
-## [2.0.0-beta.11] - 2019-1-21
-
-## [2.0.0-beta.10] - 2019-01-19
-
-## [2.0.0-beta.9] - 2019-01-18
-
-## [2.0.0-beta.8] - 2019-01-18
-
-## [2.0.0-beta.7] - 2019-01-16
-
-## [2.0.0-beta.6] - 2019-01-14
-## [2.0.0-beta.5] - 2018-01-09
-### Changed
-- Configure blocks props.
-
-## [2.0.0-beta.4] - 2018-01-09
-### Changed
-- Remove `global.css` and bump `vtex.store` to 2.0.0-beta. 
-
-## [2.0.0-beta.3] - 2018-01-04
-### Changed
+### Added
 - Bye `pages.json`! Welcome `store-builder`.
-
-## [2.0.0-beta.1] - 2018-12-14
-### Fixed
-- Changing global padding to small devices
-
-## [2.0.0-beta.0] - 2018-12-06
-### Added
-- Default background to body.
-
-## [2.0.0-beta] - 2018-12-04
-### Added
 - Two new nav icons.
 - New Icon for telemarketing.
-
-### Added
 - Default padding setted on body.
-- Class force-full-width to ignore body padding when its needed.
 - Dreamstore with Design Tokens! :tada 
 - Extension point definition for not found results page.
 - Add `ProductSummary` to `header/minicart/product-summary` extension point.
 - Add Arrow Down icon that is used in `SearchResult`.
+
+### Changed
+- Configure blocks props.
+- Remove `global.css` and bump `vtex.store` to 2.0.0-beta. 
+
+### Fixed
+- Changing global padding to small devices
 
 ## [1.18.6] - 2018-12-20
 ### Fixed
