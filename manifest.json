@@ -1,10 +1,10 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "2.0.0-beta.15",
+  "version": "2.0.0-beta.16",
   "builders": {
     "styles": "0.x",
-    "store": "0.x"  
+    "store": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
