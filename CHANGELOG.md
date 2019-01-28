@@ -7,13 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [2.0.0-beta.16] - 2019-01-24
-
-## [2.0.0-beta.15] - 2019-01-24
-
-## [2.0.0-beta.14] - 2019-01-23
-
+## [2.0.0-rc] - 2019-01-28
 ### Added
+- Add profile challenge block on account.
 - Bye `pages.json`! Welcome `store-builder`.
 - Two new nav icons.
 - New Icon for telemarketing.
