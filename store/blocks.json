@@ -40,7 +40,10 @@
   "store.account": {
     "blocks": [
       "my-account"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
   },
   "store.login": {
     "blocks": [
