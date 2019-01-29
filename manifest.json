@@ -3,7 +3,7 @@
   "name": "dreamstore",
   "version": "2.0.0-rc",
   "builders": {
-    "styles": "1.x",
+    "styles": "0.x",
     "store": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
@@ -11,7 +11,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0-rc",
+    "vtex.store": "2.0.0-rc.0",
     "vtex.store-header": "2.x",
     "vtex.store-footer": "2.x",
     "vtex.carousel": "2.x",

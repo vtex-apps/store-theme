@@ -59,11 +59,9 @@
       "menu-link",
       "telemarketing",
       "category-menu"
-    ],
-    "inheritComponent": true
+    ]
   },
   "menu-link": {
-    "inheritComponent": true,
     "props": {
       "numberOfItems": 6,
       "item1": {
@@ -98,7 +96,6 @@
     "blocks": [
       "product-summary"
     ],
-    "inheritComponent": true,
     "props": {
       "type": "popup",
       "showRemoveButton": true,
@@ -111,7 +108,6 @@
     }
   },
   "footer": {
-    "inheritComponent": true,
     "props": {
       "showPaymentFormsInColor": false,
       "showSocialNetworksInColor": false,
@@ -227,7 +223,6 @@
     }
   },
   "carousel#home": {
-    "inheritComponent": true,
     "props": {
       "autoplay": true,
       "autoplaySpeed": 4,
@@ -238,7 +233,6 @@
     }
   },
   "shelf#home": {
-    "inheritComponent": true,
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
@@ -268,7 +262,6 @@
     }
   },
   "product-details#default": {
-    "inheritComponent": true,
     "props": {
       "displayVertically": true,
       "share": {
@@ -299,7 +292,6 @@
       "not-found",
       "breadcrumb"
     ],
-    "inheritComponent": true,
     "props": {
       "querySchema": {
         "maxItemsPerPage": 2,
@@ -336,7 +328,6 @@
     }
   },
   "login-content#default": {
-    "inheritComponent": true,
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
