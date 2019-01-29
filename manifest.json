@@ -3,7 +3,7 @@
   "name": "dreamstore",
   "version": "2.0.0-rc.1",
   "builders": {
-    "styles": "0.x",
+    "styles": "1.x",
     "store": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
