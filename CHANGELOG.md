@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.0-rc.0] - 2019-01-29
+
 ## [2.0.0-rc] - 2019-01-28
 ### Added
 - Add profile challenge block on account.
