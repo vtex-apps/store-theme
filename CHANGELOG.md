@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.0-rc.2] - 2019-1-30
+### Changed
+- Migrate to styles builder 1.x
+
 ## [2.0.0-rc.1] - 2019-01-30
 
 ## [2.0.0-rc.0] - 2019-01-29
@@ -18,14 +22,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Two new nav icons.
 - New Icon for telemarketing.
 - Default padding setted on body.
-- Dreamstore with Design Tokens! :tada 
+- Dreamstore with Design Tokens! :tada
 - Extension point definition for not found results page.
 - Add `ProductSummary` to `header/minicart/product-summary` extension point.
 - Add Arrow Down icon that is used in `SearchResult`.
 
 ### Changed
 - Configure blocks props.
-- Remove `global.css` and bump `vtex.store` to 2.0.0-beta. 
+- Remove `global.css` and bump `vtex.store` to 2.0.0-beta.
 
 ### Fixed
 - Changing global padding to small devices
@@ -84,7 +88,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.14.0] - 2018-09-14
 ### Added
-- `Logo` and `SearchBar` as extensions of the `Header`. 
+- `Logo` and `SearchBar` as extensions of the `Header`.
 
 ## [1.13.3] - 2018-09-12
 ### Added
@@ -150,7 +154,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.9.4] - 2018-08-02
 ### Changed
-- Bump `vtex.styleguide` major version. 
+- Bump `vtex.styleguide` major version.
 
 ## [1.9.3] - 2018-07-30
 ### Fixed
@@ -162,7 +166,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.9.1] - 2018-07-24
 ### Changed
-- Bump my-orders version dependency to use stable. 
+- Bump my-orders version dependency to use stable.
 
 ## [1.7.0] - 2018-07-09
 ### Added
@@ -177,7 +181,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Moved `store/login/container` to `vtex.store`.
 
 ## [1.5.0] - 2018-7-6
-### Added 
+### Added
 - `vtex.login/LoginContent` to `store/login/container` extension point.
 
 ## [1.4.0] - 2018-7-6
@@ -192,8 +196,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - `pages.json` to inject `search-result` into `CategoryPage`
 
-### Fixed 
-- Remove the integration with `vtex.my-orders-app`. 
+### Fixed
+- Remove the integration with `vtex.my-orders-app`.
 
 ## [1.3.0] - 2018-6-20
 ### Added
@@ -235,7 +239,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Removed redundant Spinner in _ProductPage_ Component.
 
 ### Added
-- **Breaking Change** Now, dreamstore-theme is a template based on `vtex.store`. 
+- **Breaking Change** Now, dreamstore-theme is a template based on `vtex.store`.
 - Add free billing policy in `manifest.json`.
 - Add the breadcrumb component to the `SearchPage` and `ProductPage`.
 
@@ -244,7 +248,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.3.5] - 2018-05-21
 ### Fixed
-- Fix pages dependency to be able to use `ExntesionContainer` again. 
+- Fix pages dependency to be able to use `ExntesionContainer` again.
 - `Topbar` when scrolled overlapped the `VTEX-topbar`.
 - Update css product details class for the spinner be in the center.
 
@@ -293,7 +297,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.0.11] - 2018-05-09
 ### Added
-- Add Product Details app. 
+- Add Product Details app.
 
 ### Deprecated
 - Remove legacy implementations of buy button and minicart.
@@ -307,4 +311,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add Menu app on top bar.
 
 ### Deprecated
-- Remove the own implementation of shelf to add the app. 
+- Remove the own implementation of shelf to add the app.
