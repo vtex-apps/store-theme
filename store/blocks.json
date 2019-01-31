@@ -290,7 +290,9 @@
       "filter-navigator",
       "gallery",
       "not-found",
-      "breadcrumb"
+      "breadcrumb",
+      "order-by",
+      "total-products"
     ],
     "props": {
       "querySchema": {
