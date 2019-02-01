@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.0-rc.4] - 2019-02-01
+
 ## [2.0.0-rc.3] - 2019-01-30
 ### Changed
 - Adjust search-result blocks configuration.
