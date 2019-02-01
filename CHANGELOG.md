@@ -7,38 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [2.0.0-rc.4] - 2019-02-01
-
-## [2.0.0-rc.3] - 2019-01-30
-### Changed
-- Adjust search-result blocks configuration.
-
-## [2.0.0-rc.2] - 2019-1-30
-### Changed
-- Migrate to styles builder 1.x
-
-## [2.0.0-rc.1] - 2019-01-30
-
-## [2.0.0-rc.0] - 2019-01-29
-
-## [2.0.0-rc] - 2019-01-28
 ### Added
 - Add profile challenge block on account.
 - Bye `pages.json`! Welcome `store-builder`.
+- Add styles builder 1.x
 - Two new nav icons.
 - New Icon for telemarketing.
 - Default padding setted on body.
 - Dreamstore with Design Tokens! :tada
-- Extension point definition for not found results page.
-- Add `ProductSummary` to `header/minicart/product-summary` extension point.
-- Add Arrow Down icon that is used in `SearchResult`.
 
 ### Changed
 - Configure blocks props.
-- Remove `global.css` and bump `vtex.store` to 2.0.0-beta.
-
-### Fixed
-- Changing global padding to small devices
+- Remove `global.css` and bump `vtex.store` to 2.0.0.
+- Adjust search-result blocks configuration.
 
 ## [1.18.6] - 2018-12-20
 ### Fixed
