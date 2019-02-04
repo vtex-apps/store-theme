@@ -255,7 +255,8 @@
           "name": {
             "showBrandName": false,
             "showSku": false,
-            "showProductReference": false
+            "showProductReference": false,
+            "tag": "h2"
           }
         }
       }
