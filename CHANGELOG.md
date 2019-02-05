@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.1] - 2019-02-05
+### Added
+- Add new required blocks for `ProductDetail`.
+
 ## [2.0.0] - 2019-02-01
 
 ### Added
