@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "dreamstore",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "builders": {
     "styles": "1.x",
     "store": "0.x"
@@ -11,7 +11,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0",
+    "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.store-footer": "2.x",
     "vtex.carousel": "2.x",
