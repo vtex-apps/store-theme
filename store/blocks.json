@@ -9,7 +9,7 @@
     "blocks": [
       "product-details#default",
       "product-kit",
-      "related-products"
+      "shelf.relatedProducts"
     ]
   },
   "store.search": {
@@ -233,6 +233,9 @@
     }
   },
   "shelf#home": {
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "productList": {

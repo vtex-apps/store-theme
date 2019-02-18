@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.2.0] - 2019-02-18
+### Changed
+- Update app name to `store-theme` instead of `dreamstore`.
+- Change `related-products` for `shelf.relatedProducts`. 
+
 ## [2.1.0] - 2019-02-12
 ### Added
 - Add product-specifications in product-details block.
