@@ -1,0 +1,22 @@
+.infoCardContainer {
+  height: 500px;
+  background-position: top center;
+}
+
+@media only screen and (min-width: 980px) {
+  .infoCardContainer {
+    height: 550px;
+    background-position: top center;
+  }
+
+  .infoCardTextContainer {
+    margin-left: 6rem;
+  }
+
+}
+
+@media only screen and (max-width: 490px) {
+  .infoCardTextContainer {
+    width: 65%;
+  }
+}

@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "info-card",
       "carousel#home",
       "shelf#home"
     ]
@@ -90,6 +91,20 @@
         "typeOfRoute": "internal",
         "position": "right"
       }
+    }
+  },
+  "info-card": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "headline": "Enjoy the outside with style",
+      "subhead": "Choose from a selection of our best Panama Hats",
+      "callToActionMode": "button",
+      "callToActionText": "Shop Panama Hats",
+      "callToActionUrl": "hats/panama",
+      "imageUrl": "https://i.ibb.co/qYktksq/resized.png",
+      "mobileImageUrl": "https://i.ibb.co/qYktksq/resized.png",
+      "textAlignment": "left"
     }
   },
   "minicart": {
