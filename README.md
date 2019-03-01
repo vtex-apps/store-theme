@@ -2,7 +2,7 @@
 Our boilerplate theme to create stores in the VTEX IO platform.
 
 ### Tutorial
-To understand how things works check our tutorial [Build a store using VTEX IO](https://help.vtex.com/en/tracks/build-a-store-using-vtex-io)
+To understand how things work check our tutorial [Build a store using VTEX IO](https://help.vtex.com/en/tracks/build-a-store-using-vtex-io)
 
 ### Dependencies
 All store components that you see on this document are open source too. Production ready, you can found those apps in this GitHub organization. 
