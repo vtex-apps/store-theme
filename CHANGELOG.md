@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added 
 - Add `product-highlights` in `product-details#default` block. 
+- Add `product-services` in `product-details#default` block. 
 
 ## [2.2.2] - 2019-05-02
 - Add `store.orderplaced` block definition to `blocks.json`.
