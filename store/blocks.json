@@ -277,7 +277,8 @@
       "shipping-simulator",
       "availability-subscriber",
       "share", 
-      "product-highlights"
+      "product-highlights", 
+      "product-services"
     ],
     "props": {
       "displayVertically": true,
