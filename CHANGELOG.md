@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Include missing dependencies. Previously, it was working only due to a dependency leak on IO, but the store-theme was breaking since that problem was fixed.
+
 ## [2.2.0] - 2019-02-18
 ### Changed
 - Update app name to `store-theme` instead of `dreamstore`.
