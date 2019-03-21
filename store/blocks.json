@@ -1,4 +1,48 @@
 {
+  "header": {
+    "blocks": [
+      "header-desktop",
+      "header-mobile"
+    ]
+  },
+  "header-desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#2-desktop": {
+    "children": [
+      "logo",
+      "_",
+      "search-bar",
+      "_",
+      "login",
+      "minicart"
+    ]
+  },
+  "login": {
+    "props": {
+      "iconLabel": "Login"
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+      "category-menu"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
   "store.home": {
     "blocks": [
       "carousel#home",
@@ -50,17 +94,6 @@
       "login-content#default"
     ]
   },
-  "header.full": {
-    "blocks": [
-      "login",
-      "minicart",
-      "logo",
-      "search-bar",
-      "menu-link",
-      "telemarketing",
-      "category-menu"
-    ]
-  },
   "menu-link": {
     "props": {
       "numberOfItems": 6,
@@ -104,7 +137,9 @@
       "labelMiniCartEmpty": "",
       "labelButtonFinishShopping": "Ir para o checkout",
       "enableQuantitySelector": true,
-      "maxQuantity": 10
+      "maxQuantity": 10,
+      "iconLabel": "Cart",
+      "labelClasses": "gray"
     }
   },
   "footer": {
