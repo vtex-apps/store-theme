@@ -1,48 +1,4 @@
 {
-  "header": {
-    "blocks": [
-      "header-desktop",
-      "header-mobile"
-    ]
-  },
-  "header-desktop": {
-    "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop"
-    ]
-  },
-  "header-row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  "header-row#2-desktop": {
-    "children": [
-      "logo",
-      "_",
-      "search-bar",
-      "_",
-      "login",
-      "minicart"
-    ]
-  },
-  "login": {
-    "props": {
-      "iconLabel": "Login"
-    }
-  },
-  "header-row#3-desktop": {
-    "children": [
-      "category-menu"
-    ],
-    "props": {
-      "sticky": true
-    }
-  },
   "store.home": {
     "blocks": [
       "carousel#home",
@@ -93,6 +49,234 @@
     "blocks": [
       "login-content#default"
     ]
+  },
+  "header": {
+    "blocks": [
+      "header-desktop",
+      "header-mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-desktop",
+      "header-mobile"
+    ]
+  },
+  "header-desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#2-desktop": {
+    "children": [
+      "logo",
+      "_",
+      "search-bar",
+      "_",
+      "login",
+      "minicart"
+    ]
+  },
+  "login": {
+    "props": {
+      "iconLabel": "Login"
+    }
+  },
+  "logo": {
+    "props": {
+      "href": "/"
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+      "_",
+      "vtex.menu@2.x:menu",
+      "_"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+  "vtex.menu@2.x:menu": {
+    "children": [
+      "menu-item#hats",
+      "menu-item#custom1",
+      "menu-item#decoration",
+      "menu-item#necessaire",
+      "menu-item#custom2",
+      "menu-item#bateria"
+    ]
+  },
+  "menu-item#hats": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#custom1": {
+    "props": {
+      "id": "menu-item-custom-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "in-et-quasi",
+        "noFollow": false,
+        "tagTitle": "et dolorem dolore",
+        "text": "facere cumque delectus"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#custom1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#custom1": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:second-level-menu#horizontal"
+    ]
+  },
+  "menu-item#decoration": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#necessaire": {
+    "props": {
+      "id": "menu-item-12",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 12
+      }
+    }
+  },
+  "menu-item#custom2": {
+    "props": {
+      "id": "menu-item-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.google.com",
+        "noFollow": true,
+        "tagTitle": "Search Google",
+        "text": "Google"
+      }
+    }
+  },
+  "menu-item#bateria": {
+    "props": {
+      "id": "menu-item-36",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 36
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#bateria"
+    ]
+  },
+  "vtex.menu@2.x:submenu#bateria": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:col#bateriaCol1",
+      "vtex.menu@2.x:col#bateriaCol2"
+    ]
+  },
+  "vtex.menu@2.x:col#bateriaCol1": {
+    "children": [
+      "vtex.menu@2.x:second-level-menu#foo",
+      "vtex.menu@2.x:second-level-menu#bar"
+    ]
+  },
+  "vtex.menu@2.x:col#bateriaCol2": {
+    "children": [
+      "vtex.menu@2.x:second-level-menu#bar"
+    ]
+  },
+  "vtex.menu@2.x:second-level-menu#horizontal": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#hats",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "vtex.menu@2.x:second-level-menu#foo": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#hats",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "vtex.menu@2.x:second-level-menu#bar": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#custom",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "second-level-menu-item#hats": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "second-level-menu-item#custom": {
+    "props": {
+      "id": "menu-item-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.google.com",
+        "noFollow": true,
+        "tagTitle": "Search Google",
+        "text": "Google"
+      }
+    }
   },
   "menu-link": {
     "props": {
