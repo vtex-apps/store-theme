@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "vtex.store": "2.x",
-    "vtex.future-header": "0.x",
+    "vtex.store-header": "2.x",
     "vtex.store-footer": "2.x",
     "vtex.store-components": "3.x",
     "vtex.carousel": "2.x",
