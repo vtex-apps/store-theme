@@ -22,7 +22,8 @@
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
     "vtex.menu": "2.x",
-    "vtex.minicart": "2.x"
+    "vtex.minicart": "2.x",
+    "vtex.store-components": "3.x"
 
   }
 }

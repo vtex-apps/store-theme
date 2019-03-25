@@ -1,0 +1,7 @@
+.itemHighlight[data-name="Technical Specs"] .highlightTitle {
+    color:red; 
+}
+
+.highlightTitle{
+    color: green;
+}
