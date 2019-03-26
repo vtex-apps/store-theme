@@ -1,9 +1,6 @@
 {
   "store.home": {
-    "blocks": [
-      "carousel#home",
-      "shelf#home"
-    ]
+    "blocks": ["carousel#home", "shelf#home"]
   },
   "store.product": {
     "blocks": [
@@ -13,42 +10,28 @@
     ]
   },
   "store.search": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
   "store.search#brand": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
   "store.search#department": {
-    "blocks": [
-      "search-result#department"
-    ]
+    "blocks": ["search-result#department"]
   },
   "store.search#category": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
   "store.search#subcategory": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
   "store.account": {
-    "blocks": [
-      "my-account"
-    ],
+    "blocks": ["my-account"],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
   "store.login": {
-    "blocks": [
-      "login-content#default"
-    ]
+    "blocks": ["login-content#default"]
   },
   "header.full": {
     "blocks": [
@@ -93,9 +76,7 @@
     }
   },
   "minicart": {
-    "blocks": [
-      "product-summary"
-    ],
+    "blocks": ["product-summary"],
     "props": {
       "type": "popup",
       "showRemoveButton": true,
@@ -194,20 +175,12 @@
         {
           "__editorItemTitle": "Crédito",
           "title": "Crédito",
-          "paymentTypes": [
-            "MasterCard",
-            "Visa",
-            "Diners Club"
-          ]
+          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
         },
         {
           "__editorItemTitle": "Débito",
           "title": "Débito",
-          "paymentTypes": [
-            "MasterCard",
-            "Visa",
-            "Diners Club"
-          ]
+          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
         }
       ],
       "storeInformations": [
@@ -233,9 +206,7 @@
     }
   },
   "shelf#home": {
-    "blocks": [
-      "product-summary"
-    ],
+    "blocks": ["product-summary"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
@@ -276,9 +247,8 @@
       "sku-selector",
       "shipping-simulator",
       "availability-subscriber",
-      "share", 
-      "product-highlights", 
-      "product-services"
+      "share",
+      "product-highlights"
     ],
     "props": {
       "displayVertically": true,

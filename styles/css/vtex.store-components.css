@@ -1,7 +1,46 @@
-.itemHighlight[data-name="Technical Specs"] .highlightTitle {
-    color:red; 
+.highlightContent {
+  margin-bottom: 0.75rem;
+  margin-left: 1.25rem;
+}
+.itemHighlight {
+  width: 100%;
+  flex: row;
+  margin-bottom: 0.5rem;
+}
+.highlightTitle {
+  float: left;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1.25rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+}
+.highlightTitle::after {
+    content: ": "
+}
+.highlightValue {
+  margin: auto;
+  font-size: 1rem;
+  line-height: 0.75rem;
+  padding-top: 0.25rem;
 }
 
-.highlightTitle{
-    color: green;
+.itemHighlight[data-name="Downloads"] .highlightValue{
+    display: none;
+}
+
+.itemHighlight[data-name="Downloads"] .highlightTitle{
+    margin-bottom: 1rem;
+    width: 100%;
+    list-style-image: url("https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-16.png");
+    list-style-position: outside;
+    margin-left: 0.25rem;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.itemHighlight[data-name="Downloads"] .highlightTitle::after {
+    content: none; 
 }
