@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "builders": {
     "styles": "1.x",
     "store": "0.x"
@@ -24,6 +24,5 @@
     "vtex.menu": "2.x",
     "vtex.minicart": "2.x",
     "vtex.store-components": "3.x"
-
   }
 }
