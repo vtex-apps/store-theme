@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "info-card#home",
       "carousel#home",
       "shelf#home"
     ]
@@ -52,24 +53,25 @@
   },
   "header": {
     "blocks": [
-      "header-desktop",
-      "header-mobile"
+      "unstable--header-layout.desktop",
+      "unstable--header-layout.mobile"
     ]
   },
   "header.full": {
     "blocks": [
-      "header-desktop",
-      "header-mobile"
+      "unstable--header-layout.desktop",
+      "unstable--header-layout.mobile"
     ]
   },
-  "header-desktop": {
+  "unstable--header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop"
+      "unstable--header-row#1-desktop",
+      "unstable--header-row#2-desktop",
+      "unstable--header-row#3-desktop",
+      "unstable--header-row#4-desktop"
     ]
   },
-  "header-row#1-desktop": {
+  "unstable--header-row#1-desktop": {
     "children": [
       "telemarketing"
     ],
@@ -77,49 +79,97 @@
       "fullWidth": true
     }
   },
-  "header-row#2-desktop": {
+  "unstable--header-row#2-desktop": {
     "children": [
-      "logo",
+      "vtex.menu@2.x:unstable--menu#number1",
+      "_",
+      "vtex.menu@2.x:unstable--menu#number2"
+    ]
+  },
+  "vtex.menu@2.x:unstable--menu#number1": {
+    "children": [
+      "unstable--menu-item#number1"
+    ]
+  },
+  "unstable--menu-item#number1": {
+    "props": {
+      "id": "menu-item-number1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 1",
+        "text": "Example 1"
+      }
+    }
+  },
+  "vtex.menu@2.x:unstable--menu#number2": {
+    "children": [
+      "unstable--menu-item#number2-1",
+      "unstable--menu-item#number2-2"
+    ]
+  },
+  "unstable--menu-item#number2-1": {
+    "props": {
+      "id": "menu-item-number2-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-1",
+        "text": "Example 2-1"
+      }
+    }
+  },
+  "unstable--menu-item#number2-2": {
+    "props": {
+      "id": "menu-item-number2-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-2",
+        "text": "Example 2-2"
+      }
+    }
+  },  
+  "unstable--header-row#3-desktop": {
+    "children": [
       "_",
       "search-bar",
-      "_",
       "login",
       "minicart"
     ]
   },
-  "login": {
-    "props": {
-      "iconLabel": "Login"
-    }
-  },
-  "logo": {
-    "props": {
-      "href": "/"
-    }
-  },
-  "header-row#3-desktop": {
+  "unstable--header-row#4-desktop": {
     "children": [
-      "_",
-      "vtex.menu@2.x:menu",
-      "_"
+      "logo",
+      "vtex.menu@2.x:unstable--menu#categories"
     ],
     "props": {
       "sticky": true
     }
   },
-  "vtex.menu@2.x:menu": {
+  "vtex.menu@2.x:unstable--menu#categories": {
     "children": [
-      "menu-item#hats",
-      "menu-item#custom1",
-      "menu-item#decoration",
-      "menu-item#necessaire",
-      "menu-item#custom2",
-      "menu-item#bateria"
+      "unstable--menu-item#category-1",
+      "unstable--menu-item#category-2",
+      "unstable--menu-item#category-3",
+      "unstable--menu-item#category-custom"
     ]
   },
-  "menu-item#hats": {
+  "unstable--menu-item#category-1": {
     "props": {
-      "id": "menu-item-1",
+      "id": "menu-item-category-1",
       "type": "category",
       "iconId": null,
       "highlight": false,
@@ -128,35 +178,9 @@
       }
     }
   },
-  "menu-item#custom1": {
+  "unstable--menu-item#category-2": {
     "props": {
-      "id": "menu-item-custom-1",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "in-et-quasi",
-        "noFollow": false,
-        "tagTitle": "et dolorem dolore",
-        "text": "facere cumque delectus"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#custom1"
-    ]
-  },
-  "vtex.menu@2.x:submenu#custom1": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:second-level-menu#horizontal"
-    ]
-  },
-  "menu-item#decoration": {
-    "props": {
-      "id": "menu-item-2",
+      "id": "menu-item-category-2",
       "type": "category",
       "iconId": null,
       "highlight": false,
@@ -165,119 +189,98 @@
       }
     }
   },
-  "menu-item#necessaire": {
+  "unstable--menu-item#category-3": {
     "props": {
-      "id": "menu-item-12",
+      "id": "menu-item-category-3",
       "type": "category",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "categoryId": 12
+        "categoryId": 3
       }
     }
-  },
-  "menu-item#custom2": {
+  },    
+  "unstable--menu-item#category-custom": {
     "props": {
-      "id": "menu-item-custom-2",
+      "id": "menu-item-category-custom",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "external",
-        "href": "https://www.google.com",
+        "href": "#",
         "noFollow": true,
-        "tagTitle": "Search Google",
-        "text": "Google"
-      }
-    }
-  },
-  "menu-item#bateria": {
-    "props": {
-      "id": "menu-item-36",
-      "type": "category",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "categoryId": 36
+        "tagTitle": "Custom Category",
+        "text": "Custom Category"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#bateria"
-    ]
+      "vtex.menu@2.x:unstable--submenu#category-custom"
+    ]    
   },
-  "vtex.menu@2.x:submenu#bateria": {
+  "vtex.menu@2.x:unstable--submenu#category-custom": {
     "props": {
       "width": "100%"
     },
     "children": [
-      "vtex.menu@2.x:col#bateriaCol1",
-      "vtex.menu@2.x:col#bateriaCol2"
+      "vtex.menu@2.x:unstable--second-level-menu#category-custom"
     ]
-  },
-  "vtex.menu@2.x:col#bateriaCol1": {
-    "children": [
-      "vtex.menu@2.x:second-level-menu#foo",
-      "vtex.menu@2.x:second-level-menu#bar"
-    ]
-  },
-  "vtex.menu@2.x:col#bateriaCol2": {
-    "children": [
-      "vtex.menu@2.x:second-level-menu#bar"
-    ]
-  },
-  "vtex.menu@2.x:second-level-menu#horizontal": {
+  },  
+  "vtex.menu@2.x:unstable--second-level-menu#category-custom": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "second-level-menu-item#hats",
-      "second-level-menu-item#custom"
+      "unstable--second-level-menu-item#category-custom-1",
+      "unstable--second-level-menu-item#category-custom-2",
+      "unstable--second-level-menu-item#category-custom-3"
     ]
   },
-  "vtex.menu@2.x:second-level-menu#foo": {
+  "unstable--second-level-menu-item#category-custom-1": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "second-level-menu-item#hats",
-      "second-level-menu-item#custom"
-    ]
-  },
-  "vtex.menu@2.x:second-level-menu#bar": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "second-level-menu-item#custom",
-      "second-level-menu-item#custom"
-    ]
-  },
-  "second-level-menu-item#hats": {
-    "props": {
-      "id": "menu-item-1",
-      "type": "category",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "categoryId": 1
-      }
-    }
-  },
-  "second-level-menu-item#custom": {
-    "props": {
-      "id": "menu-item-custom-2",
+      "id": "menu-item-category-custom-1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "https://www.google.com",
+        "type": "internal",
+        "href": "#",
         "noFollow": true,
-        "tagTitle": "Search Google",
-        "text": "Google"
+        "tagTitle": "Custom Category 1",
+        "text": "Custom Category 1"
       }
     }
   },
+  "unstable--second-level-menu-item#category-custom-2": {
+    "props": {
+      "id": "menu-item-category-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 2",
+        "text": "Custom Category 2"
+      }
+    }
+  },
+  "unstable--second-level-menu-item#category-custom-3": {
+    "props": {
+      "id": "menu-item-category-custom-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 3",
+        "text": "Custom Category 3"
+      }
+    }
+  }, 
   "menu-link": {
     "props": {
       "numberOfItems": 6,
@@ -309,23 +312,6 @@
       }
     }
   },
-  "minicart": {
-    "blocks": [
-      "product-summary"
-    ],
-    "props": {
-      "type": "popup",
-      "showRemoveButton": true,
-      "showDiscount": true,
-      "showSku": true,
-      "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Ir para o checkout",
-      "enableQuantitySelector": true,
-      "maxQuantity": 10,
-      "iconLabel": "Cart",
-      "labelClasses": "gray"
-    }
-  },
   "footer": {
     "props": {
       "showPaymentFormsInColor": false,
@@ -338,68 +324,64 @@
       ],
       "sectionLinks": [
         {
-          "__editorItemTitle": "Institucional",
-          "title": "Institucional",
+          "__editorItemTitle": "Institutional",
+          "title": "Institutional",
           "links": [
             {
-              "__editorItemTitle": "Garantia Estendida",
-              "title": "Garantia Estendida"
+              "__editorItemTitle": "Extended warranty",
+              "title": "Extended warranty"
             },
             {
-              "__editorItemTitle": "Relações com investidores",
-              "title": "Relações com investidores"
+              "__editorItemTitle": "Relationship with investors",
+              "title": "Relationship with investors"
             },
             {
-              "__editorItemTitle": "Trabalhe conosco",
-              "title": "Trabalhe conosco"
+              "__editorItemTitle": "Work with us",
+              "title": "Work with us"
             },
             {
-              "__editorItemTitle": "Política de privacidade",
-              "title": "Política de privacidade"
+              "__editorItemTitle": "Privacy policy",
+              "title": "Privacy policy"
             }
           ]
         },
         {
-          "__editorItemTitle": "Dúvidas",
-          "title": "Dúvidas",
+          "__editorItemTitle": "Support",
+          "title": "Support",
           "links": [
             {
-              "__editorItemTitle": "Atendimento",
-              "title": "Atendimento"
+              "__editorItemTitle": "Attendance",
+              "title": "Attendance"
             },
             {
-              "__editorItemTitle": "Trocas e devoluções",
-              "title": "Trocas e devoluções"
+              "__editorItemTitle": "Exchanges and Returns",
+              "title": "Exchanges and Returns"
             },
             {
-              "__editorItemTitle": "Direito de arrependimento",
-              "title": "Direito de arrependimento"
-            },
-            {
-              "__editorItemTitle": "Politica de entrega",
-              "title": "Politica de entrega"
+              "__editorItemTitle": "Chat",
+              "title": "Chat"
             }
           ]
         },
         {
-          "__editorItemTitle": "Nosso Cartão",
-          "title": "Nosso Cartão",
+          "__editorItemTitle": "Our Card",
+          "title": "Our Card",
           "links": [
             {
-              "__editorItemTitle": "Peça já o seu!",
-              "title": "Peça já o seu!"
+              "__editorItemTitle": "Ask for yours now!",
+              "title": "Ask for yours now!"
             },
             {
-              "__editorItemTitle": "Central de Promoções",
-              "title": "Central de Promoções"
+              "__editorItemTitle": "Promotions Center",
+              "title": "Promotions Center"
             },
             {
-              "__editorItemTitle": "Programas Milhas",
-              "title": "Programas Milhas"
+              "__editorItemTitle": "Programs Miles",
+              "title": "Programs Miles"
             },
             {
-              "__editorItemTitle": "Benefícios",
-              "title": "Benefícios"
+              "__editorItemTitle": "Benefits",
+              "title": "Benefits"
             }
           ]
         }
@@ -411,8 +393,8 @@
       ],
       "paymentForms": [
         {
-          "__editorItemTitle": "Crédito",
-          "title": "Crédito",
+          "__editorItemTitle": "Credit",
+          "title": "Credit",
           "paymentTypes": [
             "MasterCard",
             "Visa",
@@ -420,8 +402,8 @@
           ]
         },
         {
-          "__editorItemTitle": "Débito",
-          "title": "Débito",
+          "__editorItemTitle": "Debit",
+          "title": "Debit",
           "paymentTypes": [
             "MasterCard",
             "Visa",
@@ -431,12 +413,12 @@
       ],
       "storeInformations": [
         {
-          "__editorItemTitle": "Informação da Loja",
-          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\nStore pictures: https://photos.icons8.com"
+          "__editorItemTitle": "Information",
+          "storeInformation": "This is a sample store for testing purpose only"
         },
         {
-          "__editorItemTitle": "Endereço",
-          "storeInformation": "CNPJ n.º 01.002.333/0001-00  | Centro Empresarial Botafogo - Praia de Botafogo, 300 - 2º Andar - Botafogo, Rio de Janeiro - RJ, 22250-040- empresa do grupo VTEX. "
+          "__editorItemTitle": "Address",
+          "storeInformation": "300 Street Name - 2º Floor - Neighborhood, City - State, 99999 - VTEX. "
         }
       ]
     }
@@ -462,13 +444,13 @@
         "itemsPerPage": 4,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "New collection",
+        "titleText": "Top sellers",
         "summary": {
           "isOneClickBuy": false,
           "showBadge": true,
           "badgeText": "OFF",
-          "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonHover",
+          "buyButtonText": "Add to cart",
+          "displayBuyButton": "displayButtonAlways",
           "showCollections": false,
           "showListPrice": true,
           "showLabels": false,
@@ -564,11 +546,47 @@
       "pagination": "show-more"
     }
   },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Got to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+  "login": {
+    "props": {
+    }
+  },
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
+  },  
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "imageUrl": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+      "headline": "SITEWIDE SAVINGS!",
+      "subhead": "EXTRA 35% OFF*",
+      "callToActionText": "Shop Now"
+      }
   }
 }
