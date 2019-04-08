@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      "info-card#home",
       "carousel#home",
       "shelf#home"
     ]
