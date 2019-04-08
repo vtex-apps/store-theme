@@ -555,7 +555,7 @@
       "showDiscount": true,
       "showSku": true,
       "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Got to checkout",
+      "labelButtonFinishShopping": "Go to checkout",
       "enableQuantitySelector": true,
       "maxQuantity": 10,
       "labelClasses": "gray"
