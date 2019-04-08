@@ -331,8 +331,8 @@
               "title": "Extended warranty"
             },
             {
-              "__editorItemTitle": "Relationship with investors",
-              "title": "Relationship with investors"
+              "__editorItemTitle": "Investor relations",
+              "title": "Investor relations"
             },
             {
               "__editorItemTitle": "Work with us",
@@ -371,12 +371,12 @@
               "title": "Ask for yours now!"
             },
             {
-              "__editorItemTitle": "Promotions Center",
-              "title": "Promotions Center"
+              "__editorItemTitle": "Promotions",
+              "title": "Promotions"
             },
             {
-              "__editorItemTitle": "Programs Miles",
-              "title": "Programs Miles"
+              "__editorItemTitle": "Miles Program",
+              "title": "Miles Program"
             },
             {
               "__editorItemTitle": "Benefits",
@@ -413,7 +413,7 @@
       "storeInformations": [
         {
           "__editorItemTitle": "Information",
-          "storeInformation": "This is a sample store for testing purpose only"
+          "storeInformation": "This is an example store for testing purposes only"
         },
         {
           "__editorItemTitle": "Address",
