@@ -305,6 +305,7 @@
     "blocks": [
       "filter-navigator",
       "gallery",
+      "search-title",
       "not-found",
       "breadcrumb",
       "order-by",
