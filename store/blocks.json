@@ -40,20 +40,234 @@
   },
   "header": {
     "blocks": [
-      "logo"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
   "header.full": {
     "blocks": [
-      "login",
-      "minicart",
-      "logo",
-      "search-bar",
-      "menu-link",
-      "telemarketing",
-      "category-menu"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop",
+      "header-row#4-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#2-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#number1",
+      "header-spacer",
+      "vtex.menu@2.x:menu#number2"
+    ]
+  },
+  "vtex.menu@2.x:menu#number1": {
+    "children": [
+      "menu-item#number1"
+    ]
+  },
+  "menu-item#number1": {
+    "props": {
+      "id": "menu-item-number1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 1",
+        "text": "Example 1"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#number2": {
+    "children": [
+      "menu-item#number2-1",
+      "menu-item#number2-2"
+    ]
+  },
+  "menu-item#number2-1": {
+    "props": {
+      "id": "menu-item-number2-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-1",
+        "text": "Example 2-1"
+      }
+    }
+  },
+  "menu-item#number2-2": {
+    "props": {
+      "id": "menu-item-number2-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-2",
+        "text": "Example 2-2"
+      }
+    }
+  },  
+  "header-row#3-desktop": {
+    "children": [
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ]
+  },
+  "header-row#4-desktop": {
+    "children": [
+      "logo",
+      "vtex.menu@2.x:menu#categories"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#category-1",
+      "menu-item#category-2",
+      "menu-item#category-3",
+      "menu-item#category-custom"
+    ]
+  },
+  "menu-item#category-1": {
+    "props": {
+      "id": "menu-item-category-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#category-2": {
+    "props": {
+      "id": "menu-item-category-2",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#category-3": {
+    "props": {
+      "id": "menu-item-category-3",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 3
+      }
+    }
+  },    
+  "menu-item#category-custom": {
+    "props": {
+      "id": "menu-item-category-custom",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category",
+        "text": "Custom Category"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-custom"
+    ]    
+  },
+  "vtex.menu@2.x:submenu#category-custom": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-custom"
+    ]
+  },  
+  "vtex.menu@2.x:menu#category-custom": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-custom-1",
+      "menu-item#category-custom-2",
+      "menu-item#category-custom-3"
+    ]
+  },
+  "menu-item#category-custom-1": {
+    "props": {
+      "id": "menu-item-category-custom-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 1",
+        "text": "Custom Category 1"
+      }
+    }
+  },
+  "menu-item#category-custom-2": {
+    "props": {
+      "id": "menu-item-category-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 2",
+        "text": "Custom Category 2"
+      }
+    }
+  },
+  "menu-item#category-custom-3": {
+    "props": {
+      "id": "menu-item-category-custom-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 3",
+        "text": "Custom Category 3"
+      }
+    }
+  }, 
   "menu-link": {
     "props": {
       "numberOfItems": 6,
