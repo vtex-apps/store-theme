@@ -52,25 +52,25 @@
   },
   "header": {
     "blocks": [
-      "unstable--header-layout.desktop",
-      "unstable--header-layout.mobile"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
   "header.full": {
     "blocks": [
-      "unstable--header-layout.desktop",
-      "unstable--header-layout.mobile"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
-  "unstable--header-layout.desktop": {
+  "header-layout.desktop": {
     "children": [
-      "unstable--header-row#1-desktop",
-      "unstable--header-row#2-desktop",
-      "unstable--header-row#3-desktop",
-      "unstable--header-row#4-desktop"
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop",
+      "header-row#4-desktop"
     ]
   },
-  "unstable--header-row#1-desktop": {
+  "header-row#1-desktop": {
     "children": [
       "telemarketing"
     ],
@@ -78,19 +78,19 @@
       "fullWidth": true
     }
   },
-  "unstable--header-row#2-desktop": {
+  "header-row#2-desktop": {
     "children": [
-      "vtex.menu@2.x:unstable--menu#number1",
-      "_",
-      "vtex.menu@2.x:unstable--menu#number2"
+      "vtex.menu@2.x:menu#number1",
+      "header-spacer",
+      "vtex.menu@2.x:menu#number2"
     ]
   },
-  "vtex.menu@2.x:unstable--menu#number1": {
+  "vtex.menu@2.x:menu#number1": {
     "children": [
-      "unstable--menu-item#number1"
+      "menu-item#number1"
     ]
   },
-  "unstable--menu-item#number1": {
+  "menu-item#number1": {
     "props": {
       "id": "menu-item-number1",
       "type": "custom",
@@ -105,13 +105,13 @@
       }
     }
   },
-  "vtex.menu@2.x:unstable--menu#number2": {
+  "vtex.menu@2.x:menu#number2": {
     "children": [
-      "unstable--menu-item#number2-1",
-      "unstable--menu-item#number2-2"
+      "menu-item#number2-1",
+      "menu-item#number2-2"
     ]
   },
-  "unstable--menu-item#number2-1": {
+  "menu-item#number2-1": {
     "props": {
       "id": "menu-item-number2-1",
       "type": "custom",
@@ -126,7 +126,7 @@
       }
     }
   },
-  "unstable--menu-item#number2-2": {
+  "menu-item#number2-2": {
     "props": {
       "id": "menu-item-number2-2",
       "type": "custom",
@@ -141,32 +141,32 @@
       }
     }
   },  
-  "unstable--header-row#3-desktop": {
+  "header-row#3-desktop": {
     "children": [
-      "_",
+      "header-spacer",
       "search-bar",
       "login",
       "minicart"
     ]
   },
-  "unstable--header-row#4-desktop": {
+  "header-row#4-desktop": {
     "children": [
       "logo",
-      "vtex.menu@2.x:unstable--menu#categories"
+      "vtex.menu@2.x:menu#categories"
     ],
     "props": {
       "sticky": true
     }
   },
-  "vtex.menu@2.x:unstable--menu#categories": {
+  "vtex.menu@2.x:menu#categories": {
     "children": [
-      "unstable--menu-item#category-1",
-      "unstable--menu-item#category-2",
-      "unstable--menu-item#category-3",
-      "unstable--menu-item#category-custom"
+      "menu-item#category-1",
+      "menu-item#category-2",
+      "menu-item#category-3",
+      "menu-item#category-custom"
     ]
   },
-  "unstable--menu-item#category-1": {
+  "menu-item#category-1": {
     "props": {
       "id": "menu-item-category-1",
       "type": "category",
@@ -177,7 +177,7 @@
       }
     }
   },
-  "unstable--menu-item#category-2": {
+  "menu-item#category-2": {
     "props": {
       "id": "menu-item-category-2",
       "type": "category",
@@ -188,7 +188,7 @@
       }
     }
   },
-  "unstable--menu-item#category-3": {
+  "menu-item#category-3": {
     "props": {
       "id": "menu-item-category-3",
       "type": "category",
@@ -199,7 +199,7 @@
       }
     }
   },    
-  "unstable--menu-item#category-custom": {
+  "menu-item#category-custom": {
     "props": {
       "id": "menu-item-category-custom",
       "type": "custom",
@@ -214,28 +214,28 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:unstable--submenu#category-custom"
+      "vtex.menu@2.x:submenu#category-custom"
     ]    
   },
-  "vtex.menu@2.x:unstable--submenu#category-custom": {
+  "vtex.menu@2.x:submenu#category-custom": {
     "props": {
       "width": "100%"
     },
     "children": [
-      "vtex.menu@2.x:unstable--second-level-menu#category-custom"
+      "vtex.menu@2.x:menu#category-custom"
     ]
   },  
-  "vtex.menu@2.x:unstable--second-level-menu#category-custom": {
+  "vtex.menu@2.x:menu#category-custom": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "unstable--second-level-menu-item#category-custom-1",
-      "unstable--second-level-menu-item#category-custom-2",
-      "unstable--second-level-menu-item#category-custom-3"
+      "menu-item#category-custom-1",
+      "menu-item#category-custom-2",
+      "menu-item#category-custom-3"
     ]
   },
-  "unstable--second-level-menu-item#category-custom-1": {
+  "menu-item#category-custom-1": {
     "props": {
       "id": "menu-item-category-custom-1",
       "type": "custom",
@@ -250,7 +250,7 @@
       }
     }
   },
-  "unstable--second-level-menu-item#category-custom-2": {
+  "menu-item#category-custom-2": {
     "props": {
       "id": "menu-item-category-custom-2",
       "type": "custom",
@@ -265,7 +265,7 @@
       }
     }
   },
-  "unstable--second-level-menu-item#category-custom-3": {
+  "menu-item#category-custom-3": {
     "props": {
       "id": "menu-item-category-custom-3",
       "type": "custom",
