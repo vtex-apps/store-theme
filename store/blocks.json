@@ -1,6 +1,14 @@
 {
   "store.home": {
-    "blocks": ["carousel#home", "shelf#home"]
+    "blocks": [
+      "notification.bar#home",
+      "carousel#home",
+      "flex-layout.row#deals",
+      "shelf#home",
+      "info-card#home",
+      "newsletter",
+      "rich-text#home"
+    ]
   },
   "store.product": {
     "blocks": [
@@ -38,6 +46,9 @@
       "order-placed"
     ]
   },
+
+
+
   "header": {
     "blocks": [
       "header-layout.desktop",
@@ -54,10 +65,12 @@
     "children": [
       "header-row#1-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop",
-      "header-row#4-desktop"
+      "header-row#3-desktop"
     ]
   },
+
+
+
   "header-row#1-desktop": {
     "children": [
       "telemarketing"
@@ -66,21 +79,25 @@
       "fullWidth": true
     }
   },
+
+
+
   "header-row#2-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#number1",
+      "vtex.menu@2.x:menu#websites",
       "header-spacer",
-      "vtex.menu@2.x:menu#number2"
+      "vtex.menu@2.x:menu#institutional"
     ]
   },
-  "vtex.menu@2.x:menu#number1": {
+  "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#number1"
+      "menu-item#shop",
+      "menu-item#blog"
     ]
   },
-  "menu-item#number1": {
+  "menu-item#shop": {
     "props": {
-      "id": "menu-item-number1",
+      "id": "menu-item-shop",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -88,75 +105,106 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Example 1",
-        "text": "Example 1"
+        "tagTitle": "Shop",
+        "text": "Shop"
       }
     }
   },
-  "vtex.menu@2.x:menu#number2": {
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
     "children": [
-      "menu-item#number2-1",
-      "menu-item#number2-2"
+      "menu-item#vtex-website"
     ]
   },
-  "menu-item#number2-1": {
+  "menu-item#vtex-website": {
     "props": {
-      "id": "menu-item-number2-1",
+      "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "#",
+        "type": "external",
+        "href": "http://vtex.com",
         "noFollow": false,
-        "tagTitle": "Example 2-1",
-        "text": "Example 2-1"
+        "tagTitle": "visit vtex.com",
+        "text": "visist vtex.com"
       }
     }
   },
-  "menu-item#number2-2": {
-    "props": {
-      "id": "menu-item-number2-2",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Example 2-2",
-        "text": "Example 2-2"
-      }
-    }
-  },  
+
+
+
   "header-row#3-desktop": {
     "children": [
+      "logo",
+      "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "search-bar",
       "login",
       "minicart"
-    ]
-  },
-  "header-row#4-desktop": {
-    "children": [
-      "logo",
-      "vtex.menu@2.x:menu#categories"
     ],
     "props": {
       "sticky": true
     }
   },
-  "vtex.menu@2.x:menu#categories": {
+  "vtex.menu@2.x:menu#category-menu": {
     "children": [
-      "menu-item#category-1",
-      "menu-item#category-2",
-      "menu-item#category-3",
-      "menu-item#category-custom"
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-eletronics",
+      "menu-item#custom-sale"
     ]
   },
-  "menu-item#category-1": {
+  "menu-item#category-clothing": {
     "props": {
-      "id": "menu-item-category-1",
+      "id": "menu-item-category-clothing",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 16
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-clothing": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes",
+      "menu-item#category-clothing-bags",
+      "menu-item#category-clothing-accessories"
+    ]
+  },
+  "menu-item#category-clothing-hats": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
       "type": "category",
       "iconId": null,
       "highlight": false,
@@ -165,9 +213,42 @@
       }
     }
   },
-  "menu-item#category-2": {
+  "menu-item#category-clothing-shoes": {
     "props": {
-      "id": "menu-item-category-2",
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10
+      }
+    }
+  },
+  "menu-item#category-clothing-bags": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 11
+      }
+    }
+  },
+  "menu-item#category-clothing-accessories": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 25
+      }
+    }
+  },
+  "menu-item#category-decoration": {
+    "props": {
+      "id": "menu-item-category-decoration",
       "type": "category",
       "iconId": null,
       "highlight": false,
@@ -176,98 +257,56 @@
       }
     }
   },
-  "menu-item#category-3": {
+  "menu-item#category-eletronics": {
     "props": {
-      "id": "menu-item-category-3",
+      "id": "menu-item-category-eletronics",
       "type": "category",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "categoryId": 3
+        "categoryId": 26
       }
     }
-  },    
-  "menu-item#category-custom": {
+  },
+  "menu-item#custom-sale": {
     "props": {
-      "id": "menu-item-category-custom",
+      "id": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
+        "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Custom Category",
-        "text": "Custom Category"
+        "tagTitle": "Sale",
+        "text": "Sale"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-custom"
-    ]    
+      "vtex.menu@2.x:submenu#custom-sale"
+    ]
   },
-  "vtex.menu@2.x:submenu#category-custom": {
+  "vtex.menu@2.x:submenu#custom-sale": {
     "props": {
       "width": "100%"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-custom"
+      "vtex.menu@2.x:menu#custom-sale",
+      "info-card#home"
     ]
-  },  
-  "vtex.menu@2.x:menu#category-custom": {
+  },
+  "vtex.menu@2.x:menu#custom-sale": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-custom-1",
-      "menu-item#category-custom-2",
-      "menu-item#category-custom-3"
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes"
     ]
   },
-  "menu-item#category-custom-1": {
-    "props": {
-      "id": "menu-item-category-custom-1",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Custom Category 1",
-        "text": "Custom Category 1"
-      }
-    }
-  },
-  "menu-item#category-custom-2": {
-    "props": {
-      "id": "menu-item-category-custom-2",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Custom Category 2",
-        "text": "Custom Category 2"
-      }
-    }
-  },
-  "menu-item#category-custom-3": {
-    "props": {
-      "id": "menu-item-category-custom-3",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Custom Category 3",
-        "text": "Custom Category 3"
-      }
-    }
-  }, 
+
+
+
   "menu-link": {
     "props": {
       "numberOfItems": 6,
@@ -419,14 +458,41 @@
       ]
     }
   },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
   "carousel#home": {
     "props": {
       "autoplay": true,
       "autoplaySpeed": 4,
-      "banners": [],
+      "banners": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_sunglasses1___2e11333faaa68b78fc5231a1a5291d16.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_sunglasses1___ea17f25869afd2ab38bf32ec0b7f25a3.png"
+        }
+      ],
       "height": 440,
       "showArrows": true,
       "showDots": true
+    }
+  },
+  "flex-layout.row#deals": {
+    "children": [
+      "info-card#home",
+      "info-card#home",
+      "info-card#home",
+      "info-card#home"
+    ]
+  },
+  "rich-text#home": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**\nReach us at\nwww.vtex.com"
     }
   },
   "shelf#home": {
@@ -435,7 +501,7 @@
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,
-        "itemsPerPage": 4,
+        "itemsPerPage": 6,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "New collection",
@@ -551,5 +617,21 @@
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "imageUrl": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+      "headline": "SITEWIDE SAVINGS!",
+      "subhead": "EXTRA 35% OFF*",
+      "callToActionText": "Shop Now"
+      }
   }
 }
