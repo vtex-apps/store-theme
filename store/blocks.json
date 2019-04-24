@@ -7,9 +7,38 @@
   },
   "store.product": {
     "blocks": [
+      "product-rating-summary",
       "product-details#default",
       "product-kit",
-      "shelf.relatedProducts"
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-rating-inline",
+      "product-summary-price",
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-buy-button"
+    ]
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator",
+      "search-title",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "total-products",
+      "order-by"
+    ]
+  },
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf"
     ]
   },
   "store.search": {
@@ -140,7 +169,7 @@
         "text": "Example 2-2"
       }
     }
-  },  
+  },
   "header-row#3-desktop": {
     "children": [
       "header-spacer",
@@ -198,7 +227,7 @@
         "categoryId": 3
       }
     }
-  },    
+  },
   "menu-item#category-custom": {
     "props": {
       "id": "menu-item-category-custom",
@@ -215,7 +244,7 @@
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-custom"
-    ]    
+    ]
   },
   "vtex.menu@2.x:submenu#category-custom": {
     "props": {
@@ -224,7 +253,7 @@
     "children": [
       "vtex.menu@2.x:menu#category-custom"
     ]
-  },  
+  },
   "vtex.menu@2.x:menu#category-custom": {
     "props": {
       "orientation": "vertical"
@@ -279,7 +308,7 @@
         "text": "Custom Category 3"
       }
     }
-  }, 
+  },
   "menu-link": {
     "props": {
       "numberOfItems": 6,
@@ -434,7 +463,7 @@
   },
   "shelf#home": {
     "blocks": [
-      "product-summary"
+      "product-summary.shelf"
     ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
@@ -571,7 +600,7 @@
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
-  },  
+  },
   "logo": {
     "props": {
       "title": "Logo",

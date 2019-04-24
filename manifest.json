@@ -21,8 +21,11 @@
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
     "vtex.product-kit": "1.x",
+    "vtex.product-summary": "2.x",
     "vtex.search-result": "3.x",
     "vtex.login": "2.x",
-    "vtex.my-account": "1.x"
+    "vtex.my-account": "1.x",
+    "vtex.rich-text": "0.x",
+    "vtex.product-review-interfaces": "1.x"
   }
 }
