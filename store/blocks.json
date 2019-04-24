@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      "notification.bar#home",
       "carousel#home",
       "flex-layout.row#deals",
       "shelf#home",
@@ -64,6 +63,7 @@
   "header-layout.desktop": {
     "children": [
       "header-row#1-desktop",
+      "header-row#4-desktop",
       "header-row#2-desktop",
       "header-row#3-desktop"
     ]
@@ -150,8 +150,9 @@
 
   "header-row#3-desktop": {
     "children": [
-      "logo",
       "vtex.menu@2.x:menu#category-menu",
+      "header-spacer",
+      "logo",
       "header-spacer",
       "search-bar",
       "login",
@@ -303,6 +304,16 @@
       "menu-item#category-clothing-hats",
       "menu-item#category-clothing-shoes"
     ]
+  },
+
+
+  "header-row#4-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
   },
 
 
@@ -469,7 +480,7 @@
       "autoplaySpeed": 4,
       "banners": [
         {
-          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
         },
         {
@@ -484,10 +495,10 @@
   },
   "flex-layout.row#deals": {
     "children": [
-      "info-card#home",
-      "info-card#home",
-      "info-card#home",
-      "info-card#home"
+      "info-card#deal1",
+      "info-card#deal2",
+      "info-card#deal3",
+      "info-card#deal4"
     ]
   },
   "rich-text#home": {
@@ -501,7 +512,7 @@
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,
-        "itemsPerPage": 6,
+        "itemsPerPage": 5,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "New collection",
@@ -621,17 +632,58 @@
   "logo": {
     "props": {
       "title": "Logo",
-      "href": "/"
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
     }
   },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
-      "isFullModeStyle": true,
-      "imageUrl": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
-      "headline": "SITEWIDE SAVINGS!",
-      "subhead": "EXTRA 35% OFF*",
-      "callToActionText": "Shop Now"
-      }
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Example of a call to action text",
+      "callToActionText": "DISCOVER"
+    }
+  },
+  "info-card#deal1": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "subhead": "Free shipping",
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#deal2": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#deal3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#deal4": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "subhead": "Exclusive deals",
+      "callToActionMode": "none"
+    }
   }
 }
