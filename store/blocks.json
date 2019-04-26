@@ -6,7 +6,8 @@
       "shelf#home",
       "info-card#home",
       "newsletter",
-      "rich-text#home"
+      "rich-text#question",
+      "rich-text#link"
     ]
   },
   "store.product": {
@@ -23,7 +24,9 @@
     "blocks": ["search-result"]
   },
   "store.search#department": {
-    "blocks": ["search-result#department"]
+    "blocks": [
+      "search-result"
+    ]
   },
   "store.search#category": {
     "blocks": ["search-result"]
@@ -69,7 +72,175 @@
     ]
   },
 
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "footer-row#1-desktop",
+      "footer-row#2-desktop",
+      "footer-row#3-desktop"
+    ]
+  },
+  "footer-row#1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-clothing",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "vtex.menu@2.x:menu#footer-bags",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "menu-row"
+    }
+  },
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "categoryId": 16,
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "categoryId": 2,
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "categoryId": 11,
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#blackfriday": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "Black Friday"
+      }
+    }
+  },
+  "menu-item#sale": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu-item#personalization": {
+    "props": {
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Personalization"
+      }
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
 
+
+  "footer-row#2-desktop": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard", "Visa", "Diners Club"
+      ]
+    }
+  },
+
+  "footer-row#3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
 
   "header-row#1-desktop": {
     "children": [
@@ -87,7 +258,10 @@
       "vtex.menu@2.x:menu#websites",
       "header-spacer",
       "vtex.menu@2.x:menu#institutional"
-    ]
+    ],
+    "props": {
+      "blockClass": "menu-link"
+    }
   },
   "vtex.menu@2.x:menu#websites": {
     "children": [
@@ -159,7 +333,8 @@
       "minicart"
     ],
     "props": {
-      "sticky": true
+      "sticky": true,
+      "blockClass": "main-header"
     }
   },
   "vtex.menu@2.x:menu#category-menu": {
@@ -210,7 +385,7 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "categoryId": 1
+        "categoryId": 16
       }
     }
   },
@@ -349,126 +524,24 @@
       }
     }
   },
-  "minicart": {
-    "blocks": ["product-summary"],
-    "props": {
-      "type": "popup",
-      "showRemoveButton": true,
-      "showDiscount": true,
-      "showSku": true,
-      "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Ir para o checkout",
-      "enableQuantitySelector": true,
-      "maxQuantity": 10
-    }
-  },
-  "footer": {
-    "props": {
-      "showPaymentFormsInColor": false,
-      "showSocialNetworksInColor": false,
-      "socialNetworks": [
-        {
-          "__editorItemTitle": "Facebook",
-          "socialNetwork": "Facebook"
-        }
-      ],
-      "sectionLinks": [
-        {
-          "__editorItemTitle": "Institucional",
-          "title": "Institucional",
-          "links": [
-            {
-              "__editorItemTitle": "Garantia Estendida",
-              "title": "Garantia Estendida"
-            },
-            {
-              "__editorItemTitle": "Relações com investidores",
-              "title": "Relações com investidores"
-            },
-            {
-              "__editorItemTitle": "Trabalhe conosco",
-              "title": "Trabalhe conosco"
-            },
-            {
-              "__editorItemTitle": "Política de privacidade",
-              "title": "Política de privacidade"
-            }
-          ]
-        },
-        {
-          "__editorItemTitle": "Dúvidas",
-          "title": "Dúvidas",
-          "links": [
-            {
-              "__editorItemTitle": "Atendimento",
-              "title": "Atendimento"
-            },
-            {
-              "__editorItemTitle": "Trocas e devoluções",
-              "title": "Trocas e devoluções"
-            },
-            {
-              "__editorItemTitle": "Direito de arrependimento",
-              "title": "Direito de arrependimento"
-            },
-            {
-              "__editorItemTitle": "Politica de entrega",
-              "title": "Politica de entrega"
-            }
-          ]
-        },
-        {
-          "__editorItemTitle": "Nosso Cartão",
-          "title": "Nosso Cartão",
-          "links": [
-            {
-              "__editorItemTitle": "Peça já o seu!",
-              "title": "Peça já o seu!"
-            },
-            {
-              "__editorItemTitle": "Central de Promoções",
-              "title": "Central de Promoções"
-            },
-            {
-              "__editorItemTitle": "Programas Milhas",
-              "title": "Programas Milhas"
-            },
-            {
-              "__editorItemTitle": "Benefícios",
-              "title": "Benefícios"
-            }
-          ]
-        }
-      ],
-      "badges": [
-        {
-          "__editorItemTitle": "Medalha"
-        }
-      ],
-      "paymentForms": [
-        {
-          "__editorItemTitle": "Crédito",
-          "title": "Crédito",
-          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
-        },
-        {
-          "__editorItemTitle": "Débito",
-          "title": "Débito",
-          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
-        }
-      ],
-      "storeInformations": [
-        {
-          "__editorItemTitle": "Informação da Loja",
-          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\nStore pictures: https://photos.icons8.com"
-        },
-        {
-          "__editorItemTitle": "Endereço",
-          "storeInformation": "CNPJ n.º 01.002.333/0001-00  | Centro Empresarial Botafogo - Praia de Botafogo, 300 - 2º Andar - Botafogo, Rio de Janeiro - RJ, 22250-040- empresa do grupo VTEX. "
-        }
-      ]
-    }
-  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "notification.bar#home": {
     "props": {
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
@@ -482,10 +555,6 @@
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_sunglasses1___2e11333faaa68b78fc5231a1a5291d16.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_sunglasses1___ea17f25869afd2ab38bf32ec0b7f25a3.png"
         }
       ],
       "height": 440,
@@ -499,11 +568,21 @@
       "info-card#deal2",
       "info-card#deal3",
       "info-card#deal4"
-    ]
-  },
-  "rich-text#home": {
+    ],
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**\nReach us at\nwww.vtex.com"
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com",
+      "blockClass": "link"
     }
   },
   "shelf#home": {
@@ -577,7 +656,7 @@
       }
     }
   },
-  "search-result#department": {
+  "search-result": {
     "blocks": [
       "filter-navigator",
       "gallery",
@@ -588,8 +667,8 @@
     ],
     "props": {
       "querySchema": {
-        "maxItemsPerPage": 2,
-        "orderByField": "OrderByReleaseDateDESC"
+        "maxItemsPerPage": 4,
+        "orderByField": "OrderByPriceDESC"
       },
       "hiddenFacets": {
         "layoutMode1": "normal",
@@ -643,7 +722,8 @@
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
       "headline": "Example of a call to action text",
-      "callToActionText": "DISCOVER"
+      "callToActionText": "DISCOVER",
+      "blockClass": "infoCardHome"
     }
   },
   "info-card#deal1": {
@@ -653,7 +733,8 @@
       "textPosition": "right",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
       "subhead": "Free shipping",
-      "callToActionMode": "none"
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   },
   "info-card#deal2": {
@@ -663,7 +744,8 @@
       "textPosition": "right",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
       "subhead": "One day delivery",
-      "callToActionMode": "none"
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   },
   "info-card#deal3": {
@@ -673,7 +755,8 @@
       "textPosition": "right",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
       "subhead": "One day delivery",
-      "callToActionMode": "none"
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   },
   "info-card#deal4": {
@@ -683,7 +766,8 @@
       "textPosition": "right",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
       "subhead": "Exclusive deals",
-      "callToActionMode": "none"
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   }
 }
