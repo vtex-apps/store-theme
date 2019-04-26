@@ -50,17 +50,236 @@
       "login-content#default"
     ]
   },
-  "header.full": {
+  "header": {
     "blocks": [
-      "login",
-      "minicart",
-      "logo",
-      "search-bar",
-      "menu-link",
-      "telemarketing",
-      "category-menu"
+      "unstable--header-layout.desktop",
+      "unstable--header-layout.mobile"
     ]
   },
+  "header.full": {
+    "blocks": [
+      "unstable--header-layout.desktop",
+      "unstable--header-layout.mobile"
+    ]
+  },
+  "unstable--header-layout.desktop": {
+    "children": [
+      "unstable--header-row#1-desktop",
+      "unstable--header-row#2-desktop",
+      "unstable--header-row#3-desktop",
+      "unstable--header-row#4-desktop"
+    ]
+  },
+  "unstable--header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "unstable--header-row#2-desktop": {
+    "children": [
+      "vtex.menu@2.x:unstable--menu#number1",
+      "_",
+      "vtex.menu@2.x:unstable--menu#number2"
+    ]
+  },
+  "vtex.menu@2.x:unstable--menu#number1": {
+    "children": [
+      "unstable--menu-item#number1"
+    ]
+  },
+  "unstable--menu-item#number1": {
+    "props": {
+      "id": "menu-item-number1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 1",
+        "text": "Example 1"
+      }
+    }
+  },
+  "vtex.menu@2.x:unstable--menu#number2": {
+    "children": [
+      "unstable--menu-item#number2-1",
+      "unstable--menu-item#number2-2"
+    ]
+  },
+  "unstable--menu-item#number2-1": {
+    "props": {
+      "id": "menu-item-number2-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-1",
+        "text": "Example 2-1"
+      }
+    }
+  },
+  "unstable--menu-item#number2-2": {
+    "props": {
+      "id": "menu-item-number2-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-2",
+        "text": "Example 2-2"
+      }
+    }
+  },  
+  "unstable--header-row#3-desktop": {
+    "children": [
+      "_",
+      "search-bar",
+      "login",
+      "minicart"
+    ]
+  },
+  "unstable--header-row#4-desktop": {
+    "children": [
+      "logo",
+      "vtex.menu@2.x:unstable--menu#categories"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+  "vtex.menu@2.x:unstable--menu#categories": {
+    "children": [
+      "unstable--menu-item#category-1",
+      "unstable--menu-item#category-2",
+      "unstable--menu-item#category-3",
+      "unstable--menu-item#category-custom"
+    ]
+  },
+  "unstable--menu-item#category-1": {
+    "props": {
+      "id": "menu-item-category-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "unstable--menu-item#category-2": {
+    "props": {
+      "id": "menu-item-category-2",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "unstable--menu-item#category-3": {
+    "props": {
+      "id": "menu-item-category-3",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 3
+      }
+    }
+  },    
+  "unstable--menu-item#category-custom": {
+    "props": {
+      "id": "menu-item-category-custom",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category",
+        "text": "Custom Category"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:unstable--submenu#category-custom"
+    ]    
+  },
+  "vtex.menu@2.x:unstable--submenu#category-custom": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:unstable--second-level-menu#category-custom"
+    ]
+  },  
+  "vtex.menu@2.x:unstable--second-level-menu#category-custom": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "unstable--second-level-menu-item#category-custom-1",
+      "unstable--second-level-menu-item#category-custom-2",
+      "unstable--second-level-menu-item#category-custom-3"
+    ]
+  },
+  "unstable--second-level-menu-item#category-custom-1": {
+    "props": {
+      "id": "menu-item-category-custom-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 1",
+        "text": "Custom Category 1"
+      }
+    }
+  },
+  "unstable--second-level-menu-item#category-custom-2": {
+    "props": {
+      "id": "menu-item-category-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 2",
+        "text": "Custom Category 2"
+      }
+    }
+  },
+  "unstable--second-level-menu-item#category-custom-3": {
+    "props": {
+      "id": "menu-item-category-custom-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 3",
+        "text": "Custom Category 3"
+      }
+    }
+  }, 
   "menu-link": {
     "props": {
       "numberOfItems": 6,
@@ -92,21 +311,6 @@
       }
     }
   },
-  "minicart": {
-    "blocks": [
-      "product-summary"
-    ],
-    "props": {
-      "type": "popup",
-      "showRemoveButton": true,
-      "showDiscount": true,
-      "showSku": true,
-      "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Ir para o checkout",
-      "enableQuantitySelector": true,
-      "maxQuantity": 10
-    }
-  },
   "footer": {
     "props": {
       "showPaymentFormsInColor": false,
@@ -119,68 +323,64 @@
       ],
       "sectionLinks": [
         {
-          "__editorItemTitle": "Institucional",
-          "title": "Institucional",
+          "__editorItemTitle": "Institutional",
+          "title": "Institutional",
           "links": [
             {
-              "__editorItemTitle": "Garantia Estendida",
-              "title": "Garantia Estendida"
+              "__editorItemTitle": "Extended warranty",
+              "title": "Extended warranty"
             },
             {
-              "__editorItemTitle": "Relações com investidores",
-              "title": "Relações com investidores"
+              "__editorItemTitle": "Investor relations",
+              "title": "Investor relations"
             },
             {
-              "__editorItemTitle": "Trabalhe conosco",
-              "title": "Trabalhe conosco"
+              "__editorItemTitle": "Work with us",
+              "title": "Work with us"
             },
             {
-              "__editorItemTitle": "Política de privacidade",
-              "title": "Política de privacidade"
+              "__editorItemTitle": "Privacy policy",
+              "title": "Privacy policy"
             }
           ]
         },
         {
-          "__editorItemTitle": "Dúvidas",
-          "title": "Dúvidas",
+          "__editorItemTitle": "Support",
+          "title": "Support",
           "links": [
             {
-              "__editorItemTitle": "Atendimento",
-              "title": "Atendimento"
+              "__editorItemTitle": "Attendance",
+              "title": "Attendance"
             },
             {
-              "__editorItemTitle": "Trocas e devoluções",
-              "title": "Trocas e devoluções"
+              "__editorItemTitle": "Exchanges and Returns",
+              "title": "Exchanges and Returns"
             },
             {
-              "__editorItemTitle": "Direito de arrependimento",
-              "title": "Direito de arrependimento"
-            },
-            {
-              "__editorItemTitle": "Politica de entrega",
-              "title": "Politica de entrega"
+              "__editorItemTitle": "Chat",
+              "title": "Chat"
             }
           ]
         },
         {
-          "__editorItemTitle": "Nosso Cartão",
-          "title": "Nosso Cartão",
+          "__editorItemTitle": "Our Card",
+          "title": "Our Card",
           "links": [
             {
-              "__editorItemTitle": "Peça já o seu!",
-              "title": "Peça já o seu!"
+              "__editorItemTitle": "Ask for yours now!",
+              "title": "Ask for yours now!"
             },
             {
-              "__editorItemTitle": "Central de Promoções",
-              "title": "Central de Promoções"
+              "__editorItemTitle": "Promotions",
+              "title": "Promotions"
             },
             {
-              "__editorItemTitle": "Programas Milhas",
-              "title": "Programas Milhas"
+              "__editorItemTitle": "Miles Program",
+              "title": "Miles Program"
             },
             {
-              "__editorItemTitle": "Benefícios",
-              "title": "Benefícios"
+              "__editorItemTitle": "Benefits",
+              "title": "Benefits"
             }
           ]
         }
@@ -192,8 +392,8 @@
       ],
       "paymentForms": [
         {
-          "__editorItemTitle": "Crédito",
-          "title": "Crédito",
+          "__editorItemTitle": "Credit",
+          "title": "Credit",
           "paymentTypes": [
             "MasterCard",
             "Visa",
@@ -201,8 +401,8 @@
           ]
         },
         {
-          "__editorItemTitle": "Débito",
-          "title": "Débito",
+          "__editorItemTitle": "Debit",
+          "title": "Debit",
           "paymentTypes": [
             "MasterCard",
             "Visa",
@@ -212,12 +412,12 @@
       ],
       "storeInformations": [
         {
-          "__editorItemTitle": "Informação da Loja",
-          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\nStore pictures: https://photos.icons8.com"
+          "__editorItemTitle": "Information",
+          "storeInformation": "This is an example store for testing purposes only"
         },
         {
-          "__editorItemTitle": "Endereço",
-          "storeInformation": "CNPJ n.º 01.002.333/0001-00  | Centro Empresarial Botafogo - Praia de Botafogo, 300 - 2º Andar - Botafogo, Rio de Janeiro - RJ, 22250-040- empresa do grupo VTEX. "
+          "__editorItemTitle": "Address",
+          "storeInformation": "300 Street Name - 2º Floor - Neighborhood, City - State, 99999 - VTEX. "
         }
       ]
     }
@@ -243,13 +443,13 @@
         "itemsPerPage": 4,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "New collection",
+        "titleText": "Top sellers",
         "summary": {
           "isOneClickBuy": false,
           "showBadge": true,
           "badgeText": "OFF",
-          "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonHover",
+          "buyButtonText": "Add to cart",
+          "displayBuyButton": "displayButtonAlways",
           "showCollections": false,
           "showListPrice": true,
           "showLabels": false,
@@ -345,11 +545,47 @@
       "pagination": "show-more"
     }
   },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+  "login": {
+    "props": {
+    }
+  },
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
+  },  
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "imageUrl": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+      "headline": "SITEWIDE SAVINGS!",
+      "subhead": "EXTRA 35% OFF*",
+      "callToActionText": "Shop Now"
+      }
   }
 }
