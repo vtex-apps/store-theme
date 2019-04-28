@@ -1,14 +1,8 @@
-.container {
-  min-height: 640px;
-}
-
 .containerImg {
-  min-height: 640px;
   background-color: #F0F0F0;
 }
 
 .containerImg img {
-  padding-top: 150px;
   max-width: 1528px;
   min-width: 1200px;
 }

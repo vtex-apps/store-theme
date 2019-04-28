@@ -317,6 +317,25 @@
     }
   },
 
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "login",
+      "header-spacer",
+      "logo",
+      "header-spacer",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+
 
 
   "carousel#home": {
@@ -325,14 +344,14 @@
       "banners": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         },
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         }
       ],
-      "height": 440,
+      "height": 640,
       "showArrows": true,
       "showDots": true
     }
@@ -630,6 +649,36 @@
     }
   },
 
+  "footer-layout.mobile": {
+    "children": [
+      "footer-row#1-mobile",
+      "footer-row#2-mobile"
+    ]
+  },
+  "footer-row#1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "footer-row#2-mobile": {
+    "children": [
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
 
 
 

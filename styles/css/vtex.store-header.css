@@ -25,3 +25,8 @@
   color: #727273;
   font-size: 14px;
 }
+
+.headerRow--main-header-mobile > div {
+  padding: 16px 0px;
+  background-color: #F0F0F0;
+}

@@ -23,6 +23,7 @@
 .infoCardContainer--infocard-deals {
   background-color: transparent;
   padding: 0px 40px;
+  display: flex;
 }
 
 .infoCardContainer--infocard-deals .infoCardImage {
@@ -70,17 +71,18 @@
 }
 
 .newsletter .container {
-  padding: 140px;
+  padding: 60px 10px;
 }
 
 .label {
   color: #fff;
-  font-size: 40px;
+  font-size: 26px;
 }
 
 .inputGroup {
   padding-bottom: 4px;
   border-bottom: 2px solid #fff;
+  display: flex;
 }
 
 .inputGroup label {
@@ -104,4 +106,18 @@
   color: #fff;
   border: none;
   margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
 }
