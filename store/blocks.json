@@ -10,44 +10,6 @@
       "rich-text#link"
     ]
   },
-  "store.product": {
-    "blocks": [
-      "product-details#default",
-      "product-kit",
-      "shelf.relatedProducts"
-    ]
-  },
-  "store.search": {
-    "blocks": ["search-result"]
-  },
-  "store.search#brand": {
-    "blocks": ["search-result"]
-  },
-  "store.search#department": {
-    "blocks": [
-      "search-result"
-    ]
-  },
-  "store.search#category": {
-    "blocks": ["search-result"]
-  },
-  "store.search#subcategory": {
-    "blocks": ["search-result"]
-  },
-  "store.account": {
-    "blocks": ["my-account"],
-    "parent": {
-      "challenge": "challenge.profile"
-    }
-  },
-  "store.login": {
-    "blocks": ["login-content#default"]
-  },
-  "store.orderplaced": {
-    "blocks": [
-      "order-placed"
-    ]
-  },
 
 
 
@@ -66,180 +28,10 @@
   "header-layout.desktop": {
     "children": [
       "header-row#1-desktop",
-      "header-row#4-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop"
+      "header-row#3-desktop",
+      "header-row#4-desktop"
     ]
-  },
-
-  "footer": {
-    "blocks": [
-      "footer-layout.desktop",
-      "footer-layout.mobile"
-    ]
-  },
-  "footer-layout.desktop": {
-    "children": [
-      "footer-row#1-desktop",
-      "footer-row#2-desktop",
-      "footer-row#3-desktop"
-    ]
-  },
-  "footer-row#1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
-    "props": {
-      "blockClass": "menu-row"
-    }
-  },
-  "vtex.menu@2.x:menu#Products": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "categoryId": 16,
-      "orientation": "vertical"
-    }
-  },
-  "vtex.menu@2.x:menu#footer-decoration": {
-    "props": {
-      "categoryId": 2,
-      "orientation": "vertical"
-    }
-  },
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "categoryId": 11,
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#news": {
-    "props": {
-      "id": "menu-item-news",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
-      }
-    }
-  },
-  "menu-item#blackfriday": {
-    "props": {
-      "id": "menu-item-black-friday",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
-      }
-    }
-  },
-  "menu-item#sale": {
-    "props": {
-      "id": "menu-item-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    }
-  },
-  "menu-item#personalization": {
-    "props": {
-      "id": "menu-item-personalization",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
-      }
-    }
-  },
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
-    }
-  },
-
-
-  "footer-row#2-desktop": {
-    "children": [
-      "accepted-payment-methods"
-    ],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": [
-        "MasterCard", "Visa", "Diners Club"
-      ]
-    }
-  },
-
-  "footer-row#3-desktop": {
-    "children": [
-      "rich-text#footer"
-    ],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
   },
 
   "header-row#1-desktop": {
@@ -251,9 +43,21 @@
     }
   },
 
-
-
   "header-row#2-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+
+  "header-row#3-desktop": {
     "children": [
       "vtex.menu@2.x:menu#websites",
       "header-spacer",
@@ -315,14 +119,12 @@
         "href": "http://vtex.com",
         "noFollow": false,
         "tagTitle": "visit vtex.com",
-        "text": "visist vtex.com"
+        "text": "visit vtex.com"
       }
     }
   },
 
-
-
-  "header-row#3-desktop": {
+  "header-row#4-desktop": {
     "children": [
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
@@ -341,7 +143,7 @@
     "children": [
       "menu-item#category-clothing",
       "menu-item#category-decoration",
-      "menu-item#category-eletronics",
+      "menu-item#category-notebooks",
       "menu-item#custom-sale"
     ]
   },
@@ -433,9 +235,9 @@
       }
     }
   },
-  "menu-item#category-eletronics": {
+  "menu-item#category-notebooks": {
     "props": {
-      "id": "menu-item-category-eletronics",
+      "id": "menu-item-category-notebooks",
       "type": "category",
       "iconId": null,
       "highlight": false,
@@ -480,78 +282,51 @@
       "menu-item#category-clothing-shoes"
     ]
   },
-
-
-  "header-row#4-desktop": {
-    "children": [
-      "notification.bar#home"
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
+    }
+  },
+  "login": {
+    "props": {
+    }
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
     ],
     "props": {
-      "fullWidth": "true"
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
     }
   },
 
 
 
-  "menu-link": {
-    "props": {
-      "numberOfItems": 6,
-      "item1": {
-        "title": "Atendimento",
-        "typeOfRoute": "internal",
-        "page": "store/home",
-        "position": "right"
-      },
-      "item2": {
-        "title": "Programa de Afiliados",
-        "typeOfRoute": "internal",
-        "position": "middle"
-      },
-      "item3": {
-        "title": "Anuncie",
-        "typeOfRoute": "internal",
-        "position": "middle"
-      },
-      "item4": {
-        "title": "Televendas 4003-2018",
-        "typeOfRoute": "internal",
-        "position": "left"
-      },
-      "item5": {
-        "title": "Sobre",
-        "typeOfRoute": "internal",
-        "position": "right"
-      }
-    }
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
   "carousel#home": {
     "props": {
-      "autoplay": true,
-      "autoplaySpeed": 4,
+      "autoplay": false,
       "banners": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
+        },
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner_coats2___17e849856b2b0e06ea5886b629190671.png"
@@ -562,6 +337,9 @@
       "showDots": true
     }
   },
+
+
+
   "flex-layout.row#deals": {
     "children": [
       "info-card#deal1",
@@ -573,18 +351,53 @@
       "blockClass": "deals"
     }
   },
-  "rich-text#question": {
+  "info-card#deal1": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "subhead": "Free shipping",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   },
-  "rich-text#link": {
+  "info-card#deal2": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com",
-      "blockClass": "link"
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
     }
   },
+  "info-card#deal3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "subhead": "One day delivery",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+  "info-card#deal4": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "subhead": "Exclusive deals",
+      "callToActionMode": "none",
+      "blockClass": "infocard-deals"
+    }
+  },
+
+
+
   "shelf#home": {
     "blocks": ["product-summary"],
     "props": {
@@ -617,6 +430,322 @@
       }
     }
   },
+
+
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Example of a call to action text",
+      "callToActionText": "DISCOVER",
+      "blockClass": "info-card-home"
+    }
+  },
+
+
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com",
+      "blockClass": "link"
+    }
+  },
+
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "footer-row#1-desktop",
+      "footer-row#2-desktop",
+      "footer-row#3-desktop"
+    ]
+  },
+  "footer-row#1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-clothing",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "vtex.menu@2.x:menu#footer-bags",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "menu-row"
+    }
+  },
+
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#blackfriday": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "Black Friday"
+      }
+    }
+  },
+  "menu-item#sale": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu-item#personalization": {
+    "props": {
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Personalization"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "categoryId": 16,
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "categoryId": 2,
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "categoryId": 11,
+      "orientation": "vertical"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "footer-row#2-desktop": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard", "Visa", "Diners Club"
+      ]
+    }
+  },
+
+  "footer-row#3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+
+
+
+
+
+
+  "store.product": {
+    "blocks": [
+      "product-details#default",
+      "product-kit",
+      "shelf.relatedProducts"
+    ]
+  },
+
+
+
+
+
+
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#department": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+
+
+
+
+
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "product-details#default": {
     "blocks": [
       "breadcrumb",
@@ -700,6 +829,7 @@
       },
       "pagination": "show-more"
     }
+<<<<<<< HEAD
   },
   "login-content#default": {
     "props": {
@@ -769,5 +899,8 @@
       "callToActionMode": "none",
       "blockClass": "infocard-deals"
     }
+=======
+>>>>>>> Improve style and organization
   }
 }
+
