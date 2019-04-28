@@ -38,34 +38,34 @@
   color: #ECECEC;
 }
 
-.infoCardContainer--infoCardHome {
-  max-width: 1400px;
+.infoCardContainer--info-card-home {
+  max-width: 1528px;
   margin: 0 auto;
   background-color: #E6F1E6;
   padding: 0px;
 }
 
-.infoCardContainer--infoCardHome div {
+.infoCardContainer--info-card-home div {
   width: auto
 }
 
-.infoCardContainer--infoCardHome .infoCardImage {
+.infoCardContainer--info-card-home .infoCardImage {
   width: 1040px;
 }
 
-.infoCardContainer--infoCardHome .infoCardTextContainer {
+.infoCardContainer--info-card-home .infoCardTextContainer {
   max-width: 400px;
   padding: 0px 60px;
   align-items: center;
 }
 
-.infoCardContainer--infoCardHome .infoCardTextContainer .infoCardHeadline {
+.infoCardContainer--info-card-home .infoCardTextContainer .infoCardHeadline {
   text-align: center;
 }
 
 .newsletter {
   background-color: #03034E;
-  max-width: 1400px;
+  max-width: 1528px;
   margin: 20px auto;
 }
 
