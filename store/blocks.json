@@ -324,6 +324,7 @@
   },
   "header-row#1-mobile": {
     "children": [
+      "drawer",
       "login",
       "header-spacer",
       "logo",
@@ -337,6 +338,23 @@
   },
 
 
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-notebooks",
+      "menu-item#custom-sale"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
 
   "carousel#home": {
     "props": {
