@@ -50,6 +50,16 @@
       "login-content#default"
     ]
   },
+  "store.orderplaced": {
+    "blocks": [
+      "order-placed"
+    ]
+  },
+  "header": {
+    "blocks": [
+      "logo"
+    ]
+  },
   "header.full": {
     "blocks": [
       "login",
