@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.2.2] - 2019-05-02
+- Add `store.orderplaced` block definition to `blocks.json`.
+
 ## [2.2.1] - 2019-03-18
 
 ### Fixed
