@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.3.1] - 2019-05-06
+
 ## [2.3.0] - 2019-03-27
 ### Added 
 - Add `product-highlights` in `product-details#default` block. 
