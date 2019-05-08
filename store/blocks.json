@@ -232,6 +232,8 @@
           "buyButtonText": "Comprar",
           "displayBuyButton": "displayButtonHover",
           "showCollections": false,
+          "labelListPrice": null,
+          "labelSellingPrice": null,
           "showListPrice": true,
           "showLabels": false,
           "showInstallments": true,
@@ -270,6 +272,7 @@
         }
       },
       "price": {
+        "labelListPrice": null,
         "labelSellingPrice": null,
         "showListPrice": true,
         "showLabels": true,
@@ -313,6 +316,7 @@
         "showBadge": true,
         "displayBuyButton": "displayButtonAlways",
         "showCollections": false,
+        "labelListPrice": null,
         "labelSellingPrice": null,
         "showListPrice": true,
         "showLabels": true,
