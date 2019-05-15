@@ -155,7 +155,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/clothing/d",
         "noFollow": true,
         "tagTitle": "Clothing",
         "text": "Clothing"
@@ -192,7 +192,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/hats/d",
         "noFollow": true,
         "tagTitle": "Hats",
         "text": "Hats"
@@ -207,7 +207,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/shoes/d",
         "noFollow": true,
         "tagTitle": "Shoes",
         "text": "Shoes"
@@ -222,7 +222,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/bags/d",
         "noFollow": true,
         "tagTitle": "Bags",
         "text": "Bags"
@@ -237,7 +237,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/accessories/d",
         "noFollow": true,
         "tagTitle": "Accessories",
         "text": "Accessories"
@@ -252,7 +252,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/decoration/d",
         "noFollow": true,
         "tagTitle": "Decoration",
         "text": "Decoration"
@@ -267,7 +267,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/notebooks/d",
         "noFollow": true,
         "tagTitle": "Notebooks",
         "text": "Notebooks"
@@ -282,7 +282,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/sale/d",
         "noFollow": true,
         "tagTitle": "Sale",
         "text": "Sale"
@@ -504,8 +504,9 @@
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Example of a call to action text",
+      "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home"
     }
   },
