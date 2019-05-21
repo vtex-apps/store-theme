@@ -966,7 +966,11 @@
   },
 
 
-
+  "store.orderplaced": {
+   "blocks":[
+     "order-placed"
+    ]
+  },
 
 
 
@@ -1077,6 +1081,7 @@
       "buy-button",
       "sku-selector",
       "shipping-simulator",
+      "product-highlights",
       "availability-subscriber",
       "product-price#default",
       "product-name#default",
