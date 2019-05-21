@@ -464,7 +464,9 @@
 
 
   "shelf#home": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary#home"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
@@ -472,30 +474,33 @@
         "itemsPerPage": 5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "New collection",
-        "summary": {
-          "isOneClickBuy": false,
-          "showBadge": true,
-          "badgeText": "OFF",
-          "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonHover",
-          "showCollections": false,
-          "labelListPrice": null,
-          "labelSellingPrice": null,
-          "showListPrice": true,
-          "showLabels": false,
-          "showInstallments": true,
-          "showSavings": true,
-          "name": {
-            "showBrandName": false,
-            "showSku": false,
-            "showProductReference": false
-          }
-        }
+        "titleText": "Top sellers"
       }
     }
   },
 
+
+  "product-summary#home": {
+    "props": {
+      "isOneClickBuy": false,
+      "showBadge": true,
+      "badgeText": "OFF",
+      "buyButtonText": "Add to cart",
+      "displayBuyButton": "displayButtonAlways",
+      "showCollections": false,
+      "showListPrice": true,
+      "labelSellingPrice": "Now",
+      "labelListPrice": "Was",
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,
+      "name": {
+        "showBrandName": true,
+        "showSku": true,
+        "showProductReference": true
+      }
+    }
+  },
 
 
   "info-card#home": {
@@ -956,7 +961,6 @@
   "store.product": {
     "blocks": [
       "product-details#default",
-      "product-kit",
       "shelf.relatedProducts"
     ]
   },
@@ -1067,42 +1071,52 @@
   "product-details#default": {
     "blocks": [
       "breadcrumb",
-      "product-name",
       "product-images",
-      "product-price",
       "product-description",
       "product-specifications",
       "buy-button",
       "sku-selector",
       "shipping-simulator",
       "availability-subscriber",
-      "share",
-      "product-highlights"
+      "product-price#default",
+      "product-name#default",
+      "share#default"
     ],
     "props": {
-      "displayVertically": true,
-      "share": {
-        "social": {
-          "Facebook": true,
-          "WhatsApp": true,
-          "Twitter": false
-        }
-      },
-      "price": {
-        "labelListPrice": null,
-        "labelSellingPrice": null,
-        "showListPrice": true,
-        "showLabels": true,
-        "showInstallments": true,
-        "showSavings": true
-      },
-      "name": {
-        "showBrandName": false,
-        "showSku": false,
-        "showProductReference": false
+      "displayVertically": true
+    }
+  },
+
+  "share#default": {
+    "props":{
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
       }
     }
   },
+
+  "product-price#default": {
+    "props":{
+      "labelListPrice": "Was",
+      "labelSellingPrice": "Now",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+
+  "product-name#default": {
+    "props":{
+      "showBrandName": true,
+      "showSku": false,
+      "showProductReference": false
+    }
+  },
+
   "search-result": {
     "blocks": [
       "filter-navigator",
@@ -1147,77 +1161,5 @@
       },
       "pagination": "show-more"
     }
-<<<<<<< HEAD
-  },
-  "login-content#default": {
-    "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
-    }
-  },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
-    }
-  },
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Example of a call to action text",
-      "callToActionText": "DISCOVER",
-      "blockClass": "infoCardHome"
-    }
-  },
-  "info-card#deal1": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "subhead": "Free shipping",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
-    }
-  },
-  "info-card#deal2": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "subhead": "One day delivery",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
-    }
-  },
-  "info-card#deal3": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "subhead": "One day delivery",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
-    }
-  },
-  "info-card#deal4": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "subhead": "Exclusive deals",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
-    }
-=======
->>>>>>> Improve style and organization
   }
 }
