@@ -465,7 +465,7 @@
 
   "shelf#home": {
     "blocks": [
-      "product-summary"
+      "product-summary#home"
     ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
@@ -474,28 +474,33 @@
         "itemsPerPage": 5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Top sellers",
-        "summary": {
-          "isOneClickBuy": false,
-          "showBadge": true,
-          "badgeText": "OFF",
-          "buyButtonText": "Add to cart",
-          "displayBuyButton": "displayButtonAlways",
-          "showCollections": false,
-          "showListPrice": true,
-          "showLabels": false,
-          "showInstallments": true,
-          "showSavings": true,
-          "name": {
-            "showBrandName": false,
-            "showSku": false,
-            "showProductReference": false
-          }
-        }
+        "titleText": "Top sellers"
       }
     }
   },
 
+
+  "product-summary#home": {
+    "props": {
+      "isOneClickBuy": false,
+      "showBadge": true,
+      "badgeText": "OFF",
+      "buyButtonText": "Add to cart",
+      "displayBuyButton": "displayButtonAlways",
+      "showCollections": false,
+      "showListPrice": true,
+      "labelSellingPrice": "Now",
+      "labelListPrice": "Was",
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,
+      "name": {
+        "showBrandName": true,
+        "showSku": true,
+        "showProductReference": true
+      }
+    }
+  },
 
 
   "info-card#home": {
@@ -956,7 +961,6 @@
   "store.product": {
     "blocks": [
       "product-details#default",
-      "product-kit",
       "shelf.relatedProducts"
     ]
   },
@@ -1067,40 +1071,52 @@
   "product-details#default": {
     "blocks": [
       "breadcrumb",
-      "product-name",
       "product-images",
-      "product-price",
       "product-description",
       "product-specifications",
       "buy-button",
       "sku-selector",
       "shipping-simulator",
       "availability-subscriber",
-      "share"
+      "product-price#default",
+      "product-name#default",
+      "share#default"
     ],
     "props": {
-      "displayVertically": true,
-      "share": {
-        "social": {
-          "Facebook": true,
-          "WhatsApp": true,
-          "Twitter": false
-        }
-      },
-      "price": {
-        "labelSellingPrice": null,
-        "showListPrice": true,
-        "showLabels": true,
-        "showInstallments": true,
-        "showSavings": true
-      },
-      "name": {
-        "showBrandName": false,
-        "showSku": false,
-        "showProductReference": false
+      "displayVertically": true
+    }
+  },
+
+  "share#default": {
+    "props":{
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
       }
     }
   },
+
+  "product-price#default": {
+    "props":{
+      "labelListPrice": "Was",
+      "labelSellingPrice": "Now",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+
+  "product-name#default": {
+    "props":{
+      "showBrandName": true,
+      "showSku": false,
+      "showProductReference": false
+    }
+  },
+
   "search-result": {
     "blocks": [
       "filter-navigator",
