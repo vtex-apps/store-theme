@@ -132,6 +132,7 @@
       "logo#desktop",
       "header-spacer",
       "search-bar",
+      "locale-switcher",
       "login",
       "minicart"
     ],
