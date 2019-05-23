@@ -1,14 +1,4 @@
-.flexRow--deals div {
-  width: auto;
-}
-
-.flexRow--deals section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .flexRow--deals {
-  background-color: #B2B2B2;
+  background-color: rgb(121, 121, 121);
   padding: 14px 0px;
 }

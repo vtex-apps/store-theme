@@ -64,7 +64,8 @@
       "vtex.menu@2.x:menu#institutional"
     ],
     "props": {
-      "blockClass": "menu-link"
+      "blockClass": "menu-link",
+      "inverted": "true"
     }
   },
   "vtex.menu@2.x:menu#websites": {

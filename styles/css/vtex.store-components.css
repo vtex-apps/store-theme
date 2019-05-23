@@ -7,30 +7,28 @@
 }
 
 .searchBarContainer {
-  max-width: 320px;
+  max-width: 265px;
 }
 
-.searchBarContainer input {
-  border: none;
-  border-bottom: solid 2px #3f3f40;
-  background-color: transparent;
-}
-
-.logoContainer > img {
+/* FIX THIS */
+.logoContainer img {
   max-width: 180px;
 }
 
+/* USE RICH TEXTS AND IMAGES INSTEAD OF INFOCARDS */
 .infoCardContainer--infocard-deals {
   background-color: transparent;
   padding: 0px 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoCardContainer--infocard-deals .infoCardImage {
   width: 22px;
 }
 
-.infoCardContainer--infocard-deals div {
+.infoCardContainer--infocard-deals {
   width: auto;
 }
 
@@ -40,14 +38,10 @@
 }
 
 .infoCardContainer--info-card-home {
-  max-width: 1528px;
+  max-width: 1520px;
   margin: 0 auto;
   background-color: #E6F1E6;
   padding: 0px;
-}
-
-.infoCardContainer--info-card-home div {
-  width: auto
 }
 
 .infoCardContainer--info-card-home .infoCardImage {
@@ -83,9 +77,6 @@
   padding-bottom: 4px;
   border-bottom: 2px solid #fff;
   display: flex;
-}
-
-.inputGroup label {
   color: #fff;
 }
 
