@@ -234,6 +234,7 @@
           "showCollections": false,
           "labelListPrice": null,
           "labelSellingPrice": null,
+          "showSellingPriceRange": true,
           "showListPrice": true,
           "showLabels": false,
           "showInstallments": true,
@@ -274,10 +275,10 @@
       "price": {
         "labelListPrice": null,
         "labelSellingPrice": null,
-        "showListPrice": true,
         "showLabels": true,
         "showInstallments": true,
-        "showSavings": true
+        "showSavings": true,
+        "showSellingPriceRange": false
       },
       "name": {
         "showBrandName": false,
@@ -322,6 +323,7 @@
         "showLabels": true,
         "showInstallments": false,
         "showSavings": false,
+        "showSellingPriceRange": true,
         "name": {
           "showBrandName": false,
           "showSku": false,
