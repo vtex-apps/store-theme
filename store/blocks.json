@@ -129,7 +129,7 @@
     "children": [
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
-      "logo",
+      "logo#desktop",
       "header-spacer",
       "search-bar",
       "login",
@@ -311,11 +311,12 @@
       "menu-item#category-clothing-shoes"
     ]
   },
-  "logo": {
+  "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
     }
   },
   "login": {
@@ -354,10 +355,9 @@
   "header-row#1-mobile": {
     "children": [
       "drawer",
+      "logo#mobile",
+      "header-spacer",
       "login",
-      "header-spacer",
-      "logo",
-      "header-spacer",
       "minicart"
     ],
     "props": {
@@ -369,8 +369,7 @@
 
   "drawer": {
     "children": [
-      "menu#drawer"
-    ]
+      "menu#drawer"    ]
   },
 
   "menu#drawer": {
@@ -382,6 +381,15 @@
     ],
     "props": {
       "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
     }
   },
 
@@ -398,7 +406,7 @@
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         }
       ],
-      "height": 500,
+      "height": 720,
       "showArrows": true,
       "showDots": true
     }
@@ -407,13 +415,26 @@
 
   "flex-layout.row#deals": {
     "children": [
-      "rich-text#deal1",
-      "rich-text#deal2",
-      "rich-text#deal3",
-      "rich-text#deal4"
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
     ],
     "props": {
       "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": "24px"
     }
   },
   "rich-text#deal1": {
@@ -422,16 +443,52 @@
       "blockClass": "deals"
     }
   },
+  "flex-layout.col#deals2": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "maxHeight": "24px"
+    }
+  },
   "rich-text#deal2": {
     "props": {
       "text": "One day delivery",
       "blockClass": "deals"
     }
   },
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+      "maxHeight": "24px"
+    }
+  },
   "rich-text#deal3": {
     "props": {
       "text": "Pick up in store",
       "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "maxHeight": "24px"
     }
   },
   "rich-text#deal4": {
@@ -491,7 +548,8 @@
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home"
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
     }
   },
 

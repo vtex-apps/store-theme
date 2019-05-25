@@ -10,10 +10,6 @@
   max-width: 265px;
 }
 
-.logoContainer .logoImage {
-  max-width: 180px;
-}
-
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -21,24 +17,10 @@
   padding: 0px;
 }
 
-.infoCardContainer--info-card-home .infoCardImage {
-  width: 1040px;
-}
-
-.infoCardContainer--info-card-home .infoCardTextContainer {
-  max-width: 400px;
-  padding: 0px 60px;
-  align-items: center;
-}
-
-.infoCardContainer--info-card-home .infoCardTextContainer .infoCardHeadline {
-  text-align: center;
-}
-
 .newsletter {
   background-color: #03054E;
   max-width: 1528px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .newsletter .container {
@@ -87,5 +69,13 @@
 
   .label {
     font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
   }
 }

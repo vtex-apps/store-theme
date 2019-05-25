@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.container--deals .paragraph {
+  margin: 0;
+}
+
 .container--link {
   justify-content: center;
 }
