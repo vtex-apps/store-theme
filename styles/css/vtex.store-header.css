@@ -1,34 +1,18 @@
-/* FIX THIS */
-.headerRow--menu-link span {
+.headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
 }
 
-/* FIX THIS */
-.headerRow--menu-link a {
-  color: #ffffff;
-  font-size: 14px;
-}
-
-/* FIX THIS */
-.headerRow--main-header > div {
+.headerRow--main-header .headerRowBackground {
   background-color: #F0F0F0;
 }
 
-/* FIX THIS */
-.headerRow--main-header a {
+.headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
   color: #727273;
   font-size: 14px;
 }
 
-/* FIX THIS */
-.headerRow--main-header span {
-  color: #727273;
-  font-size: 14px;
-}
-
-/* FIX THIS */
-.headerRow--main-header-mobile > div {
+.headerRow--main-header-mobile .headerRowBackground {
   padding: 16px 0px;
   background-color: #F0F0F0;
 }

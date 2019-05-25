@@ -394,7 +394,7 @@
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-black___6b3a762f6c60ed998b74c4114541b9d0.png",
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         }
       ],
@@ -405,63 +405,41 @@
   },
 
 
-
   "flex-layout.row#deals": {
     "children": [
-      "info-card#deal1",
-      "info-card#deal2",
-      "info-card#deal3",
-      "info-card#deal4"
+      "rich-text#deal1",
+      "rich-text#deal2",
+      "rich-text#deal3",
+      "rich-text#deal4"
     ],
     "props": {
       "blockClass": "deals"
     }
   },
-  "info-card#deal1": {
+  "rich-text#deal1": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "subhead": "Free shipping",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
+      "text": "Free shipping",
+      "blockClass": "deals"
     }
   },
-  "info-card#deal2": {
+  "rich-text#deal2": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "subhead": "One day delivery",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
+      "text": "One day delivery",
+      "blockClass": "deals"
     }
   },
-  "info-card#deal3": {
+  "rich-text#deal3": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "subhead": "One day delivery",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
+      "text": "Pick up in store",
+      "blockClass": "deals"
     }
   },
-  "info-card#deal4": {
+  "rich-text#deal4": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "subhead": "Exclusive deals",
-      "callToActionMode": "none",
-      "blockClass": "infocard-deals"
+      "text": "Exclusive deals",
+      "blockClass": "deals"
     }
   },
-
 
 
   "shelf#home": {

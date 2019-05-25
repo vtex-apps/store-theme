@@ -10,31 +10,8 @@
   max-width: 265px;
 }
 
-/* FIX THIS */
-.logoContainer img {
+.logoContainer .logoImage {
   max-width: 180px;
-}
-
-/* USE RICH TEXTS AND IMAGES INSTEAD OF INFOCARDS */
-.infoCardContainer--infocard-deals {
-  background-color: transparent;
-  padding: 0px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.infoCardContainer--infocard-deals .infoCardImage {
-  width: 22px;
-}
-
-.infoCardContainer--infocard-deals {
-  width: auto;
-}
-
-.infoCardContainer--infocard-deals .infoCardSubhead {
-  margin-top: 0px;
-  color: #ECECEC;
 }
 
 .infoCardContainer--info-card-home {
@@ -59,7 +36,7 @@
 }
 
 .newsletter {
-  background-color: #03034E;
+  background-color: #03054E;
   max-width: 1528px;
   margin: 20px auto;
 }

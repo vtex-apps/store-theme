@@ -2,8 +2,7 @@
   padding-right: 24px;
 }
 
-/* FIX THIS */
-.row--menu-row div {
+.row--menu-row .rowContainer {
   align-items: flex-start;
 }
 

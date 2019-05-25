@@ -1,4 +1,14 @@
-.container {
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
   justify-content: center;
 }
 
