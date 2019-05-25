@@ -1,292 +1,1165 @@
 {
   "store.home": {
-    "blocks": ["carousel#home", "shelf#home"]
-  },
-  "store.product": {
     "blocks": [
-      "product-details#default",
-      "product-kit",
-      "shelf.relatedProducts"
+      "carousel#home",
+      "flex-layout.row#deals",
+      "shelf#home",
+      "info-card#home",
+      "newsletter",
+      "rich-text#question",
+      "rich-text#link"
     ]
   },
-  "store.search": {
-    "blocks": ["search-result"]
-  },
-  "store.search#brand": {
-    "blocks": ["search-result"]
-  },
-  "store.search#department": {
-    "blocks": ["search-result#department"]
-  },
-  "store.search#category": {
-    "blocks": ["search-result"]
-  },
-  "store.search#subcategory": {
-    "blocks": ["search-result"]
-  },
-  "store.account": {
-    "blocks": ["my-account"],
-    "parent": {
-      "challenge": "challenge.profile"
-    }
-  },
-  "store.login": {
-    "blocks": ["login-content#default"]
-  },
-  "store.orderplaced": {
-    "blocks": [
-      "order-placed"
-    ]
-  },
+
+
+
   "header": {
     "blocks": [
-      "logo"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
   "header.full": {
     "blocks": [
-      "login",
-      "minicart",
-      "logo",
-      "search-bar",
-      "menu-link",
-      "telemarketing",
-      "category-menu"
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
-  "menu-link": {
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop",
+      "header-row#4-desktop"
+    ]
+  },
+
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
     "props": {
-      "numberOfItems": 6,
-      "item1": {
-        "title": "Atendimento",
-        "typeOfRoute": "internal",
-        "page": "store/home",
-        "position": "right"
-      },
-      "item2": {
-        "title": "Programa de Afiliados",
-        "typeOfRoute": "internal",
-        "position": "middle"
-      },
-      "item3": {
-        "title": "Anuncie",
-        "typeOfRoute": "internal",
-        "position": "middle"
-      },
-      "item4": {
-        "title": "Televendas 4003-2018",
-        "typeOfRoute": "internal",
-        "position": "left"
-      },
-      "item5": {
-        "title": "Sobre",
-        "typeOfRoute": "internal",
-        "position": "right"
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+
+  "header-row#3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "header-spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true"
+    }
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop",
+      "menu-item#blog"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
       }
     }
   },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  },
+
+  "header-row#4-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu",
+      "header-spacer",
+      "logo#desktop",
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-notebooks",
+      "menu-item#custom-sale"
+    ]
+  },
+  "menu-item#category-clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-clothing": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes",
+      "menu-item#category-clothing-bags",
+      "menu-item#category-clothing-accessories"
+    ]
+  },
+  "menu-item#category-clothing-hats": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Hats",
+        "text": "Hats"
+      }
+    }
+  },
+  "menu-item#category-clothing-shoes": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shoes/d",
+        "noFollow": true,
+        "tagTitle": "Shoes",
+        "text": "Shoes"
+      }
+    }
+  },
+  "menu-item#category-clothing-bags": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Bags"
+      }
+    }
+  },
+  "menu-item#category-clothing-accessories": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accessories/d",
+        "noFollow": true,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-decoration": {
+    "props": {
+      "id": "menu-item-category-decoration",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/d",
+        "noFollow": true,
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    }
+  },
+  "menu-item#category-notebooks": {
+    "props": {
+      "id": "menu-item-category-notebooks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks/d",
+        "noFollow": true,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
+    }
+  },
+  "menu-item#custom-sale": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sale/d",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#custom-sale"
+    ]
+  },
+  "vtex.menu@2.x:submenu#custom-sale": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#custom-sale",
+      "info-card#home"
+    ]
+  },
+  "vtex.menu@2.x:menu#custom-sale": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "login": {
+    "props": {
+    }
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
   "minicart": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
       "type": "popup",
       "showRemoveButton": true,
       "showDiscount": true,
       "showSku": true,
       "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Ir para o checkout",
+      "labelButtonFinishShopping": "Go to checkout",
       "enableQuantitySelector": true,
-      "maxQuantity": 10
+      "maxQuantity": 10,
+      "labelClasses": "gray"
     }
   },
-  "footer": {
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
     "props": {
-      "showPaymentFormsInColor": false,
-      "showSocialNetworksInColor": false,
-      "socialNetworks": [
-        {
-          "__editorItemTitle": "Facebook",
-          "socialNetwork": "Facebook"
-        }
-      ],
-      "sectionLinks": [
-        {
-          "__editorItemTitle": "Institucional",
-          "title": "Institucional",
-          "links": [
-            {
-              "__editorItemTitle": "Garantia Estendida",
-              "title": "Garantia Estendida"
-            },
-            {
-              "__editorItemTitle": "Relações com investidores",
-              "title": "Relações com investidores"
-            },
-            {
-              "__editorItemTitle": "Trabalhe conosco",
-              "title": "Trabalhe conosco"
-            },
-            {
-              "__editorItemTitle": "Política de privacidade",
-              "title": "Política de privacidade"
-            }
-          ]
-        },
-        {
-          "__editorItemTitle": "Dúvidas",
-          "title": "Dúvidas",
-          "links": [
-            {
-              "__editorItemTitle": "Atendimento",
-              "title": "Atendimento"
-            },
-            {
-              "__editorItemTitle": "Trocas e devoluções",
-              "title": "Trocas e devoluções"
-            },
-            {
-              "__editorItemTitle": "Direito de arrependimento",
-              "title": "Direito de arrependimento"
-            },
-            {
-              "__editorItemTitle": "Politica de entrega",
-              "title": "Politica de entrega"
-            }
-          ]
-        },
-        {
-          "__editorItemTitle": "Nosso Cartão",
-          "title": "Nosso Cartão",
-          "links": [
-            {
-              "__editorItemTitle": "Peça já o seu!",
-              "title": "Peça já o seu!"
-            },
-            {
-              "__editorItemTitle": "Central de Promoções",
-              "title": "Central de Promoções"
-            },
-            {
-              "__editorItemTitle": "Programas Milhas",
-              "title": "Programas Milhas"
-            },
-            {
-              "__editorItemTitle": "Benefícios",
-              "title": "Benefícios"
-            }
-          ]
-        }
-      ],
-      "badges": [
-        {
-          "__editorItemTitle": "Medalha"
-        }
-      ],
-      "paymentForms": [
-        {
-          "__editorItemTitle": "Crédito",
-          "title": "Crédito",
-          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
-        },
-        {
-          "__editorItemTitle": "Débito",
-          "title": "Débito",
-          "paymentTypes": ["MasterCard", "Visa", "Diners Club"]
-        }
-      ],
-      "storeInformations": [
-        {
-          "__editorItemTitle": "Informação da Loja",
-          "storeInformation": "Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela nossa Loja. O valor de oferta do produto será garantido após a finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado. \n\n\nStore pictures: https://photos.icons8.com"
-        },
-        {
-          "__editorItemTitle": "Endereço",
-          "storeInformation": "CNPJ n.º 01.002.333/0001-00  | Centro Empresarial Botafogo - Praia de Botafogo, 300 - 2º Andar - Botafogo, Rio de Janeiro - RJ, 22250-040- empresa do grupo VTEX. "
-        }
-      ]
+      "sticky": true,
+      "blockClass": "main-header-mobile"
     }
   },
+
+
+  "drawer": {
+    "children": [
+      "menu#drawer"    ]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#category-notebooks",
+      "menu-item#custom-sale"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  },
+
   "carousel#home": {
     "props": {
-      "autoplay": true,
-      "autoplaySpeed": 4,
-      "banners": [],
-      "height": 440,
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ],
+      "height": 720,
       "showArrows": true,
       "showDots": true
     }
   },
+
+
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Free shipping",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "One day delivery",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "Pick up in store",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "Exclusive deals",
+      "blockClass": "deals"
+    }
+  },
+
+
   "shelf#home": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary#home"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,
-        "itemsPerPage": 4,
+        "itemsPerPage": 5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "New collection",
-        "summary": {
-          "isOneClickBuy": false,
-          "showBadge": true,
-          "badgeText": "OFF",
-          "buyButtonText": "Comprar",
-          "displayBuyButton": "displayButtonHover",
-          "showCollections": false,
-          "labelListPrice": null,
-          "labelSellingPrice": null,
-          "showListPrice": true,
-          "showLabels": false,
-          "showInstallments": true,
-          "showSavings": true,
-          "name": {
-            "showBrandName": false,
-            "showSku": false,
-            "showProductReference": false
-          }
-        }
+        "titleText": "Top sellers"
       }
     }
   },
+
+
+  "product-summary#home": {
+    "props": {
+      "isOneClickBuy": false,
+      "showBadge": true,
+      "badgeText": "OFF",
+      "buyButtonText": "Add to cart",
+      "displayBuyButton": "displayButtonAlways",
+      "showCollections": false,
+      "showListPrice": true,
+      "labelSellingPrice": "Now",
+      "labelListPrice": "Was",
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,
+      "name": {
+        "showBrandName": true,
+        "showSku": true,
+        "showProductReference": true
+      }
+    }
+  },
+
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com",
+      "blockClass": "link"
+    }
+  },
+
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "footer-row#1-desktop",
+      "footer-row#2-desktop",
+      "footer-row#3-desktop"
+    ]
+  },
+  "footer-row#1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-clothing",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "vtex.menu@2.x:menu#footer-bags",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "menu-row"
+    }
+  },
+
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#blackfriday": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "Black Friday"
+      }
+    }
+  },
+  "menu-item#sale": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu-item#personalization": {
+    "props": {
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Personalization"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+
+  "menu-item#smartphones": {
+    "props": {
+      "id": "menu-item-smartphones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
+      }
+    }
+  },
+
+  "menu-item#videogames": {
+    "props": {
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/videogames",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "Videogames"
+      }
+    }
+  },
+
+
+  "menu-item#tvs": {
+    "props": {
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "TVs"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bags",
+      "menu-item#backpacks",
+      "menu-item#necessaire"
+    ]
+  },
+
+
+
+  "menu-item#bags": {
+    "props": {
+      "id": "menu-item-bags",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Bags"
+      }
+    }
+  },
+
+
+  "menu-item#backpacks": {
+    "props": {
+      "id": "menu-item-backpacks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/backpacks",
+        "noFollow": true,
+        "tagTitle": "Backpacks",
+        "text": "Backpacks"
+      }
+    }
+  },
+
+
+
+  "menu-item#necessaire": {
+    "props": {
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Necessaire"
+      }
+    }
+  },
+
+
+
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
+
+
+  "menu-item#clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shorts",
+        "noFollow": false,
+        "tagTitle": "Shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+
+  "menu-item#tank-tops": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Tank tops",
+        "text": "Tank tops"
+      }
+    }
+  },
+
+  "menu-item#shirts": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Shirts",
+        "text": "Shirts"
+      }
+    }
+  },
+
+  "menu-item#sweatshirt": {
+    "props": {
+      "id": "menu-item-sweat-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/sweatshirt",
+        "noFollow": false,
+        "tagTitle": "Sweatshirt",
+        "text": "Sweatshirt"
+      }
+    }
+  },
+
+
+
+  "menu-item#cropped": {
+    "props": {
+      "id": "menu-item-cropped",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/cropped",
+        "noFollow": false,
+        "tagTitle": "Cropped",
+        "text": "Cropped"
+      }
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "footer-row#2-desktop": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard", "Visa", "Diners Club"
+      ]
+    }
+  },
+
+  "footer-row#3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "footer-row#1-mobile",
+      "footer-row#2-mobile"
+    ]
+  },
+  "footer-row#1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "footer-row#2-mobile": {
+    "children": [
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+
+
+
+
+
+  "store.product": {
+    "blocks": [
+      "product-details#default",
+      "shelf.relatedProducts"
+    ]
+  },
+
+
+  "store.orderplaced": {
+   "blocks":[
+     "order-placed"
+    ]
+  },
+
+
+
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#department": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+
+
+
+
+
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "product-details#default": {
     "blocks": [
       "breadcrumb",
-      "product-name",
       "product-images",
-      "product-price",
       "product-description",
       "product-specifications",
       "buy-button",
       "sku-selector",
       "shipping-simulator",
+      "product-highlights",
       "availability-subscriber",
-      "share",
-      "product-highlights"
+      "product-price#default",
+      "product-name#default",
+      "share#default"
     ],
     "props": {
-      "displayVertically": true,
-      "share": {
-        "social": {
-          "Facebook": true,
-          "WhatsApp": true,
-          "Twitter": false
-        }
-      },
-      "price": {
-        "labelListPrice": null,
-        "labelSellingPrice": null,
-        "showListPrice": true,
-        "showLabels": true,
-        "showInstallments": true,
-        "showSavings": true
-      },
-      "name": {
-        "showBrandName": false,
-        "showSku": false,
-        "showProductReference": false
+      "displayVertically": true
+    }
+  },
+
+  "share#default": {
+    "props":{
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
       }
     }
   },
-  "search-result#department": {
+
+  "product-price#default": {
+    "props":{
+      "labelListPrice": "Was",
+      "labelSellingPrice": "Now",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+
+  "product-name#default": {
+    "props":{
+      "showBrandName": true,
+      "showSku": false,
+      "showProductReference": false
+    }
+  },
+
+  "search-result": {
     "blocks": [
       "filter-navigator",
       "gallery",
@@ -297,8 +1170,8 @@
     ],
     "props": {
       "querySchema": {
-        "maxItemsPerPage": 2,
-        "orderByField": "OrderByReleaseDateDESC"
+        "maxItemsPerPage": 4,
+        "orderByField": "OrderByPriceDESC"
       },
       "hiddenFacets": {
         "layoutMode1": "normal",
@@ -329,13 +1202,6 @@
         }
       },
       "pagination": "show-more"
-    }
-  },
-  "login-content#default": {
-    "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
     }
   }
 }

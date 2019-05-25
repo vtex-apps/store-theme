@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "2.4.0",
+  "version": "3.1.0",
   "builders": {
     "styles": "1.x",
     "store": "0.x"
@@ -13,8 +13,11 @@
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
+    "vtex.product-summary": "2.x",
     "vtex.store-footer": "2.x",
     "vtex.store-components": "3.x",
+    "vtex.styleguide": "9.x",
+    "vtex.slider": "0.x",
     "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
@@ -23,6 +26,9 @@
     "vtex.product-kit": "1.x",
     "vtex.search-result": "3.x",
     "vtex.login": "2.x",
-    "vtex.my-account": "1.x"
+    "vtex.my-account": "1.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.store-drawer": "0.x"
   }
 }

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.1.0] - 2019-05-25
+### Fixed
+- Changed the way props are declared in product-summary and product-details.
+
+### Changed
+
+- New store layout using flexible blocks for Header and Footer.
+
 ## [2.4.1] - 2019-05-17
 ### Added
 - Add `under construction` status to product kit
