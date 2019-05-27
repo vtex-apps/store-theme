@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fix
+
+- Publish new version to enable new pixels.
+
 ## [2.4.0] - 2019-05-09
 ### Added
 - Add `labelListPrice` in product-details and summary blocks.
