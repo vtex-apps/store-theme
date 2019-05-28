@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "store-theme",
+  "name": "vtexday2019-theme",
   "version": "3.1.1",
   "builders": {
     "styles": "1.x",
