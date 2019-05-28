@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Fixed
-- `labelListPrice` and `labelSellingPrice` defaultss.
+- `labelListPrice` and `labelSellingPrice` defaults.
 
 ## [3.2.0] - 2019-05-28
 ### Added
