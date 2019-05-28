@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "builders": {
     "styles": "1.x",
     "store": "0.x"
@@ -29,6 +29,7 @@
     "vtex.my-account": "1.x",
     "vtex.flex-layout": "0.x",
     "vtex.rich-text": "0.x",
-    "vtex.store-drawer": "0.x"
+    "vtex.store-drawer": "0.x",
+    "vtex.locale-switcher": "0.x"
   }
 }
