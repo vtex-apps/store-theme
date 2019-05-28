@@ -1,13 +1,11 @@
 {
   "store.home": {
     "blocks": [
-      "carousel#home",
-      "flex-layout.row#deals",
-      "shelf#home",
       "info-card#home",
-      "newsletter",
-      "rich-text#question",
-      "rich-text#link"
+      "shelf#home",
+      "carousel#home",
+      "flex-layout.row#teto",
+      "newsletter"
     ]
   },
 
@@ -29,7 +27,6 @@
     "children": [
       "header-row#1-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop",
       "header-row#4-desktop"
     ]
   },
@@ -57,79 +54,11 @@
     }
   },
 
-  "header-row#3-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ],
-    "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
-    }
-  },
-  "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop",
-      "menu-item#blog"
-    ]
-  },
-  "menu-item#shop": {
-    "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    }
-  },
-  "menu-item#blog": {
-    "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Blog",
-        "text": "Blog"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
-    "props": {
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
-    }
-  },
 
   "header-row#4-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
       "logo#desktop",
+      "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "search-bar",
       "login",
@@ -412,92 +341,28 @@
     }
   },
 
-
-  "flex-layout.row#deals": {
+  "flex-layout.row#teto": {
     "children": [
-      "flex-layout.col#deals1",
-      "flex-layout.col#deals2",
-      "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
+      "image#teto",
+      "rich-text#teto"
     ],
     "props": {
-      "blockClass": "deals"
+      "blockClass": "teto"
     }
   },
 
-  "flex-layout.col#deals1": {
-    "children": [
-      "image#deal1",
-      "rich-text#deal1"
-    ]
-  },
-  "image#deal1": {
+  "image#teto": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
       "maxHeight": "24px"
     }
   },
-  "rich-text#deal1": {
+  "rich-text#teto": {
     "props": {
       "text": "Free shipping",
       "blockClass": "deals"
     }
   },
-  "flex-layout.col#deals2": {
-    "children": [
-      "image#deal2",
-      "rich-text#deal2"
-    ]
-  },
-  "image#deal2": {
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
-    }
-  },
-  "rich-text#deal2": {
-    "props": {
-      "text": "One day delivery",
-      "blockClass": "deals"
-    }
-  },
-  "flex-layout.col#deals3": {
-    "children": [
-      "image#deal3",
-      "rich-text#deal3"
-    ]
-  },
-  "image#deal3": {
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
-    }
-  },
-  "rich-text#deal3": {
-    "props": {
-      "text": "Pick up in store",
-      "blockClass": "deals"
-    }
-  },
-  "flex-layout.col#deals4": {
-    "children": [
-      "image#deal4",
-      "rich-text#deal4"
-    ]
-  },
-  "image#deal4": {
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
-    }
-  },
-  "rich-text#deal4": {
-    "props": {
-      "text": "Exclusive deals",
-      "blockClass": "deals"
-    }
-  },
-
 
   "shelf#home": {
     "blocks": [
@@ -542,29 +407,15 @@
   "info-card#home": {
     "props": {
       "id": "info-card-home",
-      "isFullModeStyle": false,
+      "isFullModeStyle": true,
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "headline": "Check our new sketchbooks!",
+      "subhead": "A new handful tool for you to write with us the future  of commerce.",
+      "callToActionText": "Check it out",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-
-
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com",
-      "blockClass": "link"
+      "textAlignment": "left"
     }
   },
 
