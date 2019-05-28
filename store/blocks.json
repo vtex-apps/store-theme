@@ -526,8 +526,8 @@
       "displayBuyButton": "displayButtonAlways",
       "showCollections": false,
       "showListPrice": true,
-      "labelSellingPrice": "Now",
-      "labelListPrice": "Was",
+      "labelSellingPrice": "To",
+      "labelListPrice": "From",
       "showLabels": true,
       "showInstallments": true,
       "showSavings": true,
@@ -1143,8 +1143,8 @@
 
   "product-price#default": {
     "props":{
-      "labelListPrice": "Was",
-      "labelSellingPrice": "Now",
+      "labelListPrice": "From",
+      "labelSellingPrice": "To",
       "showListPrice": true,
       "showLabels": true,
       "showInstallments": true,
