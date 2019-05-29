@@ -7,6 +7,20 @@
   align-items: center;
 }
 
-.flexRow--deals .flexCol {
-  align-items: center;
+.flexRow--teto {
+  margin: 90px 0px;
+}
+
+.flexCol--imagemTeto {
+  align-items: flex-end;
+}
+
+.flexCol--textoTeto {
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.flexCol--textoTeto > div {
+  height: auto !important;
 }

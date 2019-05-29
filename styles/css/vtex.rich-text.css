@@ -1,3 +1,17 @@
+
+.container--discount:active,
+.container--discount:visited,
+.container--discount a {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--teto {
+  max-width: 620px;
+}
+
 .container--deals {
   color: #ffffff;
   text-align: center;

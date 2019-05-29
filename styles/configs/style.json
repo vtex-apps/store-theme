@@ -55,9 +55,9 @@
       },
       "semanticColors": {
         "background": {
-          "base": "#ffffff",
+          "base": "#FFFFFF",
           "base--inverted": "#03044e",
-          "action-primary": "#0F3E99",
+          "action-primary": "#F71963",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
@@ -106,9 +106,9 @@
           "muted-5": "#f2f4f5"
         },
         "text": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#F71963",
           "action-secondary": "#eef3f7",
-          "link": "#0F3E99",
+          "link": "#F71963",
           "emphasis": "#f71963",
           "disabled": "#979899",
           "success": "#8bc34a",
@@ -149,7 +149,7 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#F71963",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
@@ -198,10 +198,10 @@
           "muted-5": "#f2f4f5"
         },
         "on": {
-          "base": "#3f3f40",
+          "base": "#142032",
           "base--inverted": "#ffffff",
           "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
+          "action-secondary": "#F71963",
           "emphasis": "#ffffff",
           "disabled": "#979899",
           "success": "#ffffff",
@@ -218,7 +218,7 @@
         },
         "hover-on": {
           "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
+          "action-secondary": "#F71963",
           "emphasis": "#ffffff",
           "success": "#ffffff",
           "success--faded": "#3f3f40",
@@ -229,7 +229,7 @@
         },
         "active-on": {
           "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
+          "action-secondary": "#F71963",
           "emphasis": "#ffffff",
           "success": "#ffffff",
           "success--faded": "#3f3f40",
@@ -261,7 +261,7 @@
           },
           "heading-2": {
             "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-            "fontWeight": "700",
+            "fontWeight": "normal",
             "fontSize": "2.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"

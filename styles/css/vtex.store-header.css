@@ -1,14 +1,12 @@
-.headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
-  font-size: 14px;
+.headerRowBackground--discount  {
+  background-color: #142032;
 }
 
-.headerRow--main-header .headerRowBackground {
-  background-color: #F0F0F0;
+.headerRowBackground--discount .headerRowContainer {
+  justify-content: center;
 }
 
 .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
-  color: #727273;
   font-size: 14px;
 }
 
