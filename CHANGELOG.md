@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.3.0] - 2019-06-04
+### Changed
+- Product details is now broken down into smaller blocks, inserted directly into `store.product`.
+
 ## [3.2.1] - 2019-05-28
 ### Fixed
 - `labelListPrice` and `labelSellingPrice` defaults.
