@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.4.0] - 2019-06-04
+
+## [3.3.0] - 2019-06-04
+### Changed
+- Changed logo position in header.
+
 ## [3.3.0] - 2019-06-04
 ### Changed
 - Product details is now broken down into smaller blocks, inserted directly into `store.product`.

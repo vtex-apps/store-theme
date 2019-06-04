@@ -127,9 +127,9 @@
 
   "header-row#4-desktop": {
     "children": [
+      "logo#desktop",
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
-      "logo#desktop",
       "header-spacer",
       "search-bar",
       "locale-switcher",
@@ -145,7 +145,6 @@
     "children": [
       "menu-item#category-clothing",
       "menu-item#category-decoration",
-      "menu-item#category-notebooks",
       "menu-item#custom-sale"
     ]
   },
@@ -261,21 +260,6 @@
       }
     }
   },
-  "menu-item#category-notebooks": {
-    "props": {
-      "id": "menu-item-category-notebooks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/notebooks/d",
-        "noFollow": true,
-        "tagTitle": "Notebooks",
-        "text": "Notebooks"
-      }
-    }
-  },
   "menu-item#custom-sale": {
     "props": {
       "id": "menu-item-custom-sale",
@@ -377,7 +361,6 @@
     "children": [
       "menu-item#category-clothing",
       "menu-item#category-decoration",
-      "menu-item#category-notebooks",
       "menu-item#custom-sale"
     ],
     "props": {
