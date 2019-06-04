@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- Changed logo position on header.
+- Changed logo position in header.
 
 ## [3.3.0] - 2019-06-04
 ### Changed
