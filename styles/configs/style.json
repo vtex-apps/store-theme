@@ -74,7 +74,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#0c389f",
+          "action-primary": "#072c75",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -127,7 +127,7 @@
           "link": "#0c389f"
         },
         "hover-text": {
-          "action-primary": "#0c389f",
+          "action-primary": "#072c75",
           "action-secondary": "#dbe9fd",
           "link": "#0c389f",
           "emphasis": "#dd1659",
@@ -166,7 +166,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
-          "action-primary": "#0c389f",
+          "action-primary": "#072c75",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
