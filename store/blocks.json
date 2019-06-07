@@ -982,7 +982,10 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      "flex-layout.row#product-main"
+      "flex-layout.row#product-main",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -1022,6 +1025,7 @@
     },
     "children": [
       "product-name",
+      "product-rating-summary",
       "product-price#product-details",
       "product-separator",
       "product-quantity",
