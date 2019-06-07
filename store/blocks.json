@@ -1015,6 +1015,7 @@
       "width": "60%"
     },
     "children": [
+      "product-addon-wrapper",
       "product-images"
     ]
   },
