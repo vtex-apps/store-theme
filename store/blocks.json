@@ -485,7 +485,7 @@
 
   "shelf#home": {
     "blocks": [
-      "product-summary#home"
+      "product-summary.shelf"
     ],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
@@ -1304,5 +1304,22 @@
       },
       "pagination": "show-more"
     }
+  },
+
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
   }
 }
