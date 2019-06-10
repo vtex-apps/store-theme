@@ -1209,7 +1209,7 @@
 
   "search-result": {
     "blocks": [
-      "filter-navigator",
+      "filter-navigator.v2",
       "gallery",
       "not-found",
       "breadcrumb",
