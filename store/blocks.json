@@ -5,9 +5,9 @@
       "flex-layout.row#deals",
       "shelf#home",
       "info-card#home",
-      "newsletter",
       "rich-text#question",
-      "rich-text#link"
+      "rich-text#link",
+      "newsletter"
     ]
   },
 
@@ -547,7 +547,7 @@
   },
   "rich-text#link": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com",
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
   },
@@ -1155,7 +1155,8 @@
       "rich-text#about-us"
     ],
     "props": {
-      "blockclass": "textColumn"
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
     }
   },
 
@@ -1170,7 +1171,9 @@
   "image#mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
-      "maxHeight": "600px"
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
     }
   },
 
