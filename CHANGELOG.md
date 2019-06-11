@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Product Review interfaces to PDP and shelf.
+
+### Changed
+
+- `product-summary` to `product-summary.shelf` so it's possible to add product review interfaces in the shelf.
+
 ## [3.4.2] - 2019-06-11
 ### Added
 - Example of institutional page.
