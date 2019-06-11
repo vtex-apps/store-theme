@@ -1016,7 +1016,7 @@
       "rowGap": 0
     },
     "children": [
-      "product-addon-wrapper",
+      "product-add-to-list-button",
       "product-images"
     ]
   },
