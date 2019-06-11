@@ -1163,7 +1163,7 @@
   "rich-text#title-about-us": {
     "props": {
       "text":
-      "Create meaningful and relevant experiences.",
+      "# Create meaningful and relevant experiences.",
       "blockClass": "title"
     }
   },
