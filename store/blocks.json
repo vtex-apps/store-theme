@@ -1012,9 +1012,11 @@
   },
   "flex-layout.col#product-image": {
     "props": {
-      "width": "60%"
+      "width": "60%",
+      "rowGap": 0
     },
     "children": [
+      "product-add-to-list-button",
       "product-images"
     ]
   },
