@@ -1120,6 +1120,17 @@
 
 
 
+  "store.search#subcategory-terms": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+
+
+
+
   "store.account": {
     "blocks": [
       "my-account"
