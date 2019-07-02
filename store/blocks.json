@@ -1031,6 +1031,7 @@
       "product-price#product-details",
       "product-separator",
       "product-quantity",
+      "product-identifier.product",
       "sku-selector",
       "flex-layout.row#buy-button",
       "availability-subscriber",
@@ -1322,6 +1323,7 @@
       "product-rating-inline",
       "product-summary-space",
       "product-summary-price",
+      "product-identifier.summary",
       "product-summary-buy-button"
     ]
   }
