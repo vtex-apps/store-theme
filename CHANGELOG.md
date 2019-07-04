@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Add `product-identifier.product` to the product page.
+- Add `product-identifier.summary` to the product summary.
+
 ## [3.5.1] - 2019-06-12
 ### Fixed
 - Show the heart icon of wish list in product details.
