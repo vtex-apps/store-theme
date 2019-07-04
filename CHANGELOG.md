@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.6.0] - 2019-07-04
+
 ### Added
 
 - Add `product-identifier.product` to the product page.
