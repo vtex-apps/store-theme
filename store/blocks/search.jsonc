@@ -1,0 +1,85 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+
+  "store.search#department": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+
+  "search-result": {
+    "blocks": [
+      // It's recommended to use the filter-navigator.v2 instead of the v1 (i.e. just `filter-navigator`)
+      "filter-navigator.v2",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "order-by",
+      "total-products"
+    ],
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 4,
+        "orderByField": "OrderByPriceDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonAlways",
+        "showCollections": false,
+        "labelListPrice": null,
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
+    }
+  },
+
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  }
+}

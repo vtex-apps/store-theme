@@ -1,0 +1,157 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": [
+      "menu-item#category-clothing",
+      "menu-item#category-decoration",
+      "menu-item#custom-sale"
+    ]
+  },
+  "menu-item#category-clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-clothing": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes",
+      "menu-item#category-clothing-bags",
+      "menu-item#category-clothing-accessories"
+    ]
+  },
+  "menu-item#category-clothing-hats": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Hats",
+        "text": "Hats"
+      }
+    }
+  },
+  "menu-item#category-clothing-shoes": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shoes/d",
+        "noFollow": true,
+        "tagTitle": "Shoes",
+        "text": "Shoes"
+      }
+    }
+  },
+  "menu-item#category-clothing-bags": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Bags"
+      }
+    }
+  },
+  "menu-item#category-clothing-accessories": {
+    "props": {
+      "id": "menu-item-category-clothing-hats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accessories/d",
+        "noFollow": true,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-decoration": {
+    "props": {
+      "id": "menu-item-category-decoration",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/d",
+        "noFollow": true,
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    }
+  },
+  "menu-item#custom-sale": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sale/d",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#custom-sale"
+    ]
+  },
+  "vtex.menu@2.x:submenu#custom-sale": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#custom-sale",
+      "info-card#home"
+    ]
+  },
+  "vtex.menu@2.x:menu#custom-sale": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-clothing-hats",
+      "menu-item#category-clothing-shoes"
+    ]
+  }
+}
