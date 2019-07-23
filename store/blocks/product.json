@@ -40,6 +40,11 @@
       "product-images"
     ]
   },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
   "flex-layout.col#product-price": {
     "props": {
       "preventVerticalStretch": true,
