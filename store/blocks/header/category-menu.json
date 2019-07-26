@@ -14,7 +14,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/apparel---accessories/clothing/",
         "noFollow": true,
         "tagTitle": "Clothing",
         "text": "Clothing"
@@ -39,8 +39,7 @@
     "children": [
       "menu-item#category-clothing-hats",
       "menu-item#category-clothing-shoes",
-      "menu-item#category-clothing-bags",
-      "menu-item#category-clothing-accessories"
+      "menu-item#category-clothing-bags"
     ]
   },
   "menu-item#category-clothing-hats": {
@@ -51,7 +50,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/hats/d",
+        "href": "/apparel---accessories/hats/",
         "noFollow": true,
         "tagTitle": "Hats",
         "text": "Hats"
@@ -60,13 +59,13 @@
   },
   "menu-item#category-clothing-shoes": {
     "props": {
-      "id": "menu-item-category-clothing-hats",
+      "id": "menu-item-category-clothing-shoes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/shoes/d",
+        "href": "/apparel---accessories/shoes/",
         "noFollow": true,
         "tagTitle": "Shoes",
         "text": "Shoes"
@@ -75,31 +74,16 @@
   },
   "menu-item#category-clothing-bags": {
     "props": {
-      "id": "menu-item-category-clothing-hats",
+      "id": "menu-item-category-clothing-bags",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/d",
+        "href": "/apparel---accessories/bags/",
         "noFollow": true,
         "tagTitle": "Bags",
         "text": "Bags"
-      }
-    }
-  },
-  "menu-item#category-clothing-accessories": {
-    "props": {
-      "id": "menu-item-category-clothing-hats",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/accessories/d",
-        "noFollow": true,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
       }
     }
   },
@@ -111,7 +95,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/d",
+        "href": "/home---decor/",
         "noFollow": true,
         "tagTitle": "Decoration",
         "text": "Decoration"
