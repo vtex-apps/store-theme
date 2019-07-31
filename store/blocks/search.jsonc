@@ -1,33 +1,22 @@
 {
   "store.search": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
 
   "store.search#brand": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
 
-
   "store.search#department": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
 
   "store.search#category": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
 
   "store.search#subcategory": {
-    "blocks": [
-      "search-result"
-    ]
+    "blocks": ["search-result"]
   },
 
   "search-result": {
@@ -73,13 +62,15 @@
           "showProductReference": false
         }
       },
-      "pagination": "show-more"
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
     }
   },
 
   "gallery": {
-    "blocks": [
-      "product-summary.shelf"
-    ]
+    "blocks": ["product-summary.shelf"]
   }
 }
