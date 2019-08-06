@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- `showBreadcrumbsOnMobile` prop to `search-result` block.
+
 ## [3.8.0] - 2019-08-01
 
 ### Added
