@@ -66,8 +66,13 @@
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
-      },
-      "showBreadcrumbsOnMobile": true
+      }
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
     }
   },
 

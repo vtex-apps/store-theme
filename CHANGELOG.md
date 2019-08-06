@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- `showBreadcrumbsOnMobile` prop to `search-result` block.
+- created a `breadcrumb` block with `showOnMobile` set to true
 
 ## [3.8.0] - 2019-08-01
 
