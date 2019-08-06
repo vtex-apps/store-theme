@@ -8,43 +8,15 @@
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
 {
-  "store.orderplaced": {
-    "blocks": ["order-placed"]
-  },
 
-  "store.account": {
-    "blocks": ["my-account"],
-    "parent": {
-      "challenge": "challenge.profile"
-    }
-  },
-
-  "store.login": {
-    "blocks": ["login-content#default"]
-  },
-
-  "login-content#default": {
-    "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
-    }
-  },
-
-  "product-summary.shelf": {
+  "store.home": {
     "children": [
-      "product-summary-add-to-list-button",
-      "product-summary-image",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "product-summary-buy-button"
+      "image#main"
     ]
   },
-
-  "store.product-review-form": {
-    "blocks": ["product-review-form"]
+  "image#main": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png"
+    }
   }
 }
