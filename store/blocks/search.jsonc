@@ -70,6 +70,12 @@
     }
   },
 
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
   "gallery": {
     "blocks": ["product-summary.shelf"]
   }
