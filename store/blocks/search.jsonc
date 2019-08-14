@@ -4,7 +4,14 @@
   },
 
   "store.search#brand": {
-    "blocks": ["search-result"]
+    "blocks": ["search-result"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10
+      }
+    }
   },
 
   "store.search#department": {
@@ -30,10 +37,6 @@
       "total-products"
     ],
     "props": {
-      "querySchema": {
-        "maxItemsPerPage": 4,
-        "orderByField": "OrderByPriceDESC"
-      },
       "hiddenFacets": {
         "layoutMode1": "normal",
         "layoutMode2": "small",
@@ -43,23 +46,6 @@
               "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
             }
           ]
-        }
-      },
-      "summary": {
-        "isOneClickBuy": false,
-        "showBadge": true,
-        "displayBuyButton": "displayButtonAlways",
-        "showCollections": false,
-        "labelListPrice": null,
-        "labelSellingPrice": null,
-        "showListPrice": true,
-        "showLabels": true,
-        "showInstallments": false,
-        "showSavings": false,
-        "name": {
-          "showBrandName": false,
-          "showSku": false,
-          "showProductReference": false
         }
       },
       "pagination": "show-more",
