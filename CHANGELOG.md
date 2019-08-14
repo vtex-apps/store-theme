@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Remove incorrect props from search-result block.
+
 ## [3.9.0] - 2019-08-07
 
 ### Added
