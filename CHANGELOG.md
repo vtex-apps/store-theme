@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Removed
+
+- `product-add-to-list-button` from `flex-layout.col#product-image` so that it isn't rendered in the products page.
+
+### Added
+
+- New props (`minItemsPerPage` and `paginationDotsVisibility`) for the Shelf component to `shelf#home`.
+
 ## [3.9.1] - 2019-08-14
 
 ### Fixed
