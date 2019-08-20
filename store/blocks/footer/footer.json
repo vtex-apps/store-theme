@@ -1,18 +1,15 @@
 {
   "footer": {
-    "blocks": [
-      "footer-layout.desktop",
-      "footer-layout.mobile"
-    ]
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
     "children": [
-      "footer-row#1-desktop",
-      "footer-row#2-desktop",
-      "footer-row#3-desktop"
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
     ]
   },
-  "footer-row#1-desktop": {
+  "flex-layout.row#footer-1-desktop": {
     "children": [
       "vtex.menu@2.x:menu#Products",
       "vtex.menu@2.x:menu#footer-clothing",
@@ -22,10 +19,11 @@
       "social-networks"
     ],
     "props": {
-      "blockClass": "menu-row"
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
     }
   },
-
 
   "social-networks": {
     "props": {
@@ -50,26 +48,20 @@
     }
   },
 
-  "footer-row#2-desktop": {
-    "children": [
-      "accepted-payment-methods"
-    ],
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["accepted-payment-methods"],
     "props": {
       "blockClass": "payment-methods"
     }
   },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": [
-        "MasterCard", "Visa", "Diners Club"
-      ]
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
 
-  "footer-row#3-desktop": {
-    "children": [
-      "rich-text#footer"
-    ],
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
     "props": {
       "blockClass": "credits"
     }
@@ -82,27 +74,27 @@
   },
 
   "footer-layout.mobile": {
-    "children": [
-      "footer-row#1-mobile",
-      "footer-row#2-mobile"
-    ]
+    "children": ["flex-layout.row#footer-mobile"]
   },
-  "footer-row#1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "footer-spacer",
-      "social-networks"
-    ],
+  "flex-layout.row#footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
     "props": {
-      "blockClass": "payment-methods"
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
     }
   },
-  "footer-row#2-mobile": {
+  "flex-layout.col#footer-1-mobile": {
     "children": [
+      "accepted-payment-methods",
+      "social-networks",
       "rich-text#footer-mobile"
     ],
     "props": {
-      "blockClass": "credits"
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
     }
   },
   "rich-text#footer-mobile": {

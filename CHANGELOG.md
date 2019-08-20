@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Use `flex-layout` to define the `footer` block.
+
+### Fixed
+
+- Missing padding in the Footer.
+
 ## [3.10.0] - 2019-08-16
 
 ### Removed
