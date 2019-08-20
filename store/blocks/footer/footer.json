@@ -74,29 +74,27 @@
   },
 
   "footer-layout.mobile": {
-    "children": [
-      "flex-layout.row#footer-1-mobile",
-      "flex-layout.row#footer-2-mobile"
-    ]
+    "children": ["flex-layout.row#footer-mobile"]
   },
-  "flex-layout.row#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "footer-spacer",
-      "social-networks"
-    ],
+  "flex-layout.row#footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
       "paddingBottom": 4
     }
   },
-  "flex-layout.row#footer-2-mobile": {
-    "children": ["rich-text#footer-mobile"],
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
     "props": {
-      "blockClass": "credits",
+      "blockClass": "payment-methods",
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "rowGap": 4
     }
   },
   "rich-text#footer-mobile": {
