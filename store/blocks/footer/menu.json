@@ -114,7 +114,6 @@
     }
   },
 
-
   "menu-item#tvs": {
     "props": {
       "id": "menu-item-tvs",
@@ -131,7 +130,6 @@
     }
   },
 
-
   "vtex.menu@2.x:menu#footer-bags": {
     "props": {
       "orientation": "vertical"
@@ -142,7 +140,6 @@
       "menu-item#necessaire"
     ]
   },
-
 
   "menu-item#bags": {
     "props": {
@@ -160,7 +157,6 @@
     }
   },
 
-
   "menu-item#backpacks": {
     "props": {
       "id": "menu-item-backpacks",
@@ -176,8 +172,6 @@
       }
     }
   },
-
-
 
   "menu-item#necessaire": {
     "props": {
@@ -195,7 +189,19 @@
     }
   },
 
-
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
 
   "vtex.menu@2.x:menu#footer-clothing": {
     "props": {
@@ -210,7 +216,6 @@
       "menu-item#cropped"
     ]
   },
-
 
   "menu-item#clothing": {
     "props": {
