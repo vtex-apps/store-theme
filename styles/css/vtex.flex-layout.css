@@ -3,10 +3,39 @@
   padding: 14px 0px;
 }
 
-.flexRow--deals  .stretchChildrenWidth {
+.flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
 
 .flexRow--deals .flexCol {
   align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexCol--switcherMobileCol {
+  width: 20%;
+}
+
+.flexCol--contentCol {
+  width: 100%;
 }
