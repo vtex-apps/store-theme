@@ -30,7 +30,7 @@
     "blocks": [
       "search-result-layout.desktop",
       "search-result-layout.mobile",
-      "not-found-layout"
+      "search-not-found-layout"
     ]
   },
 
@@ -78,7 +78,7 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "blockClass": "contentCol"
+      "width": "grow"
     }
   },
   "flex-layout.row#searchinfo": {
@@ -170,7 +170,7 @@
       "blockClass": "switcherMobileCol"
     }
   },
-  "not-found-layout": {
+  "search-not-found-layout": {
     "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
   },
 
