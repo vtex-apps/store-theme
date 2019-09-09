@@ -53,18 +53,21 @@
       "product-quantity",
       "product-identifier.product",
       "sku-selector",
+      "product-assembly-options",
       "flex-layout.row#buy-button",
       "availability-subscriber",
       "shipping-simulator",
       "share#default"
     ]
   },
+
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
       "showSavings": true
     }
   },
+
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
