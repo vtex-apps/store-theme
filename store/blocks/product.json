@@ -23,10 +23,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": [
-      "flex-layout.col#product-image",
-      "flex-layout.col#product-price"
-    ]
+    "children": ["flex-layout.col#product-image", "flex-layout.col#right-col"]
   },
   "flex-layout.col#product-image": {
     "props": {
@@ -40,7 +37,7 @@
       "displayThumbnailsArrows": true
     }
   },
-  "flex-layout.col#product-price": {
+  "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0
@@ -81,25 +78,6 @@
         "Twitter": false,
         "Pinterest": true
       }
-    }
-  },
-
-  "product-price#default": {
-    "props": {
-      "labelListPrice": "From",
-      "labelSellingPrice": "To",
-      "showListPrice": true,
-      "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true
-    }
-  },
-
-  "product-name#default": {
-    "props": {
-      "showBrandName": true,
-      "showSku": false,
-      "showProductReference": false
     }
   }
 }
