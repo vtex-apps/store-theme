@@ -100,7 +100,7 @@
     "props": {
       "marginTop": 3
     },
-    "children": ["fetch-more"]
+    "children": ["search-fetch-more"]
   },
   "flex-layout.row#products": {
     "children": ["search-content"]
@@ -165,7 +165,7 @@
     }
   },
   "flex-layout.col#switcherMobile": {
-    "children": ["layout-switcher"],
+    "children": ["search-layout-switcher"],
     "props": {
       "blockClass": "switcherMobileCol"
     }
