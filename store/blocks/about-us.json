@@ -1,22 +1,73 @@
 {
   "store.custom#about-us": {
     "blocks": [
-      "flex-layout.row#about-us"
+      "slider-layout#flex",
+      "slider-layout#info-card",
+      "slider-layout#notification"
     ]
+  },
+
+  "slider-layout#flex": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "navigationStep": "page",
+      "infinite": true
+    },
+    "children": ["flex-layout.row#about-us", "flex-layout.row#deals"]
+  },
+
+  "slider-layout#info-card": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "navigationStep": "page",
+      "infinite": true
+    },
+    "children": ["info-card#home", "info-card#home", "info-card#home"]
+  },
+
+  "slider-layout#notification": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "navigationStep": "page",
+      "infinite": true
+    },
+    "children": [
+      "notification.bar#about-us",
+      "notification.bar#about-us",
+      "notification.bar#about-us"
+    ]
+  },
+
+  "notification.bar#about-us": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
   },
 
   "flex-layout.row#about-us": {
-    "children": [
-      "image#mobile-phone",
-      "flex-layout.col#text-about-us"
-    ]
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
   },
 
   "flex-layout.col#text-about-us": {
-    "children": [
-      "rich-text#title-about-us",
-      "rich-text#about-us"
-    ],
+    "children": ["rich-text#title-about-us", "rich-text#about-us"],
     "props": {
       "blockclass": "textColumn",
       "preventVerticalStretch": true
@@ -25,8 +76,7 @@
 
   "rich-text#title-about-us": {
     "props": {
-      "text":
-      "# Create meaningful and relevant experiences.",
+      "text": "# Create meaningful and relevant experiences.",
       "blockClass": "title"
     }
   },

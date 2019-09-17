@@ -1,6 +1,6 @@
 .notificationBarContainer {
-  background-color: #E6F1E6;
-  color: #03034E;
+  background-color: #e6f1e6;
+  color: #03034e;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
@@ -13,12 +13,12 @@
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #E6F1E6;
+  background-color: #e6f1e6;
   padding: 0px;
 }
 
 .newsletter {
-  background-color: #03054E;
+  background-color: #03054e;
   max-width: 1528px;
   margin: 0 auto;
 }
