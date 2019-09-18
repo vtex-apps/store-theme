@@ -56,7 +56,7 @@
   "header-row#4-desktop": {
     "children": [
       "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
+      "category-menu",
       "header-spacer",
       "header-spacer",
       "search-bar",
@@ -74,7 +74,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "width": "180",
+      "height": "12"
     }
   },
 
@@ -102,31 +103,14 @@
   },
   "header-row#1-mobile": {
     "children": [
-      "drawer",
+      "category-menu",
       "logo#mobile",
       "header-spacer",
       "login",
       "minicart"
     ],
     "props": {
-      "sticky": true,
       "blockClass": "main-header-mobile"
-    }
-  },
-  "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-clothing",
-      "menu-item#category-decoration",
-      "menu-item#custom-sale"
-    ],
-    "props": {
-      "orientation": "vertical"
     }
   },
 
@@ -135,7 +119,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "width": "70",
+      "height": "24"
     }
   }
 }
