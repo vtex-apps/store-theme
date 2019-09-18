@@ -74,6 +74,7 @@
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
     ],
@@ -95,6 +96,12 @@
     "props": {
       "blockClass": "orderByCol"
     }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
   },
   "flex-layout.row#fetchmore": {
     "props": {
