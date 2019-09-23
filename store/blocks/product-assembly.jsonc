@@ -8,8 +8,13 @@
   "product-assembly-options": {
     "children": [
       "flex-layout.row#product-assembly-options",
-      "assembly-option-item-input-values"
+      "assembly-option-input-values"
     ]
+  },
+  "assembly-option-input-values": {
+    "props": {
+      "optionsDisplay": "box"
+    }
   },
   "flex-layout.row#product-assembly-options": {
     "props": {
