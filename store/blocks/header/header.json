@@ -131,7 +131,8 @@
         { "id": 25 },
         { "id": 40 },
         { "id": 72 }
-      ]
+      ],
+      "showAllDepartments": false
     }
   }
 }
