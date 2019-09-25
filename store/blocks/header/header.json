@@ -56,7 +56,7 @@
   "header-row#4-desktop": {
     "children": [
       "logo#desktop",
-      "category-menu",
+      "category-menu#header",
       "header-spacer",
       "header-spacer",
       "search-bar",
@@ -103,7 +103,7 @@
   },
   "header-row#1-mobile": {
     "children": [
-      "category-menu",
+      "category-menu#header",
       "logo#mobile",
       "header-spacer",
       "login",
@@ -121,6 +121,17 @@
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70",
       "height": "24"
+    }
+  },
+
+  "category-menu#header": {
+    "props": {
+      "departments": [
+        { "id": 2 },
+        { "id": 25 },
+        { "id": 40 },
+        { "id": 72 }
+      ]
     }
   }
 }
