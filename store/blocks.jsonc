@@ -31,6 +31,18 @@
     }
   },
 
+  "buy-button": {
+    "props": {
+      "customToastURL": "https://google.com"
+    }
+  },
+
+  "product-summary-buy-button": {
+    "props": {
+      "customToastURL": "https://google.com"
+    }
+  },
+
   "product-summary.shelf": {
     "children": [
       "product-summary-add-to-list-button",

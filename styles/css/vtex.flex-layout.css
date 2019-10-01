@@ -1,6 +1,7 @@
 .flexRow--deals {
   background-color: #a7afbd;
   padding: 14px 0px;
+  width: 100%;
 }
 
 .flexRow--deals .stretchChildrenWidth {

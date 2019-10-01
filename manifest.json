@@ -34,7 +34,8 @@
     "vtex.product-quantity": "1.x",
     "vtex.product-identifier": "0.x",
     "vtex.breadcrumb": "1.x",
-    "vtex.slider-layout": "0.x"
+    "vtex.slider-layout": "0.x",
+    "vtex.store-image": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

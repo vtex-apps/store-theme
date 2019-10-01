@@ -1,10 +1,6 @@
 {
   "store.custom#about-us": {
-    "blocks": [
-      "slider-layout#flex",
-      "slider-layout#info-card",
-      "slider-layout#notification"
-    ]
+    "blocks": ["image-slider#testing", "slider-layout#info-card"]
   },
 
   "slider-layout#flex": {
@@ -14,12 +10,32 @@
         "tablet": 1,
         "phone": 1
       },
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "mobileOnly",
       "navigationStep": "page",
       "infinite": true
     },
     "children": ["flex-layout.row#about-us", "flex-layout.row#deals"]
+  },
+
+  "image-slider#testing": {
+    "props": {
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ],
+      "height": 720
+    }
   },
 
   "slider-layout#info-card": {
@@ -34,7 +50,12 @@
       "navigationStep": "page",
       "infinite": true
     },
-    "children": ["info-card#home", "info-card#home", "info-card#home"]
+    "children": [
+      "flex-layout.row#about-us",
+      "info-card#home",
+      "info-card#home",
+      "info-card#home"
+    ]
   },
 
   "slider-layout#notification": {
@@ -63,7 +84,7 @@
   },
 
   "flex-layout.row#about-us": {
-    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
+    "children": ["image-new#mobile-phone", "flex-layout.col#text-about-us"]
   },
 
   "flex-layout.col#text-about-us": {
@@ -81,7 +102,7 @@
     }
   },
 
-  "image#mobile-phone": {
+  "image-new#mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
       "maxHeight": "",

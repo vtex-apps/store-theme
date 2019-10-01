@@ -73,7 +73,7 @@
   "info-card#home": {
     "props": {
       "id": "info-card-home",
-      "isFullModeStyle": true,
+      "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
       "headline": "Clearance Sale",
