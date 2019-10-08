@@ -23,13 +23,33 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#product-image", "flex-layout.col#right-col"]
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
-  "flex-layout.col#product-image": {
+
+  "stack-layout": {
+    "children": [
+      "flex-layout.row#product-image",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
     "props": {
       "width": "60%",
       "rowGap": 0
-    },
+    }
+  },
+  "flex-layout.row#product-image": {
     "children": ["product-images"]
   },
   "product-images": {
