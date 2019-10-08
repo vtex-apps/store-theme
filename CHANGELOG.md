@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.16.1] - 2019-10-08
+
 ## [3.16.0] - 2019-10-07
 ### Added
 - The `search-fetch-previous` block to the search result.
