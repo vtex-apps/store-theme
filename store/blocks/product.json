@@ -92,7 +92,11 @@
     },
     "children": ["buy-button"]
   },
-
+  "sku-selector": {
+    "props": {
+      "imageHeight": 90
+    }
+  },
   "share#default": {
     "props": {
       "social": {
