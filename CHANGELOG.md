@@ -7,32 +7,48 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Default font.
+
 ## [3.16.1] - 2019-10-08
 
 ## [3.16.0] - 2019-10-07
+
 ### Added
+
 - The `search-fetch-previous` block to the search result.
 
 ## [3.15.1] - 2019-09-23
 
 ## [3.15.0] - 2019-09-18
+
 ### Added
+
 - Add sitemap builder with about-us url
 
 ## [3.14.0] - 2019-09-18
+
 ### Added
+
 - Product Customizer to PDP.
 
 ## [3.13.1] - 2019-09-10
+
 ### Fixed
+
 - Use `search-fetch-more`.
 
 ## [3.13.0] - 2019-09-10
+
 ### Changed
+
 - Use flexble layout for `search-result`.
 
 ## [3.12.0] - 2019-08-27
+
 ### Added
+
 - Accordion menu to footer on mobile.
 
 ## [3.11.0] - 2019-08-20
