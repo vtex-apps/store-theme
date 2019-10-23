@@ -1,0 +1,204 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "product-list-block#demo1",
+      "list-context.image-list#demo",
+      "product-list-block#demo2"
+    ]
+  },
+
+  "product-summary.shelf#demo1": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "product-summary.shelf#demo2": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-identifier.summary",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "product-list-block#demo1": {
+    "blocks": ["product-summary.shelf#demo1", "list-context.product-list#demo1"]
+  },
+  "product-list-block#demo2": {
+    "blocks": ["product-summary.shelf#demo2", "list-context.product-list#demo2"]
+  },
+
+  "list-context.product-list#demo1": {
+    "children": ["slider-layout#demo-products"]
+  },
+  "list-context.product-list#demo2": {
+    "children": ["list-context.image-list#demo2"]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "list-context.image-list#demo2": {
+    "children": ["slider-layout#demo-lists"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "slider-layout#demo-lists": {
+    "children": ["flex-layout.row#about-us", "flex-layout.row#about-us2"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "rich-text#desktop": {
+    "props": {
+      "text": "# This will only show up on desktop.",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#tablet": {
+    "props": {
+      "text": "# This will only show up on tablet.",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#phone": {
+    "props": {
+      "text": "# This will only show up on phone.",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "# This will only show up on mobile.",
+      "blockClass": "title"
+    }
+  },
+
+  "responsive-layout.desktop#testing": {
+    "children": ["rich-text#desktop", "flex-layout.row#about-us"]
+  },
+  "responsive-layout.tablet#testing": {
+    "children": ["rich-text#tablet", "flex-layout.row#about-us"]
+  },
+  "responsive-layout.phone#testing": {
+    "children": ["rich-text#phone", "flex-layout.row#about-us2"]
+  },
+  "responsive-layout.mobile#testing": {
+    "children": ["flex-layout.row#about-us2"]
+  },
+
+  "flex-layout.row#about-us": {
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
+  },
+
+  "flex-layout.row#about-us2": {
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us2"]
+  },
+
+  "flex-layout.col#text-about-us": {
+    "children": ["rich-text#title-about-us", "rich-text#about-us"],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#text-about-us2": {
+    "children": ["rich-text#title-about-us2", "rich-text#about-us"],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-about-us": {
+    "props": {
+      "text": "# Create meaningful and relevant experiences.",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#title-about-us2": {
+    "props": {
+      "text": "# If you are seeing this, it worked!",
+      "blockClass": "title"
+    }
+  },
+
+  "image#mobile-phone": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+
+  "rich-text#about-us": {
+    "props": {
+      "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+      "blockClass": "about"
+    }
+  }
+}

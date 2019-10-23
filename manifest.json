@@ -38,7 +38,8 @@
     "vtex.sticky-layout": "0.x",
     "vtex.product-customizer": "2.x",
     "vtex.stack-layout": "0.x",
-    "vtex.product-specification-badges": "0.x"
+    "vtex.product-specification-badges": "0.x",
+    "vtex.checkout-cart": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -63,7 +63,7 @@
       "rowGap": 0
     },
     "children": [
-      "product-name",
+      "vtex.store-components:product-name",
       "product-rating-summary",
       "product-price#product-details",
       "product-separator",
