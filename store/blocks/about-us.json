@@ -1,6 +1,6 @@
 {
   "store.custom#about-us": {
-    "blocks": ["image-slider#testing", "slider-layout#info-card"]
+    "blocks": ["slider-layout#info-card"]
   },
 
   "slider-layout#flex": {
@@ -13,7 +13,11 @@
       "showNavigationArrows": "mobileOnly",
       "showPaginationDots": "mobileOnly",
       "navigationStep": "page",
-      "infinite": true
+      "infinite": true,
+      "autoplay": {
+        "timeout": 300,
+        "stopOnHover": true
+      }
     },
     "children": ["flex-layout.row#about-us", "flex-layout.row#deals"]
   },
@@ -48,7 +52,11 @@
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
       "navigationStep": "page",
-      "infinite": true
+      "infinite": true,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
     },
     "children": [
       "flex-layout.row#about-us",
@@ -84,7 +92,7 @@
   },
 
   "flex-layout.row#about-us": {
-    "children": ["image-new#mobile-phone", "flex-layout.col#text-about-us"]
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
   },
 
   "flex-layout.col#text-about-us": {
@@ -102,7 +110,7 @@
     }
   },
 
-  "image-new#mobile-phone": {
+  "image#mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
       "maxHeight": "",
