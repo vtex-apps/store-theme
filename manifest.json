@@ -43,7 +43,8 @@
     "vtex.telemarketing": "2.x",
     "vtex.order-placed": "1.x",
     "vtex.checkout-cart": "0.x",
-    "vtex.product-list": "0.x"
+    "vtex.product-list": "0.x",
+    "vtex.checkout-summary": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

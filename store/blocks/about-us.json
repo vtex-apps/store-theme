@@ -1,14 +1,6 @@
 {
   "store.custom#about-us": {
-    "blocks": ["flex-layout.row#about-us", "minicartv2"]
-  },
-
-  "minicartv2": {
-    "blocks": ["minicart-product-list-wrapper"]
-  },
-
-  "minicart-product-list-wrapper": {
-    "blocks": ["product-list"]
+    "blocks": ["flex-layout.row#about-us"]
   },
 
   "flex-layout.row#about-us": {
