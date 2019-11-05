@@ -42,6 +42,7 @@
     ],
     "props": {
       "pagination": "show-more",
+      "preventRouteChange": true,
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
