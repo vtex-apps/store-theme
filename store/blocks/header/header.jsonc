@@ -91,11 +91,17 @@
     "blocks": ["product-list"]
   },
   "minicart-summary": {
-    "blocks": ["checkout-summary"]
+    "blocks": ["checkout-summary.compact"]
   },
 
-  "checkout-summary": {
-    "children": ["summary-totalizers"]
+  "checkout-summary.compact": {
+    "children": ["summary-totalizers#minicart"]
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": false,
+      "showDeliveryTotal": false
+    }
   },
 
   "header-layout.mobile": {
