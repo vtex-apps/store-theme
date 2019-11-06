@@ -34,24 +34,22 @@
 
 .inputGroup {
   padding-bottom: 4px;
-  border-bottom: 2px solid #fff;
   display: flex;
   color: #fff;
 }
 
-.inputGroup input {
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
-  padding-left: 0px;
 }
 
-.inputGroup input::placeholder {
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
 }
 
-.inputGroup button {
+.inputGroup :global(.vtex-button) {
   background-color: transparent;
   color: #fff;
   border: none;
