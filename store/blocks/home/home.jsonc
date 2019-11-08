@@ -37,6 +37,7 @@
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "desktopOnly",
+      "skusFilter": "FIRST_AVAILABLE",
       "productList": {
         "maxItems": 10,
         "itemsPerPage": 5,
