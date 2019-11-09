@@ -68,42 +68,6 @@
     }
   },
 
-  // "minicart": {
-  //   "blocks": ["product-summary"],
-  //   "props": {
-  //     "type": "popup",
-  //     "showRemoveButton": true,
-  //     "showDiscount": true,
-  //     "showSku": true,
-  //     "labelMiniCartEmpty": "",
-  //     "labelButtonFinishShopping": "Go to checkout",
-  //     "enableQuantitySelector": true,
-  //     "maxQuantity": 10,
-  //     "labelClasses": "gray"
-  //   }
-  // },
-
-  "minicart": {
-    "blocks": ["minicart-product-list", "minicart-summary"]
-  },
-
-  "minicart-product-list": {
-    "blocks": ["product-list"]
-  },
-  "minicart-summary": {
-    "blocks": ["checkout-summary.compact"]
-  },
-
-  "checkout-summary.compact": {
-    "children": ["summary-totalizers#minicart"]
-  },
-  "summary-totalizers#minicart": {
-    "props": {
-      "showTotal": false,
-      "showDeliveryTotal": false
-    }
-  },
-
   "header-layout.mobile": {
     "children": ["header-row#1-mobile"]
   },
