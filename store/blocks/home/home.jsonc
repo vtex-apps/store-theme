@@ -6,6 +6,7 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "shelf#home",
+      "vtex.menu@2.x:menu#category-menu",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
