@@ -87,6 +87,12 @@
     ]
   },
 
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3
+    }
+  },
+
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
