@@ -1,5 +1,8 @@
 {
-    "store.custom#about-us": {
+  "store.custom#about-us": {
     "path": "/about-us"
+  },
+  "store.custom#training-day": {
+    "path": "/training-day"
   }
 }
