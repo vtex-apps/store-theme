@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve"
+  },
+  "include": ["./typings/*.d.ts", "./**/*.tsx"]
+}
