@@ -52,7 +52,7 @@
       "search-bar",
       "locale-switcher",
       "login",
-      "minicart"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
