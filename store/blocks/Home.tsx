@@ -2,7 +2,7 @@ import { Carousel } from 'vtex.carousel'
 import { FlexLayout } from 'vtex.flex-layout'
 import { Shelf } from 'vtex.shelf'
 import { RichText } from 'vtex.rich-text'
-import { InfoCard } from 'vtex.store-components'
+import { InfoCard, Newsletter } from 'vtex.store-components'
 import Deals from './components/Deals'
 import ProductSummaryShelf from './components/ProductSummaryShelf'
 
@@ -32,6 +32,7 @@ function Home() {
       <Carousel
         __id="home"
         autoplay={false}
+        height={720}
         banners={[
           {
             image:
@@ -48,7 +49,7 @@ function Home() {
       />
       <FlexLayout.Row __id="deals" blockClass="deals">
         {DEALS.map(({ imageSrc, text }, id) => {
-          return <Deals id={id} imageSrc={imageSrc} text={text} />
+          return <Deals key={`deals-${id}`} id={id} imageSrc={imageSrc} text={text} />
         })}
       </FlexLayout.Row>
       <Shelf
@@ -81,14 +82,15 @@ function Home() {
       />
       <RichText
         __id="question"
-        text="**This is an example store built using the VTEX platform.\nWant to know more?**"
+        text={`**This is an example store built using the VTEX platform.\nWant to know more?**`}
         blockClass="question"
       />
       <RichText
         __id="link"
-        text="\n**Reach us at**\nwww.vtex.com.br"
+        text={`\n**Reach us at**\nwww.vtex.com.br`}
         blockClass="link"
       />
+      <Newsletter __id={null} />
     </template>
   )
 }

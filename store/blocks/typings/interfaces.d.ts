@@ -15,6 +15,10 @@ declare namespace JSX {
     __id: string | null
   }
 
+  interface IntrinsicAttributes {
+    key?: string
+  }
+
   interface ElementChildrenAttribute {
     children?: Array<Element<unknown>> | Element<unknown>
   }
