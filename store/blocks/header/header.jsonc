@@ -72,7 +72,13 @@
     "children": ["header-row#1-mobile"]
   },
   "header-row#1-mobile": {
-    "children": ["drawer", "logo#mobile", "header-spacer", "login", "minicart"],
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
     "props": {
       "sticky": true,
       "blockClass": "main-header-mobile"
