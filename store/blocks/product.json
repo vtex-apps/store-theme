@@ -103,7 +103,7 @@
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["buy-button"]
+    "children": ["add-to-cart-button"]
   },
 
   "share#default": {
