@@ -41,7 +41,7 @@
       "productList": {
         "maxItems": 10,
         "itemsPerPage": 5,
-        "minItemsPerPage": 1.5,
+        "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Top sellers"
