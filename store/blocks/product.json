@@ -19,9 +19,7 @@
     "props": {
       "marginBottom": 7
     },
-    "children": [
-      "product-description"
-    ]
+    "children": ["product-description"]
   },
   "flex-layout.row#product-main": {
     "props": {
@@ -72,7 +70,7 @@
       "rowGap": 0
     },
     "children": [
-      "product-name",
+      "vtex.store-components:product-name",
       "product-rating-summary",
       "product-price#product-details",
       "product-separator",
@@ -105,7 +103,7 @@
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["buy-button"]
+    "children": ["add-to-cart-button"]
   },
 
   "share#default": {

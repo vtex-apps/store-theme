@@ -1,15 +1,9 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
@@ -21,18 +15,14 @@
   },
 
   "header-row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
+    "children": ["telemarketing"],
     "props": {
       "fullWidth": true
     }
   },
 
   "header-row#2-desktop": {
-    "children": [
-      "notification.bar#home"
-    ],
+    "children": ["notification.bar#home"],
     "props": {
       "fullWidth": "true"
     }
@@ -62,7 +52,7 @@
       "search-bar",
       "locale-switcher",
       "login",
-      "minicart"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -78,27 +68,8 @@
     }
   },
 
-  "minicart": {
-    "blocks": [
-      "product-summary"
-    ],
-    "props": {
-      "type": "popup",
-      "showRemoveButton": true,
-      "showDiscount": true,
-      "showSku": true,
-      "labelMiniCartEmpty": "",
-      "labelButtonFinishShopping": "Go to checkout",
-      "enableQuantitySelector": true,
-      "maxQuantity": 10,
-      "labelClasses": "gray"
-    }
-  },
-
   "header-layout.mobile": {
-    "children": [
-      "header-row#1-mobile"
-    ]
+    "children": ["header-row#1-mobile"]
   },
   "header-row#1-mobile": {
     "children": [
@@ -106,7 +77,7 @@
       "logo#mobile",
       "header-spacer",
       "login",
-      "minicart"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -114,9 +85,7 @@
     }
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
 
   "menu#drawer": {
@@ -136,6 +105,32 @@
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70"
+    }
+  },
+
+  "minicart.v2": {
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-product-list", "minicart-summary"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact"]
+  },
+
+  "checkout-summary.compact": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
     }
   }
 }

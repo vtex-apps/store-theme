@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "3.19.2",
+  "version": "3.20.0-beta.0",
   "builders": {
     "styles": "1.x",
     "store": "0.x",
@@ -41,7 +41,10 @@
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
     "vtex.telemarketing": "2.x",
-    "vtex.order-placed": "1.x"
+    "vtex.order-placed": "1.x",
+    "vtex.checkout-summary": "0.x",
+    "vtex.product-list": "0.x",
+    "vtex.add-to-cart-button": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
