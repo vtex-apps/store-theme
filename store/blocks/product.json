@@ -87,7 +87,8 @@
 
   "sku-selector": {
     "props": {
-      "variationsSpacing": 3
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
     }
   },
 
