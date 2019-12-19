@@ -90,9 +90,9 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-clothing",
-      "menu-item#category-decoration",
-      "menu-item#custom-sale"
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
     ],
     "props": {
       "orientation": "vertical"
