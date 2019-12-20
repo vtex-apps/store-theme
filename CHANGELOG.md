@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `showValueNameForImageVariation` to `sku-selector`.
+
+### Changed
+- Remove product-identifier.
 
 ## [3.20.2] - 2019-12-19
 ### Fixed
