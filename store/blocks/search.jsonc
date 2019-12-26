@@ -187,10 +187,26 @@
     }
   },
 
+  "filter-navigator.v3": {
+    "props": {
+      "layout": "desktop"
+    }
+  },
+
   "flex-layout.col#filterMobile": {
-    "children": ["filter-navigator.v3"],
+    "children": ["drawer#filter"],
     "props": {
       "blockClass": "filterMobileCol"
+    }
+  },
+  "drawer#filter": {
+    "children": [
+      "filter-navigator.v3#mobile"
+    ]
+  },
+  "filter-navigator.v3#mobile": {
+    "props": {
+      "layout": "desktop"
     }
   },
   "flex-layout.col#switcherMobile": {
