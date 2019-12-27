@@ -33,7 +33,6 @@
 
   "product-summary.shelf": {
     "children": [
-      "product-summary-add-to-list-button",
       "stack-layout#prodsum",
       "product-summary-name",
       "product-rating-inline",
@@ -46,6 +45,7 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image",
+      "product-bookmark",
       "product-summary-specification-badges"
     ]
   },
