@@ -1,5 +1,12 @@
 {
     "store.custom#about-us": {
-    "path": "/about-us"
-  }
+      "path": "/about-us"
+    },
+    "store.custom#about-us-meta": {
+      "path": "/about-us-meta",
+      "title": "About us with meta tags",
+      "metaTags": {
+          "description": "This is a about us custom page with metatags in its routes.json"
+      }
+    }
 }
