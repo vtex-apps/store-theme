@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "carousel#home",
+      "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
@@ -13,10 +13,11 @@
     ]
   },
 
-  "carousel#home": {
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
     "props": {
-      "autoplay": false,
-      "banners": [
+      "height": 720,
+      "images": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
@@ -25,10 +26,19 @@
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         }
-      ],
-      "height": 720,
-      "showArrows": true,
-      "showDots": true
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "fullWidth": true
     }
   },
 
