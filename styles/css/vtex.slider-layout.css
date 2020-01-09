@@ -1,0 +1,8 @@
+.sliderLayoutContainer {
+  background-color: #F0F0F0;
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  max-width: 1520px;
+}
