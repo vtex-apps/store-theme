@@ -6,7 +6,9 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "shelf#home",
+      "__fold__",
       "info-card#home",
+      "shelf#home2",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -42,6 +44,22 @@
         "maxItems": 10,
         "itemsPerPage": 5,
         "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top sellers"
+      }
+    }
+  },
+
+  "shelf#home2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1.5,
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "Top sellers"
