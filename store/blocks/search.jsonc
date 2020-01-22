@@ -101,7 +101,8 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "grow"
+      "width": "grow",
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.row#searchinfo": {
