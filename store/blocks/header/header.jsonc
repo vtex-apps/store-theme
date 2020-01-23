@@ -67,7 +67,6 @@
       "width": "180"
     }
   },
-
   "header-layout.mobile": {
     "children": ["header-row#1-mobile"]
   },

@@ -34,8 +34,12 @@
   },
 
   "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
     "children": [
       "flex-layout.row#product-image",
+      "product-bookmark",
       "product-specification-badges"
     ]
   },
