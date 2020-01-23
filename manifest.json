@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "3.21.2",
+  "version": "3.22.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
