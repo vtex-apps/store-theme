@@ -4,9 +4,9 @@ import { Menu } from 'vtex.menu'
 import { Login } from 'vtex.login'
 import { Drawer } from 'vtex.store-drawer'
 
-import MenuItemClothing from './Menu/Items/Clothing'
-import MenuItemDecoration from './Menu/Items/Decoration'
-import MenuItemCustomSale from './Menu/Items/CustomSale'
+import MenuItemApparel from './Menu/Items/Apparel'
+import MenuItemHomeAndDecor from './Menu/Items/HomeAndDecor'
+import MenuItemMore from './Menu/Items/More'
 import Minicart from './Minicart'
 
 export default function Mobile() {
@@ -15,9 +15,9 @@ export default function Mobile() {
       <HeaderRow __id="1-mobile">
         <Drawer __id="">
           <Menu __id="drawer" orientation="vertical">
-            <MenuItemClothing />
-            <MenuItemDecoration />
-            <MenuItemCustomSale />
+            <MenuItemApparel />
+            <MenuItemHomeAndDecor />
+            <MenuItemMore />
           </Menu>
         </Drawer>
         <Logo
