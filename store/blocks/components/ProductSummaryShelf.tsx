@@ -1,3 +1,4 @@
+import { AddToCartButton } from 'vtex.add-to-cart-button'
 import {
   ProductSummaryAddToListButton,
   ProductSummaryImage,
@@ -5,12 +6,10 @@ import {
   ProductSummaryName,
   ProductSummarySpace,
   ProductSummaryPrice,
-  ProductSummary,
-  ProductSummaryBuyButton,
+  ProductSummary
 } from 'vtex.product-summary'
 import { StackLayout } from 'vtex.stack-layout'
 import { ProductRatingInline } from 'vtex.product-review-interfaces'
-import { ProductIdentifier } from 'vtex.product-identifier'
 
 export default function ProductSummaryShelf() {
   return (
@@ -30,8 +29,7 @@ export default function ProductSummaryShelf() {
       <ProductRatingInline __id={null} />
       <ProductSummarySpace __id={null} />
       <ProductSummaryPrice __id={null} />
-      <ProductIdentifier.Summary __id={null} />
-      <ProductSummaryBuyButton __id={null} />
+      <AddToCartButton __id={null} />
     </ProductSummary.Shelf>
   )
 }

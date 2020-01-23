@@ -1,3 +1,4 @@
+import { AddToCartButton } from 'vtex.add-to-cart-button'
 import { FlexLayout } from 'vtex.flex-layout'
 import { Breadcrumb } from 'vtex.breadcrumb'
 import {
@@ -5,7 +6,6 @@ import {
   ProductPrice,
   ProductSeparator,
   SkuSelector,
-  BuyButton,
   AvailabilitySubscriber,
   ShippingSimulator,
   Share,
@@ -57,11 +57,11 @@ export default function Product() {
           <ProductPrice __id="product-details" showInstallments showSavings />
           <ProductSeparator __id={null} />
           <ProductIdentifier.Product __id={null} />
-          <SkuSelector __id={null} />
+          <SkuSelector __id="" variationsSpacing={3} showValueNameForImageVariation />
           <ProductQuantity __id={null} />
           <ProductAssemblyOptions __id={null} />
           <FlexLayout.Row __id="buy-button" marginTop={4} marginBottom={7}>
-            <BuyButton __id={null} />
+            <AddToCartButton __id={null} />
           </FlexLayout.Row>
           <AvailabilitySubscriber __id={null} />
           <ShippingSimulator __id={null} />
