@@ -61,5 +61,16 @@
 
   "store.product-review-form": {
     "blocks": ["product-review-form"]
+  },
+  "store.not-found-product": {
+    "blocks": ["rich-text#not-found"]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
   }
 }
