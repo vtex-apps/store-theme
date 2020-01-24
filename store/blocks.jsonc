@@ -62,7 +62,7 @@
   "store.product-review-form": {
     "blocks": ["product-review-form"]
   },
-  "store.not-found-product": {
+  "store.not-found#product": {
     "blocks": ["rich-text#not-found"]
   },
   "rich-text#not-found": {
