@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+.container--shelfTitle {
+  text-align: center;
+  justify-content: center;
+}
+
 .container--deals .paragraph {
   margin: 0;
 }
