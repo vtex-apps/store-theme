@@ -5,7 +5,8 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
-      "shelf#home",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -56,6 +57,33 @@
         "arrows": true,
         "titleText": "Top sellers"
       }
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["product-list-block#demo1"]
+  },
+  "product-list-block#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true
     }
   },
 
