@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Fixed
-- Use default `minicart.v2 from `vtex.minicart`.
+- Use default `minicart.v2` from `vtex.minicart`.
 
 ## [3.23.0] - 2020-01-27
 ### Added
