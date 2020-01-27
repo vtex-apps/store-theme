@@ -6,3 +6,13 @@
 .sliderTrackContainer {
   max-width: 1520px;
 }
+
+.layoutContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide {
+  margin-bottom: 25px;
+}
