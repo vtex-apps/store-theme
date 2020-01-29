@@ -3,6 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
+      "buy-together",
       "flex-layout.row#description",
       "shelf.relatedProducts",
       "product-reviews",
