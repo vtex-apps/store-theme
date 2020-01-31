@@ -1,18 +1,20 @@
 .sliderLayoutContainer {
-  background-color: #F0F0F0;
   justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  background-color: #F0F0F0;
 }
 
 .sliderTrackContainer {
   max-width: 1520px;
 }
 
-.layoutContainer {
+.layoutContainer--shelf {
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 96rem;
 }
 
-.slide {
+.slide--shelf {
   margin-bottom: 25px;
 }

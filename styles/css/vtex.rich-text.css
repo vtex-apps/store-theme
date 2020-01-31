@@ -5,8 +5,13 @@
 }
 
 .container--shelfTitle {
-  text-align: center;
+  color: #727273;
   justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
 }
 
 .container--deals .paragraph {

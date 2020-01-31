@@ -39,24 +39,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "fullWidth": true
-    }
-  },
-
-  "shelf#home": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "paginationDotsVisibility": "desktopOnly",
-      "skusFilter": "FIRST_AVAILABLE",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 5,
-        "minItemsPerPage": 1,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Top sellers"
-      }
+      "blockClass": "carousel"
     }
   },
 
@@ -67,9 +50,9 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["product-list-block#demo1"]
+    "children": ["list-context.product-list#demo1"]
   },
-  "product-list-block#demo1": {
+  "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -83,29 +66,9 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": true
-    }
-  },
-
-  "product-summary#home": {
-    "props": {
-      "isOneClickBuy": false,
-      "showBadge": true,
-      "badgeText": "OFF",
-      "buyButtonText": "Add to cart",
-      "displayBuyButton": "displayButtonAlways",
-      "showCollections": false,
-      "showListPrice": true,
-      "labelSellingPrice": "To",
-      "labelListPrice": "From",
-      "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,
-      "name": {
-        "showBrandName": true,
-        "showSku": true,
-        "showProductReference": true
-      }
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   },
 
