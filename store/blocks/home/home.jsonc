@@ -67,7 +67,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "shelf"
     }
   },
