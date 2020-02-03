@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Changed
+### Removed
 - `vtex.carousel` in favor of using `list-context.image-list` and `slider-layout`.
-- Custom implementation of `minicart.v2` in favor of the default one.
+- `vtex.shelf` in favor of using `list-context.product-list` and `slider-layout`.
 
 ## [3.24.0] - 2020-02-05
 ### Added
