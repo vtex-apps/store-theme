@@ -50,6 +50,12 @@
     ]
   },
 
+  "product-summary-image": {
+    "props": {
+      "height": 220
+    }
+  },
+
   "product-summary-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
