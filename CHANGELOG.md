@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `height` on `product-summary-image`
 
+## [3.23.2] - 2020-02-03
+### Changed
+- Make search use cold prices by default.
+
+## [3.23.1] - 2020-01-27
+### Fixed
+- Use default `minicart.v2` from `vtex.minicart`.
+
 ## [3.23.0] - 2020-01-27
 ### Added
 - `store.not-found#product` block.
