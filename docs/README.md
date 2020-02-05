@@ -1,29 +1,22 @@
 # Store theme
-
 Our boilerplate theme to create stores in the VTEX IO platform.
 
 ## Preview
-
 ![store-theme-default](https://user-images.githubusercontent.com/1354492/63937047-e8d81c80-ca37-11e9-86fc-61e88847bbfb.png)
 
 ## Tutorial
-
 To understand how things work check our tutorial [Build a store using VTEX IO](https://vtex.io/docs/getting-started/build-stores-with-vtex-io/1)
 
 ## Dependencies
-
 All store components that you see on this document are open source too. Production ready, you can found those apps in this GitHub organization.
 
 Store framework is the baseline to create any store using _VTEX IO Web Framework_.
-
 - [Store](https://github.com/vtex-apps/store/blob/master/README.md)
 
 Store GraphQL is a middleware to access all VTEX APIs.
-
 - [Store GraphQL](https://github.com/vtex-apps/store-graphql/blob/master/docs/README.md)
 
 ### Store Component Apps
-
 - [Header](https://github.com/vtex-apps/store-header/blob/master/docs/README.md)
 - [Footer](https://github.com/vtex-apps/store-footer/blob/master/docs/README.md)
 - [Slider Layout](https://github.com/vtex-apps/slider-layout/blob/master/docs/README.md)
@@ -37,14 +30,14 @@ Store GraphQL is a middleware to access all VTEX APIs.
 - [Breadcrumb](https://github.com/vtex-apps/breadcrumb/blob/master/docs/README.md)
 - [Search Result](https://github.com/vtex-apps/search-result/blob/master/docs/README.md)
 - [Product Details](https://github.com/vtex-apps/product-details/blob/master/docs/README.md)
-- [Storecomponents](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
+- [Store Components](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
 - [Order Placed](https://github.com/vtex-apps/order-placed/blob/master/docs/README.md)
 - [Product Kit](https://github.com/vtex-apps/product-kit/blob/master/docs/README.md) :construction: under construction
 
 ### Store Pixel Apps
 
-- [Facebook Pixel](https://github.com/vtex-apps/facebook-pixel/blob/master/docs/README.md)
-- [Google Tag Manager](https://github.com/vtex-apps/google-tag-manager/blob/master/docs/README.md)
+ - [Facebook Pixel](https://github.com/vtex-apps/facebook-pixel/blob/master/docs/README.md)
+ - [Google Tag Manager](https://github.com/vtex-apps/google-tag-manager/blob/master/docs/README.md)
 
 ## Contributing
 
