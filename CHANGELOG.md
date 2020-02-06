@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [3.25.0] - 2020-02-06
 ### Changed
 - `vtex.carousel` in favor of using `list-context.image-list` and `slider-layout`.
 - `vtex.shelf` in favor of using `list-context.product-list` and `slider-layout`.
