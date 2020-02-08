@@ -1,44 +1,30 @@
-# Store theme
-Our boilerplate theme to create stores in the VTEX IO platform.
+# Store Theme
 
-## Preview
+Store Theme is a boilerplate theme based on the VTEX IO Store Framework with **pre-configured blocks and templates for store's front**. 
+
 ![store-theme-default](https://user-images.githubusercontent.com/1354492/63937047-e8d81c80-ca37-11e9-86fc-61e88847bbfb.png)
 
-## Tutorial
-To understand how things work check our tutorial [Build a store using VTEX IO](https://vtex.io/docs/getting-started/build-stores-with-vtex-io/1)
+The theme's default configurations will allow you to work in a swift and easy way, avoiding the need to build your store's front from scratch. 
 
-## Dependencies
-All store components that you see on this document are open source too. Production ready, you can found those apps in this GitHub organization.
+Once the Store Theme is a boilerplate theme, it includes all default blocks any store's front could ask for, such as:
 
-Store framework is the baseline to create any store using _VTEX IO Web Framework_.
-- [Store](https://github.com/vtex-apps/store/blob/master/README.md)
+- [Header](https://vtex.io/docs/components/all/vtex.store-header/)
+- [Shelf](https://vtex.io/docs/components/all/vtex.shelf/)
+- [Menu](https://vtex.io/docs/components/all/vtex.menu/)
+- [Logo](https://vtex.io/docs/components/all/vtex.store-components/logo)
+- [Login](https://vtex.io/docs/components/all/vtex.login/)
+- [Infocard](https://vtex.io/docs/components/all/vtex.store-components/info-card)
+- [Product Name](https://vtex.io/docs/components/product/vtex.store-components/product-name)
+- [Product Price](https://vtex.io/docs/components/product/vtex.store-components/product-price)
+- [Minicart](https://vtex.io/docs/components/all/vtex.minicart/)
+- [Breadcrumb](https://vtex.io/docs/components/all/vtex.breadcrumb/)
+- [Infocard](https://vtex.io/docs/components/all/vtex.store-components/info-card)
+- [SKU Selector](https://vtex.io/docs/components/all/vtex.store-components/sku-selector)
+- [Image](https://vtex.io/docs/components/all/vtex.store-components/image)
+- [Footer](https://vtex.io/docs/components/all/vtex.store-footer/)
 
-Store GraphQL is a middleware to access all VTEX APIs.
-- [Store GraphQL](https://github.com/vtex-apps/store-graphql/blob/master/docs/README.md)
+Notice: **all Store Framework store blocks are open source**, including those imported by Store Theme. Production ready, you can contribute to developing these apps by simply accessing their documentation in this Github organization (`vtex-apps`).
 
-### Store Component Apps
-- [Header](https://github.com/vtex-apps/store-header/blob/master/docs/README.md)
-- [Footer](https://github.com/vtex-apps/store-footer/blob/master/docs/README.md)
-- [Slider Layout](https://github.com/vtex-apps/slider-layout/blob/master/docs/README.md)
-- [Shelf](https://github.com/vtex-apps/shelf/blob/master/docs/README.md)
-- [Telemarketing](https://github.com/vtex-apps/telemarketing/blob/master/docs/README.md)
-- [Menu](https://github.com/vtex-apps/menu/blob/master/docs/README.md)
-- [Login](https://github.com/vtex-apps/login/blob/master/docs/README.md)
-- [Minicart](https://github.com/vtex-apps/minicart/blob/master/docs/README.md)
-- [Category Menu](https://github.com/vtex-apps/category-menu/blob/master/docs/README.md)
-- [Product Summary](https://github.com/vtex-apps/product-summary/blob/master/docs/README.md)
-- [Breadcrumb](https://github.com/vtex-apps/breadcrumb/blob/master/docs/README.md)
-- [Search Result](https://github.com/vtex-apps/search-result/blob/master/docs/README.md)
-- [Product Details](https://github.com/vtex-apps/product-details/blob/master/docs/README.md)
-- [Store Components](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
-- [Order Placed](https://github.com/vtex-apps/order-placed/blob/master/docs/README.md)
-- [Product Kit](https://github.com/vtex-apps/product-kit/blob/master/docs/README.md) :construction: under construction
+## Configuration
 
-### Store Pixel Apps
-
- - [Facebook Pixel](https://github.com/vtex-apps/facebook-pixel/blob/master/docs/README.md)
- - [Google Tag Manager](https://github.com/vtex-apps/google-tag-manager/blob/master/docs/README.md)
-
-## Contributing
-
-Check it out [how to contribute](https://github.com/vtex-apps/awesome-io#contributing) with this project.
+In order to learn how to build your store's front using the Store Theme repository, check out our documentation on how to [Build a store using VTEX IO](https://vtex.io/docs/getting-started/build-stores-with-vtex-io/1)
