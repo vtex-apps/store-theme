@@ -4,7 +4,7 @@ Store Theme is a boilerplate theme based on the VTEX IO Store Framework with **p
 
 ![store-theme-default](https://user-images.githubusercontent.com/1354492/63937047-e8d81c80-ca37-11e9-86fc-61e88847bbfb.png)
 
-The theme's default configurations will allow you to work in a swift and easy way, avoiding the need to build your store's front from scratch. 
+The theme's default configurations will allow you to work in a **swift** and **easy** way, avoiding the need to build your store's front from scratch. If you want to build without these pre-configurations, you should access the [Minimum Boilerplate Theme](https://github.com/vtex-apps/minimum-boilerplate-theme/pull/1)repository and follow the indicated steps. 
 
 Once the Store Theme is a boilerplate theme, it includes all default blocks any store's front could ask for, such as:
 
