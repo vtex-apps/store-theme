@@ -1,16 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
     ]
   },
 

@@ -1,28 +1,24 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": []
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": []
   },
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop",
-      "header-row#4-desktop"
     ]
   },
 
   "header-row#1-desktop": {
-    "children": ["telemarketing"],
+    "children": [],
     "props": {
       "fullWidth": true
     }
   },
 
   "header-row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": [],
     "props": {
       "fullWidth": "true"
     }
@@ -34,9 +30,6 @@
   },
   "header-row#3-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
     ],
     "props": {
       "blockClass": "menu-link",
@@ -45,14 +38,6 @@
   },
   "header-row#4-desktop": {
     "children": [
-      "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
-      "header-spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -68,15 +53,10 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["header-row#1-mobile"]
+    "children": []
   },
   "header-row#1-mobile": {
     "children": [
-      "drawer",
-      "logo#mobile",
-      "header-spacer",
-      "login",
-      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -84,14 +64,11 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": []
   },
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
     ],
     "props": {
       "orientation": "vertical"
