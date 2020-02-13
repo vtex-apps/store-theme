@@ -43,7 +43,7 @@
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
   }
 
   /* header background when stuck and not hovered */
