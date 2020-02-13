@@ -78,5 +78,8 @@
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
     }
+  },
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
   }
 }
