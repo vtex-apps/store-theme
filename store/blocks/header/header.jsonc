@@ -10,7 +10,7 @@
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
-      "sticky-layout.stack-container#4-desktop"
+      "sticky-layout#4-desktop"
     ]
   },
 
@@ -50,9 +50,6 @@
     "props": {
       "width": "grow"
     }
-  },
-  "sticky-layout.stack-container#4-desktop": {
-    "children": ["sticky-layout#4-desktop"]
   },
   "sticky-layout#4-desktop": {
     "props": {
