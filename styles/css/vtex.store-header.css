@@ -11,7 +11,6 @@
 /* desktop/mobile main header padding and background transitions */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  transition: background 0.3s ease, box-shadow 0.3s ease;
   will-change: padding, background, box-shadow;
 }
 
@@ -29,10 +28,13 @@
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* remove the extra padding when stuck from the desktop header */
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  transition: padding 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }
