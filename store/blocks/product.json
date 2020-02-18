@@ -65,6 +65,10 @@
   },
   "product-images": {
     "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
       "displayThumbnailsArrows": true
     }
   },
