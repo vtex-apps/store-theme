@@ -96,7 +96,7 @@
 
   "product-gifts": {
     "props": {
-      "maxVisibleItems": 1
+      "maxVisibleItems": 2
     },
     "children": ["flex-layout.row#product-text", "product-gift-list"]
   },
@@ -143,12 +143,12 @@
   "modal-trigger#product-gifts": {
     "children": ["modal-layout#product-gifts", "gift-text"],
     "props": {
-      "blockClass": "quickview"
+      "blockClass": "product-gifts"
     }
   },
   "modal-layout#product-gifts": {
     "props": {
-      "blockClass": "quickview",
+      "blockClass": "product-gifts",
       "fullScreen": {
         "phone": true,
         "desktop": false,
@@ -159,9 +159,6 @@
   },
 
   "product-gifts#modal": {
-    "props": {
-      "maxVisibleItems": 10
-    },
     "children": ["product-gift-list"]
   },
 
