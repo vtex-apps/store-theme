@@ -1,5 +1,6 @@
 /* add transitions */
-:global(.vtex-sticky-layout-0-x-container) .logoLink,
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-logoLink),
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-minicart-2-x-openIconContainer),
 :global(.vtex-sticky-layout-0-x-container)
@@ -11,7 +12,8 @@
 /* desktop/mobile main header padding and background transitions */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  will-change: padding, background, box-shadow;
+  transition: background 0.3s ease;
+  will-change: padding, background;
 }
 
 /* main header desktop has a bigger padding when not stuck */
@@ -34,7 +36,7 @@
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease;
+  transition: padding 0.3s ease, background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -63,6 +65,20 @@
 }
 
 /* resize the logo for neat effect */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck) .logoLink {
-  transform: scale(0.8);
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-store-components-3-x-logoLink) {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
 }
