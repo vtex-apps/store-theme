@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Limit the width of the search bar input instead of its container.
 
+### Fixed
+- Logo animation when header sticks to the top of the page.
+
+### Added
+- `prefers-reduced-motion` query to remove animation for users which don't want unnecessary animations.
+
 ## [3.26.0] - 2020-02-18
 ### Changed
 - Refactor the `header` with native IO blocks.
