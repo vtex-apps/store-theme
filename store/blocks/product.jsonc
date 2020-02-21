@@ -94,26 +94,36 @@
     ]
   },
 
+  // product-gifts implementation
+
   "product-gifts": {
     "props": {
-      "maxVisibleItems": 2
+      "maxVisibleItems": {
+        "desktop": 2,
+        "mobile": 1
+      }
     },
-    "children": ["flex-layout.row#product-text", "product-gift-list"]
+    "children": ["flex-layout.row#product-gifts-text", "product-gift-list"]
   },
-  "flex-layout.row#product-text": {
+
+  "flex-layout.row#product-gifts-text": {
     "props": {
       "verticalAlign": "middle",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
     },
-    "children": ["rich-text#product-gift", "flex-layout.col#product-gift-text"]
+    "children": [
+      "rich-text#product-gifts",
+      "flex-layout.col#product-gifts-text"
+    ]
   },
-  "flex-layout.col#product-gift-text": {
+  "flex-layout.col#product-gifts-text": {
     "children": ["modal-trigger#product-gifts"],
     "props": {
       "verticalAlign": "middle"
     }
   },
-  "rich-text#product-gift": {
+  "rich-text#product-gifts": {
     "props": {
       "text": "**+ GIFT**"
     }
@@ -161,6 +171,8 @@
   "product-gifts#modal": {
     "children": ["product-gift-list"]
   },
+
+  // End of product-gifts implementation
 
   "sku-selector": {
     "props": {
