@@ -82,10 +82,12 @@
   },
   "link.product#button-pdp": {
     "props": {
+      "buttonProps": {
+        "variant": "secondary"
+      },
       "displayMode": "button",
       "label": "View details",
-      "href": "/{slug}/p",
-      "variant": "secondary"
+      "href": "/{slug}/p"
     }
   },
   "flex-layout.row#quickview-main-row": {
@@ -116,7 +118,8 @@
     "props": {
       "thumbnailImage": "skuvariation",
       "imageHeight": 28,
-      "blockClass": "quickview"
+      "blockClass": "quickview",
+      "visibility": "more-than-one"
     }
   },
   "vtex.store-components:product-name": {
@@ -126,8 +129,8 @@
   },
   "product-images#quickview" : {
     "props": {
-      "blockClass": "quickviewImages",
-      "showNavigationArrows": false
+      "blockClass": "quickview",
+      "showNavigationArrows": true
     }
   }
 }

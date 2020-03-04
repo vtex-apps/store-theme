@@ -92,19 +92,19 @@
   }
 }
 
-.productImagesContainer--quickviewImages .carouselContainer {
+.productImagesContainer--quickview .carouselContainer {
   justify-content: flex-start;
 }
 
-.productImagesContainer--quickviewImages .productImageTag {
+.productImagesContainer--quickview .productImageTag {
   object-fit: cover !important;
 }
 
-.productImagesContainer--quickviewImages .carouselGaleryThumbs {
+.productImagesContainer--quickview .carouselGaleryThumbs {
   display: none;
 }
 
-.productImagesContainer--quickviewImages .carouselGaleryCursor {
+.productImagesContainer--quickview .carouselGaleryCursor {
   margin: 0;
   padding: 0;
   width: 100%;

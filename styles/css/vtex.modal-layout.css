@@ -8,13 +8,6 @@
     padding: 0 2rem 2rem 2rem;
   }
 }
-/* 
-@media screen and (min-width: 50em) {
-  .paper--quickview {
-    height: 400px;
-    width: 850px;
-  }
-} */
 
 @media screen and (min-width: 50em) {
   .paper--quickview {
@@ -23,12 +16,15 @@
   }
 }
 
-@media screen and (min-width: 82em) {
-  .paper--quickview {
-    height: 550px;
-    width: 1100px;
-  }
 
+@media screen and (min-width: 75em) {
+  .paper--quickview {
+    width: calc(100% - 4rem);
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 82em) {
   .actionsContainer--quickview {
     padding: 0 2.5rem 2.5rem 2.5rem;
   }
@@ -36,6 +32,7 @@
 
 .paper--quickview {
   min-width: 320px;
+  max-width: 96rem;
 }
 
 .headerContainer--quickview {
@@ -81,4 +78,8 @@
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) .actionsContentWrapper {
   border-top-color: transparent;
+}
+
+.closeButton {
+  padding-right: 1rem;
 }

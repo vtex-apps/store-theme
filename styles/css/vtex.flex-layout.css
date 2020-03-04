@@ -84,7 +84,7 @@
 }
 
 .flexColChild--quickviewDetails:first-child {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 66% !important;
   overflow-x: hidden;
 }
