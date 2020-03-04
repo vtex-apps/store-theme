@@ -3,7 +3,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "FIRST_AVAILABLE",
+        "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }
@@ -16,7 +16,7 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
-        "skusFilter": "FIRST_AVAILABLE",
+        "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }
@@ -26,7 +26,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "FIRST_AVAILABLE",
+        "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }
@@ -36,7 +36,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "FIRST_AVAILABLE",
+        "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }
@@ -46,7 +46,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "FIRST_AVAILABLE",
+        "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }

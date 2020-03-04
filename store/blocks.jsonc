@@ -30,7 +30,12 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showInstallments": true
+    }
+  },
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
@@ -41,12 +46,16 @@
       "add-to-cart-button"
     ]
   },
-
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false
+    }
+  },
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image",
-      "product-bookmark",
-      "product-summary-specification-badges"
+      "product-summary-image#shelf",
+      "modal-trigger#quickview"
+      
     ]
   },
 
