@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.29.0] - 2020-03-06
+
 ## [3.28.0] - 2020-03-05
 ### Added
 - `__fold__` blocks on home.
