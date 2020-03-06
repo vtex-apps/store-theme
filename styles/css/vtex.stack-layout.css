@@ -1,3 +1,9 @@
 .stackItem--product {
   width: 100%;
 }
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: auto;
+}

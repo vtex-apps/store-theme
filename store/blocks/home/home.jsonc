@@ -20,17 +20,6 @@
     "blocks": ["product-summary.shelf"]
   },
 
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-summary-description",
-      "product-summary-image",
-      "product-summary-price",
-      "product-summary-sku-selector",
-      "product-summary-buy-button"
-    ]
-  },
-
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
