@@ -20,21 +20,6 @@
       }
     }
   },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": false,
-        "tagTitle": "about-us",
-        "text": "About Us"
-      }
-    }
-  },
   "vtex.menu@2.x:menu#institutional": {
     "children": [
       "menu-item#vtex-website"
