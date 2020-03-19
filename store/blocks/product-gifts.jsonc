@@ -1,0 +1,78 @@
+{
+  "product-gifts": {
+    "props": {
+      "maxVisibleItems": {
+        "desktop": 1,
+        "mobile": 1
+      }
+    },
+    "children": ["flex-layout.row#product-gifts-text", "product-gift-list"]
+  },
+
+  "flex-layout.row#product-gifts-text": {
+    "props": {
+      "verticalAlign": "middle",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#product-gifts",
+      "flex-layout.col#product-gifts-text"
+    ]
+  },
+  "flex-layout.col#product-gifts-text": {
+    "children": ["modal-trigger#product-gifts"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#product-gifts": {
+    "props": {
+      "text": "**+ GIFT**"
+    }
+  },
+  "gift-text": {
+    "props": {
+      "blockClass": "default",
+      "text": "{exceedingItems, plural, =0{} one {+ # gift} other {+ # gifts}}"
+    }
+  },
+  "product-gift-list": {
+    "children": ["flex-layout.row#gift"]
+  },
+  "flex-layout.row#gift": {
+    "props": {
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#gift-name-description", "gift-image"]
+  },
+  "flex-layout.col#gift-name-description": {
+    "props": {
+      "verticalAlign": "middle",
+      "rowGap": 3
+    },
+    "children": ["gift-name", "gift-description"]
+  },
+
+  "modal-trigger#product-gifts": {
+    "children": ["modal-layout#product-gifts", "gift-text"],
+    "props": {
+      "blockClass": "product-gifts"
+    }
+  },
+  "modal-layout#product-gifts": {
+    "props": {
+      "blockClass": "product-gifts",
+      "fullScreen": {
+        "phone": true,
+        "desktop": false,
+        "tablet": false
+      }
+    },
+    "children": ["product-gifts#modal"]
+  },
+
+  "product-gifts#modal": {
+    "children": ["product-gift-list"]
+  }
+}

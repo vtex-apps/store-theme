@@ -86,6 +86,7 @@
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
+      "product-gifts",
       "flex-layout.row#buy-button",
       "availability-subscriber",
       "shipping-simulator",
