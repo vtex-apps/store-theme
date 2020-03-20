@@ -1,5 +1,8 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
