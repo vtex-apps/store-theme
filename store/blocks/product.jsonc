@@ -80,7 +80,9 @@
     "children": [
       "vtex.store-components:product-name",
       "product-rating-summary",
-      "product-price#product-details",
+      "flex-layout.row#list-price-savings",
+      "product-selling-price",
+      "product-installments",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
@@ -91,6 +93,18 @@
       "availability-subscriber",
       "shipping-simulator",
       "share#default"
+    ]
+  },
+
+  "flex-layout.row#list-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "product-list-price",
+      "product-price-savings"
     ]
   },
 
