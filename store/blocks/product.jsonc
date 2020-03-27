@@ -96,18 +96,6 @@
     ]
   },
 
-  "flex-layout.row#list-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true
-    },
-    "children": [
-      "product-list-price",
-      "product-price-savings"
-    ]
-  },
-
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
