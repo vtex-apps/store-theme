@@ -42,3 +42,11 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+.listPrice--summary {
+  margin-bottom: 0.5rem;
+}
+
+.installments--summary {
+  margin-bottom: 2rem;
+}

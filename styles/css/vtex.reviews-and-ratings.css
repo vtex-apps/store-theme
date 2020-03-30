@@ -1,0 +1,12 @@
+.inlineContainer {
+  margin-left: 0rem ;
+  margin-bottom: 0.5rem;
+}
+
+.star--filled {
+  color: #FFB100;
+}
+
+.star--empty {
+  color: #FFB100;
+}

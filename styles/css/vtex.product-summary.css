@@ -16,3 +16,17 @@
     display: none;
   } 
 }
+
+.nameContainer {
+  justify-content: left;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}

@@ -81,7 +81,7 @@
       "vtex.store-components:product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
-      "product-selling-price",
+      "flex-layout.row#selling-price",
       "product-installments",
       "product-separator",
       "product-identifier.product",
