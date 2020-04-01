@@ -27,7 +27,7 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 3
+      "marginBottom": 4
     },
     "children": [
       "product-selling-price"
@@ -38,7 +38,7 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 3
+      "marginBottom": 4
     },
     "children": [
       "product-selling-price#summary",

@@ -51,15 +51,13 @@
 
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": false,
-      "height": 300
+      "showBadge": false
     }
   },
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
       "modal-trigger#quickview"
-      
     ]
   },
 

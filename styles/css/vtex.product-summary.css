@@ -19,6 +19,8 @@
 
 .nameContainer {
   justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .brandName {
@@ -29,4 +31,8 @@
 
 .container {
   text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
 }
