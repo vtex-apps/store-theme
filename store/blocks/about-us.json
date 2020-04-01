@@ -1,32 +1,23 @@
 {
   "store.custom#about-us": {
-    "blocks": [
-      "flex-layout.row#about-us"
-    ]
+    "blocks": ["flex-layout.row#about-us"]
   },
 
   "flex-layout.row#about-us": {
-    "children": [
-      "image#mobile-phone",
-      "flex-layout.col#text-about-us"
-    ]
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
   },
 
   "flex-layout.col#text-about-us": {
-    "children": [
-      "rich-text#title-about-us",
-      "rich-text#about-us"
-    ],
+    "children": ["rich-text#title-about-us", "rich-text#about-us"],
     "props": {
-      "blockclass": "textColumn",
+      "blockClass": "textColumn",
       "preventVerticalStretch": true
     }
   },
 
   "rich-text#title-about-us": {
     "props": {
-      "text":
-      "# Create meaningful and relevant experiences.",
+      "text": "# Create meaningful and relevant experiences.",
       "blockClass": "title"
     }
   },
