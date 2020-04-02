@@ -42,10 +42,13 @@
       "product-summary-name",
       "product-rating-inline",
       "product-summary-space",
-      "product-summary-price",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
       "add-to-cart-button"
     ]
   },
+
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false
@@ -55,7 +58,6 @@
     "children": [
       "product-summary-image#shelf",
       "modal-trigger#quickview"
-      
     ]
   },
 

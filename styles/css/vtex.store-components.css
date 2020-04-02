@@ -111,5 +111,7 @@
 }
 
 .productNameContainer {
+  color: #3f3f40;
   font-weight: bold;
+  font-size: 30px;
 }

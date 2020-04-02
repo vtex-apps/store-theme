@@ -80,7 +80,9 @@
     "children": [
       "vtex.store-components:product-name",
       "product-rating-summary",
-      "product-price#product-details",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
