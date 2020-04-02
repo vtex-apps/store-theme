@@ -37,7 +37,7 @@
   "flex-layout.col#quickviewPrice": {
     "children": [
       "flex-layout.row#list-price-savings",
-      "product-selling-price",
+      "flex-layout.row#selling-price",
       "product-installments"
     ]
   },
