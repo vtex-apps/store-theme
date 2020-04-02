@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [3.33.0] - 2020-04-02
 ### Changed
 - Price blocks on `product-summary` and on the PDP to use the new blocks from `vtex.product-price`
 - Product title style on PDP.
