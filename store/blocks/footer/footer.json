@@ -11,15 +11,9 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
       "social-networks"
     ],
     "props": {
-      "blockClass": "menu-row",
       "paddingTop": 6,
       "paddingBottom": 3
     }
@@ -75,7 +69,6 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]
   },
@@ -99,13 +92,6 @@
       "paddingBottom": 4,
       "rowGap": 4
     }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
   },
   "rich-text#footer-mobile": {
     "props": {

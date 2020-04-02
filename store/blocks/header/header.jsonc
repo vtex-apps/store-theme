@@ -9,7 +9,6 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -32,19 +31,12 @@
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "vtex.menu@2.x:menu#header-menu": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
+      "navigation": {
+        "id": 10000
+      }
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -68,7 +60,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
+      "vtex.menu@2.x:menu#header-menu",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
@@ -81,12 +73,6 @@
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -117,21 +103,6 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
