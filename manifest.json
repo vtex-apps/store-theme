@@ -52,7 +52,8 @@
     "vtex.store-icons": "0.x",
     "vtex.modal-layout": "0.x",
     "vtex.store-link": "0.x",
-    "vtex.product-gifts": "0.x"
+    "vtex.product-gifts": "0.x",
+    "vtex.overlay-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

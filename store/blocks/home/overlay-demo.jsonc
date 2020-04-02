@@ -1,0 +1,23 @@
+{
+  "rich-text#open-trigger": {
+    "props": {
+      "text": "## Open the overlay"
+    }
+  },
+  "overlay-trigger": {
+    "children": [
+      "rich-text#open-trigger",
+      "overlay-layout"
+    ]
+  },
+  "rich-text#overlay-content": {
+    "props": {
+      "text": "## This is an example of overlay content"
+    }
+  },
+  "overlay-layout": {
+    "children": [
+      "rich-text#overlay-content"
+    ]
+  }
+}
