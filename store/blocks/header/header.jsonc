@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "props": {
+      "MobileLayout": "header-layout.mobile",
+      "DesktopLayout": "header-layout.desktop"
+    }
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "props": {
+      "MobileLayout": "header-layout.mobile",
+      "DesktopLayout": "header-layout.desktop"
+    }
   },
   "header-layout.desktop": {
     "children": [

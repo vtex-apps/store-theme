@@ -226,9 +226,9 @@
         "noFollow": true,
         "tagTitle": "Clothing",
         "text": "Clothing"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+      },
+      "Item": "vtex.menu@2.x:submenu.accordion#clothing"
+    }
   },
   "vtex.menu@2.x:submenu.accordion#clothing": {
     "children": ["vtex.menu@2.x:menu#clothing-accordion"]
@@ -252,9 +252,9 @@
       "itemProps": {
         "tagTitle": "Decoration",
         "text": "Decoration"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+      },
+      "Item": "vtex.menu@2.x:submenu.accordion#decoration"
+    }
   },
   "vtex.menu@2.x:submenu.accordion#decoration": {
     "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
@@ -276,9 +276,9 @@
       "itemProps": {
         "tagTitle": "Sale",
         "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+      },
+      "Item": "vtex.menu@2.x:submenu.accordion#sale"
+    }
   },
   "vtex.menu@2.x:submenu.accordion#sale": {
     "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]

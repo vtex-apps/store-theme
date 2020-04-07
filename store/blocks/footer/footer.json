@@ -1,13 +1,24 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "props": {
+      "DesktopLayout": "footer-layout.desktop",
+      "MobileLayout": "footer-layout.mobile"
+    }
   },
   "footer-layout.desktop": {
+    "props": {
+      "TestSlot": "rich-text#testing"
+    },
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
+  },
+  "rich-text#testing": {
+    "props": {
+      "text": "eai boy"
+    }
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [

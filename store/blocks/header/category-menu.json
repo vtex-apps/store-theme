@@ -22,10 +22,17 @@
         "tagTitle": "Apparel & Accessories",
         "text": "Apparel & Accessories"
       },
-      "Item": "vtex.menu@2.x:submenu#category-apparel",
-      "Item2": "vtex.menu@2.x:submenu#category-apparel",
-      "Item3": "vtex.menu@2.x:submenu#category-apparel",
-      "Item4": "vtex.menu@2.x:submenu#category-apparel"
+      "Item": "vtex.menu@2.x:submenu#category-apparel"
+    }
+  },
+  "rich-text#slot1": {
+    "props": {
+      "text": "This is here because Slots work! :D"
+    }
+  },
+  "rich-text#slot2": {
+    "props": {
+      "text": "This is here because multiple Slots work! :D"
     }
   },
   "vtex.menu@2.x:submenu#category-apparel": {
@@ -116,9 +123,9 @@
         "noFollow": true,
         "tagTitle": "More",
         "text": "More"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#more"]
+      },
+      "Item": "vtex.menu@2.x:submenu#more"
+    }
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {
