@@ -1,7 +1,7 @@
 .listPrice {
   color: #727273;
   margin-bottom: .25rem;
-  font-size: .875rem;
+  font-size: 1rem;
 }
 
 .sellingPrice {
@@ -48,6 +48,7 @@
 
 .listPrice--summary {
   margin-bottom: 0.25rem;
+  font-size: .875rem;
 }
 
 .installments--summary {
