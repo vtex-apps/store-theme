@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": [
+    "children": [
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -13,10 +13,6 @@
       "rich-text#link",
       "newsletter"
     ]
-  },
-
-  "shelf#home": {
-    "blocks": ["product-summary.shelf"]
   },
 
   "list-context.image-list#demo": {
@@ -58,9 +54,9 @@
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
+      "Product": "product-summary.shelf",
       "orderBy": "OrderByTopSaleDESC"
     }
   },

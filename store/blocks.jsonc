@@ -9,18 +9,18 @@
  */
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "children": ["order-placed"]
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "children": ["my-account"],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "children": ["login-content#default"]
   },
 
   "login-content#default": {
@@ -57,10 +57,7 @@
     }
   },
   "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf",
-      "modal-trigger#quickview"
-    ]
+    "children": ["product-summary-image#shelf", "modal-trigger#quickview"]
   },
 
   "product-summary-image": {
@@ -79,10 +76,10 @@
   },
 
   "store.product-review-form": {
-    "blocks": ["product-review-form"]
+    "children": ["product-review-form"]
   },
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "children": ["rich-text#not-found"]
   },
   "rich-text#not-found": {
     "props": {
@@ -93,6 +90,6 @@
     }
   },
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
+    "children": ["rich-text#not-found"]
   }
 }

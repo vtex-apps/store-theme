@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "children": ["search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -10,7 +10,7 @@
   },
 
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "children": ["search-result-layout"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -23,7 +23,7 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "children": ["search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +33,7 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "children": ["search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -43,7 +43,7 @@
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "children": ["search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
