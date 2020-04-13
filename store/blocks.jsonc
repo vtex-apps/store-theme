@@ -51,7 +51,9 @@
 
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": false
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
     }
   },
   "stack-layout#prodsum": {

@@ -36,3 +36,7 @@
 .imageContainer {
   text-align: center;
 }
+
+.image {
+  border-radius: 0.25rem;
+}
