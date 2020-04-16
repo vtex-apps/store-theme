@@ -53,11 +53,11 @@
   },
 
   "search-result-layout": {
-    "blocks": [
-      "search-result-layout.desktop",
-      "search-result-layout.mobile",
-      "search-not-found-layout"
-    ]
+    "props": {
+      "MobileLayout": "search-result-layout.mobile",
+      "DesktopLayout": "search-result-layout.desktop",
+      "NotFound": "search-not-found-layout"
+    }
   },
 
   "search-result-layout.desktop": {
@@ -141,7 +141,10 @@
     "children": ["search-content"]
   },
   "search-content": {
-    "blocks": ["gallery", "not-found"]
+    "props": {
+      "Gallery": "gallery",
+      "NotFound": "not-found"
+    }
   },
 
   "search-result-layout.mobile": {
@@ -225,6 +228,8 @@
   },
 
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "props": {
+      "ProductSummary": "product-summary.shelf"
+    }
   }
 }
