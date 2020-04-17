@@ -61,7 +61,10 @@
   },
 
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+    "children": [
+      "rich-text#footer",
+      "advertising-tracking-preferences"
+    ],
     "props": {
       "blockClass": "credits"
     }
