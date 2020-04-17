@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [3.34.1-beta] - 2020-04-17
+
 ## [3.34.0] - 2020-04-07
 ### Added
 - `fetch-more` and `fetch-previous` buttons on mobile.
