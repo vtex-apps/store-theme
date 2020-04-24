@@ -31,11 +31,39 @@
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
     }
   },
-  "vtex.menu@2.x:menu#header-menu": {
+  "menu#header-menu": {
     "props": {
-      "navigation": {
-        "id": 10000
-      }
+      "navigationId": 10000,
+      "MenuItem": "menu-item.root#root-item"
+    }
+  },
+  "menu-item.root#root-item": {
+    "props": {
+      "Submenu": "submenu#default-submenu"
+    }
+  },
+  "submenu#default-submenu": {
+    "props": {
+      "SubmenuList": "menu-list.horizontal#lvl1"
+    }
+  },
+  "menu-list.vertical#lvl1": {
+    "props": {
+      "TopItem": "menu-item",
+      "ListItem": "menu-list.vertical#lvl2"
+    }
+  },
+  "menu-list.vertical#lvl2": {
+    "props": {
+      "TopItem": "menu-item",
+      "ListItem": "menu-list.vertical#lvl3",
+      "blockClass": "lvl2"
+    }
+  },
+  "menu-list.vertical#lvl3": {
+    "props": {
+      "TopItem": "menu-item",
+      "blockClass": "lvl3"
     }
   },
   "flex-layout.col#spacer": {
@@ -60,7 +88,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "vtex.menu@2.x:menu#header-menu",
+      "menu#header-menu",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",

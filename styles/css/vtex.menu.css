@@ -1,0 +1,15 @@
+.modifierBrand {
+  position: relative;
+}
+
+.modifierBrand .menuItemLabel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuItem--lvl3 {
+  display: block;
+  padding: .25rem;
+}
