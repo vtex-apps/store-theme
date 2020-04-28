@@ -15,7 +15,6 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -38,6 +37,30 @@
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
     }
   },
+  "menu#header-menu": {
+    "props": {
+      "navigationId": 10000,
+      "MenuItem": "menu-item.root#root-item"
+    }
+  },
+  "menu-item.root#root-item": {
+    "props": {
+      "Submenu": "submenu#default-submenu"
+    }
+  },
+  "submenu#default-submenu": {
+    "props": {
+      "SubmenuList": "menu-item.vertical-list#test1"
+    }
+  },
+  "menu-item.vertical-list#test1": {
+    "children": ["rich-text#testing-submenu"]
+  },
+  "rich-text#testing-submenu": {
+    "props": {
+      "text": "This is being rendered inside a submenu"
+    }
+  },
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -47,9 +70,9 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      // "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer"
+      // "vtex.menu@2.x:menu#institutional"
     ]
   },
   "flex-layout.col#spacer": {
@@ -74,7 +97,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
+      "menu#header-menu",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
@@ -91,8 +114,8 @@
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    }
+    // "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -123,20 +146,20 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
+  // "drawer": {
+  //   "children": ["menu#drawer"]
+  // },
 
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
+  // "menu#drawer": {
+  //   "children": [
+  //     "menu-item#category-apparel",
+  //     "menu-item#category-home",
+  //     "menu-item#more"
+  //   ],
+  //   "props": {
+  //     "orientation": "vertical"
+  //   }
+  // },
 
   "logo#mobile": {
     "props": {
