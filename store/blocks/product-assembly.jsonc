@@ -63,7 +63,8 @@
       }
     },
     "children": [
-      "flex-layout.row#item-customize"
+      "flex-layout.row#item-customize",
+      "assembly-option-input-values"
     ]
   },
   "flex-layout.row#item-customize": {
