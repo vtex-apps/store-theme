@@ -35,7 +35,6 @@ Store GraphQL is a middleware to access all VTEX APIs.
 - [Product Details](https://github.com/vtex-apps/product-details/blob/master/docs/README.md)
 - [Store Components](https://github.com/vtex-apps/store-components/blob/master/docs/README.md)
 - [Order Placed](https://github.com/vtex-apps/order-placed/blob/master/docs/README.md)
-- [Product Kit](https://github.com/vtex-apps/product-kit/blob/master/docs/README.md) :construction: under construction
 
 ### Store Pixel Apps
 

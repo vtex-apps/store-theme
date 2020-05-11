@@ -9,6 +9,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add input values for recursive assemblies
 
+## [3.35.0] - 2020-04-13
+### Added
+- `aspectRatio` and `maxHeight` on `product-summary-image#shelf`.
+
+### Fixed
+- Some styles on product summary and price components.
+
+## [3.34.0] - 2020-04-07
+### Added
+- `fetch-more` and `fetch-previous` buttons on mobile.
+
+## [3.33.0] - 2020-04-02
+### Changed
+- Price blocks on `product-summary` and on the PDP to use the new blocks from `vtex.product-price`
+- Product title style on PDP.
+
 ## [3.32.0] - 2020-03-20
 ### Changed
 - Use `__fold__.experimentalLazyAssets` on home.

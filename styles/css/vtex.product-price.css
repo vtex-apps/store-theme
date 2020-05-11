@@ -1,0 +1,57 @@
+.listPrice {
+  color: #727273;
+  margin-bottom: .25rem;
+  font-size: 1rem;
+}
+
+.sellingPrice {
+  color: #3f3f40;
+  font-size: 1.25rem;
+}
+
+.sellingPriceValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.installments {
+  color: #727273;
+  margin-bottom: 1rem;
+}
+
+.savings {
+  font-weight: 500;
+  color: #79B03A;
+}
+
+.sellingPriceValue--summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2E2E2E;
+}
+
+.savings--summary {
+  background: #8BC34A;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: .875rem;
+}
+
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
