@@ -17,7 +17,7 @@
   },
   "rich-text#testing": {
     "props": {
-      "text": "eai boy"
+      "text": "This is from a slot"
     }
   },
   "flex-layout.row#footer-1-desktop": {

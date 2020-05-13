@@ -1,6 +1,19 @@
 {
   "store.custom#about-us": {
-    "children": ["flex-layout.row#about-us"]
+    "children": ["flex-layout.row#about-us", "info-card#imageurltest"]
+  },
+
+  "info-card#imageurltest": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "//emporiodacerveja.vtexassets.com/assets/vtex.file-manager-graphql/images/teste-dandy.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
   },
 
   "flex-layout.row#about-us": {
