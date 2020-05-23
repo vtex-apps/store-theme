@@ -6,7 +6,8 @@
       "flex-layout.row#description",
       "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "back-to-top-button"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -135,6 +136,13 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 800,
+      "display":"caret-icon"
     }
   }
 }

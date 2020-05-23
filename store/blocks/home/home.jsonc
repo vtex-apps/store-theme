@@ -11,7 +11,8 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter",
+      "back-to-top-button"
     ]
   },
 
@@ -102,6 +103,13 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 800,
+      "display":"caret-icon"
     }
   }
 }

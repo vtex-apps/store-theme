@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout","back-to-top-button"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -226,5 +226,13 @@
 
   "gallery": {
     "blocks": ["product-summary.shelf"]
+  },
+
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 800,
+      "display":"caret-icon"
+    }
   }
+
 }
