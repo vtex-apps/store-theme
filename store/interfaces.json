@@ -1,0 +1,28 @@
+{
+  "my-virtual-component": {
+    "content": {
+      "title": "My Virtual Component",
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        }
+      }
+    },
+    "virtualTree": {
+      "interface": "vtex.flex-layout:flex-layout.row",
+      "children": [
+        {
+          "interface": "vtex.rich-text:rich-text",
+          "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "$text",
+            "font": "t-heading-2"
+          }
+        }
+      ]
+    }
+  }
+}
