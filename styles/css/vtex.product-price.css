@@ -55,3 +55,29 @@
   margin-bottom: 2rem;
   font-size: 0.875rem;
 }
+
+
+
+
+
+
+.listPrice--search {
+  display: block;
+  float: left;
+
+  padding: 5px;
+  border-right: 1px solid black;
+}
+
+.listPriceValue--search {
+  display: block;
+  font-weight: bold;
+}
+
+.sellingPrice--search, .sellingPriceValue--search {
+  font-size: 1em;
+}
+
+.sellingPriceValue--search {
+  display: block;
+}

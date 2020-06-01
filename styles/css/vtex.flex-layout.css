@@ -96,3 +96,17 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+
+
+.flexCol--search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.flexColChild--search:empty {
+  display: none;
+}

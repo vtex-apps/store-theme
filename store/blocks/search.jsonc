@@ -225,6 +225,51 @@
   },
 
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  "product-summary.shelf#search": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "flex-layout.row#prices",
+      "add-to-cart-button"
+    ]
+  },
+
+  "flex-layout.row#prices": {
+    "props": {
+      "blockClass": "search"
+    },
+    "children": [
+      "flex-layout.col#prices"
+    ]
+  },
+  "flex-layout.col#prices": {
+    "props": {
+      "blockClass": "search"
+    },
+    "children": [
+      "product-list-price#search",
+      "product-selling-price#search"
+    ]
+  },
+  "product-list-price#search": {
+    "props": {
+      "blockClass": "search",
+      "markers": [
+        "highlight"
+      ]
+    }
+  },
+  "product-selling-price#search": {
+    "props": {
+      "blockClass": "search",
+      "markers": [
+        "highlight"
+      ]
+    }
   }
 }
