@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "my-virtual-component",
+      "my-virtual-component#foo",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
@@ -10,6 +10,12 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+
+  "my-virtual-component#foo": {
+    "props": {
+      "text": "hallo"
+    }
   },
 
   "shelf#home": {

@@ -1,4 +1,7 @@
 {
+  "great-component": {
+    "component": "GreatComponent"
+  },
   "my-virtual-component": {
     "content": {
       "title": "My Virtual Component",
@@ -13,6 +16,15 @@
     "virtualTree": {
       "interface": "vtex.flex-layout:flex-layout.row",
       "children": [
+        {
+          "interface": "vtex.rich-text:rich-text",
+          "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "$text",
+            "font": "t-heading-2"
+          }
+        },
         {
           "interface": "vtex.rich-text:rich-text",
           "props": {
