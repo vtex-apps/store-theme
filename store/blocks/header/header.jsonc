@@ -39,32 +39,26 @@
   },
   "menu-item.root#root-item": {
     "props": {
-      "Submenu": "submenu#default-submenu"
+      "Submenu": "submenu.horizontal#default-submenu"
     }
   },
-  "submenu#default-submenu": {
+  "submenu.horizontal#default-submenu": {
     "props": {
-      "SubmenuList": "menu-list.horizontal#lvl1"
+      "MenuItem": "menu-item#subitem"
     }
   },
-  "menu-list.vertical#lvl1": {
+  "menu-item#subitem": {
     "props": {
-      "TopItem": "menu-item",
-      "ListItem": "menu-list.vertical#lvl2"
+      "Submenu": "submenu#default"
     }
   },
-  "menu-list.vertical#lvl2": {
+  "submenu#default": {
     "props": {
-      "TopItem": "menu-item",
-      "ListItem": "menu-list.vertical#lvl3",
-      "blockClass": "lvl2"
+      "MenuItem": "menu-item#subsub"
     }
   },
-  "menu-list.vertical#lvl3": {
-    "props": {
-      "TopItem": "menu-item",
-      "blockClass": "lvl3"
-    }
+  "menu-item#subsub": {
+    "props": {}
   },
   "flex-layout.col#spacer": {
     "props": {
