@@ -1,0 +1,235 @@
+{
+  "10000": {
+    "id": "10000",
+    "title": "Main Navigation",
+    "items": [
+      {
+        "id": "41201",
+        "label": "Men's",
+        "link": "#",
+        "subNavigation": "39215"
+      },
+      {
+        "id": "41202",
+        "label": "Women's",
+        "link": "#"
+      },
+      {
+        "id": "41203",
+        "label": "Kid's",
+        "link": "#"
+      },
+      {
+        "id": "41204",
+        "label": "Camp & Hike",
+        "link": "#"
+      },
+      {
+        "id": "41205",
+        "label": "Climbing",
+        "link": "#"
+      },
+      {
+        "id": "41206",
+        "label": "Hunt & Fish",
+        "link": "#"
+      },
+      {
+        "id": "41207",
+        "label": "Sports",
+        "link": "#"
+      },
+      {
+        "id": "41208",
+        "label": "Snow",
+        "link": "#"
+      },
+      {
+        "id": "41209",
+        "label": "Water",
+        "link": "#"
+      },
+      {
+        "id": "41210",
+        "label": "Bike",
+        "link": "#"
+      },
+      {
+        "id": "41211",
+        "label": "Brands",
+        "link": "#"
+      }
+    ]
+  },
+
+  "39215": {
+    "id": "39215",
+    "title": "Men's",
+    "items": [
+      {
+        "id": "49215",
+        "label": "Clothing",
+        "link": "/clothing/Mens?map=c%2CspecificationFilter_7721",
+        "subNavigation": "39216"
+      },
+      {
+        "id": "49216",
+        "label": "Footwear",
+        "link": "/footwear/Mens?map=c%2CspecificationFilter_7721",
+        "subNavigation": "39217"
+      },
+      {
+        "id": "49217",
+        "label": "Accessories",
+        "link": "/clothing/accessories/Mens?map=c%2Cc%2CspecificationFilter_7721",
+        "subNavigation": "39218"
+      }
+    ]
+  },
+
+  "39216": {
+    "id": "39216",
+    "title": "Men's Clothing",
+    "items": [
+      {
+        "id": "59216",
+        "label": "Shirts",
+        "link": "#"
+      },
+      {
+        "id": "59217",
+        "label": "Hoodies",
+        "link": "#"
+      },
+      {
+        "id": "59218",
+        "label": "Pants",
+        "link": "#"
+      },
+      {
+        "id": "59219",
+        "label": "Shorts",
+        "link": "#"
+      },
+      {
+        "id": "59220",
+        "label": "Swimwear",
+        "link": "#"
+      },
+      {
+        "id": "59221",
+        "label": "Baselayers",
+        "link": "#"
+      },
+      {
+        "id": "59222",
+        "label": "Underwear",
+        "link": "#"
+      },
+      {
+        "id": "59223",
+        "label": "Vests",
+        "link": "#"
+      }
+    ]
+  },
+
+  "39217": {
+    "id": "39217",
+    "title": "Men's Footwear",
+    "items": [
+      {
+        "id": "69216",
+        "label": "Casual",
+        "link": "#"
+      },
+      {
+        "id": "69217",
+        "label": "Athetic Sneakers",
+        "link": "#"
+      },
+      {
+        "id": "69218",
+        "label": "Running",
+        "link": "#"
+      },
+      {
+        "id": "69219",
+        "label": "Cross Training Shoes",
+        "link": "#"
+      },
+      {
+        "id": "69220",
+        "label": "Hiking",
+        "link": "#"
+      },
+      {
+        "id": "69221",
+        "label": "Sandals",
+        "link": "#"
+      },
+      {
+        "id": "69222",
+        "label": "Climbing",
+        "link": "#"
+      },
+      {
+        "id": "69223",
+        "label": "Hunting",
+        "link": "#"
+      },
+      {
+        "id": "69224",
+        "label": "Athletic Cleats",
+        "link": "#"
+      },
+      {
+        "id": "69225",
+        "label": "Winter",
+        "link": "#"
+      },
+      {
+        "id": "69226",
+        "label": "Socks",
+        "link": "#"
+      }
+    ]
+  },
+
+  "39218": {
+    "id": "39218",
+    "title": "Men's Accessories",
+    "items": [
+      {
+        "id": "79216",
+        "label": "Hats",
+        "link": "#"
+      },
+      {
+        "id": "79217",
+        "label": "Gloves & Mittens",
+        "link": "#"
+      },
+      {
+        "id": "79218",
+        "label": "Belts",
+        "link": "#"
+      },
+      {
+        "id": "79219",
+        "label": "Gaiters",
+        "link": "#"
+      },
+      {
+        "id": "79220",
+        "label": "Sunglasses",
+        "link": "#"
+      },
+      {
+        "id": "79221",
+        "label": "Watches",
+        "link": "#"
+      }
+    ]
+  }
+}
