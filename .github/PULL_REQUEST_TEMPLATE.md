@@ -2,30 +2,26 @@
 
 <!--- What is the motivation and context for this change? -->
 
-#### How should this be manually tested?
+#### How to test it?
 
-[Workspace](url)
+<!--- Don't forget to add a link to a Workspace where this branch is linked -->
 
-#### Checklist/Reminders
+[Workspace](Link goes here!)
 
-- [ ] Updated `README.md`.
-- [ ] Updated `CHANGELOG.md`.
-- [ ] Linked this PR to a Clubhouse story (if applicable).
-- [ ] Updated/created tests (important for bug fixes).
-- [ ] Deleted the workspace after merging this PR (if applicable).
+#### Screenshots or example usage:
 
-#### Screenshots or example usage
+<!--- Add some images or gifs to showcase changes in behaviour or layout. Example: before and after images -->
 
-#### Type of changes
+#### Describe alternatives you've considered, if any.
 
-<!--- Add a ✔️ where applicable -->
-✔️ | Type of Change
----|---
-_ | Bug fix <!-- a non-breaking change which fixes an issue -->
-_ | New feature <!-- a non-breaking change which adds functionality -->
-_ | Breaking change <!-- fix or feature that would cause existing functionality to change -->
-_ | Technical improvements <!-- chores, refactors and overall reduction of technical debt -->
+<!--- Optional -->
 
-#### Notes
+#### Related to / Depends on
 
-<!-- Put any relevant information that doesn't fit in the other sections here. -->
+<!--- Optional -->
+
+#### How does this PR make you feel? [:link:](http://giphy.com/)
+
+<!-- Go to http://giphy.com/ and pick a gif that represents how this PR makes you feel -->
+
+![](put .gif link here - can be found under "advanced" on giphy)
