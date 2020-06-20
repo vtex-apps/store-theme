@@ -55,10 +55,10 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#home"]
   },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+  "list-context.product-list#home": {
+    "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -76,7 +76,6 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -103,5 +102,18 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "challenge-permission#home-price"
+    ]
+  },
+  "challenge-permission#home-price":{
+    "blocks":[
+      "allowed-content#price",
+      "disallowed-content#price"
+    ] 
   }
 }

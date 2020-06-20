@@ -15,12 +15,19 @@
   "store.account": {
     "blocks": ["my-account"],
     "parent": {
-      "challenge": "challenge.profile"
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
   "store.login": {
     "blocks": ["login-content#default"]
+  },
+  "login": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
   },
 
   "login-content#default": {
@@ -29,7 +36,8 @@
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
-  },
+  }
+  ,
   "product-price": {
     "props": {
       "showSavings": true,
@@ -94,5 +102,10 @@
   },
   "store.not-found#search": {
     "blocks": ["rich-text#not-found"]
+  }
+  ,"challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/registration"
+    }
   }
 }

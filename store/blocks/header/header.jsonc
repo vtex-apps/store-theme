@@ -76,6 +76,17 @@
       "minicart.v2"
     ]
   },
+    "search-bar": {
+      "blocks": ["autocomplete-result-list.v2"],
+      "props": {
+        "openAutocompleteOnFocus": true
+      }
+    }
+  ,
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
+  }
+  ,
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -85,9 +96,20 @@
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
+    }
+    ,"children": ["vtex.menu@2.x:menu#category-menu"]
+    /*"children": ["category-menu#old"]*/
+  }
+  ,"category-menu#old": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": []
+    }
+  }
+  
+  ,
   "logo#desktop": {
     "props": {
       "title": "Logo",
@@ -140,4 +162,5 @@
       "width": "70"
     }
   }
+  
 }

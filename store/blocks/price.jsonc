@@ -30,7 +30,7 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price"
+      "challenge-permission#general-price"
     ]
   },
   "flex-layout.row#selling-price-savings": {
@@ -41,11 +41,9 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
+      "challenge-permission#general2-price"
     ]
   },
-
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,
@@ -54,6 +52,40 @@
       "marginBottom": 2,
       "marginTop": 5
     },
+    "children": [
+      "challenge-permission#general3-price"
+    ]
+  },
+  "challenge-permission#general-price":{
+    "blocks":[
+      "allowed-content#general-price",
+      "disallowed-content#price"
+    ] 
+  },
+  "allowed-content#general-price":{
+    "children": [
+      "product-selling-price"
+    ]
+  },
+  "challenge-permission#general2-price":{
+    "blocks":[
+      "allowed-content#general2-price",
+      "disallowed-content#price"
+    ] 
+  },
+  "allowed-content#general2-price":{
+    "children": [
+      "product-selling-price#summary",
+      "product-price-savings#summary"
+    ]
+  },
+  "challenge-permission#general3-price":{
+    "blocks":[
+      "allowed-content#general3-price",
+      "disallowed-content#price"
+    ] 
+  },
+  "allowed-content#general3-price":{
     "children": [
       "product-list-price",
       "product-price-savings"

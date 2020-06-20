@@ -2,41 +2,110 @@
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "challenge-block#loggedIn"
     ]
   },
-  "menu-item#shop": {
-    "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
+  "challenge-block#loggedIn": {
+      "blocks": [
+        "challenge-content#loggedIn",
+        "challenge-fallback#loggedIn"
+      ]
+    },
+    "challenge-content#loggedIn": {
+      "children": [
+        "flex-layout.row#topmenu-apps"
+      ]
+    },
+    "challenge-fallback#loggedIn": {
+      "children": [
+        "menu-item#cadastro"
+      ]
+    },
+    "flex-layout.row#topmenu-apps":{
+      "children": [
+        "menu-item#quickorder",
+        "menu-item#orderquote"
+      ]
     }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
-    "props": {
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+    ,
+    "menu-item#quickorder": {
+      "props": {
+        "id": "menu-item-quickorder",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/quickorder",
+          "noFollow": false,
+          "tagTitle": "Quick Order",
+          "text": "Quick Order"
+        }
+      }
+    },
+    "menu-item#orderquote": {
+      "props": {
+        "id": "menu-item-orderquote",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/orderquote",
+          "noFollow": false,
+          "tagTitle": "Order Quote",
+          "text": "Order Quote"
+        }
+      }
+    },
+    "menu-item#cadastro": {
+      "props": {
+        "id": "menu-item-cadastro",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/registration",
+          "noFollow": false,
+          "tagTitle": "Become a partner",
+          "text": "Become a partner"
+        }
+      }
+    },
+    "menu-item#shop": {
+      "props": {
+        "id": "menu-item-shop",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Shop",
+          "text": "Shop"
+        }
+      }
+    },
+    "vtex.menu@2.x:menu#institutional": {
+      "children": [
+        "menu-item#vtex-website"
+      ]
+    },
+    "menu-item#vtex-website": {
+      "props": {
+        "id": "menu-item-vtex-website",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "external",
+          "href": "http://vtex.com",
+          "noFollow": false,
+          "tagTitle": "visit vtex.com",
+          "text": "visit vtex.com"
       }
     }
   }

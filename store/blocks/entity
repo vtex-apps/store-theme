@@ -1,0 +1,99 @@
+{
+	"title": "Revenda",
+	"type": "object",
+	"properties": {
+		"razaoSocial": {
+			"type": "string",
+			"title": "Razão Social"
+		},
+		"cnpj": {
+			"type": "string",
+			"title": "CNPJ"
+		},
+		"nomeFantasia": {
+			"type": "string",
+			"title": "Nome Fantasia"
+		},
+		"contribuinte": {
+			"type": "boolean",
+			"title": "Contribuinte de ICMS?"
+		},
+		"isento": {
+			"type": "boolean",
+			"title": "Isento de Inscrição Estadual?"
+		},
+		"inscricaoEstadual": {
+			"type": "integer",
+			"title": "Inscrição Estadual"
+		},
+		"nfEmail": {
+			"type": "string",
+			"format": "email",
+			"title": "E-Mail para Nota Fiscal"
+		},
+		"address": {
+			"title": "Address",
+			"type": "object",
+			"properties": {
+				"streetType": {
+					"type": "string",
+					"title": "Stree type: ",
+					"enum": [
+						"Stresst",
+						"Highway",
+						"Avenue",
+						"Boulevard"
+					]
+				},
+				"cep": {
+					"title": "ZipCode",
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 8
+				},
+				"streetAddress": {
+					"type": "string",
+					"title": "Address"
+				},
+				"streetNumber": {
+					"type": "integer",
+					"title": "No"
+				}
+			},
+			"required": [
+				"streetType", "streetAddress", "streetNumber"
+			]
+		},
+		"agreement": {
+			"type": "boolean",
+			"title": "A empresa se enquadra no regime do simples nacional?"
+		}
+	},
+	"required": [
+		"razaoSocial",
+		"nfEmail"
+	],
+	"v-security": {
+		"publicWrite": ["publicForWrite"],
+		"publicJsonSchema": true
+	},
+	"v-triggers": [{
+		"name": "insert-customer-table",
+		"active": true,
+		"condition": "",
+		"action": {
+			"type": "save",
+			"dataEntity": "CL",
+			"json": {
+				"approved": "false",
+				"email": "{!nfEmail}",
+				"documentType": "CNPJ",
+				"isCorporate": "true",
+				"corporateName": "{!razaoSocial}",
+				"tradeName": "{!nomeFantasia}",
+				"stateRegistration": "true",
+				"corporateDocument": "{!cnpj}"
+			}
+		}
+	}]
+}

@@ -1,0 +1,119 @@
+{
+  "store.custom#registration": {
+    "blocks": [
+      "flex-layout.row#form"
+    ]
+  },
+  "flex-layout.row#form": {
+      "children": [
+        "flex-layout.col#form"
+      ]
+    },
+    "flex-layout.col#form": {
+      "children": [
+        "form"
+      ]
+    },
+    "form": {
+      "props": {  
+          "entity": "Revenda",  
+          "schema": "v1",
+          "blockclass": "textColumn",
+          "preventVerticalStretch": true
+        },  
+        "children": [
+          "rich-text#formTitle",
+          "flex-layout.col#coluna1",
+          "flex-layout.col#coluna2"
+        ],  
+        "blocks": ["form-success"]  
+    },
+    "flex-layout.col#coluna1":{
+      "children": [  
+        "form-input.text#razaoSocial",  
+        "form-input.text#nomeFantasia",
+        "form-input.text#cnpj",
+        "form-input.checkbox#contribuinte",
+        "form-input.checkbox#isento",
+        "form-input.text#inscricaoEstadual"
+      ]
+    },
+    "flex-layout.col#coluna2":{
+      "children": [  
+        "form-field-group#address",
+        "form-input.text#nfEmail",  
+        "form-submit"
+      ]
+    },
+    "form-success": {  
+      "children": [  
+        "rich-text#successSubmit"  
+      ]  
+    },  
+    "rich-text#successSubmit": {  
+      "props": {  
+        "text": "Data sent successfully",  
+        "textAlignment": "CENTER",  
+        "textPosition": "CENTER"  
+      }  
+    },  
+    "rich-text#formTitle": {  
+      "props": {  
+        "text": "Reseller registration",  
+        "textAlignment": "CENTER",  
+        "textPosition": "CENTER"  
+      }  
+    },
+    "form-input.text#razaoSocial": {  
+      "props": {  
+        "pointer": "#/properties/razaoSocial",
+        "label": "Company Name"  
+      }  
+    },  
+    "form-input.text#nomeFantasia": {  
+      "props": {  
+        "pointer": "#/properties/nomeFantasia",
+        "label": "Trading Name"  
+      }  
+    },  
+    "form-input.text#cnpj": {  
+      "props": {  
+        "pointer": "#/properties/cnpj",
+        "label": "Corporate Taxpayer"  
+      }  
+    },  
+    "form-input.checkbox#contribuinte": {  
+      "props": {  
+        "pointer": "#/properties/contribuinte",  
+        "label": "Tax payer?"  
+      }  
+    },  
+    "form-input.checkbox#isento": {  
+      "props": {  
+        "pointer": "#/properties/isento",  
+        "label": "Tax exempt?: "  
+      }  
+    },  
+    "form-input.text#inscricaoEstadual": {  
+      "props": {  
+        "pointer": "#/properties/inscricaoEstadual",  
+        "label": "State registry: "  
+      }  
+    },  
+    "form-field-group#address": {  
+      "props": {  
+        "pointer": "#/properties/address"  
+      }  
+    },  
+    "form-input.text#nfEmail": {  
+      "props": {  
+        "pointer": "#/properties/nfEmail",
+        "label": "Email: "  
+      }  
+    },  
+    "form-submit": {  
+      "props": {  
+        "label": "Submit"  
+      }  
+    }
+}

@@ -7,6 +7,10 @@
         "simulationBehavior": "skip"
       }
     }
+    ,
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
 
   "store.search#brand": {
@@ -19,6 +23,9 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
+    },
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -29,6 +36,9 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
+    },
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -39,6 +49,9 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
+    },
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -49,6 +62,9 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
+    },
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -59,20 +75,32 @@
       "search-not-found-layout"
     ]
   },
-
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
+      "flex-layout.row#didyoumean",
+      "flex-layout.row#suggestion",
       "flex-layout.row#result"
     ],
     "props": {
       "pagination": "show-more",
-      "preventRouteChange": false,
+      "preventRouteChange": true,
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
       }
+    }
+  },
+  "flex-layout.row#didyoumean": {
+    "children": ["did-you-mean"]
+  },
+  "flex-layout.row#suggestion": {
+    "children": ["search-banner#one"]
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "myBanner",
+      "horizontalAlignment": "center"
     }
   },
   "flex-layout.row#searchbread": {
@@ -223,8 +251,37 @@
       "showOnMobile": true
     }
   },
-
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#newdemo"]
+  },
+  "product-summary.shelf#newdemo": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "challenge-permission#plp-price"
+    ]
+  },
+  "challenge-permission#plp-price":{
+    "blocks":[
+      "allowed-content#price",
+      "disallowed-content#price"
+    ] 
+  },
+  "allowed-content#price":{
+    "children": [
+      "flex-layout.col#pricecontent"
+    ]
+  },
+  "disallowed-content#price":{
+    "children": []
+  },
+  "flex-layout.col#pricecontent":{
+    "children":[
+      "product-list-price",
+      "product-selling-price#summary",
+      "product-price-savings",
+      "product-installments",
+      "flex-layout.row#buy-button"
+    ]
   }
 }
