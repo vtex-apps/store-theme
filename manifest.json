@@ -47,6 +47,7 @@
     "vtex.order-placed": "1.x",
     "vtex.checkout-summary": "0.x",
     "vtex.product-list": "0.x",
+    "vtex.list-context": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
     "vtex.slider-layout": "0.x",
@@ -55,7 +56,9 @@
     "vtex.modal-layout": "0.x",
     "vtex.store-link": "0.x",
     "vtex.product-gifts": "0.x",
-    "vtex.product-price": "1.x"
+    "vtex.product-price": "1.x",
+    "vtex.format-currency": "0.x",
+    "vtex.tab-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

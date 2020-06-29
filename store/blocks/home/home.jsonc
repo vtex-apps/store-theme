@@ -1,20 +1,44 @@
 {
   "store.home": {
     "blocks": [
-      "my-virtual-component#foo",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "highlights"
     ]
   },
 
-  "my-virtual-component#foo": {
+  "highlights": {
     "props": {
-      "text": "hallo"
+      "highlights": [
+        {
+          "text": "Foo",
+          "image": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+        },
+        {
+          "text": "Bar",
+          "image": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+        }
+      ]
+    }
+  },
+
+  "highlight": {
+    "props": {
+      "text": "Single",
+      "image": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+    }
+  },
+
+  "slot-component": {
+    "props": {
+      "Custom": "image-new",
+      "SecondCustom": "image-new#foobar",
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+    }
+  },
+
+  "image-new#foobar": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+      "maxHeight": "24px"
     }
   },
 

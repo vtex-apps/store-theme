@@ -1,0 +1,31 @@
+{
+  "definitions": {
+    "Highlight": {
+      "title": "Highlight",
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "image": {
+          "type": "string",
+          "title": "Image"
+        }
+      }
+    },
+    "Highlights": {
+      "title": "Highlights",
+      "type": "object",
+      "properties": {
+        "highlights": {
+          "title": "Highlight list",
+          "type": "array",
+          "items": {
+            "$ref": "app:vtex.store-theme#/definitions/Highlight"
+          }
+        }
+      }
+    }
+  }
+}

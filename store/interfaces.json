@@ -1,28 +1,19 @@
 {
-  "great-component": {
-    "component": "GreatComponent"
+  "slot-component": {
+    "component": "SlotComponent"
   },
-  "my-virtual-component": {
+  "highlight": {
     "content": {
-      "title": "My Virtual Component",
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        }
-      }
+      "$ref": "app:vtex.store-theme#/definitions/Highlight"
     },
     "virtualTree": {
-      "interface": "vtex.flex-layout:flex-layout.row",
+      "interface": "vtex.flex-layout:flex-layout.col",
       "children": [
         {
-          "interface": "vtex.rich-text:rich-text",
+          "interface": "vtex.store-image:image-new",
           "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "$text",
-            "font": "t-heading-2"
+            "src": "$image",
+            "maxHeight": "24px"
           }
         },
         {
@@ -32,6 +23,169 @@
             "textPosition": "CENTER",
             "text": "$text",
             "font": "t-heading-2"
+          }
+        }
+      ]
+    }
+  },
+  "highlights": {
+    "content": {
+      "$ref": "app:vtex.store-theme#/definitions/Highlights"
+    },
+    "virtualTree": {
+      "interface": "vtex.flex-layout:flex-layout.row",
+      "children": [
+        {
+          "interface": "vtex.list-context:list-context.general",
+          "props": {
+            "items": "$highlights",
+            "Component": "highlight"
+          },
+          "children": [
+            {
+              "interface": "vtex.list-context:list-context-renderer"
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+
+
+  "tabbed-shelf": {
+    "content": {
+      "title": "Tabbed Shelf",
+      "properties": {
+        "tabs": {
+          "title": "Tabs",
+          "type": "array",
+          "items": {
+            "title": "Tab",
+            "type": "object",
+            "properties": {
+              "title": {
+                "title": "Title",
+                "type": "string"
+              },
+              "categoryId": {
+                "title": "Category ID",
+                "type": "string"
+              },
+              "defaultTab": {
+                "title": "Default Tab",
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "virtualTree": {
+      "interface": "vtex.tab-layout:tab-layout",
+      "children": [
+        {
+          "interface": "vtex.tab-layout:tab-list",
+          "children": [
+            {
+              "interface": "vtex.list-context:list-context.general",
+              "props": {
+                "Component": "tab-item",
+                "items": "$tabs"
+              },
+              "children": [
+                {
+                  "interface": "vtex.list-context:list-context-renderer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "interface": "vtex.tab-layout:tab-content",
+          "children": [
+            {
+              "interface": "vtex.list-context:list-context.general",
+              "props": {
+                "Component": "tab-shelf",
+                "items": "$tabs"
+              },
+              "children": [
+                {
+                  "interface": "vtex.list-context:list-context-renderer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  "tab-item": {
+    "content": {
+      "title": "Tab Item",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "defaultTab": {
+          "title": "Default Tab",
+          "type": "boolean"
+        }
+      }
+    },
+    "virtualTree": {
+      "interface": "vtex.tab-layout:tab-content.item",
+      "props": {
+        "tabId": "$title",
+        "label": "$title"
+      }
+    }
+  },
+
+  "tab-shelf": {
+    "content": {
+      "title": "Shelf",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "categoryId": {
+          "title": "Category Id",
+          "type": "string"
+        }
+      }
+    },
+    "virtualTree": {
+      "interface": "vtex.tab-layout:tab-content.item",
+      "props": {
+        "tabId": "$title"
+      },
+      "children": [
+        {
+          "interface": "vtex.rich-text:rich-text",
+          "props": {
+            "text": "$categoryId"
+          }
+        },
+        {
+          "interface": "vtex.shelf:shelf",
+          "props": {
+            "ProductSummary": "vtex.product-summary:product-summary.shelf",
+            "orderBy": "OrderByTopSaleDESC",
+            "skusFilter": "FIRST_AVAILABLE",
+            "productList": {
+              "maxItems": 10,
+              "itemsPerPage": 5,
+              "scroll": "BY_PAGE",
+              "arrows": true,
+              "titleText": "$title",
+              "categoryId": "$categoryId"
+            }
           }
         }
       ]
