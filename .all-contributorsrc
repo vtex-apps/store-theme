@@ -9,6 +9,17 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
-  "contributorsPerLine": 7
+  "contributors": [
+    {
+      "login": "hugocostadev",
+      "name": "Hugo Costa",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20212776?v=4",
+      "profile": "http://www.hugoccosta.com",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
