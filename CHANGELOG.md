@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Active **background** `action-secondary` color from `#dbe9fd` to `#d2defc`
+- Active **border** `action-secondary` color from `#dbe9fd` to `#d2defc`
 
 ## [3.37.1] - 2020-07-08
 
