@@ -1,0 +1,4 @@
+{
+  "extends": "vtex-react/io",
+  "plugins": ["static-react-components"]
+}
