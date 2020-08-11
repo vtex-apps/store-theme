@@ -1,7 +1,20 @@
 {
+
+  "vtex.store-components@3.x:product-brand#foo": {
+    "props": {
+      "displayMode": "OOOOOOOOOI"
+    }
+  },
+  "vtex.store-components:product-brand#bar": {
+    "props": {
+      "displayMode": "OOOOOOOOOI"
+    }
+  },
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
+      "vtex.store-components@3.x:product-brand#foo",
+      "vtex.store-components:product-brand#bar",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
       "shelf.relatedProducts",
