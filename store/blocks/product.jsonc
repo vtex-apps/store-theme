@@ -4,6 +4,7 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
+      "product-specification-group#table",
       "shelf.relatedProducts",
       "product-specs",
       "product-reviews",
@@ -101,9 +102,7 @@
     "props": {
       "marginBottom": 3
     },
-    "children": [
-      "vtex.store-components:product-name"
-    ]
+    "children": ["vtex.store-components:product-name"]
   },
 
   "sku-selector": {
