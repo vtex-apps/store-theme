@@ -6,8 +6,7 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "slider-layout-group#test",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -15,8 +14,12 @@
     ]
   },
 
-  "shelf#home": {
-    "blocks": ["product-summary.shelf"]
+  "slider-layout-group#test": {
+    "children": [
+      "flex-layout.row#shelf",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#shelf3"
+    ]
   },
 
   "list-context.image-list#demo": {
@@ -48,33 +51,107 @@
     }
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#1-1": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "text": "Slide 1",
+      "textPosition": "center",
+      "textAlignment": "center"
     }
   },
+  "rich-text#1-2": {
+    "props": {
+      "text": "Slide 2",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#1-3": {
+    "props": {
+      "text": "Slide 3",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#2-1": {
+    "props": {
+      "text": "Slide 1",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#2-2": {
+    "props": {
+      "text": "Slide 2",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#2-3": {
+    "props": {
+      "text": "slide3",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#3-1": {
+    "props": {
+      "text": "Slide 1",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#3-2": {
+    "props": {
+      "text": "Slide 2",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#3-3": {
+    "props": {
+      "text": "Slide3",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["slider-layout#1"]
   },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+  "slider-layout#1": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
+      "itemsPerPage": 1,
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf"
-    }
+      "autoplay": {
+        "timeout": 1000,
+        "stopOnHover": true
+      }
+    },
+    "children": ["rich-text#1-1", "rich-text#1-2", "rich-text#1-3"]
+  },
+
+  "flex-layout.row#shelf2": {
+    "children": ["slider-layout#2"]
+  },
+  "slider-layout#2": {
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": true,
+      "fullWidth": false
+    },
+    "children": ["rich-text#2-1", "rich-text#2-2", "rich-text#2-3"]
+  },
+  "flex-layout.row#shelf3": {
+    "children": ["slider-layout#3"]
+  },
+  "slider-layout#3": {
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": true,
+      "fullWidth": false
+    },
+    "children": ["rich-text#3-1", "rich-text#3-2", "rich-text#3-3"]
   },
 
   "info-card#home": {
