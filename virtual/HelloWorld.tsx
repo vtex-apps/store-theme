@@ -4,7 +4,7 @@ const HelloWorld = () => {
   return (
     <>
       <h1>Hello World</h1>
-      <button onClick={() => {}}>a</button>
+      <button>a</button>
       <h1>Hello World</h1>
       <h1>Hello World</h1>
       <h1>Hello World</h1>
@@ -12,6 +12,12 @@ const HelloWorld = () => {
       <h1>Hello World</h1>
     </>
   )
+}
+
+HelloWorld.displayName = 'helloworld'
+
+HelloWorld.schema = {
+  title: 'Olarrr',
 }
 
 export default HelloWorld
