@@ -4,8 +4,8 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
-      "product-specification-group#table",
       "shelf.relatedProducts",
+      "product-specification-group#table",
       "product-specs",
       "product-reviews",
       "product-questions-and-answers"
