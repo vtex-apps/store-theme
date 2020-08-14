@@ -5,6 +5,7 @@
       "flex-layout.row#product-main",
       "flex-layout.row#description",
       "shelf.relatedProducts",
+      "product-specs",
       "product-reviews",
       "product-questions-and-answers"
     ]

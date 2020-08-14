@@ -1,0 +1,7 @@
+.productSpecs:first-child {
+  margin-top: 0;
+}
+
+.productSpecs {
+  margin-top: 1em;
+}
