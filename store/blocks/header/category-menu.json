@@ -152,7 +152,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#faq"
     ]
   },
   "menu-item#about-us": {
@@ -167,6 +168,21 @@
         "noFollow": true,
         "tagTitle": "About us",
         "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
       }
     }
   }

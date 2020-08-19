@@ -94,5 +94,10 @@
   },
   "store.not-found#search": {
     "blocks": ["rich-text#not-found"]
+  },
+  "store.custom#faq": {
+    "children": [
+      "flex-layout.row#faq"
+    ]
   }
 }
