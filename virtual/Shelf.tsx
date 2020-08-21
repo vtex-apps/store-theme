@@ -11,7 +11,7 @@ const itemsPerPage = { desktop: 5, tablet: 3, phone: 1 }
 const ShelfBlock = () => {
   return (
     <div className={`${styles.themeShelf} flex justify-center`}>
-      <div className="mw9">
+      <div className="mw9 w-100">
         <div className="flex justify-center items-center">
           <h2 className="t-heading-2 fw2 c-muted-2">Summer</h2>
         </div>
