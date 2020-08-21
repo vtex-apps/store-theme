@@ -1,0 +1,32 @@
+.storeContextTitle {
+  font-size: 40px;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: bold;
+
+
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034e;
+}
+
+.storeContextReach {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034e;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.storeContextLink {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034e;
+  text-transform: initial;
+}

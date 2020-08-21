@@ -30,44 +30,6 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-  "product-price": {
-    "props": {
-      "showSavings": true,
-      "showInstallments": true
-    }
-  },
-  "product-summary.shelf": {
-    "children": [
-      "stack-layout#prodsum",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
-    ]
-  },
-
-  "product-summary-image#shelf": {
-    "props": {
-      "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
-    }
-  },
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf",
-      "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image": {
-    "props": {
-      "height": 220
-    }
-  },
 
   "product-summary-specification-badges": {
     "props": {

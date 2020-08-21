@@ -2,9 +2,9 @@ import React from 'react'
 import { Menu, MenuItem } from 'vtex.menu'
 import { menuItems } from './modules/menu'
 
-const MenuVirtual = () => {
+const MenuMobile = () => {
   return (
-    <Menu>
+    <Menu orientation="vertical">
       {menuItems.map((menuItem) => (
         <MenuItem
           key={menuItem.id}
@@ -19,6 +19,6 @@ const MenuVirtual = () => {
   )
 }
 
-MenuVirtual.displayName = 'menuvirtual'
+MenuMobile.displayName = 'menu-mobile'
 
-export default MenuVirtual
+export default MenuMobile

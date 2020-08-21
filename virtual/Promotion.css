@@ -1,0 +1,14 @@
+.promotion .infoCardContainer {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0;
+}
+
+.promotion .infoCardTextContainer {
+  width: 30%;
+}
+
+.promotion .infoCardImageContainer {
+  width: 70%;
+}
