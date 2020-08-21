@@ -1,3 +1,4 @@
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -10,56 +11,6 @@
   max-width: 208px;
 }
 
-.infoCardContainer--info-card-home {
-  max-width: 1520px;
-  margin: 0 auto;
-  background-color: #e6f1e6;
-  padding: 0px;
-}
-
-.newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
-}
-
-.label {
-  color: #fff;
-  font-size: 26px;
-}
-
-.inputGroup {
-  padding-bottom: 4px;
-  display: flex;
-  color: #fff;
-}
-
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-}
-
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
-  font-size: 16px;
-}
-
-.inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  margin-right: -24px;
-}
-
-.buttonContainer {
-  padding-top: 0px;
-}
-
 .imageElement--storePrint {
   max-height: 300px;
   margin-bottom: 20px;
@@ -70,22 +21,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-
-  .label {
-    font-size: 40px;
-  }
-
-  .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
-  }
-
-  .infoCardContainer--info-card-home .infoCardImageContainer {
-    width: 70%;
-  }
-
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;

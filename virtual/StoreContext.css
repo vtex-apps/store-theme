@@ -1,14 +1,14 @@
 .storeContextTitle {
-  font-size: 40px;
-  line-height: 3rem;
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+
+
   text-align: center;
-  font-weight: bold;
-
-
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034e;
+  color: #03034E;
 }
 
 .storeContextReach {
@@ -29,4 +29,12 @@
   font-weight: 300;
   color: #03034e;
   text-transform: initial;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .storeContextTitle {
+    font-size: 40px;
+    line-height: 3rem;
+  }
 }

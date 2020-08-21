@@ -49,34 +49,36 @@ const HeaderDesktop = () => {
         </div>
       </div>
 
-      <StickyLayout>
-        <div className={`${styles.mainRow} flex`}>
-          <div className="flex items-center">
-            <Logo
-              title="Logo"
-              href="/"
-              url="https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
-              width="180"
-            />
+      <div className={styles.themeHeader}>
+        <StickyLayout>
+          <div className={`${styles.mainHeader} flex`}>
+            <div className="flex items-center">
+              <Logo
+                title="Logo"
+                href="/"
+                url="https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png"
+                width="180"
+              />
+            </div>
+            <div className="flex items-center">
+              <MenuVirtual />
+            </div>
+            <div className="flex flex-grow-1"></div>
+            <div className="flex">
+              <SearchBar />
+            </div>
+            <div className="flex">
+              <LocaleSwitcher />
+            </div>
+            <div className="flex">
+              <Login hideIconLabel showIconProfile />
+            </div>
+            <div className="flex">
+              <Minicart />
+            </div>
           </div>
-          <div className="flex items-center">
-            <MenuVirtual />
-          </div>
-          <div className="flex flex-grow-1"></div>
-          <div className="flex">
-            <SearchBar />
-          </div>
-          <div className="flex">
-            <LocaleSwitcher />
-          </div>
-          <div className="flex">
-            <Login hideIconLabel showIconProfile />
-          </div>
-          <div className="flex">
-            <Minicart />
-          </div>
-        </div>
-      </StickyLayout>
+        </StickyLayout>
+      </div>
     </header>
   )
 }

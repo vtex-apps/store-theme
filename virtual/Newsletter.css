@@ -5,18 +5,22 @@
 }
 
 .newsletter .container {
-  padding: 140px;
+  padding: 60px 10px;
 }
 
 .newsletter .label {
-  font-size: 40px;
   color: #fff;
+  font-size: 26px;
 }
 
 .newsletter .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #fff;
+}
+
+.newsletter .buttonContainer {
+  padding-top: 0;
 }
 
 .newsletter .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -36,3 +40,14 @@
   border: none;
   margin-right: -24px;
 }
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .newsletter .label {
+    font-size: 40px;
+  }
+}
+

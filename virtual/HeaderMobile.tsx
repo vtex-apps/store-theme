@@ -10,9 +10,9 @@ import MenuMobile from './MenuMobile'
 
 const HeaderMobile = () => {
   return (
-    <header>
+    <header className={styles.themeHeader}>
       <StickyLayout>
-        <div className={`${styles.mainRow} flex items-center justify-start`}>
+        <div className={`${styles.mainHeaderMobile} flex items-center justify-start`}>
           <div className="flex">
             <Drawer>
               <MenuMobile />

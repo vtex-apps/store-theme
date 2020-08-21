@@ -1,8 +1,74 @@
+
 .darkRow {
   background-color: #03044e;
   color: #fff;
 }
 
-.mainRow {
+/* add transitions */
+.themeHeader .container .logoLink,
+.themeHeader .container .openIconContainer,
+.themeHeader .container .searchBarContainer {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* desktop/mobile main header padding and background transitions */
+.mainHeader, .mainHeaderMobile {
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}
+
+/* main header desktop has a bigger padding when not stuck */
+.mainHeader {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* add a box-shadow to desktop/mobile header when stuck */
+.themeHeader .wrapper--stuck .mainHeader,
+.themeHeader .wrapper--stuck .mainHeaderMobile {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+ .themeHeader .wrapper--stuck .mainHeader {
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* if supported add some translucency to the desktop/mobile header background */
+@supports (backdrop-filter: blur(5px)) {
+  .themeHeader .wrapper--stuck .mainHeader,
+  .themeHeader .wrapper--stuck .mainHeaderMobile {
+    backdrop-filter: blur(8px);
+  }
+
+  /* header background when stuck and not hovered */
+  .themeHeader .wrapper--stuck:not(:hover) .mainHeader,
+  .themeHeader .wrapper--stuck:not(:hover) .mainHeaderMobile {
+    background: rgba(240, 240, 240, 0.8);
+  }
+}
+
+/* stick wrapper with the same color as the desktop/mobile header */
+.themeHeader .wrapper {
   background-color: #f0f0f0;
+}
+
+/* resize the logo for neat effect */
+.themeHeader .wrapper--stuck .logoLink {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .themeHeader .container .logoLink,
+  .themeHeader .container .openIconContainer,
+  .themeHeader .container .searchBarContainer,
+  .themeHeader .wrapper--stuck .mainHeader {
+    transition: none;
+  }
 }

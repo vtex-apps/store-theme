@@ -2,13 +2,16 @@
   max-width: 1520px;
   margin: 0 auto;
   background-color: #e6f1e6;
-  padding: 0;
+  padding: 0px;
 }
 
-.promotion .infoCardTextContainer {
-  width: 30%;
-}
+@media only screen and (min-width: 640px) {
+  .promotion .infoCardContainer .infoCardTextContainer {
+    width: 30%;
+  }
 
-.promotion .infoCardImageContainer {
-  width: 70%;
+  .promotion .infoCardContainer .infoCardImageContainer {
+    width: 70%;
+  }
+
 }

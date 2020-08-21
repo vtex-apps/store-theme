@@ -14,6 +14,7 @@ const StoreContext = () => {
       <div className="flex justify-center">
         <div className={styles.storeContextReach}>
           <div>Reach us at</div>
+          <br />
           <div>
             <a href="https://vtex.com" className={styles.storeContextLink}>
               www.vtex.com
