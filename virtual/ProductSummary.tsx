@@ -1,5 +1,4 @@
 import React from 'react'
-import { ExtensionPoint } from 'vtex.render-runtime'
 import { ProductImages, ProductName } from 'vtex.store-components'
 import { ProductSummaryQuantity } from 'vtex.product-quantity'
 import {
@@ -24,6 +23,7 @@ import {
 } from 'vtex.modal-layout'
 import { IconExpand } from 'vtex.store-icons'
 import { ProductLink } from 'vtex.store-link'
+import { RatingInline } from 'vtex.reviews-and-ratings'
 
 import styles from './ProductSummary.css'
 
@@ -78,7 +78,6 @@ const QuickView = () => {
 
 interface Props {
   product: any
-  RatingInline: any
 }
 
 const ProductSummary = ({ product }: Props) => {
@@ -97,7 +96,7 @@ const ProductSummary = ({ product }: Props) => {
           <ProductSummaryName />
         </div>
         <div className="flex">
-          <ExtensionPoint id="rating-inline" />
+          <RatingInline />
         </div>
         <div className="flex flex-grow-1"></div>
         <div className="flex">

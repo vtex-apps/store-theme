@@ -8,17 +8,5 @@
       "store-context",
       "vtex.store-theme@3.x:newsletter"
     ]
-  },
-
-  "shelf-block": {
-    "props": {
-      "RatingInline": "rating-inline"
-    }
-  },
-
-  "rating-inline": {
-    "children": [
-      "product-rating-inline"
-    ]
   }
 }

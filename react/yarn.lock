@@ -26,13 +26,13 @@
   version "0.5.5"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.5/public/@types/vtex.locale-switcher#c07555ef8aef2e6b635a4c6b5f7b421930e1eda6"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.36.0/public/_types/react":
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.36.1/public/_types/react":
   version "0.0.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.36.0/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.36.1/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
-"vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.25.0/public/@types/vtex.menu":
+"vtex.menu@https://virtual2--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.menu@2.25.0+build1597947385/public/@types/vtex.menu":
   version "2.25.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.25.0/public/@types/vtex.menu#cab220bbc9a8186a70bcb0b091d2476b35c1179f"
+  resolved "https://virtual2--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.menu@2.25.0+build1597947385/public/@types/vtex.menu#1715159e690e5edaacac6db9c3ec4554bce2c691"
 
 "vtex.minicart@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.50.0/public/@types/vtex.minicart":
   version "2.50.0"
@@ -94,21 +94,21 @@
   version "0.1.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specification-badges@0.1.2/public/@types/vtex.product-specification-badges#5bf4e90216e7d9a6c2205d7c00ee8ef4da1ddb52"
 
-"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.58.3/public/_types/react":
+"vtex.product-summary@https://virtual2--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.58.3+build1597960165/public/_types/react":
   version "0.0.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.58.3/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "https://virtual2--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.58.3+build1597960165/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.111.1/public/@types/vtex.render-runtime":
-  version "8.111.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.111.1/public/@types/vtex.render-runtime#1bd9d36d074f1991a3dc6fa14ea193dea2c03ad0"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.112.0/public/@types/vtex.render-runtime":
+  version "8.112.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.112.0/public/@types/vtex.render-runtime#d24f7d970497a80e1e38864db09bbe5da61e0696"
 
 "vtex.reviews-and-ratings@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@1.6.2/public/@types/vtex.reviews-and-ratings":
   version "1.6.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@1.6.2/public/@types/vtex.reviews-and-ratings#68f4238c452397b82316e392f2f6b02613f75d3e"
 
-"vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.10.1/public/@types/vtex.rich-text":
-  version "0.10.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.10.1/public/@types/vtex.rich-text#71018851899c0f64b989304dc4971da42a026c57"
+"vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.10.2/public/@types/vtex.rich-text":
+  version "0.10.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.10.2/public/@types/vtex.rich-text#d372d3d25d02ade63cfb51732599b8a00ecf40bd"
 
 "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.69.1/public/_types/react":
   version "0.0.0"
@@ -122,9 +122,9 @@
   version "0.14.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.14.0/public/@types/vtex.slider-layout#eab273429a451640f3e72411fdf79664a639e8bc"
 
-"vtex.slider@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.1/public/_types/react":
+"vtex.slider@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.2/public/_types/react":
   version "0.0.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.1/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.2/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
 "vtex.stack-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout":
   version "0.1.0"

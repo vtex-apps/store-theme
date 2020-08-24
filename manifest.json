@@ -58,5 +58,8 @@
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x"
   },
+  "peerDependencies": {
+    "vtex.reviews-and-ratings": "1.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
