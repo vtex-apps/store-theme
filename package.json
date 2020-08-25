@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@vtex/prettier-config": "^0.3.1"
+  }
+}
