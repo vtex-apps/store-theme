@@ -1,33 +1,35 @@
 {
-  "store.custom#0e51139d-c18e-4300-bcd4-0b33806a49bf": {
+  "store.custom#not-found": {
     "children": ["vtex.cms-virtual-404@0.x:cms-virtual-404#1597941205291"]
   },
   "vtex.cms-virtual-404@0.x:cms-virtual-404#1597941205291": {
     "props": {
       "imageProp": {
-        "appearance": "right",
-        "image": "https://content.vtexassets.com/assets/vtex.file-manager-graphql/images/382dc6e3-0dab-448c-9415-1d560593e872___ffad42cd4e7f95a61c1b6837772a46c1.jpg"
+        "appearance": "left",
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
       }
     },
     "children": [
-      "vtex.rich-text@0.x:rich-text#bbe57f47-0fc7-40d1-ad79-a25be9f701f8",
-      "vtex.rich-text@0.x:rich-text#84872f8e-45d1-4551-9fae-d68a190a418c",
-      "vtex.rich-text@0.x:rich-text#c6d49561-8f70-42d5-b809-212aa149cf3f",
+      "vtex.cms-virtual-404@0.x:cms-virtual-404-text#bbe57f47-0fc7-40d1-ad79-a25be9f701f8",
+      "vtex.cms-virtual-404@0.x:cms-virtual-404-text#84872f8e-45d1-4551-9fae-d68a190a418c",
+      "vtex.cms-virtual-404@0.x:cms-virtual-404-text#c6d49561-8f70-42d5-b809-212aa149cf3f",
       "vtex.store-components@3.x:search-bar#79f561a9-dc91-4bde-b13a-152a50e5fa2d",
       "vtex.store-link@0.x:link#46b5de7e-9b89-402a-b2de-4dd269397d56"
     ]
   },
-  "vtex.rich-text@0.x:rich-text#bbe57f47-0fc7-40d1-ad79-a25be9f701f8": {
+  "vtex.cms-virtual-404@0.x:cms-virtual-404-text#bbe57f47-0fc7-40d1-ad79-a25be9f701f8": {
     "props": {
-      "text": "404"
+      "text": "404",
+      "size": "huge"
     }
   },
-  "vtex.rich-text@0.x:rich-text#84872f8e-45d1-4551-9fae-d68a190a418c": {
+  "vtex.cms-virtual-404@0.x:cms-virtual-404-text#84872f8e-45d1-4551-9fae-d68a190a418c": {
     "props": {
-      "text": "Page not found"
+      "text": "Page not found",
+      "size": "large"
     }
   },
-  "vtex.rich-text@0.x:rich-text#c6d49561-8f70-42d5-b809-212aa149cf3f": {
+  "vtex.cms-virtual-404@0.x:cms-virtual-404-text#c6d49561-8f70-42d5-b809-212aa149cf3f": {
     "props": {
       "text": "You may have misstyped the address or the page may no longer be available."
     }
