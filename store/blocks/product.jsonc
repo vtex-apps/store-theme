@@ -6,8 +6,44 @@
       "flex-layout.row#description",
       "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "modal-trigger#pdp",
+      "drawer#pdp"
     ]
+  },
+  "modal-trigger#pdp": {
+    "children": [
+      "rich-text#pdpmodal",
+      "modal-layout#pdp"
+    ]
+  },
+  "rich-text#pdpmodal": {
+    "props": {
+      "text": "ABRIR MODAL"
+    }
+  },
+  "modal-layout#pdp": {
+    "children": [
+      "shipping-simulator"
+    ]
+  },
+  "drawer#pdp": {
+    "children": [
+      "shipping-simulator"
+    ],
+    "blocks": [
+      "drawer-trigger#pdp"
+    ]
+  },
+  "drawer-trigger#pdp": {
+    "children": [
+      "rich-text#pdpdrawer"
+    ]
+  },
+  "rich-text#pdpdrawer": {
+    "props": {
+      "text": "ABRIR DRAWER"
+    }
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
