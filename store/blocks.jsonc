@@ -30,60 +30,19 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-  "product-price": {
-    "props": {
-      "showSavings": true,
-      "showInstallments": true
-    }
-  },
-  "product-summary.shelf": {
-    "children": [
-      "stack-layout#prodsum",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
-    ]
-  },
-
-  "product-summary-image#shelf": {
-    "props": {
-      "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
-    }
-  },
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf",
-      "modal-trigger#quickview"
-    ]
-  },
-
-  "product-summary-image": {
-    "props": {
-      "height": 220
-    }
-  },
-
-  "product-summary-specification-badges": {
-    "props": {
-      "specificationGroupName": "Group",
-      "specificationName": "On Sale",
-      "visibleWhen": "True",
-      "displayValue": "SPECIFICATION_NAME"
-    }
-  },
 
   "store.product-review-form": {
     "blocks": ["product-review-form"]
   },
+
   "store.not-found#product": {
     "blocks": ["rich-text#not-found"]
   },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
   "rich-text#not-found": {
     "props": {
       "textAlignment": "CENTER",
@@ -91,8 +50,5 @@
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
     }
-  },
-  "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
   }
 }

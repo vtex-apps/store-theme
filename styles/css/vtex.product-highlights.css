@@ -1,0 +1,12 @@
+.productHighlightWrapper--collection {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 200px;
+}
+
+.productHighlightText {
+  background: antiquewhite;
+  border-radius: 20px;
+  padding: 5px 10px;
+}

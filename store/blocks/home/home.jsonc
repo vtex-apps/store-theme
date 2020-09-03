@@ -15,10 +15,6 @@
     ]
   },
 
-  "shelf#home": {
-    "blocks": ["product-summary.shelf"]
-  },
-
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {

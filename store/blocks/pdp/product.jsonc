@@ -112,13 +112,6 @@
     }
   },
 
-  "product-price#product-details": {
-    "props": {
-      "showInstallments": true,
-      "showSavings": true
-    }
-  },
-
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
