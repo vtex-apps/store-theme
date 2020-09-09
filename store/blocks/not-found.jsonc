@@ -5,8 +5,8 @@
   "vtex.cms-virtual-404@0.x:cms-virtual-404#1597941205291": {
     "props": {
       "imageProp": {
-        "appearance": "left",
-        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
+        //"appearance": "left"
+        //"image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
       }
     },
     "children": [
@@ -35,7 +35,9 @@
     }
   },
   "vtex.store-components@3.x:search-bar#79f561a9-dc91-4bde-b13a-152a50e5fa2d": {
-    "props": {}
+    "props": {
+      "blockClass": "not-found"
+    }
   },
   "vtex.store-link@0.x:link#46b5de7e-9b89-402a-b2de-4dd269397d56": {
     "props": {

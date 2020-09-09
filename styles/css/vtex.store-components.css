@@ -10,6 +10,10 @@
   max-width: 208px;
 }
 
+.autoCompleteOuterContainer--not-found :global(.vtex-styleguide-9-x-input) {
+  max-width: inherit !important;
+}
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
