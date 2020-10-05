@@ -7,15 +7,8 @@
 
   "minicart.v2": {
     "props": {
-      "customPixelEventName": "addToCart",
-      "MinicartIcon": "icon-cart#minicart-icon"
+      "customPixelEventName": "addToCart"
     },
     "children": ["minicart-base-content"]
-  },
-
-  "icon-cart#minicart-icon": {
-    "props": {
-      "size": 24
-    }
   }
 }
