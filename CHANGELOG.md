@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- `minicart.v2` opening itself on **all** `addToCart` events, including the ones triggered by quantity changes in the checkout cart.
 
 ## [3.39.1] - 2020-10-05
 ### Fixed

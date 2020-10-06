@@ -1,13 +1,14 @@
 {
   "add-to-cart-button": {
     "props": {
-      "addToCartFeedback": "customEvent"
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
     }
   },
 
   "minicart.v2": {
     "props": {
-      "customPixelEventName": "addToCart"
+      "customPixelEventId": "add-to-cart-button"
     },
     "children": ["minicart-base-content"]
   }
