@@ -55,7 +55,8 @@
     "vtex.store-link": "0.x",
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x",
-    "vtex.disclosure-layout": "1.x"
+    "vtex.disclosure-layout": "1.x",
+    "vtex.store-form": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
