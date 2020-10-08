@@ -15,7 +15,7 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@1.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#collection",
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
@@ -28,7 +28,7 @@
     }
   },
 
-  "vtex.product-highlights@1.x:product-highlights#collection": {
+  "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
       "type": "collection"
     },
