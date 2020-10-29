@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Example of [vtex.product-specifications](https://github.com/vtex-apps/product-specifications) usage.
 
+### Changed
+- Use new major of [vtex.reviews-and-ratings](https://github.com/vtex-apps/reviews-and-ratings).
+
 ## [3.41.0] - 2020-10-08
 ### Added
 - Example of [vtex.product-highlight](https://github.com/vtex-apps/product-highlights) usage.
