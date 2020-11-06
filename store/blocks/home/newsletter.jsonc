@@ -1,0 +1,87 @@
+{
+  "newsletter-form": {
+    "children": [
+      "rich-text#newsletter-title",
+      "flex-layout.row#newsletter-inputs",
+      "newsletter-checkbox-confirmation",
+      "newsletter-submit"
+    ],
+    "props": {
+      "SuccessState": "flex-layout.row#newsletter-success"
+    }
+  },
+
+  "newsletter-checkbox-confirmation": {
+    "props": {
+      "checkboxLabel": "I accept the {firstLink} and {secondLink}.",
+      "firstLabelLink": {
+        "url": "https://www.vtex.com",
+        "text": "Terms of service"
+      },
+      "secondLabelLink": {
+        "url": "https://www.vtex.com",
+        "text": "Privacy Policy"
+      }
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "## Subscribe to our newsletter",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "newsletterTitle"
+    }
+  },
+
+  "flex-layout.row#newsletter-inputs": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-input-phone"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.row#newsletter-success": {
+    "children": ["rich-text#newsletter-success"]
+  },
+
+  "rich-text#newsletter-success": {
+    "title": "Newsletter success message",
+    "props": {
+      "text": "## Thanks!\n You're now subscribed!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Email address",
+      "errorMessage": "Invalid email"
+    }
+  },
+
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "First name",
+      "errorMessage": "This field cannot be empty"
+    }
+  },
+
+  "newsletter-input-phone": {
+    "props": {
+      "placeholderText": "Phone"
+    }
+  },
+
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Subscribe"
+    }
+  }
+}
