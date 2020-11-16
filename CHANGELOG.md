@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-Example of [vtex.store-video](https://github.com/vtex-apps/store-video) usage.
+- Example of [vtex.store-video](https://github.com/vtex-apps/store-video) usage.
 
 ## [4.1.0] - 2020-11-16
 ### Changed
