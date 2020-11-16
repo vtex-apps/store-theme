@@ -7,7 +7,7 @@
 
   "flex-layout.row#about-us": {
     "children": [
-      "image#mobile-phone",
+      "slider-layout#about-us",
       "flex-layout.col#text-about-us"
     ]
   },
@@ -31,6 +31,21 @@
     }
   },
 
+  "slider-layout#about-us": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly"
+    },
+    "children": [
+      "image#mobile-phone",
+      "video#about-us"
+    ]
+  },
   "image#mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
@@ -39,7 +54,13 @@
       "blockClass": "storePrint"
     }
   },
-
+  "video#about-us": {
+    "props": {
+      "src": "https://www.youtube.com/embed/JgkrlaF52WQ",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
   "rich-text#about-us": {
     "props": {
       "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",

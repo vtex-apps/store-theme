@@ -1,0 +1,6 @@
+.videoContainer {
+  width: 95%;
+  height: 54%;
+  display: flex;
+  justify-content: center;
+}
