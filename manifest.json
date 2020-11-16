@@ -42,7 +42,7 @@
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
     "vtex.telemarketing": "2.x",
-    "vtex.order-placed": "1.x",
+    "vtex.order-placed": "2.x",
     "vtex.checkout-summary": "0.x",
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",
@@ -58,7 +58,8 @@
     "vtex.store-form": "0.x",
     "vtex.product-highlights": "2.x",
     "vtex.product-specifications": "1.x",
-    "vtex.tab-layout": "0.x"
+    "vtex.tab-layout": "0.x",
+    "vtex.responsive-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
