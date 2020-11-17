@@ -1,13 +1,14 @@
 {
   "store.custom#about-us": {
     "blocks": [
-      "flex-layout.row#about-us"
+      "flex-layout.row#about-us",
+      "video#about-us"
     ]
   },
 
   "flex-layout.row#about-us": {
     "children": [
-      "slider-layout#about-us",
+      "image#mobile-phone",
       "flex-layout.col#text-about-us"
     ]
   },
@@ -31,21 +32,6 @@
     }
   },
 
-  "slider-layout#about-us": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly"
-    },
-    "children": [
-      "image#mobile-phone",
-      "video#about-us"
-    ]
-  },
   "image#mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
