@@ -4975,9 +4975,9 @@ verror@1.10.0:
   version "0.17.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-summary@0.17.0/public/@types/vtex.checkout-summary#fc009163add7a92010ab6fb6d759d563c68ac675"
 
-"vtex.css-handles@https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606239179/public/@types/vtex.css-handles":
+"vtex.css-handles@https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606241891/public/@types/vtex.css-handles":
   version "1.0.0"
-  resolved "https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606239179/public/@types/vtex.css-handles#53f80d1b8101b07e3ee05deb8676bd05559322ba"
+  resolved "https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606241891/public/@types/vtex.css-handles#bc45eda91999c1c5d882c1aab083bcf2a4f334af"
 
 "vtex.disclosure-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.disclosure-layout@1.0.3/public/@types/vtex.disclosure-layout":
   version "1.0.3"

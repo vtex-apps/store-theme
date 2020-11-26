@@ -25,7 +25,7 @@
     "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.1/public/@types/vtex.breadcrumb",
     "vtex.carousel": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.carousel@2.12.1/public/@types/vtex.carousel",
     "vtex.checkout-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-summary@0.17.0/public/@types/vtex.checkout-summary",
-    "vtex.css-handles": "https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606239179/public/@types/vtex.css-handles",
+    "vtex.css-handles": "https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.css-handles@1.0.0+build1606241891/public/@types/vtex.css-handles",
     "vtex.disclosure-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.disclosure-layout@1.0.3/public/@types/vtex.disclosure-layout",
     "vtex.flex-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.15.1/public/@types/vtex.flex-layout",
     "vtex.format-currency": "https://breno--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.format-currency@0.2.0+build1606239200/public/@types/vtex.format-currency",
