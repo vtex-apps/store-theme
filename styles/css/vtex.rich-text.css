@@ -14,6 +14,10 @@
   font-weight: 200;
 }
 
+.headingLevel2--newsletterTitle {
+  color: #ffffff;
+}
+
 .container--deals .paragraph {
   margin: 0;
 }

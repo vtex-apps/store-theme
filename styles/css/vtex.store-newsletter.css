@@ -1,0 +1,37 @@
+.newsletterForm {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+  padding: 90px 10px;
+}
+
+.newsletterForm :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.newsletterForm :global(.vtex-checkbox__label) {
+  color: #ffffff;
+}
+
+.newsletterForm :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.newsletterForm :global(.vtex-button) {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter-form {
+    padding: 140px;
+  }
+
+  .emailInputContainer {
+    min-width: 420px;
+  }
+}
