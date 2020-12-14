@@ -6,10 +6,6 @@
   text-decoration: underline;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  max-width: 208px;
-}
-
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
