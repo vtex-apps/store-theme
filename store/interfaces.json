@@ -1,0 +1,5 @@
+{
+  "my-custom-block": {
+    "component": "MyCustomBlock"
+  }
+}

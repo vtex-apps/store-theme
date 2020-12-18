@@ -16,7 +16,8 @@
       "vtex.menu@2.x:menu#footer-decoration",
       "vtex.menu@2.x:menu#footer-bags",
       "footer-spacer",
-      "social-networks"
+      "social-networks",
+      "my-custom-block"
     ],
     "props": {
       "blockClass": "menu-row",

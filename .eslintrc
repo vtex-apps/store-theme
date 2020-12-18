@@ -1,4 +1,7 @@
 {
   "extends": "vtex",
-  "root": true
+  "root": true,
+  "env": {
+    "node": true
+  }
 }
