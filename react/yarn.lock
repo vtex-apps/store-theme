@@ -5001,6 +5001,10 @@ verror@1.10.0:
   version "1.0.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-bookmark-interfaces@1.0.1/public/@types/vtex.product-bookmark-interfaces#2c26815e4afa45b2e254a23e5abb356424bb09e7"
 
+"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.9.6/public/@types/vtex.product-context":
+  version "0.9.6"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.9.6/public/@types/vtex.product-context#0d516252cdd7a4e66b422e4784206999afb53e0d"
+
 "vtex.product-customizer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-customizer@2.9.5/public/@types/vtex.product-customizer":
   version "2.9.5"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-customizer@2.9.5/public/@types/vtex.product-customizer#f1a680212a6e4c88ba72a563f3229c58abe77fd5"
@@ -5025,13 +5029,13 @@ verror@1.10.0:
   version "0.0.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.1/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
-"vtex.product-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.27.0/public/@types/vtex.product-list":
-  version "0.27.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.27.0/public/@types/vtex.product-list#6697e1204b060c5e40f3209570d0b72411d55ca8"
+"vtex.product-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.27.1/public/@types/vtex.product-list":
+  version "0.27.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.27.1/public/@types/vtex.product-list#1b9bdbd896e9fa1ff4fb32470a1024775937cc73"
 
-"vtex.product-price@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.11.0/public/@types/vtex.product-price":
+"vtex.product-price@https://breact--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.product-price@1.11.0+build1608568623/public/@types/vtex.product-price":
   version "1.11.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.11.0/public/@types/vtex.product-price#54e0e309d313553138d1c5216516d216190e146e"
+  resolved "https://breact--storecomponents.myvtex.com/_v/private/typings/linked/v1/vtex.product-price@1.11.0+build1608568623/public/@types/vtex.product-price#559f4a783b1102787e71a252330a7011caed235e"
 
 "vtex.product-quantity@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-quantity@1.5.0/public/@types/vtex.product-quantity":
   version "1.5.0"
@@ -5049,9 +5053,9 @@ verror@1.10.0:
   version "1.0.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.0.1/public/@types/vtex.product-specifications#665bfd1b9f4420f6c988091fa0acf7186b75e10b"
 
-"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.68.0/public/@types/vtex.product-summary":
-  version "2.68.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.68.0/public/@types/vtex.product-summary#3d799b2d04b977f4cf58ee092e979e7475ff579f"
+"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.68.1/public/@types/vtex.product-summary":
+  version "2.68.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.68.1/public/@types/vtex.product-summary#c9385c2bb64f1bd4811b9bc6ccba86de4f2dbd72"
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.4/public/@types/vtex.render-runtime":
   version "8.126.4"
@@ -5060,6 +5064,10 @@ verror@1.10.0:
 "vtex.responsive-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout":
   version "0.1.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout#e33f23a78afb3ffb8ff8aedc77b1ca6728583e72"
+
+"vtex.reviews-and-ratings@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@2.3.2/public/@types/vtex.reviews-and-ratings":
+  version "2.3.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@2.3.2/public/@types/vtex.reviews-and-ratings#a8af9a3163a61b81f5f6a30e3da7a2b52b03f517"
 
 "vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.12.0/public/@types/vtex.rich-text":
   version "0.12.0"
