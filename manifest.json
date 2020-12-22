@@ -1,12 +1,13 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "react": "3.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -61,7 +62,9 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.responsive-layout": "0.x",
-    "vtex.condition-layout": "2.x"
+    "feature/conditional-layout-example",
+    "vtex.condition-layout": "2.x",
+    "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
