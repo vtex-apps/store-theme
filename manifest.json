@@ -62,7 +62,6 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.responsive-layout": "0.x",
-    "feature/conditional-layout-example",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x"
   },
