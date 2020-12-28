@@ -2,10 +2,30 @@
   "newsletter-form": {
     "children": [
       "rich-text#newsletter-title",
-      "flex-layout.row#newsletter-inputs"
+      "flex-layout.row#newsletter-inputs",
+      "newsletter-hidden-field"
     ],
     "props": {
       "SuccessState": "flex-layout.row#newsletter-success"
+    }
+  },
+
+  "newsletter-hidden-field": {
+    "props": {
+      "customFields": [
+        {
+          "fieldName": "bindingId",
+          "dynamicValue": "bindingId"
+        },
+        {
+          "fieldName": "bindingUrl",
+          "dynamicValue": "bindingUrl"
+        },
+        {
+          "fieldName": "iae",
+          "value": "boy"
+        }
+      ]
     }
   },
 
@@ -19,7 +39,11 @@
   },
 
   "flex-layout.row#newsletter-inputs": {
-    "children": ["newsletter-input-email", "newsletter-submit"],
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ],
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true
