@@ -33,5 +33,6 @@ docs/_book/
 npm-debug.log
 .build/
 lib
+.eslintrc
 *.orig
 react/package-lock.json
