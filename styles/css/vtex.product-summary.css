@@ -14,7 +14,7 @@
 @media screen and (max-width: 40em) {
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
-  } 
+  }
 }
 
 .nameContainer {
@@ -23,10 +23,28 @@
   padding-bottom: 1rem;
 }
 
+.nameContainer--summaryListDesktop {
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+  justify-content: start;
+}
+
+.nameContainer--summaryListMobile {
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  justify-content: start;
+}
+
 .brandName {
   font-weight: 600;
   font-size: 18px;
   color: #2E2E2E;
+}
+
+.brandName--summaryListMobile {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: black;
 }
 
 .container {
@@ -39,4 +57,18 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.container--listLayout {
+  max-width: none !important;
+}
+
+.image--summaryListDesktop {
+  width: 180px !important;
+}
+
+.image--summaryListMobile {
+  width: 140px !important;
+  min-width: 140px;
+  height: inherit !important;
 }
