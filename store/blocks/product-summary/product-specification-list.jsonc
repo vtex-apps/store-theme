@@ -1,0 +1,29 @@
+{
+  "product-specification-group#summary": {
+    "children": [
+      "product-specification#summary"
+    ]
+  },
+  "product-specification#summary": {
+    "children": [
+      "flex-layout.row#summarySpecificationValues"
+    ]
+  },
+  "flex-layout.row#summarySpecificationValues": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 3
+    },
+    "children": [
+      "rich-text#summarySpecificationBullet",
+      "product-specification-values"
+    ]
+  },
+  "rich-text#summarySpecificationBullet": {
+    "props": {
+      "text": "•",
+      "textColor": "c-action-primary",
+      "blockClass": "summarySpecificationBullet"
+    }
+  }
+}
