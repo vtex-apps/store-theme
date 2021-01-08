@@ -2,32 +2,32 @@
   "newsletter-form": {
     "children": [
       "rich-text#newsletter-title",
-      "flex-layout.row#newsletter-inputs",
-      "newsletter-hidden-field"
+      "flex-layout.row#newsletter-inputs"
+      // "newsletter-hidden-field"
     ],
     "props": {
       "SuccessState": "flex-layout.row#newsletter-success"
     }
   },
 
-  "newsletter-hidden-field": {
-    "props": {
-      "customFields": [
-        {
-          "fieldName": "bindingId",
-          "dynamicValue": "bindingId"
-        },
-        {
-          "fieldName": "bindingUrl",
-          "dynamicValue": "bindingUrl"
-        },
-        {
-          "fieldName": "iae",
-          "value": "boy"
-        }
-      ]
-    }
-  },
+  // "newsletter-hidden-field": {
+  //   "props": {
+  //     "customFields": [
+  //       {
+  //         "fieldName": "bindingId",
+  //         "dynamicValue": "bindingId"
+  //       },
+  //       {
+  //         "fieldName": "bindingUrl",
+  //         "dynamicValue": "bindingUrl"
+  //       },
+  //       {
+  //         "fieldName": "iae",
+  //         "value": "boy"
+  //       }
+  //     ]
+  //   }
+  // },
 
   "rich-text#newsletter-title": {
     "props": {
