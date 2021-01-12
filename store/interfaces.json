@@ -1,5 +1,17 @@
 {
   "section-hello-world": {
-    "component": "HelloWorld"
+    "component": "HelloWorld.section",
+    "content": {
+      "title": "Hello World",
+      "description": "Just a hello world section",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Your name",
+          "description": "Just write your first name",
+          "type": "string"
+        }
+      }
+    }
   }
 }
