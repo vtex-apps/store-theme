@@ -1,0 +1,15 @@
+{
+  "definitions": {
+    "SectionShelf": {
+      "title": "Product Shelf",
+      "description": "Products from a collection or the best selling ones",
+      "type": "object",
+      "properties": {
+        "title": {
+					"title": "Title",
+					"type": "string"
+				}
+      }
+    }
+  }
+}

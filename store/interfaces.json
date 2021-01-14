@@ -1,5 +1,8 @@
 {
   "section-shelf": {
-    "component": "Shelf.section"
+    "component": "Shelf.section",
+    "content": {
+      "$ref": "#/definitions/SectionShelf"
+    }
   }
 }
