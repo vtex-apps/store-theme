@@ -1,13 +1,12 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x",
-    "react": "3.x"
+    "docs": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -48,6 +47,7 @@
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
+    "vtex.responsive-layout": "0.x",
     "vtex.slider-layout": "0.x",
     "vtex.store-image": "0.x",
     "vtex.store-icons": "0.x",
@@ -64,6 +64,7 @@
     "vtex.responsive-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x"
+    "vtex.tab-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"

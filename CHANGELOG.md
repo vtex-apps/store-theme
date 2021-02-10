@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [4.3.0] - 2021-01-14
+### Added
+- Example of multiple search gallery layouts usage
+
 ## [4.2.1] - 2020-12-14
 ### Fixed
 - Unnecessary `max-width` style in the input of `search-bar` block which causes the style to break when the `search-bar` needs to be bigger`.
