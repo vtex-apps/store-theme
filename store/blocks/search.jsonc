@@ -137,6 +137,16 @@
     },
     "children": ["search-fetch-more"]
   },
+  "search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
   "flex-layout.row#products": {
     "children": ["search-content"]
   },
