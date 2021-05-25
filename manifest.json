@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "store-theme",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -61,10 +61,8 @@
     "vtex.product-highlights": "2.x",
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
-    "vtex.responsive-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x"
-    "vtex.tab-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
