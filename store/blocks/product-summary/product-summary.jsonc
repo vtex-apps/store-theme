@@ -26,6 +26,12 @@
     ]
   },
 
+  "product-summary-name": {
+    "props": {
+      "tag": "div"
+    }
+  },
+
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
