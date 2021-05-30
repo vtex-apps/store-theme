@@ -1,0 +1,22 @@
+.newsletterForm {
+  max-width: 1528px;
+  margin: 0 auto;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #03054e;
+}
+
+.newsletterForm :global(.vtex-input-prefix__group) {
+  margin: 0 10px;
+}
+
+.formSubmitContainer :global(.vtex-button),
+.newsletterForm :global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+  color: #FFF;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  border: 0;
+}
