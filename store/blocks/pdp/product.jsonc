@@ -37,7 +37,7 @@
     "props": {
       "conditions": [
         {
-          "subject": "isProductAvailability"
+          "subject": "isProductAvailable"
         }
       ],
       "Then": "flex-layout.row#product-main",
