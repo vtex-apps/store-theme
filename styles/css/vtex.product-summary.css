@@ -40,3 +40,26 @@
 .image {
   border-radius: 0.25rem;
 }
+/*------Wrap Ley de Gondolas badges------*/
+
+:global(.vtex-product-specifications-1-x-specificationName)[data-specification-group="leyDeGondolas"] {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.625rem;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+:global(.vtex-product-specifications-1-x-specificationName)[data-specification-name="Mejor Menor Precio"] {
+  background-image: url(assets/badges/mejorMenorPrecio.png);
+}
+
+:global(.vtex-product-specifications-1-x-specificationName)[data-specification-name="PyMEs"] {
+  background-image: url(assets/badges/compreMiPYME.png);
+}
+
+
+/*------END Wrap Ley de Gondolas badges------*/

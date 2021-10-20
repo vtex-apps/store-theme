@@ -92,3 +92,14 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+/*------Wrap Ley de Gondolas badges------*/
+
+.flexRow--product-view-badges-container{
+  margin-top: 0.875rem;
+  margin-bottom: 1rem;
+}
+.flexRowContent--product-view-badges-container .stretchChildrenWidth{
+  justify-content: flex-start;
+}
+/*------Wrap Ley de Gondolas badges------*/
+

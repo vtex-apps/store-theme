@@ -1,0 +1,64 @@
+{
+  "flex-layout.row#info-badges": {
+    "children": [
+      "flex-layout.col#info-badges"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "rowBadges"
+    }
+  },
+
+  "flex-layout.col#info-badges": {
+    "children": [
+      "product-specification-group#badges"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "colBadges"
+    }
+  },
+
+  "flex-layout.row#product-view-badges-container": {
+    "title": "Bloque Ley de Gondolas",
+    "props": {
+      "marginBottom": 1,
+      "blockClass": "product-view-badges-container"
+    },
+    "children": [
+      "product-specification-group#badges"
+    ]
+  },
+
+  "product-specification-group#badges": {
+    "children": ["product-specification#specification"],
+    "props": {
+      "filter": {
+        "specificationGroups": "leyDeGondolas",
+        "type": "show"
+      }
+    }
+  },
+
+  "product-specification#specification": {
+    "children": [
+      "product-specification-text#specificationBagdes"]
+  },
+
+  "product-specification-text#specificationBagdes": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  }/*,
+
+  "product-specification-values#specificationBagdes": {
+    "children": ["product-specification-text#valueBagdes"]
+  },
+
+  "product-specification-text#valueBagdes": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+  */
+}

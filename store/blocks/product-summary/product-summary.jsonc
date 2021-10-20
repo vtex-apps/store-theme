@@ -3,6 +3,7 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
+      "flex-layout.row#info-badges", // Ley de Gondolas Block
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
@@ -22,7 +23,7 @@
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "modal-trigger#quickview"
     ]
   },
 

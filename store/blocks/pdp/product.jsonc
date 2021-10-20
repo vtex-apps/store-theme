@@ -94,6 +94,7 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "flex-layout.row#product-view-badges-container", // Ley de Gondolas Block
       "product-installments",
       "product-separator",
       "product-identifier.product",

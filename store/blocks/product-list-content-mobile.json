@@ -1,0 +1,94 @@
+{
+  "product-list-content-mobile": {
+    "children": ["flex-layout.row#list-row.mobile"]
+  },
+  "flex-layout.row#list-row.mobile": {
+    "children": [
+      "flex-layout.col#image.mobile",
+      "flex-layout.col#main-container.mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "6",
+      "paddingTop": "5",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.col#image.mobile": {
+    "children": ["product-list-image"],
+    "props": {
+      "marginRight": "5"
+    }
+  },
+  "flex-layout.col#main-container.mobile": {
+    "children": [
+      "flex-layout.row#top.mobile",
+      "flex-layout.row#quantity-selector.mobile",
+      "flex-layout.row#unit-price.mobile",
+      "flex-layout.row#price.mobile",
+      "flex-layout.row#message.mobile"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#top.mobile": {
+    "children": [
+      "flex-layout.col#product-description",
+      "flex-layout.col#remove-button.mobile"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.row#quantity-selector.mobile": {
+    "children": ["quantity-selector"],
+    "props": {
+      "marginTop": "5",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "quantity-selector":{
+    "props": {
+      "mode": "stepper",
+      "showBultAsUnit": true
+    }
+  },
+  "flex-layout.row#unit-price.mobile": {
+    "children": ["unit-price"],
+    "props": {
+      "marginTop": "3"
+    }
+  },
+  "flex-layout.row#price.mobile": {
+    "children": ["vtex.product-list:price#mobile"],
+    "props": {
+      "marginTop": "5",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "vtex.product-list:price#mobile": {
+    "props": {
+      "textAlign": "left"
+    }
+  },
+  "flex-layout.col#remove-button.mobile": {
+    "children": ["remove-button"],
+    "props": {
+      "marginLeft": "3"
+    }
+  },
+  "flex-layout.row#message.mobile": {
+    "children": ["vtex.product-list:message#mobile"],
+    "props": {
+      "marginTop": "3"
+    }
+  },
+  "vtex.product-list:message#mobile": {
+    "props": {
+      "layout": "rows"
+    }
+  }
+}

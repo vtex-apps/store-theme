@@ -70,7 +70,8 @@
   },
   "flex-layout.row#productSpecifications": {
     "children": [
-      "product-specification-group#summary"
+      "product-specification-group#summary",
+      "product-specification-group#badges"
     ]
   },
   "product-summary-name#summaryListDesktop": {
