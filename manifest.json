@@ -1,7 +1,7 @@
 {
   "vendor": "vtexarg",
   "name": "store-theme-ley-gondolas-arg",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -61,7 +61,8 @@
     "vtex.store-form": "0.x",
     "vtex.product-highlights": "2.x",
     "vtex.product-specifications": "1.x",
-    "vtex.tab-layout": "0.x"
+    "vtex.tab-layout": "0.x",
+    "vtex.search-resolver": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
