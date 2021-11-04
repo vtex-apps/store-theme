@@ -111,7 +111,7 @@
     "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
   },
   "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by#pricePerUnit", "gallery-layout-switcher"],
+    "children": ["order-by.v2#pricePerUnit", "gallery-layout-switcher"],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -120,9 +120,14 @@
     }
   },
 
-  "order-by#pricePerUnit": {
+  "order-by.v2#pricePerUnit": {
     "props":{
-      "specificationOptions": "pricePerUnit:asc"
+      "specificationOptions": [
+        {
+          "value": "pricePerUnit:asc",
+          "label": "Price per unit"
+        }
+      ]
     }
   },
 
