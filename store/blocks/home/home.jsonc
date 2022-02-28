@@ -1,6 +1,8 @@
 {
   "store.home": {
     "blocks": [
+      //"image#name",
+      //"rich-text#name",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -13,6 +15,28 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+
+
+  
+
+  "rich-text#name": {
+    "props": {
+      "blockClass": ["name"],
+      "font": "t-body",
+      "text": "Olá Mundo VTEX /n teste",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "image#name": {
+    "props": {
+      "blockClass": ["name"],
+     // "maxHeight": 124,
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png"
+    }
   },
 
   "list-context.image-list#demo": {
