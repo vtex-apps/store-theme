@@ -1,0 +1,17 @@
+{
+
+"flex-layout.row#exercicio-ecristovao": {
+		"props": {
+			"blockClass": "exercicio-ecristovao",
+			"fullWidth": "true"
+		},
+		"children": [
+			"rich-text#regiao"
+		]
+	},
+	"rich-text#regiao": {
+			"props": {
+				"text": "**Sua loja**"
+			}
+		}
+}
