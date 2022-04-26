@@ -12,14 +12,14 @@
 	},
 	"flex-layout.col#exercicio-ecristovao": {
 			"children": [
-				"rich-text#regiao",
+				"rich-text#titulo",
 				"slider-layout#slider-ecristovao",
 				"list-context.product-list#demo2"
 
 			]
 		},
 //Título
-	"rich-text#regiao": {
+	"rich-text#titulo": {
 		"title": "Título Trilha",
 		"props": {
 			"text": "## **_Rich Text Trilha IO_**",
