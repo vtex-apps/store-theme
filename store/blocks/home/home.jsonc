@@ -10,7 +10,7 @@
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      //"flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",

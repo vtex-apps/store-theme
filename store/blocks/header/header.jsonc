@@ -7,12 +7,16 @@
   },
   "header-layout.desktop": {
     "children": [
+	"header-row#1-desktop",
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
+"header-row#1-desktop": {
+   "children": ["minicart.v2"]
+ },
 
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],

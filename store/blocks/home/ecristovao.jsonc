@@ -15,9 +15,40 @@
 				"rich-text#titulo",
 				"slider-layout#slider-ecristovao",
 				"list-context.product-list#demo2"
-
+				//"modal-trigger"
 			]
 		},
+
+
+
+"modal-trigger": {
+    "props": {
+      "trigger": "load"
+    },
+    "children": [
+      "modal-layout"
+    ]
+  },
+  "modal-layout": {
+    "children": [
+      "modal-header",
+      "modal-content"
+    ]
+  },
+  "modal-header": {
+    "props": {
+      "showCloseButton": true,
+      "iconCloseSize": 30
+    }
+  },
+  "modal-content": {
+    "children": [
+      "modalfink"
+    ]
+  },
+
+
+
 //Título
 	"rich-text#titulo": {
 		"title": "Título Trilha",
@@ -81,7 +112,7 @@
     ]
   },
   "list-context.product-list#demo2": {
-    "blocks": ["product-summary.shelf#demo2"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
