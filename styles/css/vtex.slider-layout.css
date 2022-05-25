@@ -3,10 +3,12 @@
 }
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
+  image-rendering: auto;
+  min-height: 450px;
 }
 
 .sliderTrackContainer {
-  max-width: 1520px;
+  max-width: 100%;
 }
 
 .paginationDotsContainer {
@@ -18,10 +20,13 @@
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 96rem;
+  min-height: 550px;
 }
 
 .slide--shelf {
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+  min-height: 550px;
+
 }

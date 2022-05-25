@@ -46,11 +46,13 @@
 }
 
 .flexRow--deals .stretchChildrenWidth {
-  align-items: center;
+  align-items: center; 
 }
 
 .flexRow--deals .flexCol {
   align-items: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 .flexCol--filterCol {
