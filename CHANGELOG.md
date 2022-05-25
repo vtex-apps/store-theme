@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [5.0.0] - 2022-05-25
+
 ### Changed
 
 - `vtex.reviews-and-ratings` peer dependency from `2.x` t0 `3.x`
