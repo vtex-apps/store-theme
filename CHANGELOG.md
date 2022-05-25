@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- `vtex.reviews-and-ratings` peer dependency from `2.x` t0 `3.x`
+
 ## [4.4.2] - 2021-07-02
 ### Fixed
 - Wrong condition subject being used in `condition-layout` example.
