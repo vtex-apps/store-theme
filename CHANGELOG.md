@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [4.4.3] - 2022-05-23
 ### Changed
 - Fixed height in `list-context.image-list#demo` example
 - Images used in `slider-layout#demo-images` example
