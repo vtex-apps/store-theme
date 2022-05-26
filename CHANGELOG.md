@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Amount of products displayed as default in `slider-layout#demo-products`.
 - Max-width to 100% in `sliderTrackContainer` in vtex.slider-layout.css.
 - Width in `logo#mobile`.
+- Benefits bar color to improve contrast.
 
 ### Added
 - Fold block in home page.
