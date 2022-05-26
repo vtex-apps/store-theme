@@ -9,24 +9,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
-- Fixed height in `list-context.image-list#demo` example
-- Images used in `slider-layout#demo-images` example
-- Amount of products displayed as default in `slider-layout#demo-products`
-- Max-width to 100% in `sliderTrackContainer` in vtex.slider-layout.css
-- Width in `logo#mobile`
+- Fixed height in `list-context.image-list#demo` example.
+- Images used in `slider-layout#demo-images` example.
+- Amount of products displayed as default in `slider-layout#demo-products`.
+- Max-width to 100% in `sliderTrackContainer` in vtex.slider-layout.css.
+- Width in `logo#mobile`.
 
 ### Added
-- Fold block in home page
-- Pre-load prop in `list-context.image-list#demo`
-- image-rendering: auto and min-height: 450px in `sliderLayoutContainer--carousel` in vtex.slider-layout.css file
-- min-height in `.layoutContainer--shelf` and `slide--shelf` in vtex.slider-layout.css file
-- Height in `logo#mobile` and  `logo#desktop`
+- Fold block in home page.
+- Pre-load prop in `list-context.image-list#demo`.
+- image-rendering: auto and min-height: 450px in `sliderLayoutContainer--carousel` in vtex.slider-layout.css file.
+- min-height in `.layoutContainer--shelf` and `slide--shelf` in vtex.slider-layout.css file.
+- Height in `logo#mobile` and  `logo#desktop`.
 
 ### Removed
-- `__fold__.experimentalLazyAssets` from home page
-- Margin-bottom and padding-bottom from `flexRow--deals .flexCol` in vtex.flex-layout.css file
-- `flex-layout.row#2-desktop` block from header-layout.desktop
-- `notification.bar#home` from header
+- `__fold__.experimentalLazyAssets` from home page.
+- Margin-bottom and padding-bottom from `flexRow--deals .flexCol` in vtex.flex-layout.css file.
+- `flex-layout.row#2-desktop` block from header-layout.desktop.
+- `notification.bar#home` from header.
 
 ## [4.4.2] - 2021-07-02
 ### Fixed
