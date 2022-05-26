@@ -34,7 +34,7 @@
   },
   "slider-layout#demo-images": {
     "props": {
-        "itemsPerPage": {
+      "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
