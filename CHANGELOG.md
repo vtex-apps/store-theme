@@ -18,7 +18,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Fold block in home page.
 - Pre-load prop in `list-context.image-list#demo`.
-- image-rendering: auto and min-height: 450px in `sliderLayoutContainer--carousel` in vtex.slider-layout.css file.
+- `image-rendering: -webkit-optimize-contrast` in vtex.store-components.css file.
+- min-height:450px in `sliderLayoutContainer--carousel` in vtex.slider-layout.css file.
 - min-height in `.layoutContainer--shelf` and `slide--shelf` in vtex.slider-layout.css file.
 - Height in `logo#mobile` and  `logo#desktop`.
 

@@ -22,12 +22,12 @@
       "preload": true,
       "images": [
         {
-          "image": "https://vtexproject.vtexassets.com/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://vtexproject.vtexassets.com/arquivos/Class&Style.png"
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
         }
       ]
     }
