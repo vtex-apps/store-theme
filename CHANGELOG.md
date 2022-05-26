@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `__fold__.experimentalLazyAssets` from home page
 - Margin-bottom and padding-bottom from `flexRow--deals .flexCol` in vtex.flex-layout.css file
 - `flex-layout.row#2-desktop` block from header-layout.desktop
-- Removed `notification.bar#home` from header
+- `notification.bar#home` from header
 
 ## [4.4.2] - 2021-07-02
 ### Fixed
