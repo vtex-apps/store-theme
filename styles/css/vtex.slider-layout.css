@@ -1,31 +1,31 @@
 .sliderLayoutContainer {
-    justify-content: center;
+  justify-content: center;
 }
 
 .sliderLayoutContainer--carousel {
-    background-color: #F0F0F0;
-    min-height: 450px;
+  background-color: #F0F0F0;
+  min-height: 450px;
 }
 
 .sliderTrackContainer {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .paginationDotsContainer {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .layoutContainer--shelf {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 96rem;
-    min-height: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+  min-height: 550px;
 }
 
 .slide--shelf {
-    margin-bottom: 25px;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    min-height: 550px;
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  min-height: 550px;
 }
