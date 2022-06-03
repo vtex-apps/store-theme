@@ -79,9 +79,9 @@
     width: 70%;
   }
   .imageElement--storePrint {
-      margin-bottom: 0px;
-      max-height: 600px;
-    }
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
 }
 
 .productImagesContainer--quickview .carouselContainer {
