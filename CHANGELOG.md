@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 // VTEX Store Theme by Growth Hacking Team 
 
 ## [Unreleased]
+
+## [5.1.0] - 2022-06-07
 ### Changed
 - Fixed height in `list-context.image-list#demo` example.
 - Images used in `slider-layout#demo-images` example.
