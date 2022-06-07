@@ -8,7 +8,6 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
@@ -20,18 +19,7 @@
       "fullWidth": true
     }
   },
-
-  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
+  
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -93,7 +81,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "width": "180",
+      "height": "12"
     }
   },
   "header-layout.mobile": {
@@ -137,7 +126,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "width": "77.5",
+      "height": "27.5"
     }
   }
 }

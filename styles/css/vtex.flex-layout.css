@@ -9,6 +9,7 @@
     padding: 0 1rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -40,8 +41,9 @@
   color: #727273;
   font-size: 14px;
 }
+
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #0F3E99;
   padding: 14px 0px;
 }
 
@@ -51,6 +53,8 @@
 
 .flexRow--deals .flexCol {
   align-items: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 .flexCol--filterCol {

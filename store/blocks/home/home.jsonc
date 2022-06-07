@@ -4,8 +4,8 @@
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
+      "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
@@ -18,15 +18,16 @@
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 570,
+      "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
         }
       ]
     }
@@ -63,7 +64,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },

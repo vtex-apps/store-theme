@@ -69,19 +69,15 @@
   .newsletter .container {
     padding: 140px;
   }
-
   .label {
-    font-size: 40px;
+     font-size: 40px;
   }
-
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
-
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
-
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -110,4 +106,8 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.image {
+  image-rendering: -webkit-optimize-contrast;
 }
