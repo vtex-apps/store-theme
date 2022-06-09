@@ -1,0 +1,9 @@
+{
+  "modalfink": {
+    "component": "Form"
+  },
+
+  "fb_like": {
+    "component": "Like"
+  }
+}
