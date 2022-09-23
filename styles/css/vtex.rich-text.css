@@ -5,9 +5,13 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #01110a;
   justify-content: center;
   text-align: center;
+  font-size: 30px;
+  min-height: 60px;
+  padding: 0px;
+
 }
 
 .headingLevel2--shelfTitle {
@@ -16,6 +20,9 @@
 
 .container--deals .paragraph {
   margin: 0;
+  color: rgb(4, 6, 6);
+  font-size: 24px;
+  f
 }
 
 .container--link {
