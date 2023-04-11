@@ -59,10 +59,16 @@
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      "binding-selector",
       "login",
       "minicart.v2"
     ]
+  },
+  "binding-selector": {
+    "props": {
+      "layout": "dropdown",
+      "display": "text"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
