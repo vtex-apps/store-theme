@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "store-theme",
+  "name": "store-theme-test",
   "version": "5.1.1-beta.0",
   "builders": {
     "styles": "2.x",
