@@ -61,7 +61,7 @@
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Pick up in store tami",
       "blockClass": "deals"
     }
   },

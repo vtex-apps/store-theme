@@ -1,0 +1,156 @@
+
+
+.slyder_custom_contain{
+    display: flex;
+    padding: 0 50px;
+    margin: 20px 0;
+}
+.list_shelf{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.432);
+    border-radius: 8px;
+    list-style: none;
+    display: flex;
+    max-width: 300px;
+    max-height: 500px;
+    
+    
+    position: relative;
+    background: #fff;
+    height: 500px;
+}
+.slider_custom_content{
+    padding: 0 2px;
+}
+.image_contain{
+    content: 'contain';
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    height: 100%;
+    width: 300px;
+    padding: 15px;
+
+}
+@media(max-width:450px){
+    .image_contain{
+        width: 195px !important;
+    }
+}
+.url_product{
+    text-decoration: none;
+}
+.image__product{
+    height: 100%;
+    width: 100%;
+}
+.info_card_content{
+    padding: 0 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2E2E2E;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+    height: 60px;
+}
+.info_card_content div{
+    -webkit-line-clamp: 2;
+    text-align: center;
+}
+.infos_card_prices{
+    display: block;
+    justify-content: center;
+    height: 90px;
+    max-height: 90px;
+    text-align: end;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+@media(max-width: 450px){
+    .infos_card_prices{
+        text-align: start;
+    }
+}
+.contentPrices{
+    display: flex;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E2E2E;
+    gap: 5px;
+}
+@media(max-width: 450px){
+    .contentPrices{
+        display: block;
+    }
+}
+.contentPricesList{
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-size: 15px;
+    display: flex;
+    color: #727273;
+}
+.listPrice{
+    text-decoration: line-through;
+}
+.contentBadgePrice{
+    background-color: #8BC34A;
+    color: #FFFF;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: baseline;
+    height: 24px;
+
+}
+.buttonAddtoCart{
+    display: flex;
+    justify-content: center;
+    /* top: 5%; */
+    padding: 0 5px;
+    position: relative;
+}
+.buttonAddtoCart button{
+    background-color: #0F3E99;
+    color: #fff;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    min-height: 2.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: solid;
+    
+
+}
+.buttonAddtoCart button:hover{
+    background-color: #052b75;
+    cursor: pointer;
+}
+
+
+/* Ajustes SliderLayout */
+:global(.corelabiz-store-tamii-0-x-sliderTrack){
+    display: flex;
+    gap: 10px;
+}
+:global(.corelabiz-store-tamii-0-x-sliderRightArrow){
+    margin: 0 -40px;
+}
+:global(.corelabiz-store-tamii-0-x-sliderLeftArrow){
+    margin: 0 -40px;
+}
+:global(.corelabiz-store-tamii-0-x-paginationDotsContainer){
+    margin: -15px 0 !important;
+}
+:global(.corelabiz-store-tamii-0-x-paginationDot--isActive){
+    background-color: #0F3E99;
+}
