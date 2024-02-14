@@ -9,7 +9,7 @@
        "rich-text#shelf-title",
        "flex-layout.row#shelf",
        "info-card#home",
-       "flex-layout.row#shelfCustom",
+       "flex-layout.row#shelfCustom-one",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -96,12 +96,13 @@
   },
 
   // shelf custom
-  "flex-layout.row#shelfCustom": {
+  "flex-layout.row#shelfCustom-one": {
     "children": [
       "shelf-custom"
     ],
-    "title": "Shelf custom"
+    "title": "Shelf custom one"
   },
+  
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",

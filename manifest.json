@@ -66,7 +66,9 @@
     "vtex.css-handles": "1.x",
     "vtex.search-graphql": "0.x",
     "vtex.format-currency": "0.x",
-    "vtex.device-detector": "0.x"
+    "vtex.device-detector": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.order-manager": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

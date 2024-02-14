@@ -5,72 +5,85 @@ import { useApolloClient } from "react-apollo";
 import SliderLayout from "vtex.slider-layout/SliderLayout";
 import { FormattedCurrency } from "vtex.format-currency";
 import { useDevice } from "vtex.device-detector";
+import { Button } from "vtex.styleguide";
+
+import ButoonAddToCart from "../ButtonAddtoCart/index";
 
 import styles from "../../styles/components/ShelfCustom/styles.css";
+
 
 const ShelfCustom = ({ items }) => {
   const [colectSchemaInfos, setColectSchemaInfos] = useState(items);
   const client = useApolloClient();
   const [productId, setProductId] = useState("");
-  console.log("🚀 ~ ShelfCustom ~ productId:", productId);
 
   const { device } = useDevice();
-  console.log("🚀 ~ ShelfCustom ~ device:", device);
 
   useEffect(() => {
     setColectSchemaInfos(items);
   }, [items]);
 
   useEffect(() => {
-    const colection_id_schema = colectSchemaInfos.collectionId;
-    const category_id_schema = colectSchemaInfos.categoryId;
+    const colection_id_schema = colectSchemaInfos?.collectionId;
+    const category_id_schema = colectSchemaInfos?.categoryId;
 
     if (
       (colection_id_schema && category_id_schema) ||
-      productId.length >= 6 ||
-      (colection_id_schema && !category_id_schema) ||
-      productId.length >= 6
+      (colection_id_schema && !category_id_schema)
     ) {
       client
         .query({
           query: getProducts,
           variables: { collection: colection_id_schema },
         })
-        .then(({ data }) => {
-          const products = data?.products;
+        .then(async({ data }) => {
+          const products = await data?.products;
           setProductId(products);
         });
-    } else if (
-      (category_id_schema && !colection_id_schema) ||
-      productId.length >= 6
-    ) {
+    } else if (category_id_schema && !colection_id_schema) {
       client
         .query({
           query: getProducts,
           variables: { category: category_id_schema },
         })
-        .then(({ data }) => {
-          const products = data?.products;
+        .then(async ({ data }) => {
+          const products = await data?.products;
           setProductId(products);
         });
     }
-    if (colection_id_schema === "" && category_id_schema === "") {
+    if (
+      items.collectionId === undefined ||
+      items.collectionId === "" ||
+      (!items.collectionId && items.categoryId === undefined || items.categoryId === '' || !items.categoryId)
+    ) {
       client
         .query({
           query: getProducts,
           variables: { collection: "141" },
         })
-        .then(({ data }) => {
-          const products = data?.products;
-          console.log("🚀 ~ .then ~ products:", products);
+        .then(async ({ data }) => {
+          const products = await data?.products;
           setProductId(products);
         });
     }
   }, [items]);
 
+
   return (
     <>
       <div className={styles.slyder_custom_contain}>
+        {items !== undefined ? (
+          <div className={styles.title__shelf_custom}>{items.title}</div>
+        ) : (
+          ""
+        )}
+
+        {items !== undefined ? (
+          <div className={styles.sobtitle__shelf_custom}>{items.sobTitle}</div>
+        ) : (
+          ""
+        )}
+
         <SliderLayout
           itemsPerPage={{
             desktop: 4,
@@ -87,7 +100,17 @@ const ShelfCustom = ({ items }) => {
         >
           {productId &&
             productId.map((item) => (
-              <li key={item} className={styles.list_shelf}>
+              <li
+                key={item}
+                className={styles.list_shelf}
+                valor={[
+                  {
+                    productName: item.items[0].name,
+                    productId: item.productId,
+                    seller: item.items[0].sellers[0],
+                  },
+                ]}
+              >
                 <div className={styles.slider_custom_content}>
                   <a href={item.link} className={styles.url_product}>
                     <div className={styles.image_contain}>
@@ -104,29 +127,61 @@ const ShelfCustom = ({ items }) => {
                     </div>
                   </a>
 
-                  <div className={styles.infos_card_prices}>
-                    <div className={styles.contentPricesList}>
-                      <span>De:</span>
-                      <div className={styles.listPrice}>
-                        <FormattedCurrency
-                          value={item.priceRange.listPrice.highPrice}
-                        />
+                  {/* start of displaying prices on products with stock */}
+                  {item.items[0]?.sellers[0]?.commertialOffer
+                    ?.AvailableQuantity > 0 && (
+                    <div className={styles.infos_card_prices}>
+                      <div className={styles.contentPricesList}>
+                        <span>De:</span>
+                        <div className={styles.listPrice}>
+                          <FormattedCurrency
+                            value={
+                              item.items[0]?.sellers[0]?.commertialOffer
+                                ?.ListPrice
+                            }
+                          />
+                        </div>
+                      </div>
+
+                      <div className={styles.contentPrices}>
+                        <span>Por:</span>
+                        <div className={styles.sellingPrice}>
+                          <FormattedCurrency
+                            value={
+                              item?.items[0]?.sellers[0]?.commertialOffer?.Price
+                            }
+                          />
+                        </div>
+                        <span className={styles.contentBadgePrice}>
+                          EconomizeR4 xx,xx
+                        </span>
                       </div>
                     </div>
+                  )}
+                  {/* end of displaying prices on products with stock */}
 
-                    <div className={styles.contentPrices}>
-                      <span>Por:</span>
-                      <div className={styles.sellingPrice}>
-                        <FormattedCurrency
-                          value={item.priceRange.sellingPrice.highPrice}
-                        />
-                      </div>
-                    <span className={styles.contentBadgePrice}>EconomizeR4 xx,xx</span>
-                    </div>
-                  </div>
-
+                  {/* start available and unavailable button contro*/}
                   <div className={styles.buttonAddtoCart}>
-                    <button>ADICIONAR AO CARRINHO</button>
+                    {item.items[0]?.sellers[0]?.commertialOffer
+                      .AvailableQuantity > 0 ? (
+                      <ButoonAddToCart
+                        valor={[
+                          {
+                            productName: item.items[0].name,
+                            itemId: item.items[0].itemId,
+                            seller: item.items[0].sellers[0],
+                          },
+                        ]}
+                      />
+                    ) : (
+                      <Button
+                        disabled
+                        className={styles.button_unavailable_custom}
+                      >
+                        PRODUTO INDISPONÍVEL
+                      </Button>
+                    )}
+                    {/* end available and unavailable button contro */}
                   </div>
                 </div>
               </li>
@@ -153,16 +208,6 @@ ShelfCustom.schema = {
           type: "string",
           default: "",
         },
-        // selectOptionByshel: {
-        //   title: "Select shelf option",
-        //   type: "string",
-        //   enum: ["opt1", "opt2"], // Define os valores
-        //   enumNames: ["Category option", "Collection Option "], // Define os textos
-        //   widget: {
-        //     "ui:widget": "radio",
-        //   },
-        // },
-
         categoryId: {
           title: "CategoryId",
           type: "string",

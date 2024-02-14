@@ -21,3 +21,6 @@ no /admin para corelabiz.store-tami@0.x:store.custom#nome-da-pagina
 Se existir alguma página com erro de carregamento, verificar no admin a configuração
 da pagina que deseja testar.
 ex: corelabiz.store-tami@0.x:store.custom#nome-da-pagina.
+
+*** VTEX LINK ***
+Para testar loja atualizada, rodar vtex link na ws: https://updateDevelop--corelabiz.myvtex.com

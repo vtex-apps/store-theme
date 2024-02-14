@@ -32,3 +32,7 @@ useApolloClient - client react
 SliderLayout - slider vtex";
 FormattedCurrency - format vtex;
 useDevice - detector responsive vtex
+
+*** ButtonAddtoCart ***
+***- componente responsável por add item ao carrinho, em vitrine custom -***
+** Falta tratar as mutations e update no carrinho **

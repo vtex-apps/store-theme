@@ -6,8 +6,19 @@ query getProduct($collection: String, $category: String) {
     items {
       name
       itemId
+      ean
       images {
         imageUrl
+      }
+       sellers {
+        sellerId
+        addToCartLink
+        sellerDefault
+        commertialOffer {
+          AvailableQuantity
+          Price
+          ListPrice
+        }
       }
     }
     priceRange {
