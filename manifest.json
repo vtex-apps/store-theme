@@ -45,6 +45,10 @@
     "vtex.telemarketing": "2.x",
     "vtex.order-placed": "2.x",
     "vtex.checkout-summary": "0.x",
+    "vtex.checkout": "1.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.checkout-cart": "0.x",
+    "vtex.checkout-resources": "0.x",
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
@@ -68,7 +72,8 @@
     "vtex.format-currency": "0.x",
     "vtex.device-detector": "0.x",
     "vtex.product-context": "0.x",
-    "vtex.order-manager": "0.x"
+    "vtex.order-manager": "0.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

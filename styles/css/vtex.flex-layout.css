@@ -96,3 +96,22 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+/* minicart items */
+.flexRow--grid{
+  border-bottom: 1px solid #a4aaadbe;
+  margin: 2px 0;
+  padding: 5px;
+}
+.flexColChild--main-container{
+  margin: 8px 0;
+}
+.flexRowContent--miniCart-row-brand-and-buttonRemove{
+  display: flex;
+  align-items: baseline;
+}
+.flexRow--minicart-footer{
+  background: rgba(226, 226, 226, 0.562);
+  border-radius: 8px 0;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.904);
+}

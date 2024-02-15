@@ -1,5 +1,5 @@
 mutation addItem($orderFormId: ID!, $items: [ItemInput]) {
-  addToCart(orderFormId: $orderFormId, items: $items) {
+  addToCart(orderFormId: $orderFormId, items: $items) @context(provider: "vtex.checkout-graphql") {
     items {
       skuName
       productId

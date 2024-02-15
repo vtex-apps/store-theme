@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import { Button } from "vtex.styleguide";
 import { NumericStepper } from "vtex.styleguide";
-// import { useOrderForm } from 'vtex.order-manager/OrderForm';
-// import {useApolloClient} from "react-apollo";
-// import addItem from '../../graphql/mutation/mutationAddItem.gql'
 import styles from "../../styles/components/ButtonAddtoCart/styles.css";
+
+import { useOrderItems } from "vtex.order-items/OrderItems";
 
 const ButtonAddtoCart = ({ valor }) => {
   const [addItem, setAddItem] = useState({ isLoading2: false });
@@ -18,10 +17,8 @@ const ButtonAddtoCart = ({ valor }) => {
   const [label, setLabel] = useState({ labelText: `Item` });
 
   const [productDetailsItem, setProductDetailsItem] = useState({});
+  console.log("🚀 ~ ButtonAddtoCart ~ productDetailsItem:", productDetailsItem);
   const selectedItemQuantity = numericStepper.quantityNumericStepper;
-
-
-
 
   useEffect(() => {
     if (showNumeriStepper === true) {
@@ -49,39 +46,59 @@ const ButtonAddtoCart = ({ valor }) => {
     }
   }, [numericStepper.quantityNumericStepper]);
 
-  // ************** add item ******
-  const updateItem = {
-    productDetailsItem
-    
+  // add item
+  const { addItems } = useOrderItems();
+  const skuItem = [
+    {
+      id: valor[0]?.itemId,
+      seller: "1",
+      quantity: 1,
+    },
+  ];
+  const addToCartItem = async () => {
+    try {
+      await addItems(skuItem);
+    } catch (error) {
+      console.error("erro ao add produti", error);
+    }
   };
 
-  // const { orderForm } = useOrderForm()
-  // const client = useApolloClient();
-  
-//   const add = () => {
-//   const orderFormId = orderForm.id
+  // remover item
+  const skuItemRemove = [
+    {
+      id: valor[0]?.itemId,
+      seller: "1",
+      quantity: -1,
+    },
+  ];
+  const removerCartItem = async () => {
+    try {
+      await addItems(skuItemRemove);
+    } catch (error) {
+      console.error("erro ao add produti", error);
+    }
+  };
 
-//   client
-//   .mutate({
-//     mutation: addItem,
-//     variables: {orderFormId: orderFormId , items:[{
-//       "id": 194,
-//     "quantity": 6,
-//     "seller": 1
-//     }]}
-//   })
-//   .then(() => {
-//     console.log('***aaaa*****');
-   
-//   })
-//   .catch((error) => console.log(error))
-// }
 
+  // precisa tratar update quantity
+  const skuItemUpdate = [
+    {
+      id: valor[0]?.itemId,
+      seller: "1",
+      quantity: +1,
+    },
+  ];
+  const updateCartItems = async() => {
+    try{
+      await addItem(skuItemUpdate)
+    }catch (error) {
+      console.error("erro ao add produti", error);
+    }
+  }
 
   return (
     <>
       <div className="col-xs-12 col-sm-6 col-md-8">
-      <button >TEste</button>
         <div className={styles.content_btnAddToCart_custom}>
           {showButton && (
             <div className="mt4">
@@ -90,7 +107,8 @@ const ButtonAddtoCart = ({ valor }) => {
                 onClick={() => {
                   setAddItem({ isLoading2: !addItem.isLoading2 });
                   setShowNumericStepper(true);
-                  setProductDetailsItem({...valor, selectedItemQuantity});
+                  setProductDetailsItem({ ...valor, selectedItemQuantity });
+                  addToCartItem();
                 }}
                 isLoading={addItem.isLoading2}
               >
@@ -113,6 +131,7 @@ const ButtonAddtoCart = ({ valor }) => {
               onChange={(event) =>
                 setNumericStepper({ quantityNumericStepper: event.value })
               }
+              onClick={numericStepper.quantityNumericStepper < 1 ? removerCartItem() : updateCartItems()}
             />
           </div>
         </div>

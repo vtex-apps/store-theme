@@ -12,6 +12,7 @@ import ButoonAddToCart from "../ButtonAddtoCart/index";
 import styles from "../../styles/components/ShelfCustom/styles.css";
 
 
+
 const ShelfCustom = ({ items }) => {
   const [colectSchemaInfos, setColectSchemaInfos] = useState(items);
   const client = useApolloClient();
@@ -52,17 +53,18 @@ const ShelfCustom = ({ items }) => {
         });
     }
     if (
-      items.collectionId === undefined ||
-      items.collectionId === "" ||
-      (!items.collectionId && items.categoryId === undefined || items.categoryId === '' || !items.categoryId)
+      items?.collectionId === undefined ||
+      items?.collectionId === "" ||
+      (!items?.collectionId && items?.categoryId === undefined || items?.categoryId === '' || !items?.categoryId)
     ) {
       client
         .query({
           query: getProducts,
-          variables: { collection: "141" },
+          variables: { collection: "141"  },
         })
         .then(async ({ data }) => {
           const products = await data?.products;
+
           setProductId(products);
         });
     }
