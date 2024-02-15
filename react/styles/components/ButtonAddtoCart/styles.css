@@ -1,0 +1,39 @@
+.content_btnAddToCart_custom Button{
+    background-color: #0F3E99;
+    color: #fff;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    min-height: 2.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 50px;
+    border: solid;
+
+}
+
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__minus-button){
+    background-color: #0F3E99;
+    color: #fff;
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    min-height: 2.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 50px !important;
+    border: solid;
+}
+:global(.vtex-numeric-stepper-container){
+    display: flex;
+    align-items: center;
+}
+:global(.vtex-numeric-stepper__input){
+    color: #0F3E99;
+    font-weight: 600;
+}
+:global(.vtex-numeric-stepper__label){
+    font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    color: #0F3E99;
+}

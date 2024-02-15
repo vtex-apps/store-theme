@@ -1,0 +1,12 @@
+
+.summaryItemContainer  :first-child{
+    color: #0068a0d8;
+    font-weight: 600;
+}
+.summaryItemPrice :last-child{
+    color: #0067A0;
+    font-weight: 700;
+}
+.installments, .summarySmallDisclaimer{
+    color: #7C878E;
+}

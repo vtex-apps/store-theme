@@ -1,0 +1,73 @@
+
+.openIconContainer{
+    display: flex;
+    align-items: baseline;
+    background-color: #0067A0;
+    border-color: #0067A0;
+    border: 1px solid #0067A0;
+}
+@media(max-width: 639px){
+    .openIconContainer{
+        display: flex !important;
+        align-items: baseline;
+    }
+}
+.openIconContainer:hover{
+    background-color: #00358E;
+}
+.openIconContainer--mini-icon :global(.vtex-button):hover{
+    color: #FFF !important;
+    background: #00358E;
+}.openIconContainer--mini-icon::before{
+    content: "Carrinho";
+    color: #FFF !important;
+    font-weight: 500;
+} 
+
+
+.minicartQuantityBadge{
+    background-color:#00AFD7;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+/* close minicart */
+.closeIconButton--mini-icon{
+    color:#7C878E;
+}
+/* title minicart */
+.minicartTitle--minicart-content::before{
+    content: "Meu ";
+    color: #0067A0;
+}
+.minicartTitle--minicart-content{
+    color: #0067A0;
+}
+/* mini cart items */
+.flexRow--grid{
+    border: 1px solid;
+}
+
+
+
+/* botão finalizar pedido */
+.minicartCheckoutButton--button-add-minicart :global(.vtex-button__label){
+    visibility: hidden;
+    width: 100%;
+
+}
+.minicartCheckoutButton--button-add-minicart :global(.vtex-button__label)::after{
+    content: "Finalizar pedido";
+    visibility: visible;
+    align-items: center;
+    display: flex;
+    margin-left: -150px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.minicartCheckoutButton--button-add-minicart :global(.vtex-button){
+    background-color: #00AFD7;
+    border-color: #00AFD7;
+}
+
+
+

@@ -1,12 +1,13 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "5.1.0",
+  "vendor": "corelabiz",
+  "name": "store-tamii",
+  "version": "0.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "react": "3.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -44,6 +45,10 @@
     "vtex.telemarketing": "2.x",
     "vtex.order-placed": "2.x",
     "vtex.checkout-summary": "0.x",
+    "vtex.checkout": "1.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.checkout-cart": "0.x",
+    "vtex.checkout-resources": "0.x",
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
@@ -62,7 +67,13 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
+    "vtex.css-handles": "1.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.format-currency": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.order-manager": "0.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

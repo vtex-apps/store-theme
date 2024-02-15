@@ -1,0 +1,87 @@
+/* product name minicart */
+.productName{
+    color: #7C878E;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.productBrandName{
+    color: #7C878E;
+    text-transform: uppercase;
+
+}
+.removeButtonContainer{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+}
+.deleteIcon{
+    color: #FA4616;
+}
+.removeButtonContainer::before{
+    content: "Excluir item";
+    visibility: visible;
+    font-size: 9px;
+    color: #7C878E;
+
+}
+
+.inputContainer{
+    width: 5rem;
+    border: none;
+    color: #00AFD7 !important;
+}
+.inputContainer :first-child{
+    color: #7C878E;
+    font-weight: 600;
+}
+.inputContainer :last-child{
+    color: #7C878E;
+}
+.quantitySelectorButton{
+    border-radius: 50%;
+    background-color: #0067A0;
+    color: #D0D3D4;
+}
+.quantitySelectorButton:hover{
+    border-radius: 50%;
+    background-color: #00358E;
+    color: #D0D3D4;
+}
+
+/* prices */
+.productPriceContainer{
+    width: 100%;
+    display: inline-grid;
+}
+.productPriceCurrency{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #D0D3D4;
+    border-radius: 0 8px 0 0;
+    border-bottom: none;
+    background-color: #D0D3D4;
+    color: #7C878E;
+    height: 20px;
+    font-weight: 700;
+    align-items: center;
+}
+.productPrice{
+    display: flex;
+    justify-content: end;
+    border: 1px solid #00AFD7;
+    border-radius: 0 0 0 8px;
+    border-top: none;
+    background-color: #00AFD7;
+    color: #fff;
+    height: 20px;
+    font-weight: 600;
+    align-items: center;
+    margin-top: -5px;
+
+}
+@media(max-width: 639px){
+    .productPrice{
+        justify-content: center;
+    }
+}

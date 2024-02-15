@@ -1,0 +1,8 @@
+{
+    "shelf-custom": {
+        "component": "ShelfCustom"
+    },
+    "button-add-to-cart-custom":{
+        "component": "ButtonAddtoCart"
+    }
+}

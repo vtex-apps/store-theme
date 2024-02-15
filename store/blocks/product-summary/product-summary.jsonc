@@ -9,8 +9,15 @@
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "add-to-cart-button"
+      
+      // "flex-layout.row#buttom-custom"
     ]
   },
+ 
+  // "flex-layout.row#buttom-custom":{
+  //   "children":["button-add-to-cart-custom"]
+   
+  // },
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"

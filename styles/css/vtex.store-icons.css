@@ -1,3 +1,11 @@
 .expandIcon {
   color: #727273;
 }
+.cartIcon{
+  color: #FFF !important;
+  background: #0067A0;
+}
+.cartIcon--minicart-empty-state{
+  color: #727273 !important;
+  background: transparent;
+}

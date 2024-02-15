@@ -1,0 +1,39 @@
+query getProduct(
+  $collection: String
+  $category: String
+) {
+  products(
+    collection: $collection
+    category: $category
+  ) {
+    productId
+    categoryId
+    link
+    items {
+      name
+      itemId
+      ean
+      images {
+        imageUrl
+      }
+      sellers {
+        sellerId
+        addToCartLink
+        sellerDefault
+        commertialOffer {
+          AvailableQuantity
+          Price
+          ListPrice
+        }
+      }
+    }
+    priceRange {
+      sellingPrice {
+        highPrice
+      }
+      listPrice {
+        highPrice
+      }
+    }
+  }
+}

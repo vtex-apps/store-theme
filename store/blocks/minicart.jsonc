@@ -1,15 +1,188 @@
 {
-  "add-to-cart-button": {
+  "minicart.v2": {
+    "title": "Minicart",
     "props": {
-      "addToCartFeedback": "customEvent",
-      "customPixelEventId": "add-to-cart-button"
+      "MinicartIcon": "icon-cart",
+      "blockClass": "mini-icon",
+      "itemCountMode": "total"
+    },
+    "children": [
+      "minicart-base-content"
+      
+    ]
+  },
+ 
+  "minicart-base-content": {
+    "blocks": [
+      "minicart-empty-state"
+    ],
+    "children": [
+      "minicart-product-list", "flex-layout.row#footer-minicart"
+    ],
+    "props":{
+      "blockClass": "minicart-content"
     }
   },
-
-  "minicart.v2": {
-    "props": {
-      "customPixelEventId": "add-to-cart-button"
+  "flex-layout.row#footer-minicart":{
+    "props":{
+      "blockClass":"minicart-footer"
     },
-    "children": ["minicart-base-content"]
+    "children":["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer":{
+    "children":[
+      "minicart-summary",
+      "minicart-checkout-button"
+    ],
+    "props":{
+      "blockClass": "minicart-footerCol"
+    }
+  },
+ 
+  "minicart-summary":{
+    "blocks":["checkout-summary.compact#minicart-footer"]
+  },
+  "minicart-checkout-button":{
+    "props":{
+      "label":"FINALIZAR PEDIDO",
+      "finishShoppingButtonLink": "/checkout/#/orderform",
+      "blockClass": "button-add-minicart"
+    }
+  },
+  "checkout-summary.compact#minicart-footer":{
+    "children":[
+      "summary-totalizers#minicart",
+      "summary-installments"
+    ],
+    "props":{
+      "totalizersToShow": ["Items", "Discounts"],
+      "total": "visibleTotalizers"
+    }
+  },
+  "summary-installments":{
+    "props": {
+      "message": "Ou Parcelas em até {installmentsNumber}x de {installmentValue} com juros. Por: {installmentsTotalValue}",
+      "markers": [],
+      "hasInterest": true
+    }
+  },
+  "summary-totalizers#minicart":{
+    "props":{
+      "showTotal": true,
+      "showDeliveryTotal": false,
+      "showOriginalTotal": false
+    }
+  },
+  // 
+  "minicart-product-list":{
+    "blocks":[ "product-list#minicart"],
+    "props":{
+      "itemCountMode": "total"
+    }
+  },
+  "product-list#minicart":{
+    "blocks":["product-list-content-desktop"]
+  },
+  "product-list-content-desktop": {
+    "children": [
+      "flex-layout.row#list-row.mobile"
+    ]
+  },
+  "flex-layout.row#list-row.mobile": {
+    "children": [
+      "flex-layout.col#image.mobile",
+      "flex-layout.col#main-container.mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "grid"
+      ]
+    }
+  },
+  "flex-layout.col#image.mobile": {
+    "children": ["product-list-image"],
+    "props": {
+      "marginRight": "4",
+      "blockClass": "product-list-image--mobile"
+    }
+  },
+  "flex-layout.col#main-container.mobile": {
+    "children": [
+      "flex-layout.row#minicar-product-name",
+      
+      "flex-layout.row#brand-and-remove-minicart",
+      "flex-layout.row#top.mobile",
+      "flex-layout.row#bottom.mobile"
+      // "flex-layout.row#message.mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "main-container"
+      ]
+    }
+  },
+  "flex-layout.row#minicar-product-name":{
+    "children":["vtex.product-list:product-name"],
+    "props":{
+      "blockClass": "minicart-productName"
+    }
+  },
+  "flex-layout.row#brand-and-remove-minicart":{
+    "children":[
+      "flex-layout.col#product-brand",
+      "flex-layout.col#remove-button.mobile"
+    ],
+    "props":{
+      "blockClass": "miniCart-row-brand-and-buttonRemove"
+    }
+  },
+  "flex-layout.col#product-brand":{
+    "children":[ "vtex.product-list:product-brand"]
+  },
+ 
+  "flex-layout.row#top.mobile": {
+    "children": [
+      
+      "flex-layout.col#quantity-selector.mobile"
+      // "flex-layout.col#remove-button.desktop"
+    ],
+    "props": {
+      "blockClass": [
+        "top"
+      ]
+    }
+  },
+  "flex-layout.col#quantity-selector.mobile":{
+    "children":["quantity-selector"]
+  },
+  "quantity-selector":{
+    "props":{
+      "mode": "stepper"
+    }
+  },
+  "flex-layout.row#bottom.mobile": {
+    "children": [
+      "flex-layout.col#price-info.mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "bottom"
+      ]
+    }
+  },
+  "flex-layout.col#price-info.mobile": {
+    "children": [
+      "price#mobile"
+    ]
+  },
+  "price#mobile":{
+    "props":{
+      "textAlign": "left"
+    }
   }
+ 
+  
+  
+
+  
 }
