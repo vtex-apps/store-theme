@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
+  "vendor": "marianafullen",
   "name": "store-theme",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -65,7 +65,9 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    "vtex.reviews-and-ratings": "3.x"
+    "vtex.reviews-and-ratings": "3.x",
+    "vtexventures.livestreaming-free": "0.x",
+    "vtexventures.personal-shopper-free": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -1,6 +1,9 @@
 {
   "store.home": {
     "blocks": [
+      "pa-widget",
+      "livestreaming",
+      "livestreaming-snack-size-videos#home",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -14,7 +17,11 @@
       "newsletter"
     ]
   },
-
+  "livestreaming-snack-size-videos#home": {
+    "props": {
+      "variant": "carousel"
+    }
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {

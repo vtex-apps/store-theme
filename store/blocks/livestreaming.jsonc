@@ -1,0 +1,10 @@
+{
+  "store.custom#lives": {
+    "children": [
+      "livestreaming"
+    ],
+    "props": {
+      "blockClass": "livestreaming"
+    }
+  }
+}

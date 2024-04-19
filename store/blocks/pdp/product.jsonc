@@ -1,6 +1,8 @@
 {
   "store.product": {
     "children": [
+      "pa-widget",
+      "livestreaming-snack-size-videos",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",

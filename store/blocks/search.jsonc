@@ -33,7 +33,7 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["livestreaming", "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
