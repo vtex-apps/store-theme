@@ -1,0 +1,40 @@
+{
+  "store.custom#chinese-cookies-landing": {
+    "blocks": [
+      "flex-layout.row#chinese-cookies--container"
+    ]
+
+  },
+  "flex-layout.row#chinese-cookies--container": {
+    "children": [
+      "flex-layout.col#chinese-cookies--container"
+    ],
+    "props": {
+      "blockClass": "chinese-cookies--container"
+    }
+  },
+  "flex-layout.col#chinese-cookies--container": {
+    "children": [
+      "rich-text#chinse-cookies-landing--title",
+      "rich-text#chinse-cookies-landing--subtitle",
+      "chinese-cookies-component"
+    ],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass": "chinese-cookies--container"
+    }
+  },
+  "rich-text#chinse-cookies-landing--title": {
+    "props": {
+      "text": "### Galletas de la fortuna",
+      "blockClass": "chinese-cookies--title"
+    }
+  },
+  "rich-text#chinse-cookies-landing--subtitle": {
+    "props": {
+      "text": "Hacé click en el botón para descubrir tu fortuna",
+      "blockClass": "chinese-cookies--subtitle"
+    }
+  }
+}

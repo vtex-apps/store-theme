@@ -1,0 +1,11 @@
+:root {
+  --color-base: #ffffff;
+  --color-base-inverted: #000000;
+
+  /* Botón */
+  --red-primary: #B22222;
+  --red-secondary: #FF7F7F;
+
+  /* Cookie background */
+  --cookie-bg: #f0f0f0;
+}
