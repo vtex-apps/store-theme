@@ -1,3 +1,14 @@
+# Challenge
+Este repositorio contiene el challenge para Valtech.
+Para la realización del desafío se desarrollaró un componente custom (ChineseCookiesComponent) el cuál contiene un botón para visualizar de manera aleatoria una frase de las galletas de la fortuna almacenadas en Master Data.
+Para ello, se realizó una petición a la entidad “CF” y se creó un middleware para no exponer sus api key y token. La landing se encuentra en https://challengerodrigoblanca0--valtech.myvtex.com/chinese-cookies . 
+Por otro lado, se desarrollo una Admin app, la cuál permite visualizar en el admin, todas los registros de las galletas de la fortuna en master data, como a su vez, agregar una nueva. Se puede visualizar en https://challengerodrigoblanca0--valtech.myvtex.com/admin/chinese-cookies .
+
+Algunas capturas del desarrollo
+
+![alt text](image.png)
+![alt text](image-1.png)
+
 # Store theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
