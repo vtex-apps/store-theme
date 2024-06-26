@@ -10,8 +10,8 @@
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#link"
+      //"newsletter"
     ]
   },
 
@@ -47,7 +47,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Nuevo Cambio",
       "blockClass": "shelfTitle"
     }
   },

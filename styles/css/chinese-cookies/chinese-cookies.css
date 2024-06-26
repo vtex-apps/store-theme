@@ -1,0 +1,165 @@
+@import '../../utils/_colors.css';
+
+.ChineseCookiesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ChineseCookiesButton {
+  border-radius: 30px;
+  padding: 8px 15px;
+  color: var(--color-base);
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, var(--red-secondary), var(--red-primary));
+  animation: gradient-animation 4s ease infinite;
+  border: none;
+  background-size: 200% 200%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.CookieResultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-base);
+  padding: 5px 15px;
+  border: none;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  position: relative;
+  width: 0;
+  animation: expandFromCenter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  margin-top: 40px;
+}
+
+@keyframes expandFromCenter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .CookieResultContainer:before {
+    content: '';
+    background-image: url('../../../assets/cookie-left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    left: 40%;
+    animation-delay: 0.5s;
+    transform: translateY(-50%);
+    animation: moveFromCenter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    z-index: 2000;
+  }
+
+  .CookieResultContainer:after {
+    content: '';
+    background-image: url('../../../assets/cookie-right.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    right: 40%;
+    animation-delay: 0.5s;
+    transform: translateY(-50%);
+    animation: moveFromCenter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    z-index: 2000;
+  }
+}
+
+@keyframes moveFromCenter {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+
+.CookieResultContainer:before {
+  animation-name: moveLeft;
+}
+
+.CookieResultContainer:after {
+  animation-name: moveRight;
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 40%;
+    transform: translateX(-50%);
+  }
+  70% {
+    left: 0;
+    transform: translateX(0);
+  }
+  100% {
+    left: -100px;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    right: 40%;
+    transform: translateX(50%);
+  }
+  70% {
+    right: 0;
+    transform: translateX(0);
+  }
+  100% {
+    right: -100px;
+    transform: translateX(0);
+  }
+}
+
+.ChineseCookiesPhrase {
+  font-size: .9rem;
+  margin-top: 0;
+  animation: fontSizeAnimation 3s ease forwards;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ChineseCookiesNumber {
+  margin-top: 0;
+  font-size: .7rem;
+  animation: fontSizeAnimation 3s ease forwards;
+  margin-bottom: 0;
+}
+
+@keyframes fontSizeAnimation {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: inherit;
+    opacity: 1;
+  }
+}
