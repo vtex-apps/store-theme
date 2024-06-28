@@ -251,7 +251,7 @@
     "props": {
       "itemProps": {
         "tagTitle": "Decoration",
-        "text": "Decoration"
+        "text": "Prueba"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]

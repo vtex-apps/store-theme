@@ -1,6 +1,6 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
+  "vendor": "itglobers",
+  "name": "store-theme-carlos",
   "version": "5.1.0",
   "builders": {
     "styles": "2.x",
@@ -62,10 +62,9 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
+    "vtex.css-handles": "1.x",
+    "itglobers.product-availability-itglobers": "0.x"
   },
-  "peerDependencies": {
-    "vtex.reviews-and-ratings": "3.x"
-  },
+  "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

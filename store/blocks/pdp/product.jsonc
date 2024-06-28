@@ -108,6 +108,7 @@
       "product-identifier.product",
       "sku-selector",
       "product-quantity",
+      "product-availability-component",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",

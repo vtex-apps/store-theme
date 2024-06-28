@@ -8,6 +8,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
+      "product-availability-component",
       "add-to-cart-button"
     ]
   },
