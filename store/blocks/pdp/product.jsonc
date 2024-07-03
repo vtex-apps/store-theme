@@ -103,7 +103,7 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments#cuotas",
+      "product-installments",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
