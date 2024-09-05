@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- `minicart-product-list` in theme to change the default template to use splitItem as false.
+
 ## [5.1.0] - 2022-06-07
 ### Changed
 - Fixed height in `list-context.image-list#demo` example.
