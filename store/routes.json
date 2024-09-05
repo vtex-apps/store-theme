@@ -7,5 +7,8 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
+  },
+  "store.custom#chinese-cookies-landing": {
+    "path": "/chinese-cookies"
   }
 }

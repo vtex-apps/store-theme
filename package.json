@@ -1,0 +1,33 @@
+{
+  "name": "store-theme",
+  "version": "5.1.0",
+  "description": "Challenge de valtech",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "3",
+    "@vtex/test-tools": "^3.4.3",
+    "react-intl": "3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex-apps/store-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtex-apps/store-theme/issues"
+  },
+  "homepage": "https://github.com/vtex-apps/store-theme#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}

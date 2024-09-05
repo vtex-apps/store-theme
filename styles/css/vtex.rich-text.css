@@ -1,11 +1,13 @@
+@import '../utils/_colors.css';
+
 .container--deals {
-  color: #ffffff;
+  color: var(--color-base);
   text-align: center;
   justify-content: center;
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: var(--red-primary);
   justify-content: center;
   text-align: center;
 }
@@ -67,7 +69,7 @@
   font-weight: 700;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .container--question .strong {
     font-size: 40px;
     line-height: 3rem;
@@ -87,4 +89,23 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+/* Landing Cookies */
+.heading--chinese-cookies--title {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.heading--chinese-cookies--title::before {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #B22222;
+  border-radius: 20px;
+  bottom: -2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }

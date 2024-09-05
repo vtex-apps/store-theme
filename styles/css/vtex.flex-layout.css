@@ -1,3 +1,5 @@
+@import '../utils//_colors.css';
+
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -95,4 +97,38 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+/* Landing Cookies */
+/* Mobile */
+@media screen and (min-width: 320px) {
+  .flexRow--chinese-cookies--container {
+    background-color: var(--cookie-bg);
+    margin: 0 auto !important;
+    height: 100vh;
+
+    .flexColChild--chinese-cookies--container:last-child {
+      width: 100%;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .flexRow--chinese-cookies--container {
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0 40px;
+    }
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .flexColChild--chinese-cookies--container:last-child {
+    width: 100%;
+    max-width: 450px;
+  }
 }
