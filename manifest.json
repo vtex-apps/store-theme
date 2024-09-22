@@ -1,5 +1,5 @@
 {
-  "vendor": "vtex",
+  "vendor": "fulfillmentqa",
   "name": "store-theme",
   "version": "5.1.0",
   "builders": {
@@ -62,10 +62,8 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
-  },
-  "peerDependencies": {
-    "vtex.reviews-and-ratings": "3.x"
+    "vtex.css-handles": "1.x",
+    "vtex.shipping-option-components": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
