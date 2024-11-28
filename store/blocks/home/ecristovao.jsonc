@@ -1,0 +1,123 @@
+{
+
+	"flex-layout.row#exercicio-ecristovao": {
+		"title": "Título Vtex IO",
+		"props": {
+			"blockClass": "exercicio-ecristovao",
+			"fullWidth": "true"
+		},
+		"children": [
+			"flex-layout.col#exercicio-ecristovao"
+		]
+	},
+	"flex-layout.col#exercicio-ecristovao": {
+			"children": [
+				"rich-text#titulo",
+				"slider-layout#slider-ecristovao",
+				"list-context.product-list#demo2"
+				//"modal-trigger"
+			]
+		},
+
+
+
+"modal-trigger": {
+    "props": {
+      "trigger": "load"
+    },
+    "children": [
+      "modal-layout"
+    ]
+  },
+  "modal-layout": {
+    "children": [
+      "modal-header",
+      "modal-content"
+    ]
+  },
+  "modal-header": {
+    "props": {
+      "showCloseButton": true,
+      "iconCloseSize": 30
+    }
+  },
+  "modal-content": {
+    "children": [
+      "modalfink"
+    ]
+  },
+
+
+
+//Título
+	"rich-text#titulo": {
+		"title": "Título Trilha",
+		"props": {
+			"text": "## **_Rich Text Trilha IO_**",
+			"textAlignment": "CENTER",
+    		"textPosition": "CENTER"
+		}
+	},
+//Slider de imagens
+	"slider-layout#slider-ecristovao": {
+		"title": "Imagens Trilha",
+		"props": {
+		"itemsPerPage": {
+			"desktop": 1,
+			"tablet": 1,
+			"phone": 1
+		},
+		"infinite": true,
+		"showNavigationArrows": "desktopOnly",
+		"blockClass": "carousel"
+		},
+		"children": ["list-context.image-list#ecristovao-list-img"]
+	},
+
+  "list-context.image-list#ecristovao-list-img": {
+    "children": ["slider-layout#ecristovao-images"],
+    "props": {
+      "height": 400,
+      "images": [
+        {
+          "image": "https://i.pinimg.com/originals/d0/1c/79/d01c7974bcdd61091068bc2f8019769f.jpg",
+          "mobileImage": "https://estado.rs.gov.br/upload/recortes/201707/19033218_1119075_GD.jpg"
+        }
+      ]
+    }
+  },
+//Lista de produtos
+  "slider-layout#ecristovao-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+
+"product-summary.shelf#demo2": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "150"
+    }
+  }
+
+}

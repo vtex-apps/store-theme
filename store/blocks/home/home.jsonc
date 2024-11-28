@@ -1,18 +1,43 @@
 {
   "store.home": {
     "blocks": [
+      //"image#name",
+      //"rich-text#name",
       "list-context.image-list#demo",
+	  "flex-layout.row#exercicio-ecristovao",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      //"flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
+  },
+
+
+  
+
+  "rich-text#name": {
+    "props": {
+      "blockClass": ["name"],
+      "font": "t-body",
+      "text": "Olá Mundo VTEX /n teste",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "image#name": {
+    "props": {
+      "blockClass": ["name"],
+     // "maxHeight": 124,
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png"
+    }
   },
 
   "list-context.image-list#demo": {

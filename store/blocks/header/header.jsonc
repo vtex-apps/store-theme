@@ -12,6 +12,9 @@
       "sticky-layout#4-desktop"
     ]
   },
+"header-row#1-desktop": {
+   "children": ["minicart.v2"]
+ },
 
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
