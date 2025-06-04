@@ -5,7 +5,7 @@
   "store.custom#faq": {
     "path": "/faq"
   },
-  "store.custom#contact-us": {
-    "path": "/contact-us"
+  "store.custom#contacts": {
+    "path": "/contactsAll"
   }
 }

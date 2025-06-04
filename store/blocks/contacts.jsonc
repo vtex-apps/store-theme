@@ -1,0 +1,40 @@
+{
+    "store.custom#contacts": {
+        "parent": {
+            "header": "header#empty"
+        },
+        "blocks": [
+            "flex-layout.row#contacts"
+        ]
+    },
+    "header#empty": {
+        "blocks": [
+            "header-layout.desktop#empty"
+        ]
+    },
+    "header-layout.desktop#empty": {
+        "children": []
+    },
+    "flex-layout.row#contacts": {
+        "children": [
+            "flex-layout.col#contacts"
+        ]
+    },
+    "flex-layout.col#contacts": {
+        "children": [
+            "rich-text#contacts",
+            "contacts#contacts"
+        ]
+    },
+    "rich-text#contacts": {
+        "props": {
+            "text": "## Contact Us"
+        }
+    },
+    "contacts#contacts": {
+        "props": {
+            "pageSize": 10,
+            "title": "This table shows the list of contacts. Use load more button to load more"
+        }
+    }
+}
