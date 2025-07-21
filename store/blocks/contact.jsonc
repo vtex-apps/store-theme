@@ -58,22 +58,26 @@
 
   "form-input.text#title": {
     "props": {
-      "pointer": "#/properties/title"
+      "pointer": "#/properties/title",
+      "placeholder":"Subject"
     }
   },
   "form-input.text#name": {
     "props": {
-      "pointer": "#/properties/name"
+      "pointer": "#/properties/name",
+      "placeholder": "Your Name"
     }
   },
   "form-input.text#email": {
     "props": {
-      "pointer": "#/properties/email"
+      "pointer": "#/properties/email",
+      "placeholder":"Your E-mail"
     }
   },
   "form-input.textarea#message": {
     "props": {
-      "pointer": "#/properties/message"
+      "pointer": "#/properties/message",
+      "placeholder":"Your Message"
     }
   },
 
