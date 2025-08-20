@@ -1,0 +1,171 @@
+/* Container principal do produto */
+.vtex-product-summary-2-x-container--customShelf {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.vtex-product-summary-2-x-container--customShelf:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Elemento principal (article) */
+.vtex-product-summary-2-x-element--customShelf {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Imagem do produto */
+.vtex-product-summary-2-x-imageContainer--customShelf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.vtex-product-summary-2-x-image--customShelf {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  max-height: 220px;
+}
+
+.vtex-product-summary-2-x-container--customShelf:hover .vtex-product-summary-2-x-image--customShelf {
+  transform: scale(1.05);
+}
+
+/* Nome do produto */
+.vtex-product-summary-2-x-nameContainer--customShelf {
+  text-align: center;
+  margin: 12px 0 6px;
+}
+
+.vtex-product-summary-2-x-productBrand--customShelf {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Avaliação */
+.flex-layout-col--customShelf.productRating {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.vtex-reviews-and-ratings-3-x-inlineContainer {
+  max-width: 120px;
+}
+
+/* Espaço flexível */
+.vtex-product-summary-2-x-spacer--customShelf {
+  flex-grow: 1;
+}
+
+/* Preço */
+.vtex-product-price-1-x-sellingPrice--summary.customShelf {
+  color: #e53935;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 8px 0 4px;
+}
+
+.vtex-product-price-1-x-currencyCode--summary.customShelf,
+.vtex-product-price-1-x-currencyInteger--summary.customShelf,
+.vtex-product-price-1-x-currencyDecimal--summary.customShelf,
+.vtex-product-price-1-x-currencyFraction--summary.customShelf {
+  vertical-align: baseline;
+}
+
+/* Linha de preço e descontos */
+.flex-layout-row--customShelf {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Parcelamento */
+.product-installments--customShelf {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Botão adicionar ao carrinho */
+.buttonData--customShelf {
+  background-color: #d21919;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.buttonData--customShelf:hover {
+  background-color: #1565c0;
+}
+
+/* Quickview botão */
+.vtex-stack-layout-0-x-stackItem--quickview {
+  top: 8px !important;
+  right: 8px !important;
+}
+
+.vtex-modal-layout-0-x-triggerContainer--quickview {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.vtex-modal-layout-0-x-triggerContainer--quickview:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Destaques da coleção */
+.collection--customShelf {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Ajuste responsivo simples */
+@media (max-width: 480px) {
+  .vtex-product-summary-2-x-container--customShelf {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .vtex-product-summary-2-x-productBrand--customShelf {
+    font-size: 1rem;
+  }
+
+  .buttonDataContainer---customShelf {
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}
