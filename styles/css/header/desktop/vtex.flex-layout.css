@@ -1,0 +1,67 @@
+/* Container principal do header */
+.flexRowContent--main-header-custom {
+  background-color: #fff200;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Logo */
+.flexRowContent--main-header-custom .logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Menu de categorias */
+.flexRowContent--main-header-custom .category-menu-col {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+/* Espaçador invisível */
+.flexRowContent--main-header-custom .flex-layout__spacer {
+  flex-grow: 1;
+}
+
+/* Barra de busca */
+.flexRowContent--main-header-custom .search-bar-custom {
+  flex: 1;
+  max-width: 500px;
+  justify-content: center;
+  display: flex;
+}
+
+/* Troca de idioma */
+.flexRowContent--main-header-custom .locale-switcher-custom {
+  padding: 0 12px;
+}
+
+/* Login */
+.flexRowContent--main-header-custom .login-custom {
+  padding: 0 12px;
+}
+
+/* Carrinho */
+.flexRowContent--main-header-custom .minicart-custom {
+  padding: 0 12px;
+}
+
+.flexRowContent--main-header-mobile :global(.vtex-input__label),
+.flexRowContent--main-header-mobile :global(.vtex-textarea__label),
+.flexRowContent--main-header-desktop :global(.vtex-input__label),
+.flexRowContent--main-header-desktop :global(.vtex-textarea__label) {
+  font-size: 1rem;
+  color: #3f3f40;
+}
+
+.flexRowContent--main-header-mobile :global(.vtex-input),
+.flexRowContent--main-header-mobile :global(.vtex-textarea),
+.flexRowContent--main-header-desktop :global(.vtex-input),
+.flexRowContent--main-header-desktop :global(.vtex-textarea) {
+  display: block;
+  margin-bottom: 1rem;
+}
