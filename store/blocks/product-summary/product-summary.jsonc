@@ -9,56 +9,72 @@
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "add-to-cart-button"
-    ]
+    ],
+    "props": {
+      "blockClass": "customShelf"
+    }
+  },
+  "product-summary-name": {
+    "props": {
+      "blockClass": "customShelf"
+    }
   },
   "flex-layout.col#productRating": {
     "props": {
-      "blockClass": "productRating"
+      "blockClass": "customShelf productRating"
     },
     "children": ["product-rating-inline"]
   },
-
   "stack-layout#prodsum": {
+    "props": {
+      "blockClass": "customShelf"
+    },
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "modal-trigger#quickview"
     ]
   },
-
   "product-summary-image#shelf": {
     "props": {
+      "blockClass": "customShelf",
       "showBadge": false,
       "aspectRatio": "1:1",
       "maxHeight": 300
     }
   },
-
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
+      "blockClass": "customShelf collection",
       "type": "collection"
     },
     "children": ["product-highlight-wrapper"]
   },
   "product-highlight-wrapper": {
     "props": {
-      "blockClass": "collection"
+      "blockClass": "customShelf collection"
     },
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
     "props": {
+      "blockClass": "customShelf collection",
       "message": "{highlightName}"
     }
   },
-
+  "product-summary-space": {
+    "props": {
+      "blockClass": "customShelf"
+    }
+  },
   "product-list-price#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "customShelf summary"
     }
   },
   "flex-layout.row#selling-price-savings": {
     "props": {
+      "blockClass": "customShelf",
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
@@ -71,20 +87,23 @@
   },
   "product-installments#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "customShelf summary"
     }
   },
   "product-selling-price#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "customShelf summary"
     }
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
-      "blockClass": "summary"
+      "blockClass": "customShelf summary",
+      "markers": ["discount"]
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "blockClass": "customShelf"
     }
   }
 }
