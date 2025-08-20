@@ -1,0 +1,38 @@
+.flexRowContent--main-header-mobile-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1rem;
+  background-color: #ffe600; /* amarelo RiHappy */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.flexRowContent--main-header-mobile-custom .menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.flexRowContent--main-header-mobile-custom .logo {
+  height: 32px;
+}
+
+.flexRowContent--main-header-mobile-custom .search-bar {
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.flexRowContent--main-header-mobile-custom .search-bar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.flexRowContent--main-header-mobile-custom .cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
